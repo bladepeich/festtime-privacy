@@ -1,0 +1,61 @@
+{
+  "festivals": [
+    {
+      "id": "sonorama-2026",
+      "name": "Sonorama Ribera",
+      "year": 2026,
+      "days": [
+        { "id": "miercoles", "displayName": "Mie 5", "calendarDate": "2026-08-05" },
+        { "id": "jueves", "displayName": "Jue 6", "calendarDate": "2026-08-06" },
+        { "id": "viernes", "displayName": "Vie 7", "calendarDate": "2026-08-07" },
+        { "id": "sabado", "displayName": "Sab 8", "calendarDate": "2026-08-08" },
+        { "id": "domingo", "displayName": "Dom 9", "calendarDate": "2026-08-09" }
+      ],
+      "defaultDayID": "miercoles",
+      "defaultShift": "noche",
+      "forcedShiftByDay": {
+        "miercoles": "noche",
+        "domingo": "dia"
+      },
+      "menuOptions": [
+        {
+          "title": "Plano del recinto",
+          "inAppImageURL": "https://www.sonoramaribera.com/wp-content/uploads/2026/07/PLANO_SONORAMA_EDITABLE_SONORAMA_RIBERA_2026_1b.jpg",
+          "systemImage": "map"
+        },
+        {
+          "title": "Zona de acampada",
+          "inAppImageURL": "https://www.sonoramaribera.com/wp-content/uploads/2026/07/PLANO_SONORAMA_EDITABLE_SONORAMA_RIBERA_2026_2.jpg",
+          "systemImage": "tent"
+        }
+      ],
+      "eventsFile": "sonorama-2026-events",
+      "stageColorsFile": "sonorama-2026-stage-colors"
+    },
+    {
+      "id": "leyendas-del-rock-2026",
+      "legacyIDs": [],
+      "name": "Leyendas del Rock",
+      "year": 2026,
+      "days": [
+        { "id": "miercoles", "displayName": "Mie 05", "calendarDate": "2026-08-05" },
+        { "id": "jueves", "displayName": "Jue 06", "calendarDate": "2026-08-06" },
+        { "id": "viernes", "displayName": "Vie 07", "calendarDate": "2026-08-07" },
+        { "id": "sabado", "displayName": "Sab 08", "calendarDate": "2026-08-08" }
+      ],
+      "defaultDayID": "miercoles",
+      "defaultShift": "dia",
+      "forcedShiftByDay": {},
+      "favoriteIDAliases": {},
+      "menuOptions": [
+        {
+          "title": "Plano del recinto",
+          "inAppImageURL": "https://www.leyendasdelrockfestival.com/wp-content/uploads/2022/07/Plano-Leyendas-2022-recinto-2048x1362.jpg",
+          "systemImage": "map"
+        }
+      ],
+      "eventsFile": "leyendas-del-rock-2026-events",
+      "stageColorsFile": "leyendas-del-rock-2026-stage-colors"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "festival": {
+    "id": "mi-festival-2027",
+    "legacyIDs": [],
+    "name": "Mi Festival",
+    "year": 2027,
+    "days": [
+      { "id": "jueves", "displayName": "Jue 10", "calendarDate": "2027-06-10" },
+      { "id": "viernes", "displayName": "Vie 11", "calendarDate": "2027-06-11" },
+      { "id": "sabado", "displayName": "Sab 12", "calendarDate": "2027-06-12" }
+    ],
+    "defaultDayID": "jueves",
+    "defaultShift": "noche",
+    "forcedShiftByDay": {
+      "jueves": "noche"
+    },
+    "favoriteIDAliases": {},
+    "menuOptions": [
+      {
+        "title": "Plano del recinto",
+        "inAppImageURL": "https://example.com/plano.jpg",
+        "systemImage": "map"
+      },
+      {
+        "title": "Zona de acampada",
+        "inAppImageURL": "https://example.com/acampada.jpg",
+        "systemImage": "tent"
+      }
+    ]
+  },
+  "stageColors": {
+    "Escenario Principal": "#ef233c",
+    "Escenario Indie": "#2b2d42",
+    "Escenario Electronica": "#118ab2"
+  },
+  "events": [
+    {
+      "id": "mi-festival-2027-vie-2310-artista-x",
+      "dia": "viernes",
+      "turno": "noche",
+      "hora": "23:10",
+      "artista": "Artista X",
+      "escenario": "Escenario Principal"
+    },
+    {
+      "id": "mi-festival-2027-sab-0130-artista-y",
+      "dia": "sabado",
+      "turno": "noche",
+      "hora": "01:30",
+      "artista": "Artista Y",
+      "escenario": "Escenario Indie"
+    }
+  ]
+}

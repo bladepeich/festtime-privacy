@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>11</integer>
+	<key>logs</key>
+	<dict>
+		<key>604D4C73-9F08-4885-A679-F80BDC616660</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>604D4C73-9F08-4885-A679-F80BDC616660.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FestTime project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FestTime</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project FestTime with scheme FestTime</string>
+			<key>timeStartedRecording</key>
+			<real>807457676.36489201</real>
+			<key>timeStoppedRecording</key>
+			<real>807457680.14253795</real>
+			<key>title</key>
+			<string>Building project FestTime with scheme FestTime</string>
+			<key>uniqueIdentifier</key>
+			<string>604D4C73-9F08-4885-A679-F80BDC616660</string>
+		</dict>
+		<key>D29BEE42-98F1-4E3E-A5F9-D008CC8435E2</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>D29BEE42-98F1-4E3E-A5F9-D008CC8435E2.xcactivitylog</string>
+			<key>hasPrimaryLog</key>
+			<true/>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>S</string>
+				<key>totalNumberOfAnalyzerIssues</key>
+				<integer>0</integer>
+				<key>totalNumberOfErrors</key>
+				<integer>0</integer>
+				<key>totalNumberOfTestFailures</key>
+				<integer>0</integer>
+				<key>totalNumberOfWarnings</key>
+				<integer>0</integer>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>FestTime project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>FestTime</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building project FestTime with scheme FestTime</string>
+			<key>timeStartedRecording</key>
+			<real>807462149.78167295</real>
+			<key>timeStoppedRecording</key>
+			<real>807462153.81924403</real>
+			<key>title</key>
+			<string>Building project FestTime with scheme FestTime</string>
+			<key>uniqueIdentifier</key>
+			<string>D29BEE42-98F1-4E3E-A5F9-D008CC8435E2</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

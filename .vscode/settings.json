@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^node -e \"const fs=require\\('fs'\\);const src=fs\\.readFileSync\\('/Users/ruben/Downloads/index\\.sonorama\\.html','utf8'\\);const m=src\\.match\\(/const horariosData = \\\\\\[\\(\\.\\*\\?\\)\\\\n\\\\s\\*\\\\\\];/s\\);if\\(!m\\) throw new Error\\('horariosData not found'\\);const arrayText='\\['\\+m\\[1\\]\\+'\\]';const jsonLike=arrayText\\.replace\\(/\\(\\\\\\{\\|,\\)\\\\s\\*\\(\\\\w\\+\\)\\\\s\\*:/g,'\\$1 \\\\\"\\$2\\\\\":'\\)\\.replace\\(/'/g,'\\\\\"'\\);const data=JSON\\.parse\\(jsonLike\\);fs\\.writeFileSync\\('FestTimeApp/Resources/Festivals/sonorama-2026-events\\.json',JSON\\.stringify\\(data,null,2\\)\\);console\\.log\\('events',data\\.length\\);const c=src\\.match\\(/const stageColors = \\\\\\{\\(\\[\\\\s\\\\S\\]\\*\\?\\)\\\\\\};/\\);if\\(!c\\) throw new Error\\('stageColors not found'\\);const objText='\\{'\\+c\\[1\\]\\+'\\}';const colors=JSON\\.parse\\(objText\\.replace\\(/\\(\\\\\\{\\|,\\)\\\\s\\*\\\\\"\\?\\(\\[\\^\\\\\"\\\\n\\]\\+\\?\\)\\\\\"\\?\\\\s\\*:/g,\\(mm,p1,p2\\)=>`\\$\\{p1\\} \\\\\"\\$\\{p2\\.trim\\(\\)\\}\\\\\":`\\)\\.replace\\(/'/g,'\\\\\"'\\)\\);fs\\.writeFileSync\\('FestTimeApp/Resources/Festivals/sonorama-2026-stage-colors\\.json',JSON\\.stringify\\(colors,null,2\\)\\);console\\.log\\('stages',Object\\.keys\\(colors\\)\\.length\\);\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}

@@ -1,0 +1,119 @@
+{
+  "" : {
+    "diagnostics" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestTime-primary.dia",
+    "emit-module-dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestTime-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestTime-primary-emit-module.dia",
+    "pch" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestTime-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestTime-primary.swiftdeps"
+  },
+  "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "const-values" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftconstvalues",
+    "dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/GeneratedAssetSymbols.d",
+    "diagnostics" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/GeneratedAssetSymbols.dia",
+    "index-unit-output-path" : "/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "swift-dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/GeneratedAssetSymbols.swiftdeps",
+    "swiftmodule" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/GeneratedAssetSymbols~partial.swiftmodule"
+  },
+  "/Users/ruben/VisualStudio/FestTime/FestTimeApp/Sources/App/FestTimeApp.swift" : {
+    "const-values" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestTimeApp.swiftconstvalues",
+    "dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestTimeApp.d",
+    "diagnostics" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestTimeApp.dia",
+    "index-unit-output-path" : "/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestTimeApp.o",
+    "llvm-bc" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestTimeApp.bc",
+    "object" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestTimeApp.o",
+    "swift-dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestTimeApp.swiftdeps",
+    "swiftmodule" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestTimeApp~partial.swiftmodule"
+  },
+  "/Users/ruben/VisualStudio/FestTime/FestTimeApp/Sources/Data/FavoriteReminderScheduler.swift" : {
+    "const-values" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoriteReminderScheduler.swiftconstvalues",
+    "dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoriteReminderScheduler.d",
+    "diagnostics" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoriteReminderScheduler.dia",
+    "index-unit-output-path" : "/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoriteReminderScheduler.o",
+    "llvm-bc" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoriteReminderScheduler.bc",
+    "object" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoriteReminderScheduler.o",
+    "swift-dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoriteReminderScheduler.swiftdeps",
+    "swiftmodule" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoriteReminderScheduler~partial.swiftmodule"
+  },
+  "/Users/ruben/VisualStudio/FestTime/FestTimeApp/Sources/Data/FavoritesKeychainStore.swift" : {
+    "const-values" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoritesKeychainStore.swiftconstvalues",
+    "dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoritesKeychainStore.d",
+    "diagnostics" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoritesKeychainStore.dia",
+    "index-unit-output-path" : "/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoritesKeychainStore.o",
+    "llvm-bc" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoritesKeychainStore.bc",
+    "object" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoritesKeychainStore.o",
+    "swift-dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoritesKeychainStore.swiftdeps",
+    "swiftmodule" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FavoritesKeychainStore~partial.swiftmodule"
+  },
+  "/Users/ruben/VisualStudio/FestTime/FestTimeApp/Sources/Data/FestivalRepository.swift" : {
+    "const-values" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalRepository.swiftconstvalues",
+    "dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalRepository.d",
+    "diagnostics" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalRepository.dia",
+    "index-unit-output-path" : "/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalRepository.o",
+    "llvm-bc" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalRepository.bc",
+    "object" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalRepository.o",
+    "swift-dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalRepository.swiftdeps",
+    "swiftmodule" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalRepository~partial.swiftmodule"
+  },
+  "/Users/ruben/VisualStudio/FestTime/FestTimeApp/Sources/Domain/FestivalEvent.swift" : {
+    "const-values" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalEvent.swiftconstvalues",
+    "dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalEvent.d",
+    "diagnostics" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalEvent.dia",
+    "index-unit-output-path" : "/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalEvent.o",
+    "llvm-bc" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalEvent.bc",
+    "object" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalEvent.o",
+    "swift-dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalEvent.swiftdeps",
+    "swiftmodule" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalEvent~partial.swiftmodule"
+  },
+  "/Users/ruben/VisualStudio/FestTime/FestTimeApp/Sources/Domain/FestivalModels.swift" : {
+    "const-values" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalModels.swiftconstvalues",
+    "dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalModels.d",
+    "diagnostics" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalModels.dia",
+    "index-unit-output-path" : "/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalModels.o",
+    "llvm-bc" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalModels.bc",
+    "object" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalModels.o",
+    "swift-dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalModels.swiftdeps",
+    "swiftmodule" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/FestivalModels~partial.swiftmodule"
+  },
+  "/Users/ruben/VisualStudio/FestTime/FestTimeApp/Sources/Features/Schedule/EventCardView.swift" : {
+    "const-values" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/EventCardView.swiftconstvalues",
+    "dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/EventCardView.d",
+    "diagnostics" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/EventCardView.dia",
+    "index-unit-output-path" : "/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/EventCardView.o",
+    "llvm-bc" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/EventCardView.bc",
+    "object" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/EventCardView.o",
+    "swift-dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/EventCardView.swiftdeps",
+    "swiftmodule" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/EventCardView~partial.swiftmodule"
+  },
+  "/Users/ruben/VisualStudio/FestTime/FestTimeApp/Sources/Features/Schedule/ScheduleView.swift" : {
+    "const-values" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleView.swiftconstvalues",
+    "dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleView.d",
+    "diagnostics" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleView.dia",
+    "index-unit-output-path" : "/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleView.o",
+    "llvm-bc" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleView.bc",
+    "object" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleView.o",
+    "swift-dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleView.swiftdeps",
+    "swiftmodule" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleView~partial.swiftmodule"
+  },
+  "/Users/ruben/VisualStudio/FestTime/FestTimeApp/Sources/Features/Schedule/ScheduleViewModel.swift" : {
+    "const-values" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleViewModel.swiftconstvalues",
+    "dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleViewModel.d",
+    "diagnostics" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleViewModel.dia",
+    "index-unit-output-path" : "/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleViewModel.o",
+    "llvm-bc" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleViewModel.bc",
+    "object" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleViewModel.o",
+    "swift-dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleViewModel.swiftdeps",
+    "swiftmodule" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/ScheduleViewModel~partial.swiftmodule"
+  },
+  "/Users/ruben/VisualStudio/FestTime/FestTimeApp/Sources/Features/Shared/Color+Hex.swift" : {
+    "const-values" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/Color+Hex.swiftconstvalues",
+    "dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/Color+Hex.d",
+    "diagnostics" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/Color+Hex.dia",
+    "index-unit-output-path" : "/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/Color+Hex.o",
+    "llvm-bc" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/Color+Hex.bc",
+    "object" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/Color+Hex.o",
+    "swift-dependencies" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/Color+Hex.swiftdeps",
+    "swiftmodule" : "/Users/ruben/VisualStudio/FestTime/.build/Build/Intermediates.noindex/FestTime.build/Debug-iphonesimulator/FestTime.build/Objects-normal/arm64/Color+Hex~partial.swiftmodule"
+  }
+}
