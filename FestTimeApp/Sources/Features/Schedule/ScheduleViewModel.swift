@@ -16,10 +16,16 @@ final class ScheduleViewModel: ObservableObject {
     @Published var remindersEnabled: Bool = false
     @Published var reminderErrorMessage: String?
     @Published var festivalChangeMessage: String?
+    @Published var isRemoteSyncInProgress: Bool = false
+    @Published var isStartupLoading: Bool = true
+    @Published var startupProgress: Double = 0.05
+    @Published var startupStatusMessage: String = "Preparando app..."
+    @Published var lastSuccessfulRemoteSyncDate: Date?
     @Published var notificationInbox: [FestTimeNotificationItem] = []
     @Published var unreadNotificationsCount: Int = 0
 
     private let repository: FestivalRepository
+    private let remoteFeedSyncService: RemoteFestivalFeedSyncing
     private let reminderScheduler: FavoriteReminderScheduling
     private let defaults: UserDefaults
     private let favoritesSecureStore: FavoritesSecureStoring
@@ -32,18 +38,26 @@ final class ScheduleViewModel: ObservableObject {
     private let favoritesPrefix = "festtime.favorites."
     private let firstLoadPrefix = "festtime.firstLoadDone."
     private let remindersEnabledPrefix = "festtime.remindersEnabled."
+    private let lastRemoteSyncAtKey = "festtime.lastRemoteSyncAt"
     private let reminderOffsets = [15, 10, 5]
 
     init(
         repository: FestivalRepository = BundleFestivalRepository(),
+        remoteFeedSyncService: RemoteFestivalFeedSyncing = RemoteFestivalFeedService(),
         reminderScheduler: FavoriteReminderScheduling = FavoriteReminderScheduler(),
         defaults: UserDefaults = .standard,
         favoritesSecureStore: FavoritesSecureStoring = FavoritesKeychainStore()
     ) {
         self.repository = repository
+        self.remoteFeedSyncService = remoteFeedSyncService
         self.reminderScheduler = reminderScheduler
         self.defaults = defaults
         self.favoritesSecureStore = favoritesSecureStore
+
+        if defaults.object(forKey: lastRemoteSyncAtKey) != nil {
+            let timestamp = defaults.double(forKey: lastRemoteSyncAtKey)
+            lastSuccessfulRemoteSyncDate = Date(timeIntervalSince1970: timestamp)
+        }
     }
 
     var selectedFestival: FestivalDefinition? {
@@ -110,10 +124,86 @@ final class ScheduleViewModel: ObservableObject {
         }
     }
 
+    var festivalsGroupedByMonth: [(title: String, festivals: [FestivalDefinition])] {
+        let parser = DateFormatter()
+        parser.locale = Locale(identifier: "en_US_POSIX")
+        parser.calendar = Calendar(identifier: .gregorian)
+        parser.dateFormat = "yyyy-MM-dd"
+
+        let monthFormatter = DateFormatter()
+        monthFormatter.locale = Locale(identifier: "es_ES")
+        monthFormatter.calendar = Calendar(identifier: .gregorian)
+        monthFormatter.dateFormat = "LLLL yyyy"
+
+        let calendar = Calendar(identifier: .gregorian)
+        var buckets: [String: (monthDate: Date, festivals: [FestivalDefinition])] = [:]
+        var undated: [FestivalDefinition] = []
+
+        for festival in festivals {
+            guard let firstDate = firstFestivalDate(for: festival, parser: parser) else {
+                undated.append(festival)
+                continue
+            }
+
+            let components = calendar.dateComponents([.year, .month], from: firstDate)
+            guard let year = components.year,
+                  let month = components.month,
+                  let monthDate = calendar.date(from: DateComponents(calendar: calendar, year: year, month: month, day: 1)) else {
+                undated.append(festival)
+                continue
+            }
+
+            let key = String(format: "%04d-%02d", year, month)
+            if buckets[key] == nil {
+                buckets[key] = (monthDate, [])
+            }
+            buckets[key]?.festivals.append(festival)
+        }
+
+        var grouped = buckets.values
+            .sorted { $0.monthDate < $1.monthDate }
+            .map { bucket in
+                let title = monthFormatter.string(from: bucket.monthDate)
+                    .capitalized(with: Locale(identifier: "es_ES"))
+                let festivals = bucket.festivals.sorted {
+                    let lhsDate = firstFestivalDate(for: $0, parser: parser) ?? .distantFuture
+                    let rhsDate = firstFestivalDate(for: $1, parser: parser) ?? .distantFuture
+
+                    if lhsDate == rhsDate {
+                        return $0.displayName.localizedCaseInsensitiveCompare($1.displayName) == .orderedAscending
+                    }
+                    return lhsDate < rhsDate
+                }
+                return (title, festivals)
+            }
+
+        if !undated.isEmpty {
+            grouped.append((
+                "Sin fecha",
+                undated.sorted { $0.displayName.localizedCaseInsensitiveCompare($1.displayName) == .orderedAscending }
+            ))
+        }
+
+        return grouped
+    }
+
+    var lastRemoteSyncLabel: String {
+        guard let date = lastSuccessfulRemoteSyncDate else {
+            return "Nunca"
+        }
+
+        return date.formatted(date: .abbreviated, time: .shortened)
+    }
+
     func load() {
         if !festivals.isEmpty {
+            isStartupLoading = false
             return
         }
+
+        isStartupLoading = true
+        startupProgress = 0.15
+        startupStatusMessage = "Cargando festivales guardados..."
 
         do {
             let loadedFestivals = try repository.loadCatalog()
@@ -127,13 +217,28 @@ final class ScheduleViewModel: ObservableObject {
             searchText = ""
             remindersEnabled = false
             isFavoritesTabActive = false
+            startupProgress = 0.35
+            startupStatusMessage = "Buscando actualizaciones..."
 
             Task {
+                await syncRemoteFestivals(force: false, showNoChangesMessage: false)
+                startupProgress = 0.8
+                startupStatusMessage = "Aplicando datos..."
                 await rescheduleEnabledFestivalsReminders()
                 await refreshNotificationInbox()
+                startupProgress = 1.0
+                startupStatusMessage = "Listo"
+                isStartupLoading = false
             }
         } catch {
             print("Error loading festivals: \(error)")
+            isStartupLoading = false
+        }
+    }
+
+    func refreshFestivalsFromRemote() {
+        Task {
+            await syncRemoteFestivals(force: true, showNoChangesMessage: true)
         }
     }
 
@@ -167,6 +272,7 @@ final class ScheduleViewModel: ObservableObject {
             applyFestivalDefaultsAndSelections()
 
             Task {
+                await syncRemoteFestivals(force: false, showNoChangesMessage: false)
                 await refreshNotificationInbox()
             }
         } catch {
@@ -191,7 +297,7 @@ final class ScheduleViewModel: ObservableObject {
         selectedFestivalID = festivalID
         defaults.set(festivalID, forKey: selectedFestivalKey)
         applyFestivalDefaultsAndSelections()
-        showFestivalChangeMessage(festival.displayName)
+        showInfoMessage("Festival cargado: \(festival.displayName)")
     }
 
     func selectDay(_ dayID: String) {
@@ -544,12 +650,12 @@ final class ScheduleViewModel: ObservableObject {
         return defaults.object(forKey: key) != nil
     }
 
-    private func showFestivalChangeMessage(_ festivalName: String) {
-        festivalChangeMessage = "Festival cargado: \(festivalName)"
+    private func showInfoMessage(_ message: String) {
+        festivalChangeMessage = message
 
         Task {
             try? await Task.sleep(nanoseconds: 2_000_000_000)
-            if festivalChangeMessage == "Festival cargado: \(festivalName)" {
+            if festivalChangeMessage == message {
                 festivalChangeMessage = nil
             }
         }
@@ -581,5 +687,96 @@ final class ScheduleViewModel: ObservableObject {
                 print("Error rescheduling reminders for \(festival.id): \(error)")
             }
         }
+    }
+
+    private func syncRemoteFestivals(force: Bool, showNoChangesMessage: Bool) async {
+        isRemoteSyncInProgress = true
+        defer {
+            isRemoteSyncInProgress = false
+        }
+
+        let summary = await remoteFeedSyncService.syncIfNeeded(force: force)
+
+        if let errorMessage = summary.errorMessage {
+            if force {
+                reminderErrorMessage = errorMessage
+            }
+            return
+        }
+
+        if summary.skippedBecauseNotConfigured {
+            if force {
+                reminderErrorMessage = "No hay URL remota configurada para actualizar festivales."
+            }
+            return
+        }
+
+        markRemoteSyncSuccess()
+
+        let shouldReloadLocalData = force || summary.appliedChangesCount > 0 || summary.skippedInvalidCount > 0
+
+        guard shouldReloadLocalData else {
+            return
+        }
+
+        do {
+            festivals = try repository.loadCatalog()
+            pruneLocalCachesToKnownFestivals()
+
+            // Remote changes may affect festivals not currently selected.
+            // Clearing these caches ensures next access reads fresh data.
+            eventsByFestival.removeAll()
+            stageColorsByFestival.removeAll()
+
+            if let currentFestival = festivals.first(where: { $0.id == selectedFestivalID }) {
+                try loadFestivalDataIfNeeded(for: currentFestival)
+            } else {
+                selectedFestivalID = ""
+                selectedDayID = ""
+                selectedStage = "todos"
+                searchText = ""
+                remindersEnabled = false
+            }
+
+            let applied = summary.appliedChangesCount
+            let skipped = summary.skippedInvalidCount
+
+            if skipped > 0 {
+                showInfoMessage("Actualizacion remota: \(applied) cambios, \(skipped) omitidos por validacion")
+            } else if applied == 0 {
+                if force, showNoChangesMessage {
+                    showInfoMessage("Catalogo remoto al dia")
+                }
+            } else {
+                showInfoMessage("Actualizacion remota aplicada: \(applied) cambios")
+            }
+        } catch {
+            if force {
+                reminderErrorMessage = "Se recibio una actualizacion remota, pero no se pudo aplicar."
+            }
+        }
+    }
+
+    private func pruneLocalCachesToKnownFestivals() {
+        let validIDs = Set(festivals.map(\.id))
+
+        eventsByFestival = eventsByFestival.filter { validIDs.contains($0.key) }
+        stageColorsByFestival = stageColorsByFestival.filter { validIDs.contains($0.key) }
+        favoritesByFestival = favoritesByFestival.filter { validIDs.contains($0.key) }
+    }
+
+    private func firstFestivalDate(for festival: FestivalDefinition, parser: DateFormatter) -> Date? {
+        festival.days
+            .compactMap { day -> Date? in
+                guard let rawDate = day.calendarDate else { return nil }
+                return parser.date(from: rawDate)
+            }
+            .min()
+    }
+
+    private func markRemoteSyncSuccess() {
+        let now = Date()
+        lastSuccessfulRemoteSyncDate = now
+        defaults.set(now.timeIntervalSince1970, forKey: lastRemoteSyncAtKey)
     }
 }

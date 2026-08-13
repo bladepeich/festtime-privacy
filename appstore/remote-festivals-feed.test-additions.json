@@ -794,7 +794,7 @@
       ]
     },
     {
-      "revision": "2026-08-13T20:20:00Z",
+      "revision": "2026-08-13T20:45:00Z",
       "festival": {
         "id": "sierra-ruta-fest-2027",
         "name": "Sierra Ruta",
@@ -862,6 +862,22 @@
           "hora": "19:30",
           "artista": "Cuerda Fina",
           "escenario": "Escenario Valle"
+        },
+        {
+          "id": "sierra-ruta-fest-2027-jue-1615-piedra-libre",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "16:15",
+          "artista": "Piedra Libre",
+          "escenario": "Escenario Sendero"
+        },
+        {
+          "id": "sierra-ruta-fest-2027-jue-2105-via-norte",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "21:05",
+          "artista": "Via Norte",
+          "escenario": "Escenario Cima"
         },
         {
           "id": "sierra-ruta-fest-2027-vie-2240-larga-distancia",

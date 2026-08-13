@@ -6,7 +6,6 @@ struct ScheduleView: View {
     @State private var isFestivalSheetPresented = false
     @State private var isNotificationsSheetPresented = false
     @State private var selectedInAppMenuOption: FestivalMenuOption?
-    @State private var hasEnteredForegroundOnce = false
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.scenePhase) private var scenePhase
 
@@ -24,6 +23,36 @@ struct ScheduleView: View {
                 }
             }
             .background(Color(.systemGroupedBackground))
+            .overlay(alignment: .top) {
+                VStack(spacing: 8) {
+                    if viewModel.isRemoteSyncInProgress {
+                        HStack(spacing: 10) {
+                            ProgressView()
+                                .tint(.black)
+                            Text("Actualizando festivales...")
+                                .font(.footnote.weight(.bold))
+                                .foregroundStyle(.black)
+                        }
+                        .padding(.horizontal, 12)
+                        .padding(.vertical, 8)
+                        .background(Color.yellow.opacity(0.92))
+                        .clipShape(Capsule(style: .continuous))
+                        .transition(.move(edge: .top).combined(with: .opacity))
+                    }
+
+                    if let festivalMessage = viewModel.festivalChangeMessage {
+                        Text(festivalMessage)
+                            .font(.footnote.weight(.bold))
+                            .foregroundStyle(.black)
+                            .padding(.horizontal, 12)
+                            .padding(.vertical, 8)
+                            .background(Color.white.opacity(0.94))
+                            .clipShape(Capsule(style: .continuous))
+                            .transition(.move(edge: .top).combined(with: .opacity))
+                    }
+                }
+                .padding(.top, 8)
+            }
             .toolbar(viewModel.selectedFestival == nil ? .visible : .hidden, for: .navigationBar)
             .scrollDismissesKeyboard(.immediately)
             .alert("Avisos", isPresented: Binding(
@@ -46,6 +75,13 @@ struct ScheduleView: View {
                 menuImageSheet(for: option)
             }
         }
+        .overlay {
+            if viewModel.isStartupLoading {
+                startupLoadingOverlay
+            }
+        }
+        .animation(.easeInOut(duration: 0.2), value: viewModel.isStartupLoading)
+        .animation(.easeInOut(duration: 0.2), value: viewModel.isRemoteSyncInProgress)
         .task {
             viewModel.load()
             await viewModel.refreshNotificationInbox()
@@ -53,16 +89,42 @@ struct ScheduleView: View {
         .onChange(of: scenePhase) { newPhase in
             switch newPhase {
             case .active:
-                if hasEnteredForegroundOnce {
-                    viewModel.reloadAfterForeground()
-                } else {
-                    hasEnteredForegroundOnce = true
-                }
+                viewModel.reloadAfterForeground()
             case .background:
                 viewModel.prepareRemindersForBackground()
             default:
                 break
             }
+        }
+    }
+
+    private var startupLoadingOverlay: some View {
+        ZStack {
+            LinearGradient(
+                colors: [Color.black.opacity(0.92), Color(red: 0.08, green: 0.12, blue: 0.19).opacity(0.95)],
+                startPoint: .top,
+                endPoint: .bottom
+            )
+            .ignoresSafeArea()
+
+            VStack(spacing: 14) {
+                ProgressView(value: max(0.0, min(1.0, viewModel.startupProgress)))
+                    .progressViewStyle(.linear)
+                    .tint(.yellow)
+                    .frame(maxWidth: 280)
+
+                Text("Actualizando festivales...")
+                    .font(.headline.weight(.bold))
+                    .foregroundStyle(.white)
+
+                Text(viewModel.startupStatusMessage)
+                    .font(.subheadline)
+                    .foregroundStyle(Color.white.opacity(0.8))
+            }
+            .padding(22)
+            .background(Color.white.opacity(0.08))
+            .clipShape(RoundedRectangle(cornerRadius: 16, style: .continuous))
+            .padding(.horizontal, 24)
         }
     }
 
@@ -135,6 +197,39 @@ struct ScheduleView: View {
                     }
                     .buttonStyle(.plain)
                     .padding(.horizontal, 24)
+
+                    Button {
+                        viewModel.refreshFestivalsFromRemote()
+                    } label: {
+                        HStack(spacing: 10) {
+                            if viewModel.isRemoteSyncInProgress {
+                                ProgressView()
+                                    .tint(.black)
+                            } else {
+                                Image(systemName: "arrow.clockwise")
+                            }
+
+                            Text(viewModel.isRemoteSyncInProgress ? "Actualizando..." : "Actualizar festivales")
+                                .fontWeight(.bold)
+                        }
+                        .foregroundStyle(.black)
+                        .frame(maxWidth: .infinity)
+                        .padding(.vertical, 12)
+                        .background(Color.white.opacity(0.92))
+                        .clipShape(RoundedRectangle(cornerRadius: 14, style: .continuous))
+                    }
+                    .buttonStyle(.plain)
+                    .padding(.horizontal, 24)
+                    .disabled(viewModel.isRemoteSyncInProgress)
+
+                    Text("Ultima actualizacion: \(viewModel.lastRemoteSyncLabel)")
+                        .font(.caption.weight(.semibold))
+                        .foregroundStyle(Color.white.opacity(0.88))
+                        .padding(.top, 2)
+
+                    Text("En colaboración con:")
+                        .font(.subheadline.weight(.semibold))
+                        .foregroundStyle(Color.white.opacity(0.9))
 
                     magazineLogoView
 
@@ -212,6 +307,12 @@ struct ScheduleView: View {
                 isFestivalSheetPresented = true
             } label: {
                 Label("Seleccionar festival", systemImage: "music.note.list")
+            }
+
+            Button {
+                viewModel.refreshFestivalsFromRemote()
+            } label: {
+                Label("Actualizar festivales", systemImage: "arrow.clockwise")
             }
 
             Button {
@@ -397,6 +498,11 @@ struct ScheduleView: View {
                 .font(.caption2.weight(.semibold))
                 .foregroundStyle(Color.white.opacity(0.85))
                 .padding(.horizontal)
+
+            Text("Ultima actualizacion: \(viewModel.lastRemoteSyncLabel)")
+                .font(.caption2.weight(.semibold))
+                .foregroundStyle(Color.white.opacity(0.85))
+                .padding(.horizontal)
         }
         .padding(.top, 8)
         .padding(.bottom, 14)
@@ -436,27 +542,33 @@ struct ScheduleView: View {
 
     private var festivalSheet: some View {
         NavigationStack {
-            List(viewModel.festivals) { festival in
-                Button {
-                    let festivalID = festival.id
-                    isFestivalSheetPresented = false
+            List {
+                ForEach(viewModel.festivalsGroupedByMonth, id: \.title) { group in
+                    Section(group.title) {
+                        ForEach(group.festivals) { festival in
+                            Button {
+                                let festivalID = festival.id
+                                isFestivalSheetPresented = false
 
-                    // Defer loading to the next runloop so the sheet closes immediately.
-                    DispatchQueue.main.async {
-                        viewModel.selectFestival(festivalID)
-                    }
-                } label: {
-                    HStack {
-                        Text(festival.displayName)
-                            .foregroundStyle(.primary)
-                        Spacer()
-                        if festival.id == viewModel.selectedFestivalID {
-                            Image(systemName: "checkmark")
-                                .foregroundStyle(.blue)
+                                // Defer loading to the next runloop so the sheet closes immediately.
+                                DispatchQueue.main.async {
+                                    viewModel.selectFestival(festivalID)
+                                }
+                            } label: {
+                                HStack {
+                                    Text(festival.displayName)
+                                        .foregroundStyle(.primary)
+                                    Spacer()
+                                    if festival.id == viewModel.selectedFestivalID {
+                                        Image(systemName: "checkmark")
+                                            .foregroundStyle(.blue)
+                                    }
+                                }
+                                .frame(maxWidth: .infinity, alignment: .leading)
+                                .contentShape(Rectangle())
+                            }
                         }
                     }
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .contentShape(Rectangle())
                 }
             }
             .navigationTitle("Festivales")
