@@ -467,8 +467,10 @@ struct ScheduleView: View {
                 .foregroundStyle(.black)
                 .padding(.vertical, 8)
                 .padding(.horizontal, 12)
+                .frame(minHeight: 40)
                 .background(viewModel.isFavoritesTabActive ? Color.yellow.opacity(0.85) : Color.white.opacity(0.94))
                 .clipShape(Capsule())
+                .contentShape(Capsule())
         }
         .buttonStyle(.plain)
         .accessibilityLabel("Favoritos")
@@ -590,16 +592,20 @@ struct ScheduleView: View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack(spacing: 8) {
                 ForEach(viewModel.selectedFestival?.days ?? [], id: \.id) { day in
-                    Button(day.displayName) {
+                    Button {
                         viewModel.selectDay(day.id)
+                    } label: {
+                        Text(day.displayName)
+                            .font(.subheadline.bold())
+                            .padding(.vertical, 10)
+                            .padding(.horizontal, 14)
+                            .frame(minHeight: 40)
+                            .foregroundStyle(.black)
+                            .background(viewModel.selectedDayID == day.id ? Color.yellow.opacity(0.85) : Color.white.opacity(0.94))
+                            .clipShape(Capsule())
+                            .contentShape(Capsule())
                     }
                     .buttonStyle(.plain)
-                    .font(.subheadline.bold())
-                    .padding(.vertical, 10)
-                    .padding(.horizontal, 14)
-                    .foregroundStyle(.black)
-                    .background(viewModel.selectedDayID == day.id ? Color.yellow.opacity(0.85) : Color.white.opacity(0.94))
-                    .clipShape(Capsule())
                 }
             }
             .padding(.horizontal)
@@ -613,16 +619,18 @@ struct ScheduleView: View {
         if !viewModel.isFavoritesTabActive {
             HStack(spacing: 8) {
                 ForEach(viewModel.availableShifts, id: \.self) { shift in
-                    Button(shift.title) {
+                    Button {
                         viewModel.selectShift(shift)
+                    } label: {
+                        Text(shift.title)
+                            .font(.subheadline.bold())
+                            .frame(maxWidth: .infinity, minHeight: 40)
+                            .foregroundStyle(.black)
+                            .background(viewModel.selectedShift == shift ? Color.yellow.opacity(0.85) : Color.white.opacity(0.94))
+                            .clipShape(Capsule())
+                            .contentShape(Capsule())
                     }
                     .buttonStyle(.plain)
-                    .font(.subheadline.bold())
-                    .frame(maxWidth: .infinity)
-                    .padding(.vertical, 10)
-                    .foregroundStyle(.black)
-                    .background(viewModel.selectedShift == shift ? Color.yellow.opacity(0.85) : Color.white.opacity(0.94))
-                    .clipShape(Capsule())
                 }
             }
             .padding(.horizontal)
@@ -648,20 +656,24 @@ struct ScheduleView: View {
     private func stageChip(title: String, colorHex: String, stageID: String) -> some View {
         let isSelected = viewModel.selectedStage == stageID
 
-        return Button(title) {
+        return Button {
             viewModel.selectStage(stageID)
+        } label: {
+            Text(title)
+                .font(.caption.bold())
+                .padding(.vertical, 8)
+                .padding(.horizontal, 12)
+                .frame(minHeight: 34)
+                .foregroundStyle(isSelected ? .white : Color(hex: colorHex))
+                .background(isSelected ? Color(hex: colorHex) : Color.clear)
+                .overlay(
+                    Capsule()
+                        .stroke(Color(hex: colorHex), lineWidth: 1.5)
+                )
+                .clipShape(Capsule())
+                .contentShape(Capsule())
         }
         .buttonStyle(.plain)
-        .font(.caption.bold())
-        .padding(.vertical, 8)
-        .padding(.horizontal, 12)
-        .foregroundStyle(isSelected ? .white : Color(hex: colorHex))
-        .background(isSelected ? Color(hex: colorHex) : Color.clear)
-        .overlay(
-            Capsule()
-                .stroke(Color(hex: colorHex), lineWidth: 1.5)
-        )
-        .clipShape(Capsule())
     }
 
     @ViewBuilder
