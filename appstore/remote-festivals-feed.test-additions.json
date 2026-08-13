@@ -1,232 +1,7 @@
 {
   "formatVersion": 1,
-  "fullReplace": false,
+  "fullReplace": true,
   "festivals": [
-    {
-      "revision": "2026-08-04T12:00:00Z",
-      "festival": {
-        "id": "costa-sonica-2027",
-        "name": "Costa Sonica",
-        "year": 2027,
-        "days": [
-          { "id": "jueves", "displayName": "Jue 15", "calendarDate": "2027-07-15" },
-          { "id": "viernes", "displayName": "Vie 16", "calendarDate": "2027-07-16" },
-          { "id": "sabado", "displayName": "Sab 17", "calendarDate": "2027-07-17" }
-        ],
-        "defaultDayID": "jueves",
-        "defaultShift": "noche",
-        "forcedShiftByDay": {},
-        "favoriteIDAliases": {},
-        "menuOptions": [
-          {
-            "title": "Plano del recinto",
-            "inAppImageURL": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30",
-            "systemImage": "map"
-          },
-          {
-            "title": "Como llegar",
-            "url": "https://maps.google.com/?q=43.3623,-8.4115",
-            "systemImage": "location"
-          },
-          {
-            "title": "Normas del festival",
-            "url": "https://example.com/costa-sonica/normas",
-            "systemImage": "doc.text"
-          }
-        ]
-      },
-      "stageColors": {
-        "Escenario Atlantico": "#0B6E99",
-        "Escenario Arena": "#F77F00",
-        "Escenario Marea": "#2A9D8F"
-      },
-      "events": [
-        {
-          "id": "costa-sonica-2027-jue-2100-marea-roja",
-          "dia": "jueves",
-          "turno": "noche",
-          "hora": "21:00",
-          "artista": "Marea Roja",
-          "escenario": "Escenario Atlantico"
-        },
-        {
-          "id": "costa-sonica-2027-vie-2330-neon-bridge",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "23:30",
-          "artista": "Neon Bridge",
-          "escenario": "Escenario Arena"
-        },
-        {
-          "id": "costa-sonica-2027-sab-0145-delta-noise",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "01:45",
-          "artista": "Delta Noise",
-          "escenario": "Escenario Marea"
-        },
-        {
-          "id": "costa-sonica-2027-sab-1830-luz-polar",
-          "dia": "sabado",
-          "turno": "dia",
-          "hora": "18:30",
-          "artista": "Luz Polar",
-          "escenario": "Escenario Atlantico"
-        }
-      ]
-    },
-    {
-      "revision": "2026-08-04T12:05:00Z",
-      "festival": {
-        "id": "pirineos-live-2027",
-        "name": "Pirineos Live",
-        "year": 2027,
-        "days": [
-          { "id": "viernes", "displayName": "Vie 06", "calendarDate": "2027-08-06" },
-          { "id": "sabado", "displayName": "Sab 07", "calendarDate": "2027-08-07" },
-          { "id": "domingo", "displayName": "Dom 08", "calendarDate": "2027-08-08" }
-        ],
-        "defaultDayID": "viernes",
-        "defaultShift": "dia",
-        "forcedShiftByDay": {
-          "domingo": "dia"
-        },
-        "favoriteIDAliases": {},
-        "menuOptions": [
-          {
-            "title": "Escenarios",
-            "inAppImageURL": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745",
-            "systemImage": "music.mic"
-          },
-          {
-            "title": "Camping",
-            "inAppImageURL": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7",
-            "systemImage": "tent"
-          },
-          {
-            "title": "Pulseras cashless",
-            "url": "https://example.com/pirineos-live/cashless",
-            "systemImage": "creditcard"
-          }
-        ]
-      },
-      "stageColors": {
-        "Escenario Cumbre": "#264653",
-        "Escenario Valle": "#E76F51",
-        "Escenario Bosque": "#3A5A40"
-      },
-      "events": [
-        {
-          "id": "pirineos-live-2027-vie-1700-solar-falls",
-          "dia": "viernes",
-          "turno": "dia",
-          "hora": "17:00",
-          "artista": "Solar Falls",
-          "escenario": "Escenario Cumbre"
-        },
-        {
-          "id": "pirineos-live-2027-vie-2230-kinetic-heart",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "22:30",
-          "artista": "Kinetic Heart",
-          "escenario": "Escenario Valle"
-        },
-        {
-          "id": "pirineos-live-2027-sab-0015-aurora-club",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "00:15",
-          "artista": "Aurora Club",
-          "escenario": "Escenario Bosque"
-        },
-        {
-          "id": "pirineos-live-2027-dom-1400-river-room",
-          "dia": "domingo",
-          "turno": "dia",
-          "hora": "14:00",
-          "artista": "River Room",
-          "escenario": "Escenario Cumbre"
-        }
-      ]
-    },
-    {
-      "revision": "2026-08-04T12:10:00Z",
-      "festival": {
-        "id": "nocturna-valencia-2027",
-        "name": "Nocturna Valencia",
-        "year": 2027,
-        "days": [
-          { "id": "jueves", "displayName": "Jue 09", "calendarDate": "2027-09-09" },
-          { "id": "viernes", "displayName": "Vie 10", "calendarDate": "2027-09-10" },
-          { "id": "sabado", "displayName": "Sab 11", "calendarDate": "2027-09-11" }
-        ],
-        "defaultDayID": "jueves",
-        "defaultShift": "noche",
-        "forcedShiftByDay": {
-          "jueves": "noche",
-          "viernes": "noche",
-          "sabado": "noche"
-        },
-        "favoriteIDAliases": {},
-        "menuOptions": [
-          {
-            "title": "Mapa nocturno",
-            "inAppImageURL": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec",
-            "systemImage": "moon.stars"
-          },
-          {
-            "title": "Transporte nocturno",
-            "url": "https://example.com/nocturna-valencia/transporte",
-            "systemImage": "tram"
-          },
-          {
-            "title": "Food trucks",
-            "inAppImageURL": "https://images.unsplash.com/photo-1466978913421-dad2ebd01d17",
-            "systemImage": "fork.knife"
-          }
-        ]
-      },
-      "stageColors": {
-        "Escenario Turia": "#6D597A",
-        "Escenario Ciudad": "#B56576",
-        "Escenario Puerto": "#355070"
-      },
-      "events": [
-        {
-          "id": "nocturna-valencia-2027-jue-2200-saturno-pop",
-          "dia": "jueves",
-          "turno": "noche",
-          "hora": "22:00",
-          "artista": "Saturno Pop",
-          "escenario": "Escenario Turia"
-        },
-        {
-          "id": "nocturna-valencia-2027-vie-0040-city-sparks",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "00:40",
-          "artista": "City Sparks",
-          "escenario": "Escenario Ciudad"
-        },
-        {
-          "id": "nocturna-valencia-2027-vie-0200-oleada",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "02:00",
-          "artista": "Oleada",
-          "escenario": "Escenario Puerto"
-        },
-        {
-          "id": "nocturna-valencia-2027-sab-2330-club-radar",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "23:30",
-          "artista": "Club Radar",
-          "escenario": "Escenario Turia"
-        }
-      ]
-    },
     {
       "revision": "2026-08-13T12:45:00Z",
       "festival": {
@@ -234,11 +9,31 @@
         "name": "Cooltural Fest",
         "year": 2026,
         "days": [
-          { "id": "jueves", "displayName": "Jue 20", "calendarDate": "2026-08-20" },
-          { "id": "viernes", "displayName": "Vie 21", "calendarDate": "2026-08-21" },
-          { "id": "sabado", "displayName": "Sab 22", "calendarDate": "2026-08-22" },
-          { "id": "domingo", "displayName": "Dom 23", "calendarDate": "2026-08-23" },
-          { "id": "clausura", "displayName": "Sab 29", "calendarDate": "2026-08-29" }
+          {
+            "id": "jueves",
+            "displayName": "Jue 20",
+            "calendarDate": "2026-08-20"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 21",
+            "calendarDate": "2026-08-21"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 22",
+            "calendarDate": "2026-08-22"
+          },
+          {
+            "id": "domingo",
+            "displayName": "Dom 23",
+            "calendarDate": "2026-08-23"
+          },
+          {
+            "id": "clausura",
+            "displayName": "Sab 29",
+            "calendarDate": "2026-08-29"
+          }
         ],
         "defaultDayID": "jueves",
         "defaultShift": "noche",
