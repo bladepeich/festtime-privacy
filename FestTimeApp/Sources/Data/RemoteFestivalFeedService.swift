@@ -138,7 +138,8 @@ actor RemoteFestivalFeedService: RemoteFestivalFeedSyncing {
             )
         }
 
-        let requestURL = cacheBustedURL(from: baseURL)
+        let resolvedURL = await resolveGitHubRawURLToCommitIfNeeded(baseURL)
+        let requestURL = cacheBustedURL(from: resolvedURL)
         var request = URLRequest(url: requestURL)
         request.timeoutInterval = 20
         request.cachePolicy = .reloadIgnoringLocalCacheData
@@ -375,6 +376,54 @@ actor RemoteFestivalFeedService: RemoteFestivalFeedSyncing {
         return components.url ?? baseURL
     }
 
+    private func resolveGitHubRawURLToCommitIfNeeded(_ url: URL) async -> URL {
+        guard url.host?.lowercased() == "raw.githubusercontent.com" else {
+            return url
+        }
+
+        let parts = url.path.split(separator: "/").map(String.init)
+        guard parts.count >= 4 else {
+            return url
+        }
+
+        let owner = parts[0]
+        let repo = parts[1]
+        let branch = parts[2]
+        let filePath = parts.dropFirst(3).joined(separator: "/")
+
+        guard !owner.isEmpty, !repo.isEmpty, !branch.isEmpty, !filePath.isEmpty else {
+            return url
+        }
+
+        guard var components = URLComponents(string: "https://api.github.com/repos/\(owner)/\(repo)/commits/\(branch)") else {
+            return url
+        }
+        components.queryItems = [URLQueryItem(name: "per_page", value: "1")]
+        guard let apiURL = components.url else {
+            return url
+        }
+
+        var request = URLRequest(url: apiURL)
+        request.timeoutInterval = 10
+        request.cachePolicy = .reloadIgnoringLocalCacheData
+        request.setValue("application/vnd.github+json", forHTTPHeaderField: "Accept")
+        request.setValue("no-cache", forHTTPHeaderField: "Cache-Control")
+
+        do {
+            let (data, response) = try await session.data(for: request)
+            guard let http = response as? HTTPURLResponse,
+                  (200 ..< 300).contains(http.statusCode),
+                  let payload = try? JSONDecoder().decode(GitHubCommitPayload.self, from: data),
+                  !payload.sha.isEmpty,
+                  let commitURL = URL(string: "https://raw.githubusercontent.com/\(owner)/\(repo)/\(payload.sha)/\(filePath)") else {
+                return url
+            }
+            return commitURL
+        } catch {
+            return url
+        }
+    }
+
     private func validate(bundle: RemoteFestivalBundleDocument) -> Bool {
         let dayIDs = Set(bundle.festival.days.map(\.id))
         guard !dayIDs.isEmpty else { return false }
@@ -411,6 +460,10 @@ actor RemoteFestivalFeedService: RemoteFestivalFeedSyncing {
             || existing.stageColors != incoming.stageColors
             || existing.events != incoming.events
     }
+}
+
+private struct GitHubCommitPayload: Decodable {
+    let sha: String
 }
 
 private struct RemoteFestivalsFeedDocument: Decodable {
