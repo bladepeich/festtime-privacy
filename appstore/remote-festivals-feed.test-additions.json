@@ -273,8 +273,7 @@
         "Escenario Music For All": "#7A33CC",
         "Escenario Cupra": "#D058A4",
         "Cooltural DJs": "#E67E22",
-        "Fiesta Bienvenida": "#4B63B5",
-        "Post Party": "#CC5AA0",
+        "Parque de las Almadrabillas": "#4B63B5",
         "Faluca Almariya": "#F2B544"
       },
       "events": [
@@ -284,7 +283,7 @@
           "turno": "noche",
           "hora": "18:30",
           "artista": "LAMARTUMIND",
-          "escenario": "Fiesta Bienvenida"
+          "escenario": "Parque de las Almadrabillas"
         },
         {
           "id": "cooltural-fest-2026-jue-1930-comandante-twin",
@@ -292,7 +291,7 @@
           "turno": "noche",
           "hora": "19:30",
           "artista": "COMANDANTE TWIN",
-          "escenario": "Fiesta Bienvenida"
+          "escenario": "Parque de las Almadrabillas"
         },
         {
           "id": "cooltural-fest-2026-jue-2045-melifluo",
@@ -300,7 +299,7 @@
           "turno": "noche",
           "hora": "20:45",
           "artista": "MELIFLUO",
-          "escenario": "Fiesta Bienvenida"
+          "escenario": "Parque de las Almadrabillas"
         },
         {
           "id": "cooltural-fest-2026-jue-2205-paula-mattheus",
@@ -308,7 +307,7 @@
           "turno": "noche",
           "hora": "22:05",
           "artista": "PAULA MATTHEUS",
-          "escenario": "Fiesta Bienvenida"
+          "escenario": "Parque de las Almadrabillas"
         },
         {
           "id": "cooltural-fest-2026-jue-2330-carlangas",
@@ -316,7 +315,7 @@
           "turno": "noche",
           "hora": "23:30",
           "artista": "CARLANGAS",
-          "escenario": "Fiesta Bienvenida"
+          "escenario": "Parque de las Almadrabillas"
         },
         {
           "id": "cooltural-fest-2026-jue-0055-juanca-pope",
@@ -324,7 +323,7 @@
           "turno": "noche",
           "hora": "00:55",
           "artista": "JUANCA&POPE (SUPERSUB DJ SET)",
-          "escenario": "Fiesta Bienvenida"
+          "escenario": "Parque de las Almadrabillas"
         },
         {
           "id": "cooltural-fest-2026-jue-0145-madbel",
@@ -332,7 +331,7 @@
           "turno": "noche",
           "hora": "01:45",
           "artista": "MADBEL",
-          "escenario": "Post Party"
+          "escenario": "Parque de las Almadrabillas"
         },
         {
           "id": "cooltural-fest-2026-jue-0230-eddie-mizake",
@@ -340,7 +339,7 @@
           "turno": "noche",
           "hora": "02:30",
           "artista": "EDDIE MIZAKE",
-          "escenario": "Post Party"
+          "escenario": "Parque de las Almadrabillas"
         },
         {
           "id": "cooltural-fest-2026-jue-0345-juanporelmundo",
@@ -348,7 +347,7 @@
           "turno": "noche",
           "hora": "03:45",
           "artista": "JUANPORELMUNDO",
-          "escenario": "Post Party"
+          "escenario": "Parque de las Almadrabillas"
         },
         {
           "id": "cooltural-fest-2026-vie-1810-hey-kid",
