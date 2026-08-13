@@ -715,7 +715,7 @@
       ]
     },
     {
-      "revision": "2026-08-13T19:05:00Z",
+      "revision": "2026-08-13T20:20:00Z",
       "festival": {
         "id": "brisa-costera-2027",
         "name": "Brisa Costera",
@@ -790,27 +790,11 @@
           "hora": "23:50",
           "artista": "Faro Noir",
           "escenario": "Escenario Viento"
-        },
-        {
-          "id": "brisa-costera-2027-vie-2040-marfil-ruido",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "20:40",
-          "artista": "Marfil Ruido",
-          "escenario": "Escenario Mar"
-        },
-        {
-          "id": "brisa-costera-2027-sab-2145-playa-central",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "21:45",
-          "artista": "Playa Central",
-          "escenario": "Escenario Viento"
         }
       ]
     },
     {
-      "revision": "2026-08-13T18:15:00Z",
+      "revision": "2026-08-13T20:20:00Z",
       "festival": {
         "id": "sierra-ruta-fest-2027",
         "name": "Sierra Ruta",
@@ -894,6 +878,22 @@
           "hora": "01:15",
           "artista": "Norte Sur",
           "escenario": "Escenario Cima"
+        },
+        {
+          "id": "sierra-ruta-fest-2027-vie-2045-bruma-alta",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:45",
+          "artista": "Bruma Alta",
+          "escenario": "Escenario Valle"
+        },
+        {
+          "id": "sierra-ruta-fest-2027-sab-2230-rio-ancho",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:30",
+          "artista": "Rio Ancho",
+          "escenario": "Escenario Sendero"
         }
       ]
     }
