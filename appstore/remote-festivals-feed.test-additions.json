@@ -715,7 +715,7 @@
       ]
     },
     {
-      "revision": "2026-08-13T21:10:00Z",
+      "revision": "2026-08-13T21:40:00Z",
       "festival": {
         "id": "brisa-costera-2027",
         "name": "Brisa Costera",
@@ -798,110 +798,30 @@
           "hora": "20:40",
           "artista": "Marfil Ruido",
           "escenario": "Escenario Mar"
-        }
-      ]
-    },
-    {
-      "revision": "2026-08-13T21:10:00Z",
-      "festival": {
-        "id": "sierra-ruta-fest-2027",
-        "name": "Sierra Ruta",
-        "year": 2027,
-        "days": [
-          {
-            "id": "jueves",
-            "displayName": "Jue 09",
-            "calendarDate": "2027-09-09"
-          },
-          {
-            "id": "viernes",
-            "displayName": "Vie 10",
-            "calendarDate": "2027-09-10"
-          },
-          {
-            "id": "sabado",
-            "displayName": "Sab 11",
-            "calendarDate": "2027-09-11"
-          }
-        ],
-        "defaultDayID": "jueves",
-        "defaultShift": "dia",
-        "forcedShiftByDay": {
-          "viernes": "noche",
-          "sabado": "noche"
-        },
-        "favoriteIDAliases": {},
-        "menuOptions": [
-          {
-            "title": "Entradas",
-            "url": "https://example.com/sierra-ruta/entradas",
-            "systemImage": "ticket"
-          },
-          {
-            "title": "Zona acampada",
-            "inAppImageURL": "https://images.unsplash.com/photo-1504851149312-7a075b496cc7",
-            "systemImage": "tent"
-          },
-          {
-            "title": "Horarios PDF",
-            "url": "https://example.com/sierra-ruta/horarios.pdf",
-            "systemImage": "doc.text"
-          }
-        ]
-      },
-      "stageColors": {
-        "Escenario Cima": "#2A9D8F",
-        "Escenario Valle": "#8D5A97",
-        "Escenario Sendero": "#E76F51"
-      },
-      "events": [
-        {
-          "id": "sierra-ruta-fest-2027-jue-1700-monte-claro",
-          "dia": "jueves",
-          "turno": "dia",
-          "hora": "17:00",
-          "artista": "Monte Claro",
-          "escenario": "Escenario Cima"
         },
         {
-          "id": "sierra-ruta-fest-2027-jue-1930-cuerda-fina",
-          "dia": "jueves",
-          "turno": "dia",
-          "hora": "19:30",
-          "artista": "Cuerda Fina",
-          "escenario": "Escenario Valle"
-        },
-        {
-          "id": "sierra-ruta-fest-2027-vie-2240-larga-distancia",
+          "id": "brisa-costera-2027-vie-2340-ola-magnetica",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "22:40",
-          "artista": "Larga Distancia",
-          "escenario": "Escenario Sendero"
+          "hora": "23:40",
+          "artista": "Ola Magnetica",
+          "escenario": "Escenario Mar"
         },
         {
-          "id": "sierra-ruta-fest-2027-sab-0115-norte-sur",
+          "id": "brisa-costera-2027-sab-1835-bahia-norte",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "01:15",
-          "artista": "Norte Sur",
-          "escenario": "Escenario Cima"
+          "hora": "18:35",
+          "artista": "Bahia Norte",
+          "escenario": "Escenario Viento"
         },
         {
-          "id": "sierra-ruta-fest-2027-vie-2045-bruma-alta",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "20:45",
-          "artista": "Bruma Alta",
-          "escenario": "Escenario Valle"
-        },
-        {
-          "id": "sierra-ruta-fest-2027-sab-2230-rio-ancho",
+          "id": "brisa-costera-2027-sab-2245-marea-roja",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "22:30",
-          "artista": "Rio Ancho",
-          "escenario": "Escenario Sendero"
+          "hora": "22:45",
+          "artista": "Marea Roja",
+          "escenario": "Escenario Mar"
         }
       ]
     }
