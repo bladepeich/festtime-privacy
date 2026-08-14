@@ -1,11 +1,13 @@
 import SwiftUI
 import UIKit
+import SafariServices
 
 struct ScheduleView: View {
     @StateObject private var viewModel = ScheduleViewModel()
     @State private var isFestivalSheetPresented = false
     @State private var isNotificationsSheetPresented = false
     @State private var selectedInAppMenuOption: FestivalMenuOption?
+    @State private var selectedInAppWebOption: FestivalMenuOption?
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.scenePhase) private var scenePhase
 
@@ -73,6 +75,9 @@ struct ScheduleView: View {
             }
             .sheet(item: $selectedInAppMenuOption) { option in
                 menuImageSheet(for: option)
+            }
+            .sheet(item: $selectedInAppWebOption) { option in
+                menuWebSheet(for: option)
             }
         }
         .overlay {
@@ -337,7 +342,7 @@ struct ScheduleView: View {
 
                 Text(selectedFestival.displayName)
 
-                ForEach(menuOptions) { option in
+                ForEach(orderedMenuOptions(menuOptions)) { option in
                     if let imageURLString = option.inAppImageURL,
                        URL(string: imageURLString) != nil {
                         Button {
@@ -345,10 +350,22 @@ struct ScheduleView: View {
                         } label: {
                             Label(option.title, systemImage: option.systemImage ?? "photo")
                         }
-                    } else if let urlString = option.url,
-                              let url = URL(string: urlString) {
-                        Link(destination: url) {
-                            Label(option.title, systemImage: option.systemImage ?? "link")
+                    } else if option.url != nil {
+                        if isLocationOption(option) {
+                            if let urlString = option.url,
+                               let url = URL(string: urlString) {
+                                Link(destination: url) {
+                                    Label(option.title, systemImage: option.systemImage ?? "location")
+                                }
+                            } else {
+                                Label(option.title, systemImage: option.systemImage ?? "location")
+                            }
+                        } else {
+                            Button {
+                                selectedInAppWebOption = option
+                            } label: {
+                                Label(option.title, systemImage: option.systemImage ?? "link")
+                            }
                         }
                     } else {
                         Label(option.title, systemImage: option.systemImage ?? "link")
@@ -540,6 +557,66 @@ struct ScheduleView: View {
                 }
             }
         }
+    }
+
+    @ViewBuilder
+    private func menuWebSheet(for option: FestivalMenuOption) -> some View {
+        NavigationStack {
+            Group {
+                if let urlString = option.url,
+                   let url = URL(string: urlString) {
+                    SafariWebView(url: url)
+                        .ignoresSafeArea(edges: .bottom)
+                } else {
+                    Text("Esta opcion no tiene enlace valido")
+                        .font(.subheadline)
+                        .foregroundStyle(.secondary)
+                        .frame(maxWidth: .infinity, maxHeight: .infinity)
+                        .background(Color(.systemGroupedBackground))
+                }
+            }
+            .navigationTitle(option.title)
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Cerrar") {
+                        selectedInAppWebOption = nil
+                    }
+                }
+            }
+        }
+    }
+
+    private func orderedMenuOptions(_ options: [FestivalMenuOption]) -> [FestivalMenuOption] {
+        let priority: [String: Int] = [
+            "web oficial": 0,
+            "entradas": 1,
+            "ubicacion recinto": 2,
+            "ubicacion del recinto": 2,
+            "plano del recinto": 3
+        ]
+
+        return options.sorted { lhs, rhs in
+            let leftTitle = lhs.title.folding(options: .diacriticInsensitive, locale: .current).lowercased()
+            let rightTitle = rhs.title.folding(options: .diacriticInsensitive, locale: .current).lowercased()
+
+            let leftPriority = priority[leftTitle] ?? 100
+            let rightPriority = priority[rightTitle] ?? 100
+
+            if leftPriority == rightPriority {
+                return lhs.title.localizedCaseInsensitiveCompare(rhs.title) == .orderedAscending
+            }
+
+            return leftPriority < rightPriority
+        }
+    }
+
+    private func isLocationOption(_ option: FestivalMenuOption) -> Bool {
+        let title = option.title.folding(options: .diacriticInsensitive, locale: .current).lowercased()
+        if title == "ubicacion recinto" || title == "ubicacion del recinto" {
+            return true
+        }
+        return option.systemImage == "location"
     }
 
     private var festivalSheet: some View {
@@ -756,6 +833,20 @@ struct ScheduleView: View {
         }
         .frame(maxWidth: .infinity)
         .padding(.top, 70)
+    }
+}
+
+private struct SafariWebView: UIViewControllerRepresentable {
+    let url: URL
+
+    func makeUIViewController(context: Context) -> SFSafariViewController {
+        let controller = SFSafariViewController(url: url)
+        controller.preferredControlTintColor = .black
+        return controller
+    }
+
+    func updateUIViewController(_ uiViewController: SFSafariViewController, context: Context) {
+        // No-op: URL is fixed for each presented sheet.
     }
 }
 
