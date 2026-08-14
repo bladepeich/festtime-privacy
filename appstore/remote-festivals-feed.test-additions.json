@@ -2991,6 +2991,11 @@
             "title": "Web oficial",
             "url": "https://www.jardindeliciasfestival.com/sevilla/",
             "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.jardindeliciasfestival.com/sevilla/comprar-entradas/",
+            "systemImage": "ticket"
           }
         ]
       },
@@ -3076,6 +3081,11 @@
             "title": "Web oficial",
             "url": "https://www.jardindeliciasfestival.com/madrid/",
             "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.jardindeliciasfestival.com/madrid/comprar-entradas/",
+            "systemImage": "ticket"
           }
         ]
       },
