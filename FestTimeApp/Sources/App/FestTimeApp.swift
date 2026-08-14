@@ -9,6 +9,11 @@ import GoogleMobileAds
 #endif
 
 #if canImport(GoogleMobileAds)
+protocol AppOpenAdManagerDelegate: AnyObject {
+    /// Called when the app-open ad lifecycle completes (dismissed or failed to present).
+    func appOpenAdManagerAdDidComplete(_ appOpenAdManager: AppOpenAdManager)
+}
+
 @MainActor
 final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     static let shared = AppOpenAdManager()
@@ -16,9 +21,11 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     // Google-provided App Open test unit used across builds while testing.
     private let appOpenAdUnitID = "ca-app-pub-3940256099942544/5575463023"
     private var appOpenAd: AppOpenAd?
+    weak var appOpenAdManagerDelegate: AppOpenAdManagerDelegate?
     private var isLoadingAd = false
     private var isShowingAd = false
-    private var adLoadDate: Date?
+    private var loadTime: Date?
+    private let timeoutInterval: TimeInterval = 4 * 3_600
     private var isAppActive = false
     private var hasShownInCurrentForeground = false
 
@@ -26,7 +33,9 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
 
     func configure() {
         MobileAds.shared.start(completionHandler: nil)
-        loadAdIfNeeded()
+        Task {
+            await loadAd()
+        }
     }
 
     func handleAppDidBecomeActive() {
@@ -45,41 +54,45 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
         hasShownInCurrentForeground = false
     }
 
-    private var isAdAvailable: Bool {
-        guard let adLoadDate else { return false }
-        let isFresh = Date().timeIntervalSince(adLoadDate) < 4 * 60 * 60
-        return appOpenAd != nil && isFresh
+    private func isAdAvailable() -> Bool {
+        guard appOpenAd != nil,
+              let loadTime else {
+            return false
+        }
+
+        return Date().timeIntervalSince(loadTime) < timeoutInterval
     }
 
-    private func loadAdIfNeeded() {
-        guard !isLoadingAd, !isAdAvailable else { return }
-
+    func loadAd() async {
+        guard !isLoadingAd, !isAdAvailable() else { return }
         isLoadingAd = true
-        AppOpenAd.load(with: appOpenAdUnitID, request: Request()) { [weak self] ad, error in
-            guard let self else { return }
-            self.isLoadingAd = false
+        defer { isLoadingAd = false }
 
-            if error != nil {
-                return
+        do {
+            appOpenAd = try await AppOpenAd.load(with: appOpenAdUnitID, request: Request())
+            appOpenAd?.fullScreenContentDelegate = self
+            loadTime = Date()
+
+            // On cold start, ad load can finish after activation.
+            if isAppActive && !hasShownInCurrentForeground {
+                showAdIfAvailable()
             }
-
-            self.appOpenAd = ad
-            self.adLoadDate = Date()
-
-            // On cold start the ad often finishes loading after activation.
-            // Try presenting immediately once loaded if app is active.
-            if self.isAppActive {
-                self.showAdIfAvailable()
-            }
+        } catch {
+            print("App open ad failed to load with error: \(error.localizedDescription)")
+            appOpenAd = nil
+            loadTime = nil
         }
     }
 
     private func showAdIfAvailable(retryAttempt: Int = 0) {
         guard !isShowingAd else { return }
 
-        guard isAdAvailable,
+        guard isAdAvailable(),
               let appOpenAd else {
-            loadAdIfNeeded()
+            appOpenAdManagerDelegate?.appOpenAdManagerAdDidComplete(self)
+            Task {
+                await loadAd()
+            }
             return
         }
 
@@ -131,18 +144,42 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
         return root
     }
 
+    func adDidRecordImpression(_ ad: FullScreenPresentingAd) {
+        print("App open ad recorded an impression.")
+    }
+
+    func adDidRecordClick(_ ad: FullScreenPresentingAd) {
+        print("App open ad recorded a click.")
+    }
+
+    func adWillPresentFullScreenContent(_ ad: FullScreenPresentingAd) {
+        print("App open ad will be presented.")
+    }
+
     func adWillDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
+        print("App open ad will be dismissed.")
+    }
+
+    func adDidDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
+        print("App open ad was dismissed.")
         isShowingAd = false
         appOpenAd = nil
-        adLoadDate = nil
-        loadAdIfNeeded()
+        loadTime = nil
+        appOpenAdManagerDelegate?.appOpenAdManagerAdDidComplete(self)
+        Task {
+            await loadAd()
+        }
     }
 
     func ad(_ ad: FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+        print("App open ad failed to present with error: \(error.localizedDescription)")
         isShowingAd = false
         appOpenAd = nil
-        adLoadDate = nil
-        loadAdIfNeeded()
+        loadTime = nil
+        appOpenAdManagerDelegate?.appOpenAdManagerAdDidComplete(self)
+        Task {
+            await loadAd()
+        }
     }
 }
 #endif
