@@ -3,7 +3,7 @@
   "fullReplace": true,
   "festivals": [
     {
-      "revision": "2026-08-14T10:40:00Z",
+      "revision": "2026-08-14T11:30:00Z",
       "festival": {
         "id": "cooltural-fest-2026",
         "name": "Cooltural Fest",
@@ -48,7 +48,7 @@
         "menuOptions": [
           {
             "title": "Web oficial",
-            "url": "https://coolturalfest.com/",
+            "url": "https://www.leyendasdelrockfestival.com",
             "systemImage": "safari"
           },
           {
@@ -58,7 +58,7 @@
           },
           {
             "title": "Entradas",
-            "url": "https://coolturalfest.com/entradas",
+            "url": "https://www.leyendasdelrockfestival.com/tickets/",
             "systemImage": "ticket"
           }
         ]
