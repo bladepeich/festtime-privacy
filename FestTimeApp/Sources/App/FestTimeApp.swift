@@ -12,8 +12,7 @@ protocol AppOpenAdManagerDelegate: AnyObject {
 final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     static let shared = AppOpenAdManager()
 
-    // Google-provided App Open test unit used across builds while testing.
-    private let appOpenAdUnitID = "ca-app-pub-3940256099942544/5575463023"
+    private let appOpenAdUnitID = "ca-app-pub-5696830624450387/8235516537"
     private var appOpenAd: AppOpenAd?
     weak var appOpenAdManagerDelegate: AppOpenAdManagerDelegate?
     private var isLoadingAd = false
@@ -26,7 +25,6 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     private override init() {}
 
     func configure() {
-        MobileAds.shared.requestConfiguration.testDeviceIdentifiers = ["SIMULATOR"]
         MobileAds.shared.start(completionHandler: nil)
         Task {
             await loadAd()
