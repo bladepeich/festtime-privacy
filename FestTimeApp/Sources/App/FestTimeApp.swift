@@ -13,12 +13,8 @@ import GoogleMobileAds
 final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     static let shared = AppOpenAdManager()
 
-    #if DEBUG
-    // Google-provided App Open test unit for simulator/dev verification.
+    // Google-provided App Open test unit used across builds while testing.
     private let appOpenAdUnitID = "ca-app-pub-3940256099942544/5575463023"
-    #else
-    private let appOpenAdUnitID = "ca-app-pub-5696830624450387/8235516537"
-    #endif
     private var appOpenAd: AppOpenAd?
     private var isLoadingAd = false
     private var isShowingAd = false
