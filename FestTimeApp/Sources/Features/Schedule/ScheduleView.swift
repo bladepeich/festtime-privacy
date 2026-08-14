@@ -764,6 +764,7 @@ struct ScheduleView: View {
     private var eventList: some View {
         let groupedFavoriteEvents = viewModel.groupedFavoriteEvents
         let filteredScheduleEvents = viewModel.filteredScheduleEvents
+        let scrollResetID = "\(viewModel.selectedFestivalID)-\(viewModel.selectedDayID)"
 
         ScrollView {
             LazyVStack(spacing: 10) {
@@ -807,6 +808,7 @@ struct ScheduleView: View {
             .padding(.top, 10)
             .padding(.bottom, 16)
         }
+        .id(scrollResetID)
     }
 
     private func favoriteDayHeader(title: String) -> some View {
