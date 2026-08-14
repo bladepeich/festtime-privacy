@@ -171,18 +171,18 @@ final class ScheduleViewModel: ObservableObject {
         }
 
         var grouped = buckets.values
-            .sorted { $0.monthDate < $1.monthDate }
+            .sorted { $0.monthDate > $1.monthDate }
             .map { bucket in
                 let title = monthFormatter.string(from: bucket.monthDate)
                     .capitalized(with: Locale(identifier: "es_ES"))
                 let festivals = bucket.festivals.sorted {
-                    let lhsDate = firstFestivalDate(for: $0, parser: parser) ?? .distantFuture
-                    let rhsDate = firstFestivalDate(for: $1, parser: parser) ?? .distantFuture
+                    let lhsDate = firstFestivalDate(for: $0, parser: parser) ?? .distantPast
+                    let rhsDate = firstFestivalDate(for: $1, parser: parser) ?? .distantPast
 
                     if lhsDate == rhsDate {
                         return $0.displayName.localizedCaseInsensitiveCompare($1.displayName) == .orderedAscending
                     }
-                    return lhsDate < rhsDate
+                    return lhsDate > rhsDate
                 }
                 return (title, festivals)
             }
