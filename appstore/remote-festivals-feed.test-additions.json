@@ -713,6 +713,80 @@
           "escenario": "Faluca Almariya"
         }
       ]
+    },
+    {
+      "revision": "2026-08-14T09:00:00Z",
+      "festival": {
+        "id": "mar-de-nubes-2027",
+        "name": "Mar de Nubes",
+        "year": 2027,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 18",
+            "calendarDate": "2027-06-18"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 19",
+            "calendarDate": "2027-06-19"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {},
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://example.com/mar-de-nubes",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Como llegar",
+            "url": "https://maps.google.com/?q=36.5267,-6.2891",
+            "systemImage": "location"
+          }
+        ]
+      },
+      "stageColors": {
+        "Escenario Faro": "#2A9D8F",
+        "Escenario Marea": "#264653"
+      },
+      "events": [
+        {
+          "id": "mar-de-nubes-2027-vie-2000-costa-oscura",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "Costa Oscura",
+          "escenario": "Escenario Faro"
+        },
+        {
+          "id": "mar-de-nubes-2027-vie-2230-ruido-atlantico",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:30",
+          "artista": "Ruido Atlantico",
+          "escenario": "Escenario Marea"
+        },
+        {
+          "id": "mar-de-nubes-2027-sab-2100-pleamar",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "Pleamar",
+          "escenario": "Escenario Faro"
+        },
+        {
+          "id": "mar-de-nubes-2027-sab-2355-isla-sonora",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:55",
+          "artista": "Isla Sonora",
+          "escenario": "Escenario Marea"
+        }
+      ]
     }
   ]
 }
