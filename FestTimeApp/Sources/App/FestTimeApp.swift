@@ -13,11 +13,17 @@ import GoogleMobileAds
 final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     static let shared = AppOpenAdManager()
 
+    #if DEBUG
+    // Google-provided App Open test unit for simulator/dev verification.
+    private let appOpenAdUnitID = "ca-app-pub-3940256099942544/5575463023"
+    #else
     private let appOpenAdUnitID = "ca-app-pub-5696830624450387/8235516537"
+    #endif
     private var appOpenAd: AppOpenAd?
     private var isLoadingAd = false
     private var isShowingAd = false
     private var adLoadDate: Date?
+    private var isAppActive = false
 
     private override init() {}
 
@@ -27,7 +33,12 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     }
 
     func handleAppDidBecomeActive() {
+        isAppActive = true
         showAdIfAvailable()
+    }
+
+    func handleAppWillResignActive() {
+        isAppActive = false
     }
 
     private var isAdAvailable: Bool {
@@ -50,6 +61,12 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
 
             self.appOpenAd = ad
             self.adLoadDate = Date()
+
+            // On cold start the ad often finishes loading after activation.
+            // Try presenting immediately once loaded if app is active.
+            if self.isAppActive {
+                self.showAdIfAvailable()
+            }
         }
     }
 
@@ -128,9 +145,15 @@ struct FestTimeApp: App {
                 }
         }
         .onChange(of: scenePhase) { newPhase in
-            guard newPhase == .active else { return }
 #if canImport(GoogleMobileAds)
-            AppOpenAdManager.shared.handleAppDidBecomeActive()
+            switch newPhase {
+            case .active:
+                AppOpenAdManager.shared.handleAppDidBecomeActive()
+            case .background, .inactive:
+                AppOpenAdManager.shared.handleAppWillResignActive()
+            @unknown default:
+                break
+            }
 #endif
         }
     }
