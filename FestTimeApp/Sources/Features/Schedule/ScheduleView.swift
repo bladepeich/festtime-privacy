@@ -4,6 +4,7 @@ import SafariServices
 
 struct ScheduleView: View {
     @StateObject private var viewModel = ScheduleViewModel()
+    @State private var showStartupOverlay = true
     @State private var isFestivalSheetPresented = false
     @State private var isNotificationsSheetPresented = false
     @State private var selectedInAppMenuOption: FestivalMenuOption?
@@ -88,11 +89,23 @@ struct ScheduleView: View {
             .sheet(item: $selectedInAppWebOption) { option in
                 menuWebSheet(for: option)
             }
+            .overlay {
+                if showStartupOverlay {
+                    startupLoadingOverlay
+                        .transition(.opacity)
+                }
+            }
         }
         .animation(.easeInOut(duration: 0.2), value: viewModel.isRemoteSyncInProgress)
+        .animation(.easeOut(duration: 0.25), value: showStartupOverlay)
         .task {
             viewModel.load()
             await viewModel.refreshNotificationInbox()
+
+            // Keep a short startup gate so users see a stable loading state
+            // instead of a black flash on cold launch.
+            try? await Task.sleep(nanoseconds: 600_000_000)
+            showStartupOverlay = false
         }
         .onChange(of: scenePhase) { newPhase in
             switch newPhase {
@@ -120,16 +133,14 @@ struct ScheduleView: View {
             .ignoresSafeArea()
 
             VStack(spacing: 14) {
-                ProgressView(value: max(0.0, min(1.0, viewModel.startupProgress)))
-                    .progressViewStyle(.linear)
+                ProgressView()
                     .tint(.yellow)
-                    .frame(maxWidth: 280)
 
-                Text("Actualizando festivales...")
+                Text("Cargando...")
                     .font(.headline.weight(.bold))
                     .foregroundStyle(.white)
 
-                Text(viewModel.startupStatusMessage)
+                Text("Preparando la app")
                     .font(.subheadline)
                     .foregroundStyle(Color.white.opacity(0.8))
             }
