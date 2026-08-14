@@ -10,7 +10,7 @@ struct EventCardView: View {
     var body: some View {
         HStack(spacing: 12) {
             VStack(alignment: .leading, spacing: 3) {
-                Text("\(event.hora) h")
+                Text(displayTime)
                     .font(.headline)
                     .foregroundStyle(.primary)
 
@@ -19,7 +19,7 @@ struct EventCardView: View {
                     .fontWeight(.semibold)
                     .lineLimit(2)
 
-                Text(event.escenario)
+                Text(displayStage)
                     .font(.caption)
                     .fontWeight(.bold)
                     .foregroundStyle(Color(hex: stageColorHex))
@@ -76,5 +76,19 @@ struct EventCardView: View {
         }
 
         return .black.opacity(0.08)
+    }
+
+    private var displayTime: String {
+        let trimmed = event.hora.trimmingCharacters(in: .whitespacesAndNewlines)
+        if trimmed.isEmpty {
+            return "Sin hora"
+        }
+
+        return "\(trimmed) h"
+    }
+
+    private var displayStage: String {
+        let trimmed = event.escenario.trimmingCharacters(in: .whitespacesAndNewlines)
+        return trimmed.isEmpty ? "Sin escenario" : trimmed
     }
 }
