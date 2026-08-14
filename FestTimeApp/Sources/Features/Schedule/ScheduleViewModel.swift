@@ -17,6 +17,7 @@ final class ScheduleViewModel: ObservableObject {
     @Published var reminderErrorMessage: String?
     @Published var festivalChangeMessage: String?
     @Published var isRemoteSyncInProgress: Bool = false
+    @Published var remoteSyncDelayMessage: String?
     @Published var isStartupLoading: Bool = false
     @Published var startupProgress: Double = 0.05
     @Published var startupStatusMessage: String = "Preparando app..."
@@ -40,6 +41,7 @@ final class ScheduleViewModel: ObservableObject {
     private let remindersEnabledPrefix = "festtime.remindersEnabled."
     private let lastRemoteSyncAtKey = "festtime.lastRemoteSyncAt"
     private let reminderOffsets = [15, 10, 5]
+    private var remoteSyncAttemptID = UUID()
 
     init(
         repository: FestivalRepository = BundleFestivalRepository(),
@@ -674,9 +676,23 @@ final class ScheduleViewModel: ObservableObject {
     }
 
     private func syncRemoteFestivals(force: Bool, showNoChangesMessage: Bool) async {
+        let attemptID = UUID()
+        remoteSyncAttemptID = attemptID
+        remoteSyncDelayMessage = nil
         isRemoteSyncInProgress = true
+
+        Task { @MainActor [attemptID] in
+            try? await Task.sleep(nanoseconds: 3_000_000_000)
+            guard isRemoteSyncInProgress,
+                  remoteSyncAttemptID == attemptID else {
+                return
+            }
+            remoteSyncDelayMessage = "La actualizacion esta tardando mas de lo normal..."
+        }
+
         defer {
             isRemoteSyncInProgress = false
+            remoteSyncDelayMessage = nil
         }
 
         let summary = await remoteFeedSyncService.syncIfNeeded(force: force)

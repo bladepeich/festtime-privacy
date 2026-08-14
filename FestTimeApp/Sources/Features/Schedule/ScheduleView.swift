@@ -29,12 +29,20 @@ struct ScheduleView: View {
             .overlay(alignment: .top) {
                 VStack(spacing: 8) {
                     if viewModel.isRemoteSyncInProgress {
-                        HStack(spacing: 10) {
-                            ProgressView()
-                                .tint(.black)
-                            Text("Actualizando festivales...")
-                                .font(.footnote.weight(.bold))
-                                .foregroundStyle(.black)
+                        VStack(spacing: 4) {
+                            HStack(spacing: 10) {
+                                ProgressView()
+                                    .tint(.black)
+                                Text("Actualizando festivales...")
+                                    .font(.footnote.weight(.bold))
+                                    .foregroundStyle(.black)
+                            }
+
+                            if let slowMessage = viewModel.remoteSyncDelayMessage {
+                                Text(slowMessage)
+                                    .font(.caption.weight(.semibold))
+                                    .foregroundStyle(.black.opacity(0.85))
+                            }
                         }
                         .padding(.horizontal, 12)
                         .padding(.vertical, 8)
