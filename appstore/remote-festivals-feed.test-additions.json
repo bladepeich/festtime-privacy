@@ -750,7 +750,7 @@
         ]
       },
       "stageColors": {
-        "Escenario Costa": "#2A9D8F",
+        "Escenario Lunar": "#2A9D8F",
         "Escenario Marea": "#264653"
       },
       "events": [
@@ -760,7 +760,7 @@
           "turno": "noche",
           "hora": "20:00",
           "artista": "Costa Oscura",
-          "escenario": "Escenario Costa"
+          "escenario": "Escenario Lunar"
         },
         {
           "id": "mar-de-nubes-2027-vie-2230-ruido-atlantico",
@@ -776,7 +776,7 @@
           "turno": "noche",
           "hora": "21:00",
           "artista": "Pleamar",
-          "escenario": "Escenario Costa"
+          "escenario": "Escenario Lunar"
         },
         {
           "id": "mar-de-nubes-2027-sab-2355-isla-sonora",
