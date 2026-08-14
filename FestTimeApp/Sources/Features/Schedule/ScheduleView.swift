@@ -762,13 +762,16 @@ struct ScheduleView: View {
 
     @ViewBuilder
     private var eventList: some View {
+        let groupedFavoriteEvents = viewModel.groupedFavoriteEvents
+        let filteredScheduleEvents = viewModel.filteredScheduleEvents
+
         ScrollView {
             LazyVStack(spacing: 10) {
                 if viewModel.isFavoritesTabActive {
-                    if viewModel.groupedFavoriteEvents.isEmpty {
+                    if groupedFavoriteEvents.isEmpty {
                         emptyState(icon: "star", title: "Sin favoritos", subtitle: "Marca con estrella los conciertos que no te quieres perder")
                     } else {
-                        ForEach(viewModel.groupedFavoriteEvents, id: \.dayName) { group in
+                        ForEach(groupedFavoriteEvents, id: \.dayName) { group in
                             VStack(alignment: .leading, spacing: 8) {
                                 favoriteDayHeader(title: group.dayName)
 
@@ -786,10 +789,10 @@ struct ScheduleView: View {
                         }
                     }
                 } else {
-                    if viewModel.filteredScheduleEvents.isEmpty {
+                    if filteredScheduleEvents.isEmpty {
                         emptyState(icon: "magnifyingglass", title: "Sin conciertos", subtitle: "No hay actuaciones para este filtro")
                     } else {
-                        ForEach(viewModel.filteredScheduleEvents) { event in
+                        ForEach(filteredScheduleEvents) { event in
                             EventCardView(
                                 event: event,
                                 stageColorHex: viewModel.stageColors[event.escenario] ?? "#6c757d",

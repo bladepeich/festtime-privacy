@@ -7,6 +7,10 @@ final class ScheduleViewModel: ObservableObject {
     @Published private(set) var stageColorsByFestival: [String: [String: String]] = [:]
     @Published private(set) var favoritesByFestival: [String: Set<String>] = [:]
 
+    private var eventsByFestivalDayShift: [String: [String: [Shift: [FestivalEvent]]]] = [:]
+    private var eventsByFestivalID: [String: [String: FestivalEvent]] = [:]
+    private var festivalLookupByID: [String: FestivalDefinition] = [:]
+
     @Published var selectedFestivalID: String = ""
     @Published var selectedDayID: String = ""
     @Published var selectedShift: Shift = .noche
@@ -63,7 +67,7 @@ final class ScheduleViewModel: ObservableObject {
     }
 
     var selectedFestival: FestivalDefinition? {
-        festivals.first(where: { $0.id == selectedFestivalID })
+        festivalLookupByID[selectedFestivalID]
     }
 
     var allEvents: [FestivalEvent] {
@@ -99,22 +103,26 @@ final class ScheduleViewModel: ObservableObject {
     var availableStages: [String] {
         let baseEvents: [FestivalEvent]
         if isFavoritesTabActive {
-            baseEvents = allEvents.filter { favorites.contains($0.id) }
+            baseEvents = favoriteEventsForSelectedFestival()
         } else {
-            baseEvents = allEvents.filter { $0.dia == selectedDayID && $0.turno == selectedShift }
+            baseEvents = eventsByFestivalDayShift[selectedFestivalID]?[selectedDayID]?[selectedShift] ?? []
         }
 
         return Array(Set(baseEvents.map(\.escenario))).sorted()
     }
 
     var filteredScheduleEvents: [FestivalEvent] {
-        var events = allEvents.filter { $0.dia == selectedDayID && $0.turno == selectedShift }
+        var events = eventsByFestivalDayShift[selectedFestivalID]?[selectedDayID]?[selectedShift] ?? []
+        if events.isEmpty {
+            events = allEvents.filter { $0.dia == selectedDayID && $0.turno == selectedShift }
+            events.sort(by: byTimeThenArtist)
+        }
         events = applySharedFilters(to: events)
-        return events.sorted(by: byTimeThenArtist)
+        return events
     }
 
     var groupedFavoriteEvents: [(dayName: String, events: [FestivalEvent])] {
-        var events = allEvents.filter { favorites.contains($0.id) }
+        var events = favoriteEventsForSelectedFestival()
         events = applySharedFilters(to: events)
 
         guard let festival = selectedFestival else { return [] }
@@ -206,6 +214,7 @@ final class ScheduleViewModel: ObservableObject {
             let loadedFestivals = try repository.loadCatalog()
 
             festivals = loadedFestivals
+            rebuildFestivalLookup()
 
             // App starts with no festival selected; data loads after explicit user choice.
             selectedFestivalID = ""
@@ -241,6 +250,7 @@ final class ScheduleViewModel: ObservableObject {
         do {
             let loadedFestivals = try repository.loadCatalog()
             festivals = loadedFestivals
+            rebuildFestivalLookup()
 
             // Keep the welcome screen stable: do not auto-open a saved festival
             // when the current selection is empty.
@@ -251,6 +261,7 @@ final class ScheduleViewModel: ObservableObject {
 
             // Force refresh of festival resources after app resumes.
             eventsByFestival[festival.id] = try repository.loadEvents(for: festival)
+            rebuildEventIndexes(for: festival.id)
             stageColorsByFestival[festival.id] = try repository.loadStageColors(for: festival)
 
             selectedFestivalID = festival.id
@@ -568,7 +579,13 @@ final class ScheduleViewModel: ObservableObject {
     }
 
     private func favoriteEventsForSelectedFestival() -> [FestivalEvent] {
-        allEvents.filter { favorites.contains($0.id) }
+        let favoriteIDs = favorites
+
+        if let indexedEvents = eventsByFestivalID[selectedFestivalID], !indexedEvents.isEmpty {
+            return favoriteIDs.compactMap { indexedEvents[$0] }
+        }
+
+        return allEvents.filter { favoriteIDs.contains($0.id) }
     }
 
     private func rescheduleFavoriteReminders() async {
@@ -595,6 +612,7 @@ final class ScheduleViewModel: ObservableObject {
     private func loadFestivalDataIfNeeded(for festival: FestivalDefinition) throws {
         if eventsByFestival[festival.id] == nil {
             eventsByFestival[festival.id] = try repository.loadEvents(for: festival)
+            rebuildEventIndexes(for: festival.id)
         }
 
         if stageColorsByFestival[festival.id] == nil {
@@ -721,12 +739,15 @@ final class ScheduleViewModel: ObservableObject {
 
         do {
             festivals = try repository.loadCatalog()
+            rebuildFestivalLookup()
             pruneLocalCachesToKnownFestivals()
 
             // Remote changes may affect festivals not currently selected.
             // Clearing these caches ensures next access reads fresh data.
             eventsByFestival.removeAll()
             stageColorsByFestival.removeAll()
+            eventsByFestivalDayShift.removeAll()
+            eventsByFestivalID.removeAll()
 
             if let currentFestival = festivals.first(where: { $0.id == selectedFestivalID }) {
                 try loadFestivalDataIfNeeded(for: currentFestival)
@@ -763,6 +784,43 @@ final class ScheduleViewModel: ObservableObject {
         eventsByFestival = eventsByFestival.filter { validIDs.contains($0.key) }
         stageColorsByFestival = stageColorsByFestival.filter { validIDs.contains($0.key) }
         favoritesByFestival = favoritesByFestival.filter { validIDs.contains($0.key) }
+        eventsByFestivalDayShift = eventsByFestivalDayShift.filter { validIDs.contains($0.key) }
+        eventsByFestivalID = eventsByFestivalID.filter { validIDs.contains($0.key) }
+    }
+
+    private func rebuildFestivalLookup() {
+        festivalLookupByID = Dictionary(uniqueKeysWithValues: festivals.map { ($0.id, $0) })
+    }
+
+    private func rebuildEventIndexes(for festivalID: String) {
+        guard let events = eventsByFestival[festivalID] else {
+            eventsByFestivalDayShift[festivalID] = nil
+            eventsByFestivalID[festivalID] = nil
+            return
+        }
+
+        var groupedByDayShift: [String: [Shift: [FestivalEvent]]] = [:]
+        var eventByID: [String: FestivalEvent] = [:]
+
+        for event in events {
+            groupedByDayShift[event.dia, default: [:]][event.turno, default: []].append(event)
+            eventByID[event.id] = event
+        }
+
+        for dayID in groupedByDayShift.keys {
+            guard var shifts = groupedByDayShift[dayID] else {
+                continue
+            }
+
+            for shift in shifts.keys {
+                shifts[shift]?.sort(by: byTimeThenArtist)
+            }
+
+            groupedByDayShift[dayID] = shifts
+        }
+
+        eventsByFestivalDayShift[festivalID] = groupedByDayShift
+        eventsByFestivalID[festivalID] = eventByID
     }
 
     private func firstFestivalDate(for festival: FestivalDefinition, parser: DateFormatter) -> Date? {

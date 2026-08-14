@@ -43,6 +43,7 @@ final class RemoteFestivalCacheStorage {
 
     private let lock = NSLock()
     private let fileManager: FileManager
+    private var cachedSnapshot: RemoteFestivalCacheSnapshot?
 
     private init(fileManager: FileManager = .default) {
         self.fileManager = fileManager
@@ -52,17 +53,26 @@ final class RemoteFestivalCacheStorage {
         lock.lock()
         defer { lock.unlock() }
 
-        guard let data = try? Data(contentsOf: cacheFileURL),
-              let snapshot = try? JSONDecoder().decode(RemoteFestivalCacheSnapshot.self, from: data) else {
-            return RemoteFestivalCacheSnapshot(lastAppliedSequence: 0, festivals: [])
+        if let cachedSnapshot {
+            return cachedSnapshot
         }
 
+        guard let data = try? Data(contentsOf: cacheFileURL),
+              let snapshot = try? JSONDecoder().decode(RemoteFestivalCacheSnapshot.self, from: data) else {
+            let empty = RemoteFestivalCacheSnapshot(lastAppliedSequence: 0, festivals: [])
+            cachedSnapshot = empty
+            return empty
+        }
+
+        cachedSnapshot = snapshot
         return snapshot
     }
 
     func saveSnapshot(_ snapshot: RemoteFestivalCacheSnapshot) {
         lock.lock()
         defer { lock.unlock() }
+
+        cachedSnapshot = snapshot
 
         guard let data = try? JSONEncoder().encode(snapshot) else { return }
 
