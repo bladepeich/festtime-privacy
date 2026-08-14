@@ -2986,7 +2986,13 @@
           "sabado": "noche"
         },
         "favoriteIDAliases": {},
-        "menuOptions": []
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://www.jardindeliciasfestival.com/sevilla/",
+            "systemImage": "safari"
+          }
+        ]
       },
       "stageColors": {},
       "events": [
@@ -3065,7 +3071,13 @@
           "sabado": "noche"
         },
         "favoriteIDAliases": {},
-        "menuOptions": []
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://www.jardindeliciasfestival.com/madrid/",
+            "systemImage": "safari"
+          }
+        ]
       },
       "stageColors": {
         "Escenario Endesa": "#00d4d8",
