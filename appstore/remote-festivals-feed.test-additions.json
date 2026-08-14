@@ -2832,6 +2832,11 @@
             "systemImage": "safari"
           },
           {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=espacio+de+ocio+pinguinos+arena+valladolid",
+            "systemImage": "location"
+          },
+          {
             "title": "Entradas",
             "url": "https://cosquinrock.net/cresp/",
             "systemImage": "ticket"
