@@ -3473,24 +3473,24 @@
           "escenario": "Recinto"
         },
         {
-          "id": "gigante-2026-jue-1300-sandra-bautista",
-          "dia": "jueves",
+          "id": "gigante-2026-vie-1300-sandra-bautista",
+          "dia": "viernes",
           "turno": "dia",
           "hora": "13:00",
           "artista": "SANDRA BAUTISTA",
           "escenario": "Escenario Guadalajara (Plaza Mayor)"
         },
         {
-          "id": "gigante-2026-jue-1400-la-126",
-          "dia": "jueves",
+          "id": "gigante-2026-vie-1400-la-126",
+          "dia": "viernes",
           "turno": "dia",
           "hora": "14:00",
           "artista": "LA 126",
           "escenario": "Escenario Guadalajara (Plaza Mayor)"
         },
         {
-          "id": "gigante-2026-jue-1515-toobaldsound",
-          "dia": "jueves",
+          "id": "gigante-2026-vie-1515-toobaldsound",
+          "dia": "viernes",
           "turno": "dia",
           "hora": "15:15",
           "artista": "TOOBALDSOUND",
