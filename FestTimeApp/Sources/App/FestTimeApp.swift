@@ -70,19 +70,32 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
         }
     }
 
-    private func showAdIfAvailable() {
+    private func showAdIfAvailable(retryAttempt: Int = 0) {
         guard !isShowingAd else { return }
 
         guard isAdAvailable,
-              let appOpenAd,
-              let rootViewController = Self.rootViewController else {
+              let appOpenAd else {
             loadAdIfNeeded()
+            return
+        }
+
+        guard let rootViewController = Self.rootViewController else {
+            retryShowIfNeeded(from: retryAttempt)
             return
         }
 
         isShowingAd = true
         appOpenAd.fullScreenContentDelegate = self
         appOpenAd.present(from: rootViewController)
+    }
+
+    private func retryShowIfNeeded(from attempt: Int) {
+        guard isAppActive, attempt < 8 else { return }
+
+        Task { @MainActor in
+            try? await Task.sleep(nanoseconds: 250_000_000)
+            self.showAdIfAvailable(retryAttempt: attempt + 1)
+        }
     }
 
     private static var rootViewController: UIViewController? {
