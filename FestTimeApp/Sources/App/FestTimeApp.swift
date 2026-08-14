@@ -24,6 +24,7 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     private var isShowingAd = false
     private var adLoadDate: Date?
     private var isAppActive = false
+    private var hasShownInCurrentForeground = false
 
     private override init() {}
 
@@ -34,11 +35,18 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
 
     func handleAppDidBecomeActive() {
         isAppActive = true
+
+        guard !hasShownInCurrentForeground else { return }
         showAdIfAvailable()
     }
 
     func handleAppWillResignActive() {
         isAppActive = false
+    }
+
+    func handleAppDidEnterBackground() {
+        isAppActive = false
+        hasShownInCurrentForeground = false
     }
 
     private var isAdAvailable: Bool {
@@ -85,6 +93,7 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
         }
 
         isShowingAd = true
+        hasShownInCurrentForeground = true
         appOpenAd.fullScreenContentDelegate = self
         appOpenAd.present(from: rootViewController)
     }
@@ -99,11 +108,31 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     }
 
     private static var rootViewController: UIViewController? {
-        UIApplication.shared.connectedScenes
+        let root = UIApplication.shared.connectedScenes
             .compactMap { $0 as? UIWindowScene }
             .flatMap(\.windows)
             .first(where: \.isKeyWindow)?
             .rootViewController
+
+        return topViewController(from: root)
+    }
+
+    private static func topViewController(from root: UIViewController?) -> UIViewController? {
+        guard let root else { return nil }
+
+        if let navigation = root as? UINavigationController {
+            return topViewController(from: navigation.visibleViewController)
+        }
+
+        if let tab = root as? UITabBarController {
+            return topViewController(from: tab.selectedViewController)
+        }
+
+        if let presented = root.presentedViewController {
+            return topViewController(from: presented)
+        }
+
+        return root
     }
 
     func adWillDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
@@ -151,19 +180,16 @@ struct FestTimeApp: App {
     var body: some Scene {
         WindowGroup {
             ScheduleView()
-                .onAppear {
-#if canImport(GoogleMobileAds)
-                    AppOpenAdManager.shared.handleAppDidBecomeActive()
-#endif
-                }
         }
         .onChange(of: scenePhase) { newPhase in
 #if canImport(GoogleMobileAds)
             switch newPhase {
             case .active:
                 AppOpenAdManager.shared.handleAppDidBecomeActive()
-            case .background, .inactive:
+            case .inactive:
                 AppOpenAdManager.shared.handleAppWillResignActive()
+            case .background:
+                AppOpenAdManager.shared.handleAppDidEnterBackground()
             @unknown default:
                 break
             }
