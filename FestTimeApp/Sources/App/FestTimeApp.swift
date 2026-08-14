@@ -32,6 +32,7 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     private override init() {}
 
     func configure() {
+        MobileAds.shared.requestConfiguration.testDeviceIdentifiers = ["SIMULATOR"]
         MobileAds.shared.start(completionHandler: nil)
         Task {
             await loadAd()
@@ -69,7 +70,12 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
         defer { isLoadingAd = false }
 
         do {
-            appOpenAd = try await AppOpenAd.load(with: appOpenAdUnitID, request: Request())
+            let request = Request()
+            request.scene = UIApplication.shared.connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .first
+
+            appOpenAd = try await AppOpenAd.load(with: appOpenAdUnitID, request: request)
             appOpenAd?.fullScreenContentDelegate = self
             loadTime = Date()
 
@@ -96,15 +102,10 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
             return
         }
 
-        guard let rootViewController = Self.rootViewController else {
-            retryShowIfNeeded(from: retryAttempt)
-            return
-        }
-
         isShowingAd = true
         hasShownInCurrentForeground = true
         appOpenAd.fullScreenContentDelegate = self
-        appOpenAd.present(from: rootViewController)
+        appOpenAd.present(from: nil)
     }
 
     private func retryShowIfNeeded(from attempt: Int) {
@@ -114,34 +115,6 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
             try? await Task.sleep(nanoseconds: 250_000_000)
             self.showAdIfAvailable(retryAttempt: attempt + 1)
         }
-    }
-
-    private static var rootViewController: UIViewController? {
-        let root = UIApplication.shared.connectedScenes
-            .compactMap { $0 as? UIWindowScene }
-            .flatMap(\.windows)
-            .first(where: \.isKeyWindow)?
-            .rootViewController
-
-        return topViewController(from: root)
-    }
-
-    private static func topViewController(from root: UIViewController?) -> UIViewController? {
-        guard let root else { return nil }
-
-        if let navigation = root as? UINavigationController {
-            return topViewController(from: navigation.visibleViewController)
-        }
-
-        if let tab = root as? UITabBarController {
-            return topViewController(from: tab.selectedViewController)
-        }
-
-        if let presented = root.presentedViewController {
-            return topViewController(from: presented)
-        }
-
-        return root
     }
 
     func adDidRecordImpression(_ ad: FullScreenPresentingAd) {
@@ -203,6 +176,20 @@ final class NotificationDelegateProxy: NSObject, UIApplicationDelegate, UNUserNo
     ) {
         completionHandler([.banner, .list, .sound, .badge])
     }
+
+#if canImport(GoogleMobileAds)
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        AppOpenAdManager.shared.handleAppDidBecomeActive()
+    }
+
+    func applicationWillResignActive(_ application: UIApplication) {
+        AppOpenAdManager.shared.handleAppWillResignActive()
+    }
+
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        AppOpenAdManager.shared.handleAppDidEnterBackground()
+    }
+#endif
 }
 
 @main
