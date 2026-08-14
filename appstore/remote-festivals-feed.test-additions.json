@@ -4498,6 +4498,245 @@
           "escenario": ""
         }
       ]
+    },
+    {
+      "revision": "2026-08-14T14:45:00Z",
+      "festival": {
+        "id": "coca-cola-music-experience-2026",
+        "legacyIDs": [
+          "ccme-2026"
+        ],
+        "name": "Coca-Cola Music Experience",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 04",
+            "calendarDate": "2026-09-04"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 05",
+            "calendarDate": "2026-09-05"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {},
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://www.coca-cola.com/es/es/offerings/musica",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.coca-cola.com/es/es/offerings/musica/CCME/abonos-entradas",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Iberdrola+Music",
+            "systemImage": "location"
+          }
+        ]
+      },
+      "stageColors": {},
+      "events": [
+        {
+          "id": "ccme-2026-vie-melendi",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MELENDI",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-milo-j",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MILO J",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-wisin",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "WISIN",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-lucho-rk",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LUCHO RK",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-natalia-lacunza",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "NATALIA LACUNZA",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-violeta",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "VIOLETA",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-tami-tamako",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TAMI TAMAKO",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-hey-kid",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "HEY KID",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-vilu-gontero",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "VILU GONTERO",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-kabasaki",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "KABASAKI",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-lucia-puerta",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LUCIA DE LA PUERTA",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-cero",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CERO",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-dellafuente",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DELLAFUENTE",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-dei-v",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DEI V",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-dimitri-vegas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DIMITRI VEGAS",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-omar-montes",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "OMAR MONTES",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-ruslana",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "RUSLANA",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-lorna",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LORNA",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-ysy-a",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "YSY A",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-pepe-vizio",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PEPE Y VIZIO",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-luc-loren",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LUC LOREN",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-taichu",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TAICHU",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-pikeras",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PIKERAS",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-dib",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DIB",
+          "escenario": ""
+        }
+      ]
     }
   ]
 }
