@@ -29,6 +29,7 @@
           "systemImage": "tent"
         }
       ],
+      "regionGeoJSONFile": "sonorama-2026-region",
       "eventsFile": "sonorama-2026-events",
       "stageColorsFile": "sonorama-2026-stage-colors"
     },
@@ -52,8 +53,14 @@
           "title": "Plano del recinto",
           "inAppImageURL": "https://www.leyendasdelrockfestival.com/wp-content/uploads/2022/07/Plano-Leyendas-2022-recinto-2048x1362.jpg",
           "systemImage": "map"
+        },
+        {
+          "title": "Ubicacion recinto",
+          "url": "https://www.google.com/maps/search/?api=1&query=leyendas+del+rock+villena",
+          "systemImage": "location"
         }
       ],
+      "regionGeoJSONFile": "leyendas-del-rock-2026-region",
       "eventsFile": "leyendas-del-rock-2026-events",
       "stageColorsFile": "leyendas-del-rock-2026-stage-colors"
     }
