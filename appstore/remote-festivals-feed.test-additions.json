@@ -3389,6 +3389,430 @@
           "escenario": "Escenario Bosque"
         }
       ]
+    },
+    {
+      "revision": "2026-08-14T13:10:00Z",
+      "festival": {
+        "id": "gigante-festival-2026",
+        "legacyIDs": [],
+        "name": "Gigante Festival",
+        "year": 2026,
+        "days": [
+          {
+            "id": "jueves",
+            "displayName": "Jue 27",
+            "calendarDate": "2026-08-27"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 28",
+            "calendarDate": "2026-08-28"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 29",
+            "calendarDate": "2026-08-29"
+          }
+        ],
+        "defaultDayID": "jueves",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {},
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://festivalgigante.com/",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://festivalgigante.com/abonos/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Explanada+del+Paseo+del+Ocio+de+Guadalajara",
+            "systemImage": "location"
+          }
+        ]
+      },
+      "stageColors": {
+        "Escenario Vibra Mahou": "#E83E8C",
+        "Escenario Gigante": "#69D2E7",
+        "Escenario Mondo Sonoro": "#F5A623",
+        "Escenario Guadalajara (Plaza Mayor)": "#F26B38",
+        "Recinto": "#95A5A6"
+      },
+      "events": [
+        {
+          "id": "gigante-2026-jue-1930-apertura-puertas",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "19:30",
+          "artista": "APERTURA PUERTAS",
+          "escenario": "Recinto"
+        },
+        {
+          "id": "gigante-2026-jue-1300-sandra-bautista",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "SANDRA BAUTISTA",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        },
+        {
+          "id": "gigante-2026-jue-1400-la-126",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "14:00",
+          "artista": "LA 126",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        },
+        {
+          "id": "gigante-2026-jue-1515-toobaldsound",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "15:15",
+          "artista": "TOOBALDSOUND",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        },
+        {
+          "id": "gigante-2026-jue-2000-comandante-twin",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "COMANDANTE TWIN",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-jue-2220-angel-stanich",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:20",
+          "artista": "ANGEL STANICH",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-jue-0050-calequi-panteras",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:50",
+          "artista": "CALEQUI Y LAS PANTERAS",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-jue-2105-angela-gonzalez",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:05",
+          "artista": "ANGELA GONZALEZ",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-jue-2335-la-cabra-mecanica",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "23:35",
+          "artista": "LA CABRA MECANICA",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-jue-1945-kov",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "19:45",
+          "artista": "KOV",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-jue-2115-la-nina-paracaidas",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:15",
+          "artista": "LA NINA PARACAIDAS",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-jue-2245-tere",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:45",
+          "artista": "TERE!",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-jue-0015-estrogenuinas",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:15",
+          "artista": "ESTROGENUINAS",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-jue-0145-chinches-djs",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "01:45",
+          "artista": "CHINCHES DJS",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-vie-1830-apertura-puertas",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:30",
+          "artista": "APERTURA PUERTAS",
+          "escenario": "Recinto"
+        },
+        {
+          "id": "gigante-2026-vie-1915-the-molotovs",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:15",
+          "artista": "THE MOLOTOVS",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-vie-2140-repion",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:40",
+          "artista": "REPION",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-vie-0035-ultraligera",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:35",
+          "artista": "ULTRALIGERA",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-vie-1845-los-domingos",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:45",
+          "artista": "LOS DOMINGOS",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-vie-2020-aiko-el-grupo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:20",
+          "artista": "AIKO EL GRUPO",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-vie-2300-lamoda",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "LA M.O.D.A.",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-vie-0150-ortiga",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:50",
+          "artista": "ORTIGA",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-vie-2015-musgo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:15",
+          "artista": "MUSGO",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-vie-2145-doplers",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:45",
+          "artista": "DOPLERS",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-vie-2315-ruvenruven",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:15",
+          "artista": "RUVENRUVEN",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-vie-0045-ona-mafalda",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:45",
+          "artista": "ONA MAFALDA",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-vie-0215-bita",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:15",
+          "artista": "BITA",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-vie-1300-lola-vila",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "LOLA VILA",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        },
+        {
+          "id": "gigante-2026-vie-1400-kitai",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "14:00",
+          "artista": "KITAI",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        },
+        {
+          "id": "gigante-2026-vie-1515-popi-sito",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "15:15",
+          "artista": "POPI & SITO",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        },
+        {
+          "id": "gigante-2026-sab-1830-apertura-puertas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:30",
+          "artista": "APERTURA PUERTAS",
+          "escenario": "Recinto"
+        },
+        {
+          "id": "gigante-2026-sab-1900-septeto-santiaguero",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "SEPTETO SANTIAGUERO",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-sab-2140-belen-aguilera",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:40",
+          "artista": "BELEN AGUILERA",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-sab-0020-zahara-rave",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:20",
+          "artista": "ZAHARA RAVE",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-sab-2020-queralt-lahoz",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:20",
+          "artista": "QUERALT LAHOZ",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-sab-2300-ginebras",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "GINEBRAS",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-sab-0135-chimo-bayo",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:35",
+          "artista": "CHIMO BAYO",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-sab-1845-late-capital",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:45",
+          "artista": "LATE CAPITAL",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-sab-2015-delacueva",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:15",
+          "artista": "DELACUEVA",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-sab-2145-casino-montreal",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:45",
+          "artista": "CASINO MONTREAL",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-sab-2315-minino",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:15",
+          "artista": "MININO",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-sab-0045-oslo-ovnies",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:45",
+          "artista": "OSLO OVNIES",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-sab-0215-superframe",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:15",
+          "artista": "SUPERFRAME",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-sab-1300-lola-vila",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "LOLA VILA",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        },
+        {
+          "id": "gigante-2026-sab-1400-kitai",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "14:00",
+          "artista": "KITAI",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        },
+        {
+          "id": "gigante-2026-sab-1515-popi-sito",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "15:15",
+          "artista": "POPI & SITO",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        }
+      ]
     }
   ]
 }
