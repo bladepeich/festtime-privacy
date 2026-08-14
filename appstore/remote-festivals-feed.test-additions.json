@@ -3848,6 +3848,11 @@
             "title": "Entradas",
             "url": "https://www.enterticket.es/eventos/festival-de-la-luz-2026-283482",
             "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Festival+de+la+Luz",
+            "systemImage": "location"
           }
         ]
       },
