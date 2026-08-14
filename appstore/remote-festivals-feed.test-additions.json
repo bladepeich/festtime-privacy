@@ -3809,6 +3809,411 @@
           "escenario": "Escenario Guadalajara (Plaza Mayor)"
         }
       ]
+    },
+    {
+      "revision": "2026-08-14T14:05:00Z",
+      "festival": {
+        "id": "festival-de-la-luz-2026",
+        "legacyIDs": [],
+        "name": "Festival de la Luz",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 28",
+            "calendarDate": "2026-08-28"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 29",
+            "calendarDate": "2026-08-29"
+          },
+          {
+            "id": "domingo",
+            "displayName": "Dom 30",
+            "calendarDate": "2026-08-30"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {},
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://festivaldelaluz.es/",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.enterticket.es/eventos/festival-de-la-luz-2026-283482",
+            "systemImage": "ticket"
+          }
+        ]
+      },
+      "stageColors": {},
+      "events": [
+        {
+          "id": "festival-luz-2026-vie-nena-daconte",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "NENA DACONTE",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-vie-quinkillada",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "QUINKILLADA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-vie-manuro",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MANURO",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-vie-uzlive",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "UZLIVE",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-vie-vamos-con-todo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "VAMOS CON TODO",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-vie-kris-k-dj",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "KRIS K DJ",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-vie-mr-kitos",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MR.KITOS (SESION DJ VIBRA MAHOU)",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-chambao",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CHAMBAO",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-the-rapants",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "THE RAPANTS",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-boikot",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BOIKOT",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-carlos-sadness",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CARLOS SADNESS",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-budino",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BUDINO",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-repion",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "REPION",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-mi-fritos-gimme-chetos",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MI FRITOS AND THE GIMME CHETOS",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-complices",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "COMPLICES",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-bma",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BMA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-sabela",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SABELA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-triixadura",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TRIIXADURA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-birnal",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BIRNAL",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-los-motores",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LOS MOTORES",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-emilio-rua",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "EMILIO RUA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-crebinsky-balkan-band",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CREBINSKY BALKAN BAND",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-stivijois",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "STIVIJOIS",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-los-acebos",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LOS ACEBOS",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-siliti",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SILITI",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-poi-floid",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "POI FLOID",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-dilara",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DILARA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-banda-balbina",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "A BANDA DA BALBINA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-divergente-dj",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DIVERGENTE DJ (SESION DJ VIBRA MAHOU)",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-santiaguinos-boimorto",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SANTIAGUINOS DE BOIMORTO",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-pablo-alboran",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PABLO ALBORAN",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-rafaga",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "RAFAGA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-puno-dragon",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PUNO DRAGON",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-luar-na-lubre",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LUAR NA LUBRE",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-la-bien-querida",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LA BIEN QUERIDA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-la-paloma",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LA PALOMA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-ona-mafalda",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "ONA MAFALDA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-mabu",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MABU",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-banda-loba",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "A BANDA DA LOBA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-vangoura",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "VANGOURA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-dani-cornes",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DANI CORNES",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-leningoat",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LENINGOAT",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-vimbio",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "VIMBIO",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-the-binturas",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "THE BINTURAS",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-banda-musica-salceda",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BANDA DE MUSICA DE SALCEDA",
+          "escenario": ""
+        }
+      ]
     }
   ]
 }
