@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0180A45235FD1E56457344AF /* FestivalRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C9207845D1CBA35BA7EDB91 /* FestivalRepository.swift */; };
+		45F74BAD302F431E00CE9905 /* GoogleMobileAds in Frameworks */ = {isa = PBXBuildFile; productRef = 45F74BAC302F431E00CE9905 /* GoogleMobileAds */; };
 		290FB5F566FCE7167266CC02 /* FavoriteReminderScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A15A51323BA73587E93F6 /* FavoriteReminderScheduler.swift */; };
 		2B0FB283E3501C9481A33C08 /* ScheduleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A04C011B5B88A543D67DA52 /* ScheduleView.swift */; };
 		2CE087494711783202D51BA6 /* FestTimeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B6B2618E0C6F13E1862CBA5 /* FestTimeApp.swift */; };
@@ -50,6 +51,17 @@
 		EB64A8C2DE523784A2E48D4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FC8B91BE50F0FE530FA08F94 /* FestTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FestTime.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		45F74BAE302F431E00CE9905 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45F74BAD302F431E00CE9905 /* GoogleMobileAds in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		1FFB585A119799AAF8E03359 /* FestTimeApp */ = {
@@ -173,6 +185,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58D15304F9C7779A9E6E8A54 /* Build configuration list for PBXNativeTarget "FestTime" */;
 			buildPhases = (
+				45F74BAE302F431E00CE9905 /* Frameworks */,
 				420D4F20CAF2F10EA1432F16 /* Sources */,
 				ACB72C3ADBAAD7DD42CBF08C /* Resources */,
 			);

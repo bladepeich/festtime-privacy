@@ -1,14 +1,8 @@
 import SwiftUI
 import UserNotifications
-#if canImport(UIKit)
 import UIKit
-#endif
-
-#if canImport(GoogleMobileAds)
 import GoogleMobileAds
-#endif
 
-#if canImport(GoogleMobileAds)
 protocol AppOpenAdManagerDelegate: AnyObject {
     /// Called when the app-open ad lifecycle completes (dismissed or failed to present).
     func appOpenAdManagerAdDidComplete(_ appOpenAdManager: AppOpenAdManager)
@@ -41,6 +35,7 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
 
     func handleAppDidBecomeActive() {
         isAppActive = true
+        print("App open ad: app became active.")
 
         guard !hasShownInCurrentForeground else { return }
         showAdIfAvailable()
@@ -53,6 +48,7 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     func handleAppDidEnterBackground() {
         isAppActive = false
         hasShownInCurrentForeground = false
+        print("App open ad: app entered background, session reset.")
     }
 
     private func isAdAvailable() -> Bool {
@@ -70,14 +66,10 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
         defer { isLoadingAd = false }
 
         do {
-            let request = Request()
-            request.scene = UIApplication.shared.connectedScenes
-                .compactMap { $0 as? UIWindowScene }
-                .first
-
-            appOpenAd = try await AppOpenAd.load(with: appOpenAdUnitID, request: request)
+            appOpenAd = try await AppOpenAd.load(with: appOpenAdUnitID, request: Request())
             appOpenAd?.fullScreenContentDelegate = self
             loadTime = Date()
+            print("App open ad loaded successfully.")
 
             // On cold start, ad load can finish after activation.
             if isAppActive && !hasShownInCurrentForeground {
@@ -90,11 +82,12 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
         }
     }
 
-    private func showAdIfAvailable(retryAttempt: Int = 0) {
+    private func showAdIfAvailable() {
         guard !isShowingAd else { return }
 
         guard isAdAvailable(),
               let appOpenAd else {
+            print("App open ad is not ready yet.")
             appOpenAdManagerDelegate?.appOpenAdManagerAdDidComplete(self)
             Task {
                 await loadAd()
@@ -103,18 +96,9 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
         }
 
         isShowingAd = true
-        hasShownInCurrentForeground = true
         appOpenAd.fullScreenContentDelegate = self
+        print("App open ad present requested.")
         appOpenAd.present(from: nil)
-    }
-
-    private func retryShowIfNeeded(from attempt: Int) {
-        guard isAppActive, attempt < 8 else { return }
-
-        Task { @MainActor in
-            try? await Task.sleep(nanoseconds: 250_000_000)
-            self.showAdIfAvailable(retryAttempt: attempt + 1)
-        }
     }
 
     func adDidRecordImpression(_ ad: FullScreenPresentingAd) {
@@ -127,6 +111,7 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
 
     func adWillPresentFullScreenContent(_ ad: FullScreenPresentingAd) {
         print("App open ad will be presented.")
+        hasShownInCurrentForeground = true
     }
 
     func adWillDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
@@ -147,15 +132,18 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     func ad(_ ad: FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
         print("App open ad failed to present with error: \(error.localizedDescription)")
         isShowingAd = false
+        hasShownInCurrentForeground = false
         appOpenAd = nil
         loadTime = nil
         appOpenAdManagerDelegate?.appOpenAdManagerAdDidComplete(self)
         Task {
             await loadAd()
+            if isAppActive && !hasShownInCurrentForeground {
+                showAdIfAvailable()
+            }
         }
     }
 }
-#endif
 
 final class NotificationDelegateProxy: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     func application(
@@ -177,7 +165,6 @@ final class NotificationDelegateProxy: NSObject, UIApplicationDelegate, UNUserNo
         completionHandler([.banner, .list, .sound, .badge])
     }
 
-#if canImport(GoogleMobileAds)
     func applicationDidBecomeActive(_ application: UIApplication) {
         AppOpenAdManager.shared.handleAppDidBecomeActive()
     }
@@ -189,7 +176,6 @@ final class NotificationDelegateProxy: NSObject, UIApplicationDelegate, UNUserNo
     func applicationDidEnterBackground(_ application: UIApplication) {
         AppOpenAdManager.shared.handleAppDidEnterBackground()
     }
-#endif
 }
 
 @main
@@ -202,7 +188,6 @@ struct FestTimeApp: App {
             ScheduleView()
         }
         .onChange(of: scenePhase) { newPhase in
-#if canImport(GoogleMobileAds)
             switch newPhase {
             case .active:
                 AppOpenAdManager.shared.handleAppDidBecomeActive()
@@ -213,7 +198,6 @@ struct FestTimeApp: App {
             @unknown default:
                 break
             }
-#endif
         }
     }
 }
