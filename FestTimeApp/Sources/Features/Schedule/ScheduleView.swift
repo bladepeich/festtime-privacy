@@ -80,12 +80,6 @@ struct ScheduleView: View {
                 menuWebSheet(for: option)
             }
         }
-        .overlay {
-            if viewModel.isStartupLoading {
-                startupLoadingOverlay
-            }
-        }
-        .animation(.easeInOut(duration: 0.2), value: viewModel.isStartupLoading)
         .animation(.easeInOut(duration: 0.2), value: viewModel.isRemoteSyncInProgress)
         .task {
             viewModel.load()

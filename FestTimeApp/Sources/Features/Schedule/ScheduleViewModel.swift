@@ -17,7 +17,7 @@ final class ScheduleViewModel: ObservableObject {
     @Published var reminderErrorMessage: String?
     @Published var festivalChangeMessage: String?
     @Published var isRemoteSyncInProgress: Bool = false
-    @Published var isStartupLoading: Bool = true
+    @Published var isStartupLoading: Bool = false
     @Published var startupProgress: Double = 0.05
     @Published var startupStatusMessage: String = "Preparando app..."
     @Published var lastSuccessfulRemoteSyncDate: Date?
@@ -197,13 +197,8 @@ final class ScheduleViewModel: ObservableObject {
 
     func load() {
         if !festivals.isEmpty {
-            isStartupLoading = false
             return
         }
-
-        isStartupLoading = true
-        startupProgress = 0.15
-        startupStatusMessage = "Cargando festivales guardados..."
 
         do {
             let loadedFestivals = try repository.loadCatalog()
@@ -217,22 +212,13 @@ final class ScheduleViewModel: ObservableObject {
             searchText = ""
             remindersEnabled = false
             isFavoritesTabActive = false
-            startupProgress = 0.35
-            startupStatusMessage = "Buscando actualizaciones..."
-
             Task {
                 await syncRemoteFestivals(force: false, showNoChangesMessage: false)
-                startupProgress = 0.8
-                startupStatusMessage = "Aplicando datos..."
                 await rescheduleEnabledFestivalsReminders()
                 await refreshNotificationInbox()
-                startupProgress = 1.0
-                startupStatusMessage = "Listo"
-                isStartupLoading = false
             }
         } catch {
             print("Error loading festivals: \(error)")
-            isStartupLoading = false
         }
     }
 
@@ -254,12 +240,10 @@ final class ScheduleViewModel: ObservableObject {
             let loadedFestivals = try repository.loadCatalog()
             festivals = loadedFestivals
 
-            let candidateID = selectedFestivalID.isEmpty
-                ? (defaults.string(forKey: selectedFestivalKey) ?? "")
-                : selectedFestivalID
-
-            guard !candidateID.isEmpty,
-                  let festival = festivals.first(where: { $0.id == candidateID }) else {
+            // Keep the welcome screen stable: do not auto-open a saved festival
+            // when the current selection is empty.
+            guard !selectedFestivalID.isEmpty,
+                  let festival = festivals.first(where: { $0.id == selectedFestivalID }) else {
                 return
             }
 
