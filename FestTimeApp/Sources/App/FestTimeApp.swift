@@ -1,5 +1,96 @@
 import SwiftUI
 import UserNotifications
+#if canImport(UIKit)
+import UIKit
+#endif
+
+#if canImport(GoogleMobileAds)
+import GoogleMobileAds
+#endif
+
+#if canImport(GoogleMobileAds)
+@MainActor
+final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
+    static let shared = AppOpenAdManager()
+
+    private let appOpenAdUnitID = "ca-app-pub-5696830624450387/8235516537"
+    private var appOpenAd: AppOpenAd?
+    private var isLoadingAd = false
+    private var isShowingAd = false
+    private var adLoadDate: Date?
+
+    private override init() {}
+
+    func configure() {
+        MobileAds.shared.start(completionHandler: nil)
+        loadAdIfNeeded()
+    }
+
+    func handleAppDidBecomeActive() {
+        showAdIfAvailable()
+    }
+
+    private var isAdAvailable: Bool {
+        guard let adLoadDate else { return false }
+        let isFresh = Date().timeIntervalSince(adLoadDate) < 4 * 60 * 60
+        return appOpenAd != nil && isFresh
+    }
+
+    private func loadAdIfNeeded() {
+        guard !isLoadingAd, !isAdAvailable else { return }
+
+        isLoadingAd = true
+        AppOpenAd.load(with: appOpenAdUnitID, request: Request()) { [weak self] ad, error in
+            guard let self else { return }
+            self.isLoadingAd = false
+
+            if error != nil {
+                return
+            }
+
+            self.appOpenAd = ad
+            self.adLoadDate = Date()
+        }
+    }
+
+    private func showAdIfAvailable() {
+        guard !isShowingAd else { return }
+
+        guard isAdAvailable,
+              let appOpenAd,
+              let rootViewController = Self.rootViewController else {
+            loadAdIfNeeded()
+            return
+        }
+
+        isShowingAd = true
+        appOpenAd.fullScreenContentDelegate = self
+        appOpenAd.present(from: rootViewController)
+    }
+
+    private static var rootViewController: UIViewController? {
+        UIApplication.shared.connectedScenes
+            .compactMap { $0 as? UIWindowScene }
+            .flatMap(\.windows)
+            .first(where: \.isKeyWindow)?
+            .rootViewController
+    }
+
+    func adWillDismissFullScreenContent(_ ad: FullScreenPresentingAd) {
+        isShowingAd = false
+        appOpenAd = nil
+        adLoadDate = nil
+        loadAdIfNeeded()
+    }
+
+    func ad(_ ad: FullScreenPresentingAd, didFailToPresentFullScreenContentWithError error: Error) {
+        isShowingAd = false
+        appOpenAd = nil
+        adLoadDate = nil
+        loadAdIfNeeded()
+    }
+}
+#endif
 
 final class NotificationDelegateProxy: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     func application(
@@ -7,6 +98,9 @@ final class NotificationDelegateProxy: NSObject, UIApplicationDelegate, UNUserNo
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
         UNUserNotificationCenter.current().delegate = self
+#if canImport(GoogleMobileAds)
+        AppOpenAdManager.shared.configure()
+#endif
         return true
     }
 
@@ -22,10 +116,22 @@ final class NotificationDelegateProxy: NSObject, UIApplicationDelegate, UNUserNo
 @main
 struct FestTimeApp: App {
     @UIApplicationDelegateAdaptor(NotificationDelegateProxy.self) var notificationDelegate
+    @Environment(\.scenePhase) private var scenePhase
 
     var body: some Scene {
         WindowGroup {
             ScheduleView()
+                .onAppear {
+#if canImport(GoogleMobileAds)
+                    AppOpenAdManager.shared.handleAppDidBecomeActive()
+#endif
+                }
+        }
+        .onChange(of: scenePhase) { newPhase in
+            guard newPhase == .active else { return }
+#if canImport(GoogleMobileAds)
+            AppOpenAdManager.shared.handleAppDidBecomeActive()
+#endif
         }
     }
 }

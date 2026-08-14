@@ -14,9 +14,12 @@
 		2F6D40D55F821C796E497DF9 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55AB677C7FB531D3EC01CAFE /* EventCardView.swift */; };
 		38C0A2975387BFC81DA41D08 /* FestivalEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FAC27BAE99193E69319EEA7 /* FestivalEvent.swift */; };
 		4C40E114BF50B7D62974DE6D /* festivals.json in Resources */ = {isa = PBXBuildFile; fileRef = CC7D042DED2CABDAE3481AB9 /* festivals.json */; };
+		4F106856305A9E333DDF82BE /* leyendas-del-rock-2026-region.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 2178BFABBB842939D90C8BAF /* leyendas-del-rock-2026-region.geojson */; };
 		50ED3F768439D80D80B5F058 /* ScheduleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7254B955C2DD1CC1FA364D94 /* ScheduleViewModel.swift */; };
 		5DA61CB270D5B04ABA610AFA /* FavoritesKeychainStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = C78938954303F99CC6F55B87 /* FavoritesKeychainStore.swift */; };
 		82BA739019189A95A728F58A /* FestivalModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCEE6964EE052324CCC86F61 /* FestivalModels.swift */; };
+		B2292002A77CE54F7C002DD8 /* sonorama-2026-region.geojson in Resources */ = {isa = PBXBuildFile; fileRef = 98862F4C9D604FC940183463 /* sonorama-2026-region.geojson */; };
+		B74CBE5F00D656ADE89F55D3 /* RemoteFestivalFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74BD0B58CF142454D354FB41 /* RemoteFestivalFeedService.swift */; };
 		C5A1500C185B2DBC84DCED10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB64A8C2DE523784A2E48D4D /* Assets.xcassets */; };
 		CBAC83B13C85AA53FB7A58E9 /* sonorama-2026-stage-colors.json in Resources */ = {isa = PBXBuildFile; fileRef = DA223DCC65B0A44E5F4B2AB0 /* sonorama-2026-stage-colors.json */; };
 		D899D07BB061C9CCDDABE18B /* leyendas-del-rock-2026-events.json in Resources */ = {isa = PBXBuildFile; fileRef = BC01CB1A42B5143492760002 /* leyendas-del-rock-2026-events.json */; };
@@ -27,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		112A15A51323BA73587E93F6 /* FavoriteReminderScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteReminderScheduler.swift; sourceTree = "<group>"; };
+		2178BFABBB842939D90C8BAF /* leyendas-del-rock-2026-region.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = "leyendas-del-rock-2026-region.geojson"; sourceTree = "<group>"; };
 		2506749B4AE2370FC9321E2A /* leyendas-del-rock-2026-stage-colors.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "leyendas-del-rock-2026-stage-colors.json"; sourceTree = "<group>"; };
 		2C9207845D1CBA35BA7EDB91 /* FestivalRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalRepository.swift; sourceTree = "<group>"; };
 		2FAC27BAE99193E69319EEA7 /* FestivalEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestivalEvent.swift; sourceTree = "<group>"; };
@@ -34,7 +38,9 @@
 		55AB677C7FB531D3EC01CAFE /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
 		7254B955C2DD1CC1FA364D94 /* ScheduleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewModel.swift; sourceTree = "<group>"; };
 		7272A5D42F2F21558390E634 /* sonorama-2026-events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "sonorama-2026-events.json"; sourceTree = "<group>"; };
+		74BD0B58CF142454D354FB41 /* RemoteFestivalFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteFestivalFeedService.swift; sourceTree = "<group>"; };
 		8B6B2618E0C6F13E1862CBA5 /* FestTimeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FestTimeApp.swift; sourceTree = "<group>"; };
+		98862F4C9D604FC940183463 /* sonorama-2026-region.geojson */ = {isa = PBXFileReference; lastKnownFileType = text; path = "sonorama-2026-region.geojson"; sourceTree = "<group>"; };
 		AD71945F6BC0578A97E7CA95 /* Color+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Hex.swift"; sourceTree = "<group>"; };
 		BC01CB1A42B5143492760002 /* leyendas-del-rock-2026-events.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "leyendas-del-rock-2026-events.json"; sourceTree = "<group>"; };
 		C78938954303F99CC6F55B87 /* FavoritesKeychainStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesKeychainStore.swift; sourceTree = "<group>"; };
@@ -77,6 +83,7 @@
 				112A15A51323BA73587E93F6 /* FavoriteReminderScheduler.swift */,
 				C78938954303F99CC6F55B87 /* FavoritesKeychainStore.swift */,
 				2C9207845D1CBA35BA7EDB91 /* FestivalRepository.swift */,
+				74BD0B58CF142454D354FB41 /* RemoteFestivalFeedService.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -102,8 +109,10 @@
 			children = (
 				CC7D042DED2CABDAE3481AB9 /* festivals.json */,
 				BC01CB1A42B5143492760002 /* leyendas-del-rock-2026-events.json */,
+				2178BFABBB842939D90C8BAF /* leyendas-del-rock-2026-region.geojson */,
 				2506749B4AE2370FC9321E2A /* leyendas-del-rock-2026-stage-colors.json */,
 				7272A5D42F2F21558390E634 /* sonorama-2026-events.json */,
+				98862F4C9D604FC940183463 /* sonorama-2026-region.geojson */,
 				DA223DCC65B0A44E5F4B2AB0 /* sonorama-2026-stage-colors.json */,
 			);
 			path = Festivals;
@@ -185,7 +194,7 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
-				LastUpgradeCheck = 2600;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					0A047CCCB136836011A029DB = {
 						ProvisioningStyle = Automatic;
@@ -219,8 +228,10 @@
 				C5A1500C185B2DBC84DCED10 /* Assets.xcassets in Resources */,
 				4C40E114BF50B7D62974DE6D /* festivals.json in Resources */,
 				D899D07BB061C9CCDDABE18B /* leyendas-del-rock-2026-events.json in Resources */,
+				4F106856305A9E333DDF82BE /* leyendas-del-rock-2026-region.geojson in Resources */,
 				DA9A26CF59FBF7F31EA7AEA7 /* leyendas-del-rock-2026-stage-colors.json in Resources */,
 				F7D8106AF8506205F0BD71CC /* sonorama-2026-events.json in Resources */,
+				B2292002A77CE54F7C002DD8 /* sonorama-2026-region.geojson in Resources */,
 				CBAC83B13C85AA53FB7A58E9 /* sonorama-2026-stage-colors.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,6 +251,7 @@
 				38C0A2975387BFC81DA41D08 /* FestivalEvent.swift in Sources */,
 				82BA739019189A95A728F58A /* FestivalModels.swift in Sources */,
 				0180A45235FD1E56457344AF /* FestivalRepository.swift in Sources */,
+				B74CBE5F00D656ADE89F55D3 /* RemoteFestivalFeedService.swift in Sources */,
 				2B0FB283E3501C9481A33C08 /* ScheduleView.swift in Sources */,
 				50ED3F768439D80D80B5F058 /* ScheduleViewModel.swift in Sources */,
 			);
@@ -252,7 +264,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -286,7 +297,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -307,7 +317,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -318,7 +327,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -352,7 +360,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -366,7 +373,6 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
-				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
@@ -384,7 +390,7 @@
 				DEVELOPMENT_TEAM = 73VJ475W7C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FestTime;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_GADApplicationIdentifier = "ca-app-pub-5696830624450387~1646057458";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -414,7 +420,7 @@
 				DEVELOPMENT_TEAM = 73VJ475W7C;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = FestTime;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.music";
+				INFOPLIST_KEY_GADApplicationIdentifier = "ca-app-pub-5696830624450387~1646057458";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
