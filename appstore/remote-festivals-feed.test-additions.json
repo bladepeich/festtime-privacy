@@ -2793,6 +2793,174 @@
           "escenario": "Dave Mustaine Stage"
         }
       ]
+    },
+    {
+      "revision": "2026-08-14T12:30:00Z",
+      "festival": {
+        "id": "cosquin-rock-valladolid-2026",
+        "name": "Cosquin Rock Valladolid",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 28",
+            "calendarDate": "2026-08-28"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 29",
+            "calendarDate": "2026-08-29"
+          },
+          {
+            "id": "domingo",
+            "displayName": "Dom 30",
+            "calendarDate": "2026-08-30"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "viernes": "noche",
+          "sabado": "noche",
+          "domingo": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://cosquinrock.net/cresp/",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://cosquinrock.net/cresp/",
+            "systemImage": "ticket"
+          }
+        ]
+      },
+      "stageColors": {},
+      "events": [
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-kaiser-chiefs",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "KAISER CHIEFS",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-m-clan",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "M-CLAN",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-olugbenca",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "OLUGBENCA",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-metronomy-dj-set",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "(METRONOMY) DJ SET",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-puno-dragon",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PUNO DRAGON",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-whisky-caravan",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "WHISKY CARAVAN",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-ilan-amores",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "ILAN AMORES",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-sab-paul-kalkbrenner",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PAUL KALKBRENNER",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-sab-claptone",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CLAPTONE",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-sab-dmasso",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DMASSO",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-sab-imbermind",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "IMBERMIND",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-sab-kinder-lomas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "KINDER LOMAS",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-dom-ultraligera",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "ULTRALIGERA",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-dom-comandante-twin",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "COMANDANTE TWIN",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-dom-oslo-ovnies",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "OSLO OVNIES",
+          "escenario": ""
+        }
+      ]
     }
   ]
 }
