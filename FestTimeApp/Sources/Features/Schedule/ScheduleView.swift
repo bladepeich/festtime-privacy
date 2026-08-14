@@ -8,6 +8,7 @@ struct ScheduleView: View {
     @State private var isNotificationsSheetPresented = false
     @State private var selectedInAppMenuOption: FestivalMenuOption?
     @State private var selectedInAppWebOption: FestivalMenuOption?
+    @State private var hasEnteredForegroundOnce = false
     @Environment(\.colorScheme) private var colorScheme
     @Environment(\.scenePhase) private var scenePhase
 
@@ -88,7 +89,11 @@ struct ScheduleView: View {
         .onChange(of: scenePhase) { newPhase in
             switch newPhase {
             case .active:
-                viewModel.reloadAfterForeground()
+                if hasEnteredForegroundOnce {
+                    viewModel.reloadAfterForeground()
+                } else {
+                    hasEnteredForegroundOnce = true
+                }
             case .background:
                 viewModel.prepareRemindersForBackground()
             default:
