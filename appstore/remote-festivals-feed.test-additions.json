@@ -715,7 +715,7 @@
       ]
     },
     {
-      "revision": "2026-08-14T11:10:00Z",
+      "revision": "2026-08-14T12:15:00Z",
       "festival": {
         "id": "sonorama-2026",
         "name": "Sonorama Ribera",
@@ -2293,6 +2293,16 @@
             "title": "Plano del recinto",
             "inAppImageURL": "https://www.leyendasdelrockfestival.com/wp-content/uploads/2022/07/Plano-Leyendas-2022-recinto-2048x1362.jpg",
             "systemImage": "map"
+          },
+          {
+            "title": "Web oficial",
+            "url": "https://www.leyendasdelrockfestival.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.leyendasdelrockfestival.com/tickets/",
+            "systemImage": "ticket"
           },
           {
             "title": "Ubicacion recinto",
