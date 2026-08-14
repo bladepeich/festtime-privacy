@@ -151,9 +151,6 @@ final class NotificationDelegateProxy: NSObject, UIApplicationDelegate, UNUserNo
         didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
     ) -> Bool {
         UNUserNotificationCenter.current().delegate = self
-#if canImport(GoogleMobileAds)
-        AppOpenAdManager.shared.configure()
-#endif
         return true
     }
 
@@ -165,23 +162,13 @@ final class NotificationDelegateProxy: NSObject, UIApplicationDelegate, UNUserNo
         completionHandler([.banner, .list, .sound, .badge])
     }
 
-    func applicationDidBecomeActive(_ application: UIApplication) {
-        AppOpenAdManager.shared.handleAppDidBecomeActive()
-    }
-
-    func applicationWillResignActive(_ application: UIApplication) {
-        AppOpenAdManager.shared.handleAppWillResignActive()
-    }
-
-    func applicationDidEnterBackground(_ application: UIApplication) {
-        AppOpenAdManager.shared.handleAppDidEnterBackground()
-    }
 }
 
 @main
 struct FestTimeApp: App {
     @UIApplicationDelegateAdaptor(NotificationDelegateProxy.self) var notificationDelegate
     @Environment(\.scenePhase) private var scenePhase
+    @State private var hasConfiguredAds = false
 
     var body: some Scene {
         WindowGroup {
@@ -190,6 +177,16 @@ struct FestTimeApp: App {
         .onChange(of: scenePhase) { newPhase in
             switch newPhase {
             case .active:
+                if !hasConfiguredAds {
+                    hasConfiguredAds = true
+                    // Configure AdMob only after the first scene becomes active,
+                    // so cold launch renders immediately without white/black delay.
+                    DispatchQueue.main.async {
+                        AppOpenAdManager.shared.configure()
+                        AppOpenAdManager.shared.handleAppDidBecomeActive()
+                    }
+                    return
+                }
                 AppOpenAdManager.shared.handleAppDidBecomeActive()
             case .inactive:
                 AppOpenAdManager.shared.handleAppWillResignActive()
