@@ -2996,6 +2996,11 @@
             "title": "Entradas",
             "url": "https://www.jardindeliciasfestival.com/sevilla/comprar-entradas/",
             "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Centro+Andaluz+de+Arte+Contemporaneo",
+            "systemImage": "location"
           }
         ]
       },
@@ -3086,6 +3091,11 @@
             "title": "Entradas",
             "url": "https://www.jardindeliciasfestival.com/madrid/comprar-entradas/",
             "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Campo+de+Rugby+Cantarranas",
+            "systemImage": "location"
           }
         ]
       },
