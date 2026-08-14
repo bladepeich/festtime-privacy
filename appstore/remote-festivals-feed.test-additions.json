@@ -4219,6 +4219,285 @@
           "escenario": ""
         }
       ]
+    },
+    {
+      "revision": "2026-08-14T14:25:00Z",
+      "festival": {
+        "id": "ebrovision-2026",
+        "legacyIDs": [],
+        "name": "Ebrovision",
+        "year": 2026,
+        "days": [
+          {
+            "id": "jueves",
+            "displayName": "Jue 03",
+            "calendarDate": "2026-09-03"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 04",
+            "calendarDate": "2026-09-04"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 05",
+            "calendarDate": "2026-09-05"
+          },
+          {
+            "id": "domingo",
+            "displayName": "Dom 06",
+            "calendarDate": "2026-09-06"
+          }
+        ],
+        "defaultDayID": "jueves",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {},
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://ebrovision.com/",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.entradas.com/artist/festival-ebrovision/?affiliate=BVS",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Festival+Ebrovision",
+            "systemImage": "location"
+          }
+        ]
+      },
+      "stageColors": {},
+      "events": [
+        {
+          "id": "ebrovision-2026-jue-juventude",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "",
+          "artista": "JUVENTUDE",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-jue-rata",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "",
+          "artista": "RATA",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-jue-la-126",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LA 126",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-jue-concierto-sorpresa",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CONCIERTO SORPRESA (RIO EBRO)",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-carlos-ares",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CARLOS ARES",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-getdown-services",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "GETDOWN SERVICES",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-shego",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SHEGO",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-la-habitacion-roja",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LA HABITACION ROJA (30 ANIVERSARIO)",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-triangulo-amor-bizarro",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TRIANGULO DE AMOR BIZARRO",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-puno-dragon",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PUNO DRAGON",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-dani-dicostas",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DANI DICOSTAS",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-san-tosielo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SAN TOSIELO",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-hoonine",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "HOONINE",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-go-cactus",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "GO CACTUS",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-grama-agropunk",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "GRAMA AGROPUNK",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-lori-meyers",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LORI MEYERS",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-sanguijuelas-guadiana",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SANGUIJUELAS DEL GUADIANA",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-bodega",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BODEGA",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-rufus-firefly",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "RUFUS T. FIREFLY",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-repion",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "REPION",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-mujeres",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MUJERES",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-la-milagrosa",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LA MILAGROSA",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-mala-gestion",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MALA GESTION",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-los-chivatos",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LOS CHIVATOS",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-concierto-sorpresa",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CONCIERTO SORPRESA (CASTILLO DE MIRANDA)",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-dom-lisasinson",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LISASINSON",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-dom-ganador-concurso-tsw",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "GANADOR CONCURSO TSW",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-dom-mas-por-confirmar",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MAS POR CONFIRMAR",
+          "escenario": ""
+        }
+      ]
     }
   ]
 }
