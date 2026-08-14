@@ -169,6 +169,7 @@ struct FestTimeApp: App {
     @UIApplicationDelegateAdaptor(NotificationDelegateProxy.self) var notificationDelegate
     @Environment(\.scenePhase) private var scenePhase
     @State private var hasConfiguredAds = false
+    @AppStorage("festtime.hasCompletedFirstLaunchSession") private var hasCompletedFirstLaunchSession = false
 
     var body: some Scene {
         WindowGroup {
@@ -183,7 +184,14 @@ struct FestTimeApp: App {
                     // so cold launch renders immediately without white/black delay.
                     DispatchQueue.main.async {
                         AppOpenAdManager.shared.configure()
-                        AppOpenAdManager.shared.handleAppDidBecomeActive()
+                        if hasCompletedFirstLaunchSession {
+                            AppOpenAdManager.shared.handleAppDidBecomeActive()
+                        }
+                    }
+
+                    // Keep first execution ad-free to protect cold-start UX.
+                    if !hasCompletedFirstLaunchSession {
+                        hasCompletedFirstLaunchSession = true
                     }
                     return
                 }
