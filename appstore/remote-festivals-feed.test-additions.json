@@ -3,7 +3,7 @@
   "fullReplace": true,
   "festivals": [
     {
-      "revision": "2026-08-14T09:45:00Z",
+      "revision": "2026-08-14T10:05:00Z",
       "festival": {
         "id": "cooltural-fest-2026",
         "name": "Cooltural Fest",
@@ -53,7 +53,7 @@
           },
           {
             "title": "Ubicacion recinto",
-            "url": "https://www.google.com/maps/place/Cooltural+Fest/@36.83643,-2.4302672,17z",
+            "url": "https://www.google.com/maps/dir/?api=1&destination=36.83643,-2.4302672&travelmode=driving",
             "systemImage": "location"
           },
           {
