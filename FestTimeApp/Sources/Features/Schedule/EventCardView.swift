@@ -81,7 +81,7 @@ struct EventCardView: View {
     private var displayTime: String {
         let trimmed = event.hora.trimmingCharacters(in: .whitespacesAndNewlines)
         if trimmed.isEmpty {
-            return "Sin hora"
+            return "Horarios no disponibles"
         }
 
         return "\(trimmed) h"
