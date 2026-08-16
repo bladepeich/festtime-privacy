@@ -331,58 +331,57 @@ private fun TopControlsBar(
         }
     }
 
-    Row(
+    Box(
         modifier = Modifier
             .fillMaxWidth()
             .background(Color.White)
             .statusBarsPadding()
-            .padding(horizontal = 12.dp, vertical = 8.dp),
-        horizontalArrangement = Arrangement.SpaceBetween,
-        verticalAlignment = Alignment.CenterVertically
+            .padding(horizontal = 12.dp, vertical = 8.dp)
     ) {
-        Button(
-            onClick = onToggleFavorites,
-            modifier = Modifier.width(favoritesWidth),
-            shape = RoundedCornerShape(999.dp),
-            colors = ButtonDefaults.buttonColors(
-                containerColor = if (state.showFavoritesOnly) Color(0xFFF6D74A) else Color.White,
-                contentColor = Color.Black
-            ),
-            border = BorderStroke(1.dp, Color(0xFFE2E4E9)),
-            contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp)
-        ) {
-            Icon(
-                imageVector = if (state.showFavoritesOnly) Icons.Filled.Star else Icons.Outlined.Star,
-                contentDescription = null
-            )
-            Text("Favoritos", fontWeight = FontWeight.Bold, maxLines = 1)
-        }
-
-        Spacer(modifier = Modifier.width(8.dp))
-
         Image(
             painter = painterResource(id = R.drawable.festtime_logo),
             contentDescription = "FestTime",
             modifier = Modifier
-                .weight(1f)
+                .align(Alignment.Center)
                 .height(logoHeight),
             contentScale = ContentScale.Fit
         )
 
-        Spacer(modifier = Modifier.width(8.dp))
-
-        Box {
-            IconButton(
-                onClick = { menuExpanded = true },
-                modifier = Modifier
-                    .size(if (screenWidth >= 420) 46.dp else 40.dp)
-                    .clip(CircleShape)
-                    .background(Color.White)
+        Row(
+            modifier = Modifier.fillMaxWidth(),
+            horizontalArrangement = Arrangement.SpaceBetween,
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            Button(
+                onClick = onToggleFavorites,
+                modifier = Modifier.width(favoritesWidth),
+                shape = RoundedCornerShape(999.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = if (state.showFavoritesOnly) Color(0xFFF6D74A) else Color.White,
+                    contentColor = Color.Black
+                ),
+                border = BorderStroke(1.dp, Color(0xFFE2E4E9)),
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp)
             ) {
-                Icon(Icons.Filled.Menu, contentDescription = "Menu", tint = Color.Black)
+                Icon(
+                    imageVector = if (state.showFavoritesOnly) Icons.Filled.Star else Icons.Outlined.Star,
+                    contentDescription = null
+                )
+                Text("Favoritos", fontWeight = FontWeight.Bold, maxLines = 1)
             }
 
-            DropdownMenu(expanded = menuExpanded, onDismissRequest = { menuExpanded = false }) {
+            Box {
+                IconButton(
+                    onClick = { menuExpanded = true },
+                    modifier = Modifier
+                        .size(if (screenWidth >= 420) 46.dp else 40.dp)
+                        .clip(CircleShape)
+                        .background(Color.White)
+                ) {
+                    Icon(Icons.Filled.Menu, contentDescription = "Menu", tint = Color.Black)
+                }
+
+                DropdownMenu(expanded = menuExpanded, onDismissRequest = { menuExpanded = false }) {
                 DropdownMenuItem(
                     text = { Text("Seleccionar Festival") },
                     onClick = {
@@ -463,6 +462,7 @@ private fun TopControlsBar(
                             }
                         )
                     }
+                }
                 }
             }
         }
