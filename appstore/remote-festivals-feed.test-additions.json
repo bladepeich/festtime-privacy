@@ -4793,8 +4793,8 @@
           "id": "brisa-norte-2027-vie-1930-viento-sur",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "19:30",
-          "artista": "Viento Sur",
+          "hora": "19:40",
+          "artista": "Viento Sur Extended",
           "escenario": "Escenario Faro"
         },
         {
@@ -4811,7 +4811,7 @@
           "turno": "noche",
           "hora": "20:15",
           "artista": "Ruta Atlantica",
-          "escenario": "Escenario Faro"
+          "escenario": "Escenario Costa"
         },
         {
           "id": "brisa-norte-2027-sab-2350-luna-boreal",
@@ -4827,6 +4827,14 @@
           "turno": "noche",
           "hora": "01:10",
           "artista": "Constelacion Marina",
+          "escenario": "Escenario Faro"
+        },
+        {
+          "id": "brisa-norte-2027-vie-0040-muelle-oscuro",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:40",
+          "artista": "Muelle Oscuro",
           "escenario": "Escenario Faro"
         }
       ]
@@ -4885,14 +4893,6 @@
           "escenario": "Escenario Pico"
         },
         {
-          "id": "sierra-electrica-2027-dom-1600-altura-zero",
-          "dia": "domingo",
-          "turno": "dia",
-          "hora": "16:00",
-          "artista": "Altura Zero",
-          "escenario": "Escenario Valle"
-        },
-        {
           "id": "sierra-electrica-2027-dom-1940-prisma-alta",
           "dia": "domingo",
           "turno": "dia",
@@ -4904,8 +4904,24 @@
           "id": "sierra-electrica-2027-dom-2110-voltaje-sur",
           "dia": "domingo",
           "turno": "dia",
-          "hora": "21:10",
+          "hora": "21:20",
           "artista": "Voltaje Sur",
+          "escenario": "Escenario Pico"
+        },
+        {
+          "id": "sierra-electrica-2027-dom-1510-eco-polar",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "15:10",
+          "artista": "Eco Polar",
+          "escenario": "Escenario Valle"
+        },
+        {
+          "id": "sierra-electrica-2027-dom-2250-cable-lunar",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "22:50",
+          "artista": "Cable Lunar",
           "escenario": "Escenario Pico"
         }
       ]
