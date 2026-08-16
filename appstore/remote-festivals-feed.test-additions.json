@@ -786,7 +786,7 @@
           "dia": "miercoles",
           "turno": "noche",
           "hora": "19:00",
-          "artista": "Nat Simons (TEST REMOTO)",
+          "artista": "Nat Simons",
           "escenario": "Escenario Aranda de Duero"
         },
         {
@@ -2252,14 +2252,6 @@
           "hora": "18:00",
           "artista": "She's A Star DJ y Amigos",
           "escenario": "Escenario Le Club / Café Central"
-        },
-        {
-          "id": "sonorama-test-001",
-          "dia": "miercoles",
-          "turno": "noche",
-          "hora": "18:35",
-          "artista": "Banda Prueba Remota",
-          "escenario": "Escenario Aranda de Duero"
         }
       ]
     },
@@ -4743,6 +4735,162 @@
           "hora": "",
           "artista": "DIB",
           "escenario": ""
+        }
+      ]
+    },
+    {
+      "revision": "2026-08-16T22:15:00Z",
+      "festival": {
+        "id": "brisa-norte-2027",
+        "name": "Brisa Norte",
+        "year": 2027,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 18",
+            "calendarDate": "2027-06-18"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 19",
+            "calendarDate": "2027-06-19"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://example.com/brisa-norte",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://example.com/brisa-norte/tickets",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=brisa+norte+festival",
+            "systemImage": "location"
+          }
+        ],
+        "regionGeoJSONFile": "brisa-norte-2027-region",
+        "eventsFile": "brisa-norte-2027-events",
+        "stageColorsFile": "brisa-norte-2027-stage-colors"
+      },
+      "stageColors": {
+        "Escenario Faro": "#0EA5E9",
+        "Escenario Costa": "#16A34A"
+      },
+      "events": [
+        {
+          "id": "brisa-norte-2027-vie-1930-viento-sur",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:30",
+          "artista": "Viento Sur",
+          "escenario": "Escenario Faro"
+        },
+        {
+          "id": "brisa-norte-2027-vie-2200-pleamar",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:00",
+          "artista": "Pleamar",
+          "escenario": "Escenario Costa"
+        },
+        {
+          "id": "brisa-norte-2027-sab-2015-ruta-atlantica",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:15",
+          "artista": "Ruta Atlantica",
+          "escenario": "Escenario Faro"
+        },
+        {
+          "id": "brisa-norte-2027-sab-2350-luna-boreal",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:50",
+          "artista": "Luna Boreal",
+          "escenario": "Escenario Costa"
+        }
+      ]
+    },
+    {
+      "revision": "2026-08-16T22:15:00Z",
+      "festival": {
+        "id": "sierra-electrica-2027",
+        "name": "Sierra Electrica",
+        "year": 2027,
+        "days": [
+          {
+            "id": "domingo",
+            "displayName": "Dom 05",
+            "calendarDate": "2027-09-05"
+          }
+        ],
+        "defaultDayID": "domingo",
+        "defaultShift": "dia",
+        "forcedShiftByDay": {
+          "domingo": "dia"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://example.com/sierra-electrica",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://example.com/sierra-electrica/tickets",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=sierra+electrica+festival",
+            "systemImage": "location"
+          }
+        ],
+        "regionGeoJSONFile": "sierra-electrica-2027-region",
+        "eventsFile": "sierra-electrica-2027-events",
+        "stageColorsFile": "sierra-electrica-2027-stage-colors"
+      },
+      "stageColors": {
+        "Escenario Pico": "#7C3AED",
+        "Escenario Valle": "#D97706"
+      },
+      "events": [
+        {
+          "id": "sierra-electrica-2027-dom-1300-corriente-libre",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "Corriente Libre",
+          "escenario": "Escenario Pico"
+        },
+        {
+          "id": "sierra-electrica-2027-dom-1600-altura-zero",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "16:00",
+          "artista": "Altura Zero",
+          "escenario": "Escenario Valle"
+        },
+        {
+          "id": "sierra-electrica-2027-dom-1830-nodo-norte",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "18:30",
+          "artista": "Nodo Norte",
+          "escenario": "Escenario Pico"
         }
       ]
     }
