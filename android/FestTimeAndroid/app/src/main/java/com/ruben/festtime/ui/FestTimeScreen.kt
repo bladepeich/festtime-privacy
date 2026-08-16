@@ -1,7 +1,11 @@
 package com.ruben.festtime.ui
 
+import android.Manifest
+import android.app.Activity
 import android.content.Intent
+import android.content.pm.PackageManager
 import android.net.Uri
+import android.os.Build
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -40,12 +44,16 @@ import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.OutlinedTextFieldDefaults
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
+import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
+import androidx.activity.compose.rememberLauncherForActivityResult
+import androidx.activity.result.contract.ActivityResultContracts
+import androidx.core.content.ContextCompat
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
@@ -60,13 +68,14 @@ import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.unit.dp
 import androidx.compose.foundation.Image
 import com.ruben.festtime.R
+import com.ruben.festtime.WebViewActivity
 import com.ruben.festtime.data.FestivalEvent
+import com.ruben.festtime.data.FestivalDefinition
 import com.ruben.festtime.data.FestivalMenuOption
 import com.ruben.festtime.data.Shift
 import java.time.LocalDate
 import java.time.YearMonth
 import java.time.format.DateTimeFormatter
-import java.time.format.TextStyle
 import java.util.Locale
 import java.text.Normalizer
 
@@ -116,6 +125,18 @@ fun FestTimeScreen(viewModel: FestTimeViewModel) {
             contentPadding = PaddingValues(top = 10.dp, bottom = 16.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
+            if (state.filteredEvents.isEmpty()) {
+                item {
+                    Text(
+                        text = "Horarios no Disponibles",
+                        color = Color(0xFF6B7280),
+                        style = MaterialTheme.typography.titleMedium,
+                        fontWeight = FontWeight.SemiBold,
+                        modifier = Modifier.padding(horizontal = 16.dp, vertical = 20.dp)
+                    )
+                }
+            }
+
             items(state.filteredEvents, key = { it.id }) { event ->
                 EventRow(
                     event = event,
@@ -261,7 +282,7 @@ private fun FestivalPickerDialog(
                                 contentColor = Color.Black
                             )
                         ) {
-                            Text("${festival.name} ${festival.year}")
+                            Text(festival.name)
                         }
                     }
                 }
@@ -284,13 +305,30 @@ private fun TopControlsBar(
     onToggleFavorites: () -> Unit
 ) {
     val context = LocalContext.current
+    val activity = context as? Activity
     val screenWidth = LocalConfiguration.current.screenWidthDp
     val favoritesWidth = if (screenWidth >= 420) 160.dp else 132.dp
     val logoHeight = if (screenWidth >= 420) 52.dp else 42.dp
     var menuExpanded by remember { mutableStateOf(false) }
     var showPicker by remember { mutableStateOf(false) }
+    var pendingEnableAlerts by remember { mutableStateOf(false) }
     val selectedFestival = state.festivals.firstOrNull { it.id == state.selectedFestivalId }
     val notificationsCount = if (state.alertsEnabled) state.favorites.size else 0
+
+    val notificationsPermissionLauncher = rememberLauncherForActivityResult(
+        contract = ActivityResultContracts.RequestPermission()
+    ) { granted ->
+        if (granted && pendingEnableAlerts) {
+            onAlertsChanged(true)
+        }
+        pendingEnableAlerts = false
+    }
+
+    LaunchedEffect(state.alertsEnabled) {
+        if (state.alertsEnabled) {
+            pendingEnableAlerts = false
+        }
+    }
 
     Row(
         modifier = Modifier
@@ -360,10 +398,32 @@ private fun TopControlsBar(
                 )
 
                 DropdownMenuItem(
-                    text = { Text(if (state.alertsEnabled) "Desactivar Alertas" else "Activar Alertas") },
+                    text = { Text(if (state.alertsEnabled) "Desactivar Notificaciones" else "Activar Notificaciones") },
                     onClick = {
                         menuExpanded = false
-                        onAlertsChanged(!state.alertsEnabled)
+                        if (state.alertsEnabled) {
+                            onAlertsChanged(false)
+                            return@DropdownMenuItem
+                        }
+
+                        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.TIRAMISU) {
+                            onAlertsChanged(true)
+                            return@DropdownMenuItem
+                        }
+
+                        val hasPermission = ContextCompat.checkSelfPermission(
+                            context,
+                            Manifest.permission.POST_NOTIFICATIONS
+                        ) == PackageManager.PERMISSION_GRANTED
+
+                        if (hasPermission) {
+                            onAlertsChanged(true)
+                        } else {
+                            pendingEnableAlerts = true
+                            if (activity != null) {
+                                notificationsPermissionLauncher.launch(Manifest.permission.POST_NOTIFICATIONS)
+                            }
+                        }
                     }
                 )
 
@@ -388,7 +448,15 @@ private fun TopControlsBar(
                                 menuExpanded = false
                                 val url = option.inAppImageURL ?: option.url
                                 if (!url.isNullOrBlank()) {
-                                    context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+                                    if (shouldOpenInApp(option.title)) {
+                                        val intent = Intent(context, WebViewActivity::class.java).apply {
+                                            putExtra(WebViewActivity.EXTRA_TITLE, option.title)
+                                            putExtra(WebViewActivity.EXTRA_URL, url)
+                                        }
+                                        context.startActivity(intent)
+                                    } else {
+                                        context.startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url)))
+                                    }
                                 }
                             }
                         )
@@ -656,10 +724,10 @@ private fun normalizeText(value: String): String {
 private data class FestivalMonthGroup(
     val key: String,
     val label: String,
-    val festivals: List<com.ruben.festtime.data.FestivalDefinition>
+    val festivals: List<FestivalDefinition>
 )
 
-private fun buildFestivalMonthGroups(festivals: List<com.ruben.festtime.data.FestivalDefinition>): List<FestivalMonthGroup> {
+private fun buildFestivalMonthGroups(festivals: List<FestivalDefinition>): List<FestivalMonthGroup> {
     val grouped = festivals.groupBy { festival ->
         festivalStartDate(festival)?.let { YearMonth.from(it) }
     }
@@ -692,10 +760,17 @@ private fun buildFestivalMonthGroups(festivals: List<com.ruben.festtime.data.Fes
     )
 }
 
-private fun festivalStartDate(festival: com.ruben.festtime.data.FestivalDefinition): LocalDate? {
+private fun festivalStartDate(festival: FestivalDefinition): LocalDate? {
     return festival.days
         .mapNotNull { day -> day.calendarDate?.let { runCatching { LocalDate.parse(it) }.getOrNull() } }
         .minOrNull()
+}
+
+private fun shouldOpenInApp(rawTitle: String): Boolean {
+    return when (normalizeText(rawTitle)) {
+        "web oficial", "entradas" -> true
+        else -> false
+    }
 }
 
 private fun parseHex(raw: String?): Color {

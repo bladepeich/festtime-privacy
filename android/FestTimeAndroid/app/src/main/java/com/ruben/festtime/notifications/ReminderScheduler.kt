@@ -4,6 +4,7 @@ import android.app.AlarmManager
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
+import android.os.Build
 import com.ruben.festtime.data.FestivalBundle
 import java.time.LocalDate
 import java.time.LocalDateTime
@@ -88,6 +89,24 @@ class ReminderScheduler(private val context: Context) {
             .atZone(ZoneId.systemDefault())
             .toInstant()
             .toEpochMilli()
+
+        val supportsExact = Build.VERSION.SDK_INT < Build.VERSION_CODES.S || alarmManager.canScheduleExactAlarms()
+        if (supportsExact) {
+            runCatching {
+                alarmManager.setExactAndAllowWhileIdle(
+                    AlarmManager.RTC_WAKEUP,
+                    triggerAtMillis,
+                    pendingIntent
+                )
+            }.onFailure {
+                alarmManager.setAndAllowWhileIdle(
+                    AlarmManager.RTC_WAKEUP,
+                    triggerAtMillis,
+                    pendingIntent
+                )
+            }
+            return
+        }
 
         alarmManager.setAndAllowWhileIdle(
             AlarmManager.RTC_WAKEUP,
