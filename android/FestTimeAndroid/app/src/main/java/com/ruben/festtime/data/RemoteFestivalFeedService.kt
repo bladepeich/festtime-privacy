@@ -6,6 +6,7 @@ import java.net.HttpURLConnection
 import java.net.URL
 import java.net.URLEncoder
 import java.nio.charset.StandardCharsets
+import java.util.regex.Pattern
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
@@ -87,7 +88,8 @@ class RemoteFestivalFeedService(private val context: Context) {
     }
 
     private fun fetchRemoteFeed(url: String): RemoteFeedPayload {
-        val requestURL = withCacheBusting(url)
+        val resolvedURL = resolveGitHubRawURLToCommitIfNeeded(url)
+        val requestURL = withCacheBusting(resolvedURL)
         val connection = (URL(requestURL).openConnection() as HttpURLConnection).apply {
             requestMethod = "GET"
             connectTimeout = 12_000
@@ -106,6 +108,49 @@ class RemoteFestivalFeedService(private val context: Context) {
         }
     }
 
+    private fun resolveGitHubRawURLToCommitIfNeeded(url: String): String {
+        val match = RAW_GITHUB_PATTERN.matcher(url)
+        if (!match.matches()) {
+            return url
+        }
+
+        val owner = match.group(1)
+        val repo = match.group(2)
+        val branch = match.group(3)
+        val filePath = match.group(4)
+
+        if (owner.isNullOrBlank() || repo.isNullOrBlank() || branch.isNullOrBlank() || filePath.isNullOrBlank()) {
+            return url
+        }
+
+        val apiURL = "https://api.github.com/repos/$owner/$repo/commits/$branch"
+        val connection = (URL(apiURL).openConnection() as HttpURLConnection).apply {
+            requestMethod = "GET"
+            connectTimeout = 10_000
+            readTimeout = 10_000
+            useCaches = false
+            setRequestProperty("Accept", "application/vnd.github+json")
+            setRequestProperty("Cache-Control", "no-cache")
+            setRequestProperty("Pragma", "no-cache")
+        }
+
+        return try {
+            val body = connection.inputStream.bufferedReader().use { it.readText() }
+            val sha = SHA_PATTERN.matcher(body).run {
+                if (find()) group(1) else null
+            }
+            if (sha.isNullOrBlank()) {
+                url
+            } else {
+                "https://raw.githubusercontent.com/$owner/$repo/$sha/$filePath"
+            }
+        } catch (_: Exception) {
+            url
+        } finally {
+            connection.disconnect()
+        }
+    }
+
     private fun withCacheBusting(url: String): String {
         val separator = if (url.contains("?")) "&" else "?"
         val ts = URLEncoder.encode(System.currentTimeMillis().toString(), StandardCharsets.UTF_8.toString())
@@ -114,6 +159,8 @@ class RemoteFestivalFeedService(private val context: Context) {
 
     companion object {
         const val DEFAULT_REMOTE_FEED_URL = "https://raw.githubusercontent.com/bladepeich/festtime-privacy/main/appstore/remote-festivals-feed.test-additions.json"
+        private val RAW_GITHUB_PATTERN = Pattern.compile("https://raw\\.githubusercontent\\.com/([^/]+)/([^/]+)/([^/]+)/(.+)")
+        private val SHA_PATTERN = Pattern.compile("\"sha\"\\s*:\\s*\"([a-fA-F0-9]{40})\"")
     }
 }
 
