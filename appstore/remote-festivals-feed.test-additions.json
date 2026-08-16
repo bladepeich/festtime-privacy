@@ -4799,14 +4799,6 @@
           "escenario": "Escenario Aurora"
         },
         {
-          "id": "neon-valley-2027-vie-2130-analog-hearts",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "21:30",
-          "artista": "Analog Hearts",
-          "escenario": "Escenario Aurora"
-        },
-        {
           "id": "neon-valley-2027-vie-2345-laser-club",
           "dia": "viernes",
           "turno": "noche",
@@ -4821,14 +4813,6 @@
           "hora": "18:30",
           "artista": "Solar Bloom",
           "escenario": "Escenario Prisma"
-        },
-        {
-          "id": "neon-valley-2027-sab-2100-midnight-radio",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "21:00",
-          "artista": "Midnight Radio",
-          "escenario": "Escenario Aurora"
         },
         {
           "id": "neon-valley-2027-sab-0105-vector-noise",
@@ -4917,6 +4901,30 @@
           "hora": "19:45",
           "artista": "Surf Cosmos",
           "escenario": "Escenario Faro"
+        },
+        {
+          "id": "costa-sonica-2027-dom-2100-oleaje-electrico",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "21:00",
+          "artista": "Oleaje Electrico",
+          "escenario": "Escenario Sal"
+        },
+        {
+          "id": "costa-sonica-2027-dom-2230-norte-sur",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "22:30",
+          "artista": "Norte Sur",
+          "escenario": "Escenario Faro"
+        },
+        {
+          "id": "costa-sonica-2027-dom-2355-mareas-rojas",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "23:55",
+          "artista": "Mareas Rojas",
+          "escenario": "Escenario Sal"
         }
       ]
     }

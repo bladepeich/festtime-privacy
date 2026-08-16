@@ -1,0 +1,103 @@
+{
+  "festival": {
+    "id": "costa-sonica-2027",
+    "name": "Costa Sonica",
+    "year": 2027,
+    "days": [
+      {
+        "id": "domingo",
+        "displayName": "Dom 16",
+        "calendarDate": "2027-05-16"
+      }
+    ],
+    "defaultDayID": "domingo",
+    "defaultShift": "dia",
+    "forcedShiftByDay": {
+      "domingo": "dia"
+    },
+    "favoriteIDAliases": {},
+    "menuOptions": [
+      {
+        "title": "Web oficial",
+        "url": "https://example.com/costa-sonica",
+        "systemImage": "safari"
+      },
+      {
+        "title": "Entradas",
+        "url": "https://example.com/costa-sonica/tickets",
+        "systemImage": "ticket"
+      },
+      {
+        "title": "Ubicacion recinto",
+        "url": "https://www.google.com/maps/search/?api=1&query=costa+sonica",
+        "systemImage": "location"
+      }
+    ],
+    "regionGeoJSONFile": "costa-sonica-2027-region",
+    "eventsFile": "costa-sonica-2027-events",
+    "stageColorsFile": "costa-sonica-2027-stage-colors"
+  },
+  "stageColors": {
+    "Escenario Marea": "#0891B2",
+    "Escenario Faro": "#9333EA",
+    "Escenario Sal": "#DC2626"
+  },
+  "events": [
+    {
+      "id": "costa-sonica-2027-dom-1200-mar-de-fondo",
+      "dia": "domingo",
+      "turno": "dia",
+      "hora": "12:00",
+      "artista": "Mar de Fondo",
+      "escenario": "Escenario Marea"
+    },
+    {
+      "id": "costa-sonica-2027-dom-1415-la-brisa",
+      "dia": "domingo",
+      "turno": "dia",
+      "hora": "14:15",
+      "artista": "La Brisa",
+      "escenario": "Escenario Faro"
+    },
+    {
+      "id": "costa-sonica-2027-dom-1700-atlantida-band",
+      "dia": "domingo",
+      "turno": "dia",
+      "hora": "17:00",
+      "artista": "Atlantida Band",
+      "escenario": "Escenario Marea"
+    },
+    {
+      "id": "costa-sonica-2027-dom-1945-surf-cosmos",
+      "dia": "domingo",
+      "turno": "dia",
+      "hora": "19:45",
+      "artista": "Surf Cosmos",
+      "escenario": "Escenario Faro"
+    },
+    {
+      "id": "costa-sonica-2027-dom-2100-oleaje-electrico",
+      "dia": "domingo",
+      "turno": "dia",
+      "hora": "21:00",
+      "artista": "Oleaje Electrico",
+      "escenario": "Escenario Sal"
+    },
+    {
+      "id": "costa-sonica-2027-dom-2230-norte-sur",
+      "dia": "domingo",
+      "turno": "dia",
+      "hora": "22:30",
+      "artista": "Norte Sur",
+      "escenario": "Escenario Faro"
+    },
+    {
+      "id": "costa-sonica-2027-dom-2355-mareas-rojas",
+      "dia": "domingo",
+      "turno": "dia",
+      "hora": "23:55",
+      "artista": "Mareas Rojas",
+      "escenario": "Escenario Sal"
+    }
+  ]
+}

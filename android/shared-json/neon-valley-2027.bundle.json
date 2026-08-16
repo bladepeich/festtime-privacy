@@ -1,0 +1,85 @@
+{
+  "festival": {
+    "id": "neon-valley-2027",
+    "name": "Neon Valley Fest",
+    "year": 2027,
+    "days": [
+      {
+        "id": "viernes",
+        "displayName": "Vie 09",
+        "calendarDate": "2027-07-09"
+      },
+      {
+        "id": "sabado",
+        "displayName": "Sab 10",
+        "calendarDate": "2027-07-10"
+      }
+    ],
+    "defaultDayID": "viernes",
+    "defaultShift": "noche",
+    "forcedShiftByDay": {
+      "viernes": "noche",
+      "sabado": "noche"
+    },
+    "favoriteIDAliases": {},
+    "menuOptions": [
+      {
+        "title": "Web oficial",
+        "url": "https://example.com/neon-valley-fest",
+        "systemImage": "safari"
+      },
+      {
+        "title": "Entradas",
+        "url": "https://example.com/neon-valley-fest/tickets",
+        "systemImage": "ticket"
+      },
+      {
+        "title": "Ubicacion recinto",
+        "url": "https://www.google.com/maps/search/?api=1&query=neon+valley+fest",
+        "systemImage": "location"
+      }
+    ],
+    "regionGeoJSONFile": "neon-valley-2027-region",
+    "eventsFile": "neon-valley-2027-events",
+    "stageColorsFile": "neon-valley-2027-stage-colors"
+  },
+  "stageColors": {
+    "Escenario Aurora": "#0B6E4F",
+    "Escenario Prisma": "#1D4ED8",
+    "Escenario Cometa": "#D97706"
+  },
+  "events": [
+    {
+      "id": "neon-valley-2027-vie-1900-neon-foxes",
+      "dia": "viernes",
+      "turno": "noche",
+      "hora": "19:00",
+      "artista": "Neon Foxes",
+      "escenario": "Escenario Aurora"
+    },
+    {
+      "id": "neon-valley-2027-vie-2345-laser-club",
+      "dia": "viernes",
+      "turno": "noche",
+      "hora": "23:45",
+      "artista": "Laser Club",
+      "escenario": "Escenario Prisma"
+    },
+    {
+      "id": "neon-valley-2027-sab-1830-solar-bloom",
+      "dia": "sabado",
+      "turno": "noche",
+      "hora": "18:30",
+      "artista": "Solar Bloom",
+      "escenario": "Escenario Prisma"
+    },
+    {
+      "id": "neon-valley-2027-sab-0105-vector-noise",
+      "dia": "sabado",
+      "turno": "noche",
+      "hora": "01:05",
+      "artista": "Vector Noise",
+      "escenario": "Escenario Prisma"
+    }
+  ]
+}
