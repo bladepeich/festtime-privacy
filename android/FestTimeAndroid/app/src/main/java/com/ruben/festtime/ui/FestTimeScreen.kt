@@ -162,7 +162,7 @@ fun FestTimeScreen(viewModel: FestTimeViewModel) {
                         )
                     }
 
-                    items(section.events, key = { it.id }) { event ->
+                    items(section.events, key = { favoriteEventListKey(it) }) { event ->
                         EventRow(
                             event = event,
                             isFavorite = state.favorites.contains(event.id),
@@ -172,7 +172,7 @@ fun FestTimeScreen(viewModel: FestTimeViewModel) {
                     }
                 }
             } else {
-                items(state.filteredEvents, key = { it.id }) { event ->
+                items(state.filteredEvents, key = { favoriteEventListKey(it) }) { event ->
                     EventRow(
                         event = event,
                         isFavorite = state.favorites.contains(event.id),
@@ -815,6 +815,11 @@ private fun buildFavoriteSections(state: FestTimeUiState): List<FavoriteDaySecti
             )
         }
     }
+}
+
+private fun favoriteEventListKey(event: FestivalEvent): String {
+    return listOf(event.id, event.dia, event.turno.name, event.hora, event.escenario)
+        .joinToString(separator = "|")
 }
 
 private fun buildFestivalMonthGroups(festivals: List<FestivalDefinition>): List<FestivalMonthGroup> {
