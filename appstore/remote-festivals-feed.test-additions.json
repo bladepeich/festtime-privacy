@@ -786,7 +786,7 @@
           "dia": "miercoles",
           "turno": "noche",
           "hora": "19:00",
-          "artista": "Nat Simons",
+          "artista": "Nat Simons (TEST REMOTO)",
           "escenario": "Escenario Aranda de Duero"
         },
         {
@@ -2252,6 +2252,14 @@
           "hora": "18:00",
           "artista": "She's A Star DJ y Amigos",
           "escenario": "Escenario Le Club / Café Central"
+        },
+        {
+          "id": "sonorama-test-001",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "18:35",
+          "artista": "Banda Prueba Remota",
+          "escenario": "Escenario Aranda de Duero"
         }
       ]
     },
