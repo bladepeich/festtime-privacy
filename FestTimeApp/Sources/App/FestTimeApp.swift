@@ -1,13 +1,16 @@
 import SwiftUI
 import UserNotifications
 import UIKit
+#if canImport(GoogleMobileAds)
 import GoogleMobileAds
+#endif
 
 protocol AppOpenAdManagerDelegate: AnyObject {
     /// Called when the app-open ad lifecycle completes (dismissed or failed to present).
     func appOpenAdManagerAdDidComplete(_ appOpenAdManager: AppOpenAdManager)
 }
 
+#if canImport(GoogleMobileAds)
 @MainActor
 final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
     static let shared = AppOpenAdManager()
@@ -142,6 +145,24 @@ final class AppOpenAdManager: NSObject, FullScreenContentDelegate {
         }
     }
 }
+#else
+@MainActor
+final class AppOpenAdManager {
+    static let shared = AppOpenAdManager()
+
+    weak var appOpenAdManagerDelegate: AppOpenAdManagerDelegate?
+
+    private init() {}
+
+    func configure() {}
+
+    func handleAppDidBecomeActive() {}
+
+    func handleAppWillResignActive() {}
+
+    func handleAppDidEnterBackground() {}
+}
+#endif
 
 final class NotificationDelegateProxy: NSObject, UIApplicationDelegate, UNUserNotificationCenterDelegate {
     func application(
