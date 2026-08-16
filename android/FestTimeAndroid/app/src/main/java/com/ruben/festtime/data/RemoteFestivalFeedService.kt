@@ -24,6 +24,33 @@ class RemoteFestivalFeedService(private val context: Context) {
     fun syncFromRemote(url: String = DEFAULT_REMOTE_FEED_URL): Int {
         val payload = fetchRemoteFeed(url)
         val incomingFestivalIds = payload.festivals.map { it.festival.id }.toSet()
+        val existingBundleFiles = cacheDir.listFiles().orEmpty().filter { it.name.endsWith(".bundle.json") }
+        val existingFestivalIds = existingBundleFiles.map { it.name.removeSuffix(".bundle.json") }.toSet()
+
+        var updatedOrInserted = 0
+        payload.festivals.forEach { remoteFestival ->
+            val incomingBundle = FestivalBundle(
+                festival = remoteFestival.festival,
+                stageColors = remoteFestival.stageColors,
+                events = remoteFestival.events
+            )
+
+            val existingFile = File(cacheDir, "${remoteFestival.festival.id}.bundle.json")
+            val hasChanged = if (!existingFile.exists()) {
+                true
+            } else {
+                val previous = runCatching {
+                    json.decodeFromString<FestivalBundle>(existingFile.readText())
+                }.getOrNull()
+                previous != incomingBundle
+            }
+
+            if (hasChanged) {
+                updatedOrInserted += 1
+            }
+        }
+
+        val removedFestivals = existingFestivalIds.subtract(incomingFestivalIds).size
 
         if (payload.fullReplace || payload.festivals.isEmpty()) {
             cacheDir.listFiles()?.forEach { file ->
@@ -56,7 +83,7 @@ class RemoteFestivalFeedService(private val context: Context) {
             File(cacheDir, "${remoteFestival.festival.id}.bundle.json").writeText(json.encodeToString(bundle))
         }
 
-        return payload.festivals.size
+        return updatedOrInserted + removedFestivals
     }
 
     private fun fetchRemoteFeed(url: String): RemoteFeedPayload {
