@@ -127,6 +127,16 @@ fun FestTimeScreen(viewModel: FestTimeViewModel) {
             )
         }
 
+        if (state.infoMessage != null) {
+            Text(
+                text = state.infoMessage ?: "",
+                color = Color(0xFF0B6E4F),
+                style = MaterialTheme.typography.bodyMedium,
+                fontWeight = FontWeight.SemiBold,
+                modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
+            )
+        }
+
         LazyColumn(
             modifier = Modifier.fillMaxSize(),
             contentPadding = PaddingValues(top = 10.dp, bottom = 16.dp),

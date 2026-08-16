@@ -31,6 +31,7 @@ data class FestTimeUiState(
     val favorites: Set<String> = emptySet(),
     val alertsEnabled: Boolean = false,
     val isRefreshingFestivals: Boolean = false,
+    val infoMessage: String? = null,
     val errorMessage: String? = null
 ) {
     val availableStages: List<String>
@@ -129,18 +130,52 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
             }
 
             val selectedFestivalId = _uiState.value.selectedFestivalId
-            _uiState.update { it.copy(isRefreshingFestivals = true, errorMessage = null) }
+            _uiState.update { it.copy(isRefreshingFestivals = true, infoMessage = null, errorMessage = null) }
 
             runCatching {
                 withContext(Dispatchers.IO) { remoteFeedService.syncFromRemote() }
-            }.onSuccess {
+            }.onSuccess { syncedFestivals ->
                 loadCatalogFromRepository(showErrors = true)
+
                 if (selectedFestivalId.isNotBlank() && _uiState.value.festivals.any { it.id == selectedFestivalId }) {
-                    selectFestival(selectedFestivalId)
+                    runCatching {
+                        withContext(Dispatchers.IO) {
+                            val bundle = repository.loadBundle(selectedFestivalId)
+                            val favoriteSet = store.getFavorites(selectedFestivalId)
+                            val firstDay = bundle.festival.defaultDayId
+                            val firstShift = bundle.festival.forcedShiftByDay[firstDay] ?: bundle.festival.defaultShift
+                            Triple(bundle, favoriteSet, firstShift to firstDay)
+                        }
+                    }.onSuccess { (bundle, favoriteSet, dayShift) ->
+                        val (firstShift, firstDay) = dayShift
+                        _uiState.update {
+                            it.copy(
+                                selectedFestivalId = selectedFestivalId,
+                                currentBundle = bundle,
+                                selectedDayId = firstDay,
+                                selectedShift = firstShift,
+                                selectedStage = "todos",
+                                searchText = "",
+                                showFavoritesOnly = false,
+                                favorites = favoriteSet,
+                                alertsEnabled = store.areAlertsEnabled(selectedFestivalId),
+                                infoMessage = "Actualizados $syncedFestivals festivales",
+                                errorMessage = null
+                            )
+                        }
+                    }.onFailure { error ->
+                        _uiState.update {
+                            it.copy(errorMessage = error.message ?: "Se actualizo el catalogo, pero no se pudo recargar el festival")
+                        }
+                    }
+                } else {
+                    _uiState.update {
+                        it.copy(infoMessage = "Actualizados $syncedFestivals festivales", errorMessage = null)
+                    }
                 }
             }.onFailure { error ->
                 _uiState.update {
-                    it.copy(errorMessage = error.message ?: "No se pudo actualizar el catalogo remoto")
+                    it.copy(infoMessage = null, errorMessage = error.message ?: "No se pudo actualizar el catalogo remoto")
                 }
             }.also {
                 _uiState.update { it.copy(isRefreshingFestivals = false) }
@@ -167,6 +202,7 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
                         showFavoritesOnly = false,
                         favorites = favoriteSet,
                         alertsEnabled = store.areAlertsEnabled(festivalId),
+                        infoMessage = null,
                         errorMessage = null
                     )
                 }
