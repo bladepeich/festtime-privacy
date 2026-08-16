@@ -204,20 +204,27 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
     }
 
     fun toggleFavorite(eventId: String) {
-        val festivalId = _uiState.value.selectedFestivalId
+        val state = _uiState.value
+        val festivalId = state.selectedFestivalId
         if (festivalId.isBlank()) {
             return
         }
 
-        val updated = _uiState.value.favorites.toMutableSet().apply {
+        val updated = state.favorites.toMutableSet().apply {
             if (contains(eventId)) remove(eventId) else add(eventId)
         }
 
-        store.saveFavorites(festivalId, updated)
         _uiState.update { it.copy(favorites = updated) }
 
-        if (_uiState.value.alertsEnabled) {
-            rescheduleReminders()
+        viewModelScope.launch(Dispatchers.IO) {
+            store.saveFavorites(festivalId, updated)
+        }
+
+        val currentBundle = state.currentBundle
+        if (state.alertsEnabled && currentBundle != null) {
+            viewModelScope.launch(Dispatchers.IO) {
+                reminderScheduler.scheduleForFestival(currentBundle, updated)
+            }
         }
     }
 
@@ -225,15 +232,22 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
         val festivalId = _uiState.value.selectedFestivalId
         val bundle = _uiState.value.currentBundle ?: return
 
-        store.setAlertsEnabled(festivalId, enabled)
+        viewModelScope.launch(Dispatchers.IO) {
+            store.setAlertsEnabled(festivalId, enabled)
+        }
         _uiState.update { it.copy(alertsEnabled = enabled) }
 
         if (!enabled) {
-            reminderScheduler.cancelForFestival(festivalId)
+            viewModelScope.launch(Dispatchers.IO) {
+                reminderScheduler.cancelForFestival(festivalId)
+            }
             return
         }
 
-        reminderScheduler.scheduleForFestival(bundle, _uiState.value.favorites)
+        val favorites = _uiState.value.favorites
+        viewModelScope.launch(Dispatchers.IO) {
+            reminderScheduler.scheduleForFestival(bundle, favorites)
+        }
     }
 
     fun rescheduleReminders() {
@@ -242,7 +256,9 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
         if (!state.alertsEnabled) {
             return
         }
-        reminderScheduler.scheduleForFestival(bundle, state.favorites)
+        viewModelScope.launch(Dispatchers.IO) {
+            reminderScheduler.scheduleForFestival(bundle, state.favorites)
+        }
     }
 
     private fun festivalSortDate(festival: FestivalDefinition): LocalDate {
