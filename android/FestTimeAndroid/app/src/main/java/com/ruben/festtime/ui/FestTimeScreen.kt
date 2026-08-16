@@ -736,6 +736,8 @@ private fun EventRow(
     onToggleFavorite: () -> Unit
 ) {
     val stripeColor = parseHex(stageColorHex)
+    val hasValidSchedule = event.sortableMinutes != Int.MAX_VALUE
+    val scheduleLabel = if (hasValidSchedule) "${event.hora} h" else "Horarios no disponibles"
 
     Card(
         modifier = Modifier
@@ -761,7 +763,7 @@ private fun EventRow(
                 )
 
                 Column {
-                    Text("${event.hora} h", fontWeight = FontWeight.SemiBold)
+                    Text(scheduleLabel, fontWeight = FontWeight.SemiBold)
                     Text(
                         text = event.artista,
                         style = MaterialTheme.typography.titleMedium,
