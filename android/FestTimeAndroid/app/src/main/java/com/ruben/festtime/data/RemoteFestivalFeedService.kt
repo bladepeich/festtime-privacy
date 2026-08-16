@@ -4,6 +4,8 @@ import android.content.Context
 import java.io.File
 import java.net.HttpURLConnection
 import java.net.URL
+import java.net.URLEncoder
+import java.nio.charset.StandardCharsets
 import kotlinx.serialization.Serializable
 import kotlinx.serialization.encodeToString
 import kotlinx.serialization.json.Json
@@ -49,11 +51,15 @@ class RemoteFestivalFeedService(private val context: Context) {
     }
 
     private fun fetchRemoteFeed(url: String): RemoteFeedPayload {
-        val connection = (URL(url).openConnection() as HttpURLConnection).apply {
+        val requestURL = withCacheBusting(url)
+        val connection = (URL(requestURL).openConnection() as HttpURLConnection).apply {
             requestMethod = "GET"
             connectTimeout = 12_000
             readTimeout = 12_000
+            useCaches = false
             setRequestProperty("Accept", "application/json")
+            setRequestProperty("Cache-Control", "no-cache, no-store, max-age=0")
+            setRequestProperty("Pragma", "no-cache")
         }
 
         return try {
@@ -62,6 +68,12 @@ class RemoteFestivalFeedService(private val context: Context) {
         } finally {
             connection.disconnect()
         }
+    }
+
+    private fun withCacheBusting(url: String): String {
+        val separator = if (url.contains("?")) "&" else "?"
+        val ts = URLEncoder.encode(System.currentTimeMillis().toString(), StandardCharsets.UTF_8.toString())
+        return "$url${separator}ft_sync_ts=$ts"
     }
 
     companion object {
