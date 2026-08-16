@@ -23,7 +23,7 @@ struct RemoteFestivalFeedConfiguration {
     static let userDefaultsURLKey = "festtime.remoteFeedURL"
 
     // Public default feed URL used when no custom URL is configured in UserDefaults.
-    static let fallbackURLString = "https://raw.githubusercontent.com/bladepeich/festtime-privacy/main/appstore/remote-festivals-feed.test-additions.json"
+    static let fallbackURLString = "https://raw.githubusercontent.com/bladepeich/festtime-privacy/main/appstore/remote-festivals-feed.json"
 
     static func resolvedURL(defaults: UserDefaults = .standard) -> URL? {
         if let custom = defaults.string(forKey: userDefaultsURLKey)?.trimmingCharacters(in: .whitespacesAndNewlines),
