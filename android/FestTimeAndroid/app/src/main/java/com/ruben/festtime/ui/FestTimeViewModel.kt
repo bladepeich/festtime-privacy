@@ -143,46 +143,57 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
             _uiState.update { it.copy(isRefreshingFestivals = true, infoMessage = null, errorMessage = null) }
 
             runCatching {
-                withContext(Dispatchers.IO) { remoteFeedService.syncFromRemote() }
-            }.onSuccess { syncedFestivals ->
-                markRemoteSyncSuccess()
-                loadCatalogFromRepository(showErrors = true)
+                withContext(Dispatchers.IO) {
+                    val syncedFestivals = remoteFeedService.syncFromRemote()
+                    val festivals = repository.loadCatalog().sortedByDescending { festivalSortDate(it) }
+                    val keepSelection = selectedFestivalId.isNotBlank() && festivals.any { it.id == selectedFestivalId }
 
-                if (selectedFestivalId.isNotBlank() && _uiState.value.festivals.any { it.id == selectedFestivalId }) {
-                    runCatching {
-                        withContext(Dispatchers.IO) {
-                            val bundle = repository.loadBundle(selectedFestivalId)
-                            val favoriteSet = store.getFavorites(selectedFestivalId)
-                            val firstDay = bundle.festival.defaultDayId
-                            val firstShift = bundle.festival.forcedShiftByDay[firstDay] ?: bundle.festival.defaultShift
-                            Triple(bundle, favoriteSet, firstShift to firstDay)
-                        }
-                    }.onSuccess { (bundle, favoriteSet, dayShift) ->
-                        val (firstShift, firstDay) = dayShift
-                        _uiState.update {
-                            it.copy(
-                                selectedFestivalId = selectedFestivalId,
-                                currentBundle = bundle,
-                                selectedDayId = firstDay,
-                                selectedShift = firstShift,
-                                selectedStage = "todos",
-                                searchText = "",
-                                showFavoritesOnly = false,
-                                favorites = favoriteSet,
-                                alertsEnabled = store.areAlertsEnabled(selectedFestivalId),
-                                infoMessage = "Actualizados $syncedFestivals festivales",
-                                errorMessage = null
-                            )
-                        }
-                    }.onFailure { error ->
-                        _uiState.update {
-                            it.copy(errorMessage = error.message ?: "Se actualizo el catalogo, pero no se pudo recargar el festival")
-                        }
+                    if (!keepSelection) {
+                        return@withContext RefreshResult(
+                            syncedFestivals = syncedFestivals,
+                            festivals = festivals,
+                            selectedFestivalId = "",
+                            selectedBundle = null,
+                            favorites = emptySet(),
+                            alertsEnabled = false,
+                            selectedDayId = "",
+                            selectedShift = Shift.noche
+                        )
                     }
-                } else {
-                    _uiState.update {
-                        it.copy(infoMessage = "Actualizados $syncedFestivals festivales", errorMessage = null)
-                    }
+
+                    val bundle = repository.loadBundle(selectedFestivalId)
+                    val favorites = store.getFavorites(selectedFestivalId)
+                    val firstDay = bundle.festival.defaultDayId
+                    val firstShift = bundle.festival.forcedShiftByDay[firstDay] ?: bundle.festival.defaultShift
+
+                    RefreshResult(
+                        syncedFestivals = syncedFestivals,
+                        festivals = festivals,
+                        selectedFestivalId = selectedFestivalId,
+                        selectedBundle = bundle,
+                        favorites = favorites,
+                        alertsEnabled = store.areAlertsEnabled(selectedFestivalId),
+                        selectedDayId = firstDay,
+                        selectedShift = firstShift
+                    )
+                }
+            }.onSuccess { result ->
+                markRemoteSyncSuccess()
+                _uiState.update {
+                    it.copy(
+                        festivals = result.festivals,
+                        selectedFestivalId = result.selectedFestivalId,
+                        currentBundle = result.selectedBundle,
+                        selectedDayId = result.selectedDayId,
+                        selectedShift = result.selectedShift,
+                        selectedStage = "todos",
+                        searchText = "",
+                        showFavoritesOnly = false,
+                        favorites = result.favorites,
+                        alertsEnabled = result.alertsEnabled,
+                        infoMessage = "Actualizados ${result.syncedFestivals} festivales",
+                        errorMessage = null
+                    )
                 }
             }.onFailure { error ->
                 _uiState.update {
@@ -325,4 +336,15 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
         private const val RUNTIME_PREFS_NAME = "festtime_runtime"
         private const val LAST_REMOTE_SYNC_AT_KEY = "festtime.lastRemoteSyncAt"
     }
+
+    private data class RefreshResult(
+        val syncedFestivals: Int,
+        val festivals: List<FestivalDefinition>,
+        val selectedFestivalId: String,
+        val selectedBundle: FestivalBundle?,
+        val favorites: Set<String>,
+        val alertsEnabled: Boolean,
+        val selectedDayId: String,
+        val selectedShift: Shift
+    )
 }
