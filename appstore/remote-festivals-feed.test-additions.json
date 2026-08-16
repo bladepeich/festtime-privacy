@@ -4801,8 +4801,8 @@
           "id": "brisa-norte-2027-vie-2200-pleamar",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "22:00",
-          "artista": "Pleamar",
+          "hora": "22:20",
+          "artista": "Pleamar Deluxe",
           "escenario": "Escenario Costa"
         },
         {
@@ -4820,6 +4820,14 @@
           "hora": "23:50",
           "artista": "Luna Boreal",
           "escenario": "Escenario Costa"
+        },
+        {
+          "id": "brisa-norte-2027-sab-0110-constelacion-marina",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:10",
+          "artista": "Constelacion Marina",
+          "escenario": "Escenario Faro"
         }
       ]
     },
@@ -4885,11 +4893,19 @@
           "escenario": "Escenario Valle"
         },
         {
-          "id": "sierra-electrica-2027-dom-1830-nodo-norte",
+          "id": "sierra-electrica-2027-dom-1940-prisma-alta",
           "dia": "domingo",
           "turno": "dia",
-          "hora": "18:30",
-          "artista": "Nodo Norte",
+          "hora": "19:40",
+          "artista": "Prisma Alta",
+          "escenario": "Escenario Valle"
+        },
+        {
+          "id": "sierra-electrica-2027-dom-2110-voltaje-sur",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "21:10",
+          "artista": "Voltaje Sur",
           "escenario": "Escenario Pico"
         }
       ]
