@@ -85,7 +85,11 @@ fun FestTimeScreen(viewModel: FestTimeViewModel) {
     val state by viewModel.uiState.collectAsState()
 
     if (state.currentBundle == null || state.selectedFestivalId.isBlank()) {
-        WelcomeScreen(state = state, onSelectFestival = viewModel::selectFestival)
+        WelcomeScreen(
+            state = state,
+            onSelectFestival = viewModel::selectFestival,
+            onRefreshFestivals = viewModel::refreshFestivals
+        )
         return
     }
 
@@ -153,7 +157,8 @@ fun FestTimeScreen(viewModel: FestTimeViewModel) {
 @Composable
 private fun WelcomeScreen(
     state: FestTimeUiState,
-    onSelectFestival: (String) -> Unit
+    onSelectFestival: (String) -> Unit,
+    onRefreshFestivals: () -> Unit
 ) {
     val context = LocalContext.current
     val screenWidth = LocalConfiguration.current.screenWidthDp
@@ -199,6 +204,27 @@ private fun WelcomeScreen(
                 )
             ) {
                 Text("Seleccionar festival", fontWeight = FontWeight.Bold, style = MaterialTheme.typography.titleMedium)
+            }
+
+            Button(
+                onClick = onRefreshFestivals,
+                enabled = !state.isRefreshingFestivals,
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .height(50.dp),
+                shape = RoundedCornerShape(14.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = Color.White.copy(alpha = 0.94f),
+                    contentColor = Color.Black,
+                    disabledContainerColor = Color.White.copy(alpha = 0.7f),
+                    disabledContentColor = Color(0xFF6B7280)
+                )
+            ) {
+                Text(
+                    if (state.isRefreshingFestivals) "Actualizando festivales..." else "Actualizar festivales",
+                    fontWeight = FontWeight.Bold,
+                    style = MaterialTheme.typography.titleMedium
+                )
             }
 
             Text(
@@ -352,47 +378,22 @@ private fun TopControlsBar(
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Row(
-                verticalAlignment = Alignment.CenterVertically,
-                horizontalArrangement = Arrangement.spacedBy(8.dp)
+            Button(
+                onClick = onToggleFavorites,
+                modifier = Modifier.width(favoritesWidth),
+                shape = RoundedCornerShape(999.dp),
+                colors = ButtonDefaults.buttonColors(
+                    containerColor = if (state.showFavoritesOnly) Color(0xFFF6D74A) else Color.White,
+                    contentColor = Color.Black
+                ),
+                border = BorderStroke(1.dp, Color(0xFFE2E4E9)),
+                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp)
             ) {
-                Button(
-                    onClick = onToggleFavorites,
-                    modifier = Modifier.width(favoritesWidth),
-                    shape = RoundedCornerShape(999.dp),
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = if (state.showFavoritesOnly) Color(0xFFF6D74A) else Color.White,
-                        contentColor = Color.Black
-                    ),
-                    border = BorderStroke(1.dp, Color(0xFFE2E4E9)),
-                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp)
-                ) {
-                    Icon(
-                        imageVector = if (state.showFavoritesOnly) Icons.Filled.Star else Icons.Outlined.Star,
-                        contentDescription = null
-                    )
-                    Text("Favoritos", fontWeight = FontWeight.Bold, maxLines = 1)
-                }
-
-                Button(
-                    onClick = onRefreshFestivals,
-                    enabled = !state.isRefreshingFestivals,
-                    shape = RoundedCornerShape(999.dp),
-                    colors = ButtonDefaults.buttonColors(
-                        containerColor = Color.White,
-                        contentColor = Color.Black,
-                        disabledContainerColor = Color(0xFFF3F4F6),
-                        disabledContentColor = Color(0xFF9CA3AF)
-                    ),
-                    border = BorderStroke(1.dp, Color(0xFFE2E4E9)),
-                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp)
-                ) {
-                    Text(
-                        text = if (state.isRefreshingFestivals) "Actualizando..." else "Actualizar",
-                        fontWeight = FontWeight.Bold,
-                        maxLines = 1
-                    )
-                }
+                Icon(
+                    imageVector = if (state.showFavoritesOnly) Icons.Filled.Star else Icons.Outlined.Star,
+                    contentDescription = null
+                )
+                Text("Favoritos", fontWeight = FontWeight.Bold, maxLines = 1)
             }
 
             Box {
