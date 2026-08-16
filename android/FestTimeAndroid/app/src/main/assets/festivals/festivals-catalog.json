@@ -1,15 +1,94 @@
 {
   "festivals": [
     {
+      "id": "cooltural-fest-2026",
+      "name": "Cooltural Fest",
+      "year": 2026,
+      "days": [
+        {
+          "id": "jueves",
+          "displayName": "Jue 20",
+          "calendarDate": "2026-08-20"
+        },
+        {
+          "id": "viernes",
+          "displayName": "Vie 21",
+          "calendarDate": "2026-08-21"
+        },
+        {
+          "id": "sabado",
+          "displayName": "Sab 22",
+          "calendarDate": "2026-08-22"
+        },
+        {
+          "id": "domingo",
+          "displayName": "Dom 23",
+          "calendarDate": "2026-08-23"
+        },
+        {
+          "id": "clausura",
+          "displayName": "Sab 29",
+          "calendarDate": "2026-08-29"
+        }
+      ],
+      "defaultDayID": "jueves",
+      "defaultShift": "noche",
+      "forcedShiftByDay": {
+        "jueves": "noche",
+        "viernes": "noche",
+        "sabado": "noche",
+        "domingo": "noche",
+        "clausura": "dia"
+      },
+      "favoriteIDAliases": {},
+      "menuOptions": [
+        {
+          "title": "Web oficial",
+          "url": "https://coolturalfest.com/",
+          "systemImage": "safari"
+        },
+        {
+          "title": "Ubicacion recinto",
+          "url": "https://www.google.com/maps/search/?api=1&query=cooltural+fest",
+          "systemImage": "location"
+        },
+        {
+          "title": "Entradas",
+          "url": "https://coolturalfest.com/entradas",
+          "systemImage": "ticket"
+        }
+      ]
+    },
+    {
       "id": "sonorama-2026",
       "name": "Sonorama Ribera",
       "year": 2026,
       "days": [
-        { "id": "miercoles", "displayName": "Mie 5", "calendarDate": "2026-08-05" },
-        { "id": "jueves", "displayName": "Jue 6", "calendarDate": "2026-08-06" },
-        { "id": "viernes", "displayName": "Vie 7", "calendarDate": "2026-08-07" },
-        { "id": "sabado", "displayName": "Sab 8", "calendarDate": "2026-08-08" },
-        { "id": "domingo", "displayName": "Dom 9", "calendarDate": "2026-08-09" }
+        {
+          "id": "miercoles",
+          "displayName": "Mie 5",
+          "calendarDate": "2026-08-05"
+        },
+        {
+          "id": "jueves",
+          "displayName": "Jue 6",
+          "calendarDate": "2026-08-06"
+        },
+        {
+          "id": "viernes",
+          "displayName": "Vie 7",
+          "calendarDate": "2026-08-07"
+        },
+        {
+          "id": "sabado",
+          "displayName": "Sab 8",
+          "calendarDate": "2026-08-08"
+        },
+        {
+          "id": "domingo",
+          "displayName": "Dom 9",
+          "calendarDate": "2026-08-09"
+        }
       ],
       "defaultDayID": "miercoles",
       "defaultShift": "noche",
@@ -39,10 +118,26 @@
       "name": "Leyendas del Rock",
       "year": 2026,
       "days": [
-        { "id": "miercoles", "displayName": "Mie 05", "calendarDate": "2026-08-05" },
-        { "id": "jueves", "displayName": "Jue 06", "calendarDate": "2026-08-06" },
-        { "id": "viernes", "displayName": "Vie 07", "calendarDate": "2026-08-07" },
-        { "id": "sabado", "displayName": "Sab 08", "calendarDate": "2026-08-08" }
+        {
+          "id": "miercoles",
+          "displayName": "Mie 05",
+          "calendarDate": "2026-08-05"
+        },
+        {
+          "id": "jueves",
+          "displayName": "Jue 06",
+          "calendarDate": "2026-08-06"
+        },
+        {
+          "id": "viernes",
+          "displayName": "Vie 07",
+          "calendarDate": "2026-08-07"
+        },
+        {
+          "id": "sabado",
+          "displayName": "Sab 08",
+          "calendarDate": "2026-08-08"
+        }
       ],
       "defaultDayID": "miercoles",
       "defaultShift": "dia",
@@ -55,6 +150,16 @@
           "systemImage": "map"
         },
         {
+          "title": "Web oficial",
+          "url": "https://www.leyendasdelrockfestival.com",
+          "systemImage": "safari"
+        },
+        {
+          "title": "Entradas",
+          "url": "https://www.leyendasdelrockfestival.com/tickets/",
+          "systemImage": "ticket"
+        },
+        {
           "title": "Ubicacion recinto",
           "url": "https://www.google.com/maps/search/?api=1&query=leyendas+del+rock+villena",
           "systemImage": "location"
@@ -63,6 +168,307 @@
       "regionGeoJSONFile": "leyendas-del-rock-2026-region",
       "eventsFile": "leyendas-del-rock-2026-events",
       "stageColorsFile": "leyendas-del-rock-2026-stage-colors"
+    },
+    {
+      "id": "cosquin-rock-valladolid-2026",
+      "name": "Cosquin Rock Valladolid",
+      "year": 2026,
+      "days": [
+        {
+          "id": "viernes",
+          "displayName": "Vie 28",
+          "calendarDate": "2026-08-28"
+        },
+        {
+          "id": "sabado",
+          "displayName": "Sab 29",
+          "calendarDate": "2026-08-29"
+        },
+        {
+          "id": "domingo",
+          "displayName": "Dom 30",
+          "calendarDate": "2026-08-30"
+        }
+      ],
+      "defaultDayID": "viernes",
+      "defaultShift": "noche",
+      "forcedShiftByDay": {
+        "viernes": "noche",
+        "sabado": "noche",
+        "domingo": "noche"
+      },
+      "favoriteIDAliases": {},
+      "menuOptions": [
+        {
+          "title": "Web oficial",
+          "url": "https://cosquinrock.net/cresp/",
+          "systemImage": "safari"
+        },
+        {
+          "title": "Ubicacion recinto",
+          "url": "https://www.google.com/maps/search/?api=1&query=espacio+de+ocio+pinguinos+arena+valladolid",
+          "systemImage": "location"
+        },
+        {
+          "title": "Entradas",
+          "url": "https://cosquinrock.net/cresp/",
+          "systemImage": "ticket"
+        }
+      ]
+    },
+    {
+      "id": "jardin-delicias-sevilla-2026",
+      "name": "Jardin de las Delicias Sevilla",
+      "year": 2026,
+      "days": [
+        {
+          "id": "sabado",
+          "displayName": "Sab 17",
+          "calendarDate": "2026-10-17"
+        }
+      ],
+      "defaultDayID": "sabado",
+      "defaultShift": "noche",
+      "forcedShiftByDay": {
+        "sabado": "noche"
+      },
+      "favoriteIDAliases": {},
+      "menuOptions": [
+        {
+          "title": "Web oficial",
+          "url": "https://www.jardindeliciasfestival.com/sevilla/",
+          "systemImage": "safari"
+        },
+        {
+          "title": "Entradas",
+          "url": "https://www.jardindeliciasfestival.com/sevilla/comprar-entradas/",
+          "systemImage": "ticket"
+        },
+        {
+          "title": "Ubicacion recinto",
+          "url": "https://www.google.com/maps/search/?api=1&query=Centro+Andaluz+de+Arte+Contemporaneo",
+          "systemImage": "location"
+        }
+      ]
+    },
+    {
+      "id": "jardin-delicias-madrid-2026",
+      "name": "Jardin de las Delicias Madrid",
+      "year": 2026,
+      "days": [
+        {
+          "id": "viernes",
+          "displayName": "Vie 18",
+          "calendarDate": "2026-09-18"
+        },
+        {
+          "id": "sabado",
+          "displayName": "Sab 19",
+          "calendarDate": "2026-09-19"
+        }
+      ],
+      "defaultDayID": "viernes",
+      "defaultShift": "noche",
+      "forcedShiftByDay": {
+        "viernes": "noche",
+        "sabado": "noche"
+      },
+      "favoriteIDAliases": {},
+      "menuOptions": [
+        {
+          "title": "Web oficial",
+          "url": "https://www.jardindeliciasfestival.com/madrid/",
+          "systemImage": "safari"
+        },
+        {
+          "title": "Entradas",
+          "url": "https://www.jardindeliciasfestival.com/madrid/comprar-entradas/",
+          "systemImage": "ticket"
+        },
+        {
+          "title": "Ubicacion recinto",
+          "url": "https://www.google.com/maps/search/?api=1&query=Campo+de+Rugby+Cantarranas",
+          "systemImage": "location"
+        }
+      ]
+    },
+    {
+      "id": "gigante-festival-2026",
+      "legacyIDs": [],
+      "name": "Gigante Festival",
+      "year": 2026,
+      "days": [
+        {
+          "id": "jueves",
+          "displayName": "Jue 27",
+          "calendarDate": "2026-08-27"
+        },
+        {
+          "id": "viernes",
+          "displayName": "Vie 28",
+          "calendarDate": "2026-08-28"
+        },
+        {
+          "id": "sabado",
+          "displayName": "Sab 29",
+          "calendarDate": "2026-08-29"
+        }
+      ],
+      "defaultDayID": "jueves",
+      "defaultShift": "noche",
+      "forcedShiftByDay": {},
+      "favoriteIDAliases": {},
+      "menuOptions": [
+        {
+          "title": "Web oficial",
+          "url": "https://festivalgigante.com/",
+          "systemImage": "safari"
+        },
+        {
+          "title": "Entradas",
+          "url": "https://festivalgigante.com/abonos/",
+          "systemImage": "ticket"
+        },
+        {
+          "title": "Ubicacion recinto",
+          "url": "https://www.google.com/maps/search/?api=1&query=Explanada+del+Paseo+del+Ocio+de+Guadalajara",
+          "systemImage": "location"
+        }
+      ]
+    },
+    {
+      "id": "festival-de-la-luz-2026",
+      "legacyIDs": [],
+      "name": "Festival de la Luz",
+      "year": 2026,
+      "days": [
+        {
+          "id": "viernes",
+          "displayName": "Vie 28",
+          "calendarDate": "2026-08-28"
+        },
+        {
+          "id": "sabado",
+          "displayName": "Sab 29",
+          "calendarDate": "2026-08-29"
+        },
+        {
+          "id": "domingo",
+          "displayName": "Dom 30",
+          "calendarDate": "2026-08-30"
+        }
+      ],
+      "defaultDayID": "viernes",
+      "defaultShift": "noche",
+      "forcedShiftByDay": {},
+      "favoriteIDAliases": {},
+      "menuOptions": [
+        {
+          "title": "Web oficial",
+          "url": "https://festivaldelaluz.es/",
+          "systemImage": "safari"
+        },
+        {
+          "title": "Entradas",
+          "url": "https://www.enterticket.es/eventos/festival-de-la-luz-2026-283482",
+          "systemImage": "ticket"
+        },
+        {
+          "title": "Ubicacion recinto",
+          "url": "https://www.google.com/maps/search/?api=1&query=Festival+de+la+Luz",
+          "systemImage": "location"
+        }
+      ]
+    },
+    {
+      "id": "ebrovision-2026",
+      "legacyIDs": [],
+      "name": "Ebrovision",
+      "year": 2026,
+      "days": [
+        {
+          "id": "jueves",
+          "displayName": "Jue 03",
+          "calendarDate": "2026-09-03"
+        },
+        {
+          "id": "viernes",
+          "displayName": "Vie 04",
+          "calendarDate": "2026-09-04"
+        },
+        {
+          "id": "sabado",
+          "displayName": "Sab 05",
+          "calendarDate": "2026-09-05"
+        },
+        {
+          "id": "domingo",
+          "displayName": "Dom 06",
+          "calendarDate": "2026-09-06"
+        }
+      ],
+      "defaultDayID": "jueves",
+      "defaultShift": "noche",
+      "forcedShiftByDay": {},
+      "favoriteIDAliases": {},
+      "menuOptions": [
+        {
+          "title": "Web oficial",
+          "url": "https://ebrovision.com/",
+          "systemImage": "safari"
+        },
+        {
+          "title": "Entradas",
+          "url": "https://www.entradas.com/artist/festival-ebrovision/?affiliate=BVS",
+          "systemImage": "ticket"
+        },
+        {
+          "title": "Ubicacion recinto",
+          "url": "https://www.google.com/maps/search/?api=1&query=Festival+Ebrovision",
+          "systemImage": "location"
+        }
+      ]
+    },
+    {
+      "id": "coca-cola-music-experience-2026",
+      "legacyIDs": [
+        "ccme-2026"
+      ],
+      "name": "Coca-Cola Music Experience",
+      "year": 2026,
+      "days": [
+        {
+          "id": "viernes",
+          "displayName": "Vie 04",
+          "calendarDate": "2026-09-04"
+        },
+        {
+          "id": "sabado",
+          "displayName": "Sab 05",
+          "calendarDate": "2026-09-05"
+        }
+      ],
+      "defaultDayID": "viernes",
+      "defaultShift": "noche",
+      "forcedShiftByDay": {},
+      "favoriteIDAliases": {},
+      "menuOptions": [
+        {
+          "title": "Web oficial",
+          "url": "https://www.coca-cola.com/es/es/offerings/musica",
+          "systemImage": "safari"
+        },
+        {
+          "title": "Entradas",
+          "url": "https://www.coca-cola.com/es/es/offerings/musica/CCME/abonos-entradas",
+          "systemImage": "ticket"
+        },
+        {
+          "title": "Ubicacion recinto",
+          "url": "https://www.google.com/maps/search/?api=1&query=Iberdrola+Music",
+          "systemImage": "location"
+        }
+      ]
     }
   ]
 }

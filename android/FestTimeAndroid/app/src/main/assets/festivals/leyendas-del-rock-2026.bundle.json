@@ -37,6 +37,16 @@
         "systemImage": "map"
       },
       {
+        "title": "Web oficial",
+        "url": "https://www.leyendasdelrockfestival.com",
+        "systemImage": "safari"
+      },
+      {
+        "title": "Entradas",
+        "url": "https://www.leyendasdelrockfestival.com/tickets/",
+        "systemImage": "ticket"
+      },
+      {
         "title": "Ubicacion recinto",
         "url": "https://www.google.com/maps/search/?api=1&query=leyendas+del+rock+villena",
         "systemImage": "location"
