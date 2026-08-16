@@ -1,87 +1,61 @@
-FestTime iOS (SwiftUI)
+FestTime (iOS + Android)
+
+Proyecto unico para mantener FestTime en ambas plataformas usando una sola fuente de datos de festivales.
 
 Compatibilidad
-- iOS 16.0 o superior
-- iPhone y iPad
+- iOS 16.0+
+- Android 8.0+ (API 26)
 
-Objetivo
-- App iOS preparada para multiples festivales.
-- Cada festival se define por metadatos, eventos y colores de escenarios en JSON.
-- Incluye todas las funciones del HTML original: dias, turno dia/noche, filtro por escenario, buscador, favoritos y vista de favoritos agrupada por dia.
-- Incluye avisos locales con alarma para favoritos a 15, 10 y 5 minutos antes.
+Arquitectura del repo
+- iOS app nativa: FestTimeApp + FestTime.xcodeproj
+- Android app nativa: android/FestTimeAndroid
+- Fuente canonica de datos: FestTimeApp/Resources/Festivals
+- Salida Android compartida: android/shared-json
+- Assets Android finales: android/FestTimeAndroid/app/src/main/assets/festivals
 
-Estructura
-- FestTimeApp/Sources/App: entrada de la app
-- FestTimeApp/Sources/Domain: modelos de dominio
-- FestTimeApp/Sources/Data: carga de recursos JSON
-- FestTimeApp/Sources/Features/Schedule: UI y estado de horarios
-- FestTimeApp/Sources/Features/Shared: utilidades de UI
-- FestTimeApp/Resources/Festivals: catalogo y datos de festivales
+Flujo unificado de datos
+1. Edita o anade festivales en FestTimeApp/Resources/Festivals.
+2. Ejecuta scripts/sync-shared-json.sh.
+3. El script:
+    - Actualiza android/shared-json/festivals-catalog.json desde festivals.json.
+    - Genera cada archivo android/shared-json/<festival-id>.bundle.json.
+    - Copia catalogo y bundles a android/FestTimeAndroid/app/src/main/assets/festivals.
+4. Compila iOS y Android con los mismos datos.
 
-Recursos actuales
-- festivals.json: catalogo multi-festival (ahora con Sonorama 2026)
-- sonorama-2026-events.json: 184 eventos
-- sonorama-2026-stage-colors.json: colores de escenario
+Comandos principales
+- Sincronizar datos compartidos:
+   - ./scripts/sync-shared-json.sh
+- Build iOS App Store:
+   - ./scripts/build-appstore.sh
+- Build Android debug (requiere gradle wrapper):
+   - ./scripts/build-android-debug.sh
 
-Como ejecutarlo en Xcode
-1. Crea un proyecto nuevo en Xcode:
-   - iOS App
-   - Nombre: FestTime
-   - Interface: SwiftUI
-   - Language: Swift
-2. Reemplaza los archivos Swift generados por los de FestTimeApp/Sources.
-3. Arrastra FestTimeApp/Resources/Festivals al target principal (Copy items if needed) y marca Target Membership.
-4. Ejecuta en simulador o dispositivo.
+iOS
+- Proyecto listo en FestTime.xcodeproj.
+- Ejecutar en Xcode con scheme FestTime.
 
-Escalar a muchos festivales
-- La alta de nuevos festivales es una tarea interna de desarrollo.
-- Los festivales nuevos se incluyen en cada nueva version de la app y llegan al usuario por actualizacion.
-- No existe alta manual desde la app final.
+Android
+- Proyecto listo en android/FestTimeAndroid.
+- Stack: Kotlin, Jetpack Compose, MVVM, Kotlinx Serialization.
+- Funciones clave implementadas:
+   - Seleccion de festival.
+   - Filtros por dia, turno y escenario.
+   - Busqueda por artista.
+   - Favoritos persistentes (EncryptedSharedPreferences con fallback).
+   - Avisos locales de favoritos a -15, -10 y -5 minutos.
+   - Reprogramacion de avisos tras reinicio o actualizacion.
 
-Flujo interno para anadir festivales (mantenimiento)
-1. Duplica los archivos JSON de ejemplo con nuevo id (por ejemplo, bbk-2027-events.json y bbk-2027-stage-colors.json).
-2. Agrega una entrada nueva en festivals.json con:
-   - id, name, year
-   - days (incluyendo calendarDate)
-   - defaultDayID y defaultShift
-   - forcedShiftByDay (opcional)
-   - eventsFile y stageColorsFile
-3. Publica una nueva version de la app con esos recursos incluidos en el bundle.
+Nota sobre gradle wrapper
+- En este entorno no hay comando global gradle instalado, por lo que no se pudo autogenerar gradle wrapper desde terminal.
+- Para dejar Android 100% compilable por script, genera wrapper una vez en android/FestTimeAndroid:
+   - gradle wrapper --gradle-version 8.7
 
-Formato de eventos
-Cada item debe seguir esta forma:
+Formato base de eventos
 {
-  "id": "unico",
-  "dia": "viernes",
-  "turno": "noche",
-  "hora": "23:10",
-  "artista": "Nombre Artista",
-  "escenario": "Escenario X"
+   "id": "unico",
+   "dia": "viernes",
+   "turno": "noche",
+   "hora": "23:10",
+   "artista": "Nombre Artista",
+   "escenario": "Escenario X"
 }
-
-Formato de dias en festivals.json
-{
-   "id": "viernes",
-   "displayName": "Vie 7",
-   "calendarDate": "2026-08-07"
-}
-
-Notas de persistencia
-- La app guarda en UserDefaults por festival:
-  - dia seleccionado
-  - turno seleccionado
-  - escenario seleccionado
-  - texto de busqueda
-  - favoritos
-   - avisos favoritos activados/desactivados
-- Los favoritos no se pierden al actualizar la app (si el usuario no desinstala).
-- Si en una version futura cambias el id de un festival o ids de eventos, puedes migrarlos con:
-   - legacyIDs en el festival
-   - favoriteIDAliases para mapear ids antiguos de eventos a ids nuevos
-
-Avisos de favoritos
-- Boton en cabecera: "Avisos ON/OFF".
-- Al activarlo, la app solicita permisos de notificaciones.
-- Se programan recordatorios para cada favorito futuro a -15, -10 y -5 minutos.
-- Cada aviso incluye sonido de alarma del sistema.
-- Si quitas o anades favoritos, los avisos se reprograman automaticamente.

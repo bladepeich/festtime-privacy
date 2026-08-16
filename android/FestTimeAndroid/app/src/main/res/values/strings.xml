@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">FestTime</string>
+    <string name="notification_channel_name">Recordatorios FestTime</string>
+    <string name="notification_channel_description">Avisos para conciertos favoritos</string>
+</resources>
