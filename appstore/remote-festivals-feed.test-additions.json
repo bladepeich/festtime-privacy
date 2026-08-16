@@ -4879,14 +4879,6 @@
           "escenario": "Escenario Marea"
         },
         {
-          "id": "costa-sonica-2027-dom-1415-la-brisa",
-          "dia": "domingo",
-          "turno": "dia",
-          "hora": "14:15",
-          "artista": "La Brisa",
-          "escenario": "Escenario Faro"
-        },
-        {
           "id": "costa-sonica-2027-dom-1700-atlantida-band",
           "dia": "domingo",
           "turno": "dia",
@@ -4924,6 +4916,14 @@
           "turno": "dia",
           "hora": "23:55",
           "artista": "Mareas Rojas",
+          "escenario": "Escenario Sal"
+        },
+        {
+          "id": "costa-sonica-2027-dom-1610-bruma-nova",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "16:10",
+          "artista": "Bruma Nova",
           "escenario": "Escenario Sal"
         }
       ]
