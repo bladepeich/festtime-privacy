@@ -74,7 +74,9 @@ import com.ruben.festtime.data.FestivalEvent
 import com.ruben.festtime.data.FestivalDefinition
 import com.ruben.festtime.data.FestivalMenuOption
 import com.ruben.festtime.data.Shift
+import java.time.Instant
 import java.time.LocalDate
+import java.time.ZoneId
 import java.time.YearMonth
 import java.time.format.DateTimeFormatter
 import java.util.Locale
@@ -136,6 +138,13 @@ fun FestTimeScreen(viewModel: FestTimeViewModel) {
                 modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
             )
         }
+
+        Text(
+            text = "Ultima actualizacion: ${formatLastRemoteSyncLabel(state.lastRemoteSyncAtMillis)}",
+            color = Color(0xFF6B7280),
+            style = MaterialTheme.typography.labelMedium,
+            modifier = Modifier.padding(horizontal = 12.dp, vertical = 4.dp)
+        )
 
         LazyColumn(
             modifier = Modifier.fillMaxSize(),
@@ -301,6 +310,13 @@ private fun WelcomeScreen(
             ) {
                 Text("Ir a la revista", fontWeight = FontWeight.Bold, style = MaterialTheme.typography.titleMedium)
             }
+
+            Text(
+                text = "Ultima actualizacion: ${formatLastRemoteSyncLabel(state.lastRemoteSyncAtMillis)}",
+                color = Color.White.copy(alpha = 0.9f),
+                style = MaterialTheme.typography.labelMedium,
+                fontWeight = FontWeight.SemiBold
+            )
         }
     }
 
@@ -830,6 +846,13 @@ private fun buildFavoriteSections(state: FestTimeUiState): List<FavoriteDaySecti
 private fun favoriteEventListKey(event: FestivalEvent): String {
     return listOf(event.id, event.dia, event.turno.name, event.hora, event.escenario)
         .joinToString(separator = "|")
+}
+
+private fun formatLastRemoteSyncLabel(timestampMillis: Long?): String {
+    val millis = timestampMillis ?: return "Aun sin sincronizar"
+    val formatter = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm", Locale("es", "ES"))
+    val zonedDateTime = Instant.ofEpochMilli(millis).atZone(ZoneId.systemDefault())
+    return zonedDateTime.format(formatter)
 }
 
 private fun buildFestivalMonthGroups(festivals: List<FestivalDefinition>): List<FestivalMonthGroup> {

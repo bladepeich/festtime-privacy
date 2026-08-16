@@ -1,6 +1,7 @@
 package com.ruben.festtime.ui
 
 import android.app.Application
+import android.content.Context
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.viewModelScope
 import com.ruben.festtime.data.FestivalBundle
@@ -31,6 +32,7 @@ data class FestTimeUiState(
     val favorites: Set<String> = emptySet(),
     val alertsEnabled: Boolean = false,
     val isRefreshingFestivals: Boolean = false,
+    val lastRemoteSyncAtMillis: Long? = null,
     val infoMessage: String? = null,
     val errorMessage: String? = null
 ) {
@@ -79,8 +81,15 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
     private val remoteFeedService = RemoteFestivalFeedService(application)
     private val store = FavoritesStore(application)
     private val reminderScheduler = ReminderScheduler(application)
+    private val runtimePrefs = application.getSharedPreferences(RUNTIME_PREFS_NAME, Context.MODE_PRIVATE)
 
-    private val _uiState = MutableStateFlow(FestTimeUiState())
+    private val _uiState = MutableStateFlow(
+        FestTimeUiState(
+            lastRemoteSyncAtMillis = runtimePrefs.takeIf { it.contains(LAST_REMOTE_SYNC_AT_KEY) }
+                ?.getLong(LAST_REMOTE_SYNC_AT_KEY, 0L)
+                ?.takeIf { it > 0L }
+        )
+    )
     val uiState: StateFlow<FestTimeUiState> = _uiState
 
     init {
@@ -119,6 +128,7 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
         runCatching {
             withContext(Dispatchers.IO) { remoteFeedService.syncFromRemote() }
         }.onSuccess {
+            markRemoteSyncSuccess()
             loadCatalogFromRepository(showErrors = false)
         }
     }
@@ -135,6 +145,7 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
             runCatching {
                 withContext(Dispatchers.IO) { remoteFeedService.syncFromRemote() }
             }.onSuccess { syncedFestivals ->
+                markRemoteSyncSuccess()
                 loadCatalogFromRepository(showErrors = true)
 
                 if (selectedFestivalId.isNotBlank() && _uiState.value.festivals.any { it.id == selectedFestivalId }) {
@@ -302,5 +313,16 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
             .mapNotNull { day -> day.calendarDate?.let { runCatching { LocalDate.parse(it) }.getOrNull() } }
             .minOrNull()
             ?: LocalDate.of(festival.year, 1, 1)
+    }
+
+    private fun markRemoteSyncSuccess() {
+        val now = System.currentTimeMillis()
+        runtimePrefs.edit().putLong(LAST_REMOTE_SYNC_AT_KEY, now).apply()
+        _uiState.update { it.copy(lastRemoteSyncAtMillis = now) }
+    }
+
+    companion object {
+        private const val RUNTIME_PREFS_NAME = "festtime_runtime"
+        private const val LAST_REMOTE_SYNC_AT_KEY = "festtime.lastRemoteSyncAt"
     }
 }
