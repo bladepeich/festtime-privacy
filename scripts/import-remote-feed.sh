@@ -2,7 +2,7 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-FEED_URL="${1:-https://raw.githubusercontent.com/bladepeich/festtime-privacy/main/appstore/remote-festivals-feed.json}"
+FEED_URL="${1:-https://raw.githubusercontent.com/bladepeich/festtime-privacy/main/appstore/remote-festivals-feed.test-additions.json}"
 
 IOS_FESTIVALS_DIR="$ROOT_DIR/FestTimeApp/Resources/Festivals"
 TMP_DIR="$ROOT_DIR/.tmp"

@@ -65,7 +65,7 @@ class RemoteFestivalFeedService(private val context: Context) {
     }
 
     companion object {
-        const val DEFAULT_REMOTE_FEED_URL = "https://raw.githubusercontent.com/bladepeich/festtime-privacy/main/appstore/remote-festivals-feed.json"
+        const val DEFAULT_REMOTE_FEED_URL = "https://raw.githubusercontent.com/bladepeich/festtime-privacy/main/appstore/remote-festivals-feed.test-additions.json"
     }
 }
 
