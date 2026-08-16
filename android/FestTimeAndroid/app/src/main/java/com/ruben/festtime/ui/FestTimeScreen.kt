@@ -352,22 +352,47 @@ private fun TopControlsBar(
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Button(
-                onClick = onToggleFavorites,
-                modifier = Modifier.width(favoritesWidth),
-                shape = RoundedCornerShape(999.dp),
-                colors = ButtonDefaults.buttonColors(
-                    containerColor = if (state.showFavoritesOnly) Color(0xFFF6D74A) else Color.White,
-                    contentColor = Color.Black
-                ),
-                border = BorderStroke(1.dp, Color(0xFFE2E4E9)),
-                contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp)
+            Row(
+                verticalAlignment = Alignment.CenterVertically,
+                horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                Icon(
-                    imageVector = if (state.showFavoritesOnly) Icons.Filled.Star else Icons.Outlined.Star,
-                    contentDescription = null
-                )
-                Text("Favoritos", fontWeight = FontWeight.Bold, maxLines = 1)
+                Button(
+                    onClick = onToggleFavorites,
+                    modifier = Modifier.width(favoritesWidth),
+                    shape = RoundedCornerShape(999.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = if (state.showFavoritesOnly) Color(0xFFF6D74A) else Color.White,
+                        contentColor = Color.Black
+                    ),
+                    border = BorderStroke(1.dp, Color(0xFFE2E4E9)),
+                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp)
+                ) {
+                    Icon(
+                        imageVector = if (state.showFavoritesOnly) Icons.Filled.Star else Icons.Outlined.Star,
+                        contentDescription = null
+                    )
+                    Text("Favoritos", fontWeight = FontWeight.Bold, maxLines = 1)
+                }
+
+                Button(
+                    onClick = onRefreshFestivals,
+                    enabled = !state.isRefreshingFestivals,
+                    shape = RoundedCornerShape(999.dp),
+                    colors = ButtonDefaults.buttonColors(
+                        containerColor = Color.White,
+                        contentColor = Color.Black,
+                        disabledContainerColor = Color(0xFFF3F4F6),
+                        disabledContentColor = Color(0xFF9CA3AF)
+                    ),
+                    border = BorderStroke(1.dp, Color(0xFFE2E4E9)),
+                    contentPadding = PaddingValues(horizontal = 12.dp, vertical = 8.dp)
+                ) {
+                    Text(
+                        text = if (state.isRefreshingFestivals) "Actualizando..." else "Actualizar",
+                        fontWeight = FontWeight.Bold,
+                        maxLines = 1
+                    )
+                }
             }
 
             Box {
@@ -391,7 +416,8 @@ private fun TopControlsBar(
                 )
 
                 DropdownMenuItem(
-                    text = { Text("Actualizar Festivales") },
+                    text = { Text(if (state.isRefreshingFestivals) "Actualizando Festivales..." else "Actualizar Festivales") },
+                    enabled = !state.isRefreshingFestivals,
                     onClick = {
                         menuExpanded = false
                         onRefreshFestivals()

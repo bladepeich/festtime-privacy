@@ -30,6 +30,7 @@ data class FestTimeUiState(
     val showFavoritesOnly: Boolean = false,
     val favorites: Set<String> = emptySet(),
     val alertsEnabled: Boolean = false,
+    val isRefreshingFestivals: Boolean = false,
     val errorMessage: String? = null
 ) {
     val availableStages: List<String>
@@ -107,7 +108,12 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
 
     fun refreshFestivals() {
         viewModelScope.launch {
+            if (_uiState.value.isRefreshingFestivals) {
+                return@launch
+            }
+
             val selectedFestivalId = _uiState.value.selectedFestivalId
+            _uiState.update { it.copy(isRefreshingFestivals = true, errorMessage = null) }
 
             runCatching {
                 withContext(Dispatchers.IO) { remoteFeedService.syncFromRemote() }
@@ -120,6 +126,8 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
                 _uiState.update {
                     it.copy(errorMessage = error.message ?: "No se pudo actualizar el catalogo remoto")
                 }
+            }.also {
+                _uiState.update { it.copy(isRefreshingFestivals = false) }
             }
         }
     }
