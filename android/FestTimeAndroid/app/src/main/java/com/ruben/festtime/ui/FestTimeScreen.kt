@@ -108,13 +108,15 @@ fun FestTimeScreen(viewModel: FestTimeViewModel) {
 
         HeaderBlock(state = state)
 
-        FestivalFilters(
-            state = state,
-            onDaySelected = viewModel::selectDay,
-            onShiftSelected = viewModel::selectShift,
-            onStageSelected = viewModel::selectStage,
-            onSearchChanged = viewModel::updateSearch
-        )
+        if (!state.showFavoritesOnly) {
+            FestivalFilters(
+                state = state,
+                onDaySelected = viewModel::selectDay,
+                onShiftSelected = viewModel::selectShift,
+                onStageSelected = viewModel::selectStage,
+                onSearchChanged = viewModel::updateSearch
+            )
+        }
 
         if (state.errorMessage != null) {
             Text(
@@ -130,6 +132,12 @@ fun FestTimeScreen(viewModel: FestTimeViewModel) {
             contentPadding = PaddingValues(top = 10.dp, bottom = 16.dp),
             verticalArrangement = Arrangement.spacedBy(10.dp)
         ) {
+            val favoriteSections = if (state.showFavoritesOnly) {
+                buildFavoriteSections(state)
+            } else {
+                emptyList()
+            }
+
             if (state.filteredEvents.isEmpty()) {
                 item {
                     Text(
@@ -142,13 +150,36 @@ fun FestTimeScreen(viewModel: FestTimeViewModel) {
                 }
             }
 
-            items(state.filteredEvents, key = { it.id }) { event ->
-                EventRow(
-                    event = event,
-                    isFavorite = state.favorites.contains(event.id),
-                    stageColorHex = state.currentBundle?.stageColors?.get(event.escenario),
-                    onToggleFavorite = { viewModel.toggleFavorite(event.id) }
-                )
+            if (state.showFavoritesOnly) {
+                favoriteSections.forEach { section ->
+                    item(key = "fav-day-${section.dayId}") {
+                        Text(
+                            text = section.dayLabel,
+                            style = MaterialTheme.typography.labelLarge,
+                            color = Color(0xFF374151),
+                            fontWeight = FontWeight.Bold,
+                            modifier = Modifier.padding(horizontal = 16.dp, vertical = 2.dp)
+                        )
+                    }
+
+                    items(section.events, key = { it.id }) { event ->
+                        EventRow(
+                            event = event,
+                            isFavorite = state.favorites.contains(event.id),
+                            stageColorHex = state.currentBundle?.stageColors?.get(event.escenario),
+                            onToggleFavorite = { viewModel.toggleFavorite(event.id) }
+                        )
+                    }
+                }
+            } else {
+                items(state.filteredEvents, key = { it.id }) { event ->
+                    EventRow(
+                        event = event,
+                        isFavorite = state.favorites.contains(event.id),
+                        stageColorHex = state.currentBundle?.stageColors?.get(event.escenario),
+                        onToggleFavorite = { viewModel.toggleFavorite(event.id) }
+                    )
+                }
             }
         }
     }
@@ -755,6 +786,36 @@ private data class FestivalMonthGroup(
     val label: String,
     val festivals: List<FestivalDefinition>
 )
+
+private data class FavoriteDaySection(
+    val dayId: String,
+    val dayLabel: String,
+    val events: List<FestivalEvent>
+)
+
+private fun buildFavoriteSections(state: FestTimeUiState): List<FavoriteDaySection> {
+    val bundle = state.currentBundle ?: return emptyList()
+    if (state.favorites.isEmpty()) return emptyList()
+
+    val favoritesById = bundle.events
+        .filter { state.favorites.contains(it.id) }
+        .groupBy { it.dia }
+
+    return bundle.festival.days.mapNotNull { day ->
+        val events = favoritesById[day.id].orEmpty()
+            .sortedWith(compareBy<FestivalEvent>({ it.sortableMinutes }, { it.artista.lowercase() }))
+
+        if (events.isEmpty()) {
+            null
+        } else {
+            FavoriteDaySection(
+                dayId = day.id,
+                dayLabel = day.displayName,
+                events = events
+            )
+        }
+    }
+}
 
 private fun buildFestivalMonthGroups(festivals: List<FestivalDefinition>): List<FestivalMonthGroup> {
     val grouped = festivals.groupBy { festival ->

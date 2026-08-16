@@ -46,11 +46,27 @@ data class FestTimeUiState(
     val filteredEvents: List<FestivalEvent>
         get() {
             val bundle = currentBundle ?: return emptyList()
+
+            if (showFavoritesOnly) {
+                val dayOrder = bundle.festival.days
+                    .mapIndexed { index, day -> day.id to index }
+                    .toMap()
+
+                return bundle.events
+                    .filter { favorites.contains(it.id) }
+                    .sortedWith(
+                        compareBy<FestivalEvent>(
+                            { dayOrder[it.dia] ?: Int.MAX_VALUE },
+                            { it.sortableMinutes },
+                            { it.artista.lowercase() }
+                        )
+                    )
+            }
+
             val base = bundle.events
                 .filter { it.dia == selectedDayId && it.turno == selectedShift }
                 .filter { selectedStage == "todos" || it.escenario == selectedStage }
                 .filter { searchText.isBlank() || it.searchArtist.contains(searchText.trim().lowercase()) }
-                .filter { !showFavoritesOnly || favorites.contains(it.id) }
 
             return base.sortedWith(compareBy<FestivalEvent>({ it.sortableMinutes }, { it.artista.lowercase() }))
         }
