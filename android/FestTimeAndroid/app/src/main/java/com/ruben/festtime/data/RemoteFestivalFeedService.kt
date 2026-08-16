@@ -23,11 +23,9 @@ class RemoteFestivalFeedService(private val context: Context) {
 
     fun syncFromRemote(url: String = DEFAULT_REMOTE_FEED_URL): Int {
         val payload = fetchRemoteFeed(url)
-        if (payload.festivals.isEmpty()) {
-            return 0
-        }
+        val incomingFestivalIds = payload.festivals.map { it.festival.id }.toSet()
 
-        if (payload.fullReplace) {
+        if (payload.fullReplace || payload.festivals.isEmpty()) {
             cacheDir.listFiles()?.forEach { file ->
                 if (file.name.endsWith(".bundle.json") || file.name == "festivals-catalog.json") {
                     file.delete()
@@ -37,6 +35,17 @@ class RemoteFestivalFeedService(private val context: Context) {
 
         val catalog = FestivalCatalog(festivals = payload.festivals.map { it.festival })
         File(cacheDir, "festivals-catalog.json").writeText(json.encodeToString(catalog))
+
+        // Remove stale bundles that no longer exist in the remote feed.
+        cacheDir.listFiles()?.forEach { file ->
+            if (!file.name.endsWith(".bundle.json")) {
+                return@forEach
+            }
+            val festivalId = file.name.removeSuffix(".bundle.json")
+            if (festivalId !in incomingFestivalIds) {
+                file.delete()
+            }
+        }
 
         payload.festivals.forEach { remoteFestival ->
             val bundle = FestivalBundle(
