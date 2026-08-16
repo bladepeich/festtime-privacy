@@ -8,12 +8,16 @@ import com.ruben.festtime.data.FestivalDefinition
 import com.ruben.festtime.data.FestivalEvent
 import com.ruben.festtime.data.FavoritesStore
 import com.ruben.festtime.data.FestivalRepository
+import com.ruben.festtime.data.RemoteFestivalFeedService
 import com.ruben.festtime.data.Shift
 import com.ruben.festtime.notifications.ReminderScheduler
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.update
+import kotlinx.coroutines.withContext
 import kotlinx.coroutines.launch
+import java.time.LocalDate
 
 data class FestTimeUiState(
     val festivals: List<FestivalDefinition> = emptyList(),
@@ -54,6 +58,7 @@ data class FestTimeUiState(
 class FestTimeViewModel(application: Application) : AndroidViewModel(application) {
 
     private val repository = FestivalRepository(application)
+    private val remoteFeedService = RemoteFestivalFeedService(application)
     private val store = FavoritesStore(application)
     private val reminderScheduler = ReminderScheduler(application)
 
@@ -66,20 +71,55 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
 
     fun loadCatalog() {
         viewModelScope.launch {
+            loadCatalogFromRepository(showErrors = true)
+            syncRemoteAndReload()
+        }
+    }
+
+    private suspend fun loadCatalogFromRepository(showErrors: Boolean) {
+        runCatching {
+            withContext(Dispatchers.IO) { repository.loadCatalog() }
+        }.onSuccess { festivals ->
+            val sortedFestivals = festivals.sortedByDescending { festivalSortDate(it) }
+            _uiState.update { current ->
+                val keepCurrentFestival = sortedFestivals.any { it.id == current.selectedFestivalId }
+                current.copy(
+                    festivals = sortedFestivals,
+                    selectedFestivalId = if (keepCurrentFestival) current.selectedFestivalId else "",
+                    currentBundle = if (keepCurrentFestival) current.currentBundle else null,
+                    errorMessage = null
+                )
+            }
+        }.onFailure { error ->
+            if (showErrors) {
+                _uiState.update { it.copy(errorMessage = error.message ?: "No se pudo cargar el catalogo") }
+            }
+        }
+    }
+
+    private suspend fun syncRemoteAndReload() {
+        runCatching {
+            withContext(Dispatchers.IO) { remoteFeedService.syncFromRemote() }
+        }.onSuccess {
+            loadCatalogFromRepository(showErrors = false)
+        }
+    }
+
+    fun refreshFestivals() {
+        viewModelScope.launch {
+            val selectedFestivalId = _uiState.value.selectedFestivalId
+
             runCatching {
-                repository.loadCatalog()
-            }.onSuccess { festivals ->
-                _uiState.update {
-                    it.copy(
-                        festivals = festivals,
-                        errorMessage = null
-                    )
-                }
-                if (festivals.isNotEmpty()) {
-                    selectFestival(festivals.first().id)
+                withContext(Dispatchers.IO) { remoteFeedService.syncFromRemote() }
+            }.onSuccess {
+                loadCatalogFromRepository(showErrors = true)
+                if (selectedFestivalId.isNotBlank() && _uiState.value.festivals.any { it.id == selectedFestivalId }) {
+                    selectFestival(selectedFestivalId)
                 }
             }.onFailure { error ->
-                _uiState.update { it.copy(errorMessage = error.message ?: "No se pudo cargar el catalogo") }
+                _uiState.update {
+                    it.copy(errorMessage = error.message ?: "No se pudo actualizar el catalogo remoto")
+                }
             }
         }
     }
@@ -179,5 +219,12 @@ class FestTimeViewModel(application: Application) : AndroidViewModel(application
             return
         }
         reminderScheduler.scheduleForFestival(bundle, state.favorites)
+    }
+
+    private fun festivalSortDate(festival: FestivalDefinition): LocalDate {
+        return festival.days
+            .mapNotNull { day -> day.calendarDate?.let { runCatching { LocalDate.parse(it) }.getOrNull() } }
+            .minOrNull()
+            ?: LocalDate.of(festival.year, 1, 1)
     }
 }
