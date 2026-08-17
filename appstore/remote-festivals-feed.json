@@ -1,0 +1,4782 @@
+{
+  "formatVersion": 1,
+  "fullReplace": true,
+  "festivals": [
+    {
+      "revision": "2026-08-14T11:55:00Z",
+      "festival": {
+        "id": "cooltural-fest-2026",
+        "name": "Cooltural Fest",
+        "year": 2026,
+        "days": [
+          {
+            "id": "jueves",
+            "displayName": "Jue 20",
+            "calendarDate": "2026-08-20"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 21",
+            "calendarDate": "2026-08-21"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 22",
+            "calendarDate": "2026-08-22"
+          },
+          {
+            "id": "domingo",
+            "displayName": "Dom 23",
+            "calendarDate": "2026-08-23"
+          },
+          {
+            "id": "clausura",
+            "displayName": "Sab 29",
+            "calendarDate": "2026-08-29"
+          }
+        ],
+        "defaultDayID": "jueves",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "jueves": "noche",
+          "viernes": "noche",
+          "sabado": "noche",
+          "domingo": "noche",
+          "clausura": "dia"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://coolturalfest.com/",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=cooltural+fest",
+            "systemImage": "location"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://coolturalfest.com/entradas",
+            "systemImage": "ticket"
+          }
+        ]
+      },
+      "stageColors": {
+        "Escenario Estrella": "#60B256",
+        "Escenario Music For All": "#7A33CC",
+        "Escenario Cupra": "#D058A4",
+        "Cooltural DJs": "#E67E22",
+        "Parque de las Almadrabillas": "#4B63B5",
+        "Faluca Almariya": "#F2B544"
+      },
+      "events": [
+        {
+          "id": "cooltural-fest-2026-jue-1830-lamartumind",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "18:30",
+          "artista": "LAMARTUMIND",
+          "escenario": "Parque de las Almadrabillas"
+        },
+        {
+          "id": "cooltural-fest-2026-jue-1930-comandante-twin",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "19:30",
+          "artista": "COMANDANTE TWIN",
+          "escenario": "Parque de las Almadrabillas"
+        },
+        {
+          "id": "cooltural-fest-2026-jue-2045-melifluo",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:45",
+          "artista": "MELIFLUO",
+          "escenario": "Parque de las Almadrabillas"
+        },
+        {
+          "id": "cooltural-fest-2026-jue-2205-paula-mattheus",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:05",
+          "artista": "PAULA MATTHEUS",
+          "escenario": "Parque de las Almadrabillas"
+        },
+        {
+          "id": "cooltural-fest-2026-jue-2330-carlangas",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "23:30",
+          "artista": "CARLANGAS",
+          "escenario": "Parque de las Almadrabillas"
+        },
+        {
+          "id": "cooltural-fest-2026-jue-0055-juanca-pope",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:55",
+          "artista": "JUANCA&POPE (SUPERSUB DJ SET)",
+          "escenario": "Parque de las Almadrabillas"
+        },
+        {
+          "id": "cooltural-fest-2026-jue-0145-madbel",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "01:45",
+          "artista": "MADBEL",
+          "escenario": "Parque de las Almadrabillas"
+        },
+        {
+          "id": "cooltural-fest-2026-jue-0230-eddie-mizake",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "02:30",
+          "artista": "EDDIE MIZAKE",
+          "escenario": "Parque de las Almadrabillas"
+        },
+        {
+          "id": "cooltural-fest-2026-jue-0345-juanporelmundo",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "03:45",
+          "artista": "JUANPORELMUNDO",
+          "escenario": "Parque de las Almadrabillas"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-1810-hey-kid",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:10",
+          "artista": "HEY KID",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-1955-samurai",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:55",
+          "artista": "SAMURAI",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-2210-lori-meyers",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:10",
+          "artista": "LORI MEYERS",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-0110-la-plazuela",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:10",
+          "artista": "LA PLAZUELA",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-0320-mind-enterprises",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "03:20",
+          "artista": "MIND ENTERPRISES (DJ SET)",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-1900-depresion-sonora",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "DEPRESION SONORA",
+          "escenario": "Escenario Music For All"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-2105-rusowsky",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:05",
+          "artista": "RUSOWSKY",
+          "escenario": "Escenario Music For All"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-2345-la-moda",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:45",
+          "artista": "LA M.O.D.A.",
+          "escenario": "Escenario Music For All"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-0220-leon-benavente",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:20",
+          "artista": "LEON BENAVENTE",
+          "escenario": "Escenario Music For All"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-1810-rbt",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:10",
+          "artista": "RBT!",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-1910-extranos-pasajeros",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:10",
+          "artista": "EXTRANOS PASAJEROS",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-2020-gara-duran",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:20",
+          "artista": "GARA DURAN",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-2140-xavibo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:40",
+          "artista": "XAVIBO",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-2300-bala",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "BALA",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-0020-las-petunias",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:20",
+          "artista": "LAS PETUNIAS",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-0140-maximiliano-calvo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:40",
+          "artista": "MAXIMILIANO CALVO",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-0300-rata",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "03:00",
+          "artista": "RATA",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-1810-javi-mattel",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:10",
+          "artista": "JAVI MATTEL",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-1935-miriam-amat",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:35",
+          "artista": "MIRIAM AMAT",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-2100-fru",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "FRU",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-2225-popi-sito",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:25",
+          "artista": "POPI&SITO",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-2350-don-gonzalo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:50",
+          "artista": "DON GONZALO",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-0115-rojonesta",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:15",
+          "artista": "ROJONESTA",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-vie-0235-eme-dj",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:35",
+          "artista": "EME DJ",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-1810-la-paloma",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:10",
+          "artista": "LA PALOMA",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-2005-ana-torroja",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:05",
+          "artista": "ANA TORROJA",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-2225-hombres-g",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:25",
+          "artista": "HOMBRES G",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-0115-la-pegatina",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:15",
+          "artista": "LA PEGATINA",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-0330-kakkmaddafakka",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "03:30",
+          "artista": "KAKKMADDAFAKKA",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-1900-sidecars",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "SIDECARS",
+          "escenario": "Escenario Music For All"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-2110-rigoberta-bandini",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:10",
+          "artista": "RIGOBERTA BANDINI",
+          "escenario": "Escenario Music For All"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-0000-ultraligera",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:00",
+          "artista": "ULTRALIGERA",
+          "escenario": "Escenario Music For All"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-0225-sexy-zebras",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:25",
+          "artista": "SEXY ZEBRAS",
+          "escenario": "Escenario Music For All"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-1810-laura-diepstraten",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:10",
+          "artista": "LAURA DIEPSTRATEN",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-1910-karlan",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:10",
+          "artista": "KARLAN",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-2020-sobrezero",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:20",
+          "artista": "SOBREZERO",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-2140-sienna",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:40",
+          "artista": "SIENNA",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-2300-puno-dragon",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "PUNO DRAGON",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-0020-la-milagrosa",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:20",
+          "artista": "LA MILAGROSA",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-0140-elfos-del-rocio",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:40",
+          "artista": "ELFOS DEL ROCIO",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-0300-vvv-trippin-you",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "03:00",
+          "artista": "VVV [TRIPPIN' YOU]",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-1810-fake-dj",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:10",
+          "artista": "FAKE DJ",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-1935-angel-garcia",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:35",
+          "artista": "ANGEL GARCIA",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-2100-lian-faz",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "LIAN FAZ",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-2225-oscar-gil",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:25",
+          "artista": "OSCAR GIL",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-2350-raffael-los-domingos",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:50",
+          "artista": "RAFFAEL LOS DOMINGOS",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-0115-clyde-los-domingos",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:15",
+          "artista": "CLYDE LOS DOMINGOS",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-sab-0235-don-fluor",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:35",
+          "artista": "DON FLUOR",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-1840-melon-diesel",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "18:40",
+          "artista": "MELON DIESEL",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-2050-vera-grv",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "20:50",
+          "artista": "VERA GRV",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-2315-david-bisbal",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "23:15",
+          "artista": "DAVID BISBAL",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-0135-fascinado-club",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "01:35",
+          "artista": "FASCINADO CLUB",
+          "escenario": "Escenario Estrella"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-1940-salistre",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "19:40",
+          "artista": "SALISTRE",
+          "escenario": "Escenario Music For All"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-2205-ginebras",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "22:05",
+          "artista": "GINEBRAS",
+          "escenario": "Escenario Music For All"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-0035-marlena",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "00:35",
+          "artista": "MARLENA",
+          "escenario": "Escenario Music For All"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-1840-pilu",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "18:40",
+          "artista": "PILU",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-1940-nixon",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "19:40",
+          "artista": "NIXON",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-2110-bicicleta",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "21:10",
+          "artista": "BICICLETA",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-2235-sarria",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "22:35",
+          "artista": "SARRIA",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-0000-cientocero",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "00:00",
+          "artista": "CIENTOCERO (TRIBUTO SUPERSUBMARINA)",
+          "escenario": "Escenario Cupra"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-1840-john-b",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "18:40",
+          "artista": "JOHN B",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-2005-bita",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "20:05",
+          "artista": "BITA",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-2130-rocio-saiz",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "21:30",
+          "artista": "ROCIO SAIZ",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-2255-neoverbeneo",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "22:55",
+          "artista": "NEOVERBENEO",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-dom-0020-algora",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "00:20",
+          "artista": "ALGORA (DJ SET)",
+          "escenario": "Cooltural DJs"
+        },
+        {
+          "id": "cooltural-fest-2026-clausura-1700-sao",
+          "dia": "clausura",
+          "turno": "dia",
+          "hora": "17:00",
+          "artista": "SAO",
+          "escenario": "Faluca Almariya"
+        },
+        {
+          "id": "cooltural-fest-2026-clausura-1800-profesor-popsnuggle",
+          "dia": "clausura",
+          "turno": "dia",
+          "hora": "18:00",
+          "artista": "PROFESOR POPSNUGGLE",
+          "escenario": "Faluca Almariya"
+        },
+        {
+          "id": "cooltural-fest-2026-clausura-1910-las-dianas",
+          "dia": "clausura",
+          "turno": "dia",
+          "hora": "19:10",
+          "artista": "LAS DIANAS",
+          "escenario": "Faluca Almariya"
+        },
+        {
+          "id": "cooltural-fest-2026-clausura-2020-victorias",
+          "dia": "clausura",
+          "turno": "dia",
+          "hora": "20:20",
+          "artista": "VICTORIAS",
+          "escenario": "Faluca Almariya"
+        },
+        {
+          "id": "cooltural-fest-2026-clausura-2140-extasis",
+          "dia": "clausura",
+          "turno": "dia",
+          "hora": "21:40",
+          "artista": "EXTASIS",
+          "escenario": "Faluca Almariya"
+        },
+        {
+          "id": "cooltural-fest-2026-clausura-2250-los-punsetes",
+          "dia": "clausura",
+          "turno": "dia",
+          "hora": "22:50",
+          "artista": "LOS PUNSETES",
+          "escenario": "Faluca Almariya"
+        }
+      ]
+    },
+    {
+      "revision": "2026-08-14T12:15:00Z",
+      "festival": {
+        "id": "sonorama-2026",
+        "name": "Sonorama Ribera",
+        "year": 2026,
+        "days": [
+          {
+            "id": "miercoles",
+            "displayName": "Mie 5",
+            "calendarDate": "2026-08-05"
+          },
+          {
+            "id": "jueves",
+            "displayName": "Jue 6",
+            "calendarDate": "2026-08-06"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 7",
+            "calendarDate": "2026-08-07"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 8",
+            "calendarDate": "2026-08-08"
+          },
+          {
+            "id": "domingo",
+            "displayName": "Dom 9",
+            "calendarDate": "2026-08-09"
+          }
+        ],
+        "defaultDayID": "miercoles",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "miercoles": "noche",
+          "domingo": "dia"
+        },
+        "menuOptions": [
+          {
+            "title": "Plano del recinto",
+            "inAppImageURL": "https://www.sonoramaribera.com/wp-content/uploads/2026/07/PLANO_SONORAMA_EDITABLE_SONORAMA_RIBERA_2026_1b.jpg",
+            "systemImage": "map"
+          },
+          {
+            "title": "Zona de acampada",
+            "inAppImageURL": "https://www.sonoramaribera.com/wp-content/uploads/2026/07/PLANO_SONORAMA_EDITABLE_SONORAMA_RIBERA_2026_2.jpg",
+            "systemImage": "tent"
+          }
+        ],
+        "regionGeoJSONFile": "sonorama-2026-region",
+        "eventsFile": "sonorama-2026-events",
+        "stageColorsFile": "sonorama-2026-stage-colors"
+      },
+      "stageColors": {
+        "Escenario Aranda de Duero": "#e63946",
+        "Escenario Ribera del Duero": "#1d3557",
+        "Escenario Indexa": "#00b4d8",
+        "Escenario Porklovers": "#ff007f",
+        "Escenario Tierra de Sabor": "#2a9d8f",
+        "Pza. Trigo Vibra Mahou": "#e76f51",
+        "Pza. La Sal Vibra Mahou": "#f4a261",
+        "Escenario Charco": "#457b9d",
+        "Escenario Le Club / Café Central": "#9b5de5"
+      },
+      "events": [
+        {
+          "id": "m1",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Nat Simons",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "m2",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Whisky Caravan",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "m3",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Fiesta Disfraces",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "m4",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "19:50",
+          "artista": "Carlangas",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "m5",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "19:50",
+          "artista": "Yacaré",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "m6",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "20:40",
+          "artista": "La Cabra Mecánica",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "m7",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "20:40",
+          "artista": "Mafalda Cardenal",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "m8",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "Salvana",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "m9",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "21:30",
+          "artista": "Bebe",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "m10",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "21:30",
+          "artista": "Pablopablo",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "m11",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "22:00",
+          "artista": "Tigre y Diamante",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "m12",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "22:20",
+          "artista": "León Benavente",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "m13",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "22:20",
+          "artista": "Tu Otra Bonita",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "m14",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "Piti y Me Voy",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "m15",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "23:10",
+          "artista": "Chiquita Movida",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "m16",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "23:20",
+          "artista": "Iván Ferreiro",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "m17",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "00:00",
+          "artista": "D.Valentino",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "m18",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "00:00",
+          "artista": "Laia Alcolea",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "m19",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "00:20",
+          "artista": "La Pegatina",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "m20",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "00:50",
+          "artista": "The Molotovs",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "m21",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "01:00",
+          "artista": "Mal Sense",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "m22",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "01:20",
+          "artista": "Crystal Fighters",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "m23",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "01:40",
+          "artista": "Sofía Gabanna",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "m24",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "02:00",
+          "artista": "DJ Filo",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "m25",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "02:20",
+          "artista": "Wally Lopez",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "m26",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "02:30",
+          "artista": "Simulacro",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "jd1",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "12:00",
+          "artista": "Sobrezero",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "jd2",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "12:00",
+          "artista": "We Are Mono",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "jd3",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "12:00",
+          "artista": "Barbi Recanati",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "jd4",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "12:55",
+          "artista": "Norte Perdido",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "jd5",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "Las Petunias",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "jd6",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "Ángela González",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "jd7",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "Winter & Torres",
+          "escenario": "Escenario Le Club / Café Central"
+        },
+        {
+          "id": "jd8",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "13:50",
+          "artista": "Soyla",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "jd9",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "14:00",
+          "artista": "Calequi y Las Panteras",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "jd10",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "14:00",
+          "artista": "Mäbu",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "jd11",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "14:45",
+          "artista": "Hostia Pedagógica",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "jd12",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "15:00",
+          "artista": "Sorpresa",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "jd13",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "15:00",
+          "artista": "La Delio Valdez",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "jd14",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "15:30",
+          "artista": "Go Cactus",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "jd15",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "16:00",
+          "artista": "Los Vinagres",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "jd16",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "16:20",
+          "artista": "Tardeo Cool DJ's",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "jd17",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "16:30",
+          "artista": "She's A Star DJ",
+          "escenario": "Escenario Le Club / Café Central"
+        },
+        {
+          "id": "jd18",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "17:00",
+          "artista": "Tiburona",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "jd19",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "17:10",
+          "artista": "DJ Felipe",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "jn1",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Karavana",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "jn2",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Galerna",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "jn3",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Dani Leiva",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "jn4",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "19:50",
+          "artista": "Nacho Vegas",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "jn5",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "19:50",
+          "artista": "Alberto.Vela",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "jn6",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:05",
+          "artista": "Ona Mafalda",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "jn7",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:40",
+          "artista": "Ramoncín",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "jn8",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:40",
+          "artista": "Vera Fauna",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "jn9",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:10",
+          "artista": "Carencias Afectivas",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "jn10",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:30",
+          "artista": "Veintiuno",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "jn11",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:30",
+          "artista": "El Nido",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "jn12",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:15",
+          "artista": "Alberto & García",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "jn13",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:20",
+          "artista": "Ángeles Toledano",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "jn14",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:25",
+          "artista": "Rigoberta Bandini",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "jn15",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "23:10",
+          "artista": "We Are Scientists",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "jn16",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "23:20",
+          "artista": "Ortiga",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "jn17",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "23:35",
+          "artista": "Guitarricadelafuente",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "jn18",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:00",
+          "artista": "Lablackie",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "jn19",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:25",
+          "artista": "Pirri Román",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "jn20",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:45",
+          "artista": "Rusowsky",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "jn21",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:50",
+          "artista": "Egon Soda",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "jn22",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "01:15",
+          "artista": "Kill The Clowns",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "jn23",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "01:40",
+          "artista": "Mi Vida Rosa",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "jn24",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "01:55",
+          "artista": "RVFV",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "jn25",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "02:20",
+          "artista": "Rober Biond",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "jn26",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "02:30",
+          "artista": "Valira",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "jn27",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "03:00",
+          "artista": "Peces Raros",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "jn28",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "03:20",
+          "artista": "Sobrinus",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "jn29",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "03:25",
+          "artista": "Maikie",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "jn30",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "03:50",
+          "artista": "Serial Killerz",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "jn31",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "04:10",
+          "artista": "Ale Acosta",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "vd1",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "12:00",
+          "artista": "La Milagrosa",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "vd2",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "12:00",
+          "artista": "Luback",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "vd3",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "12:00",
+          "artista": "Alonso",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "vd4",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "12:55",
+          "artista": "Volavent",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "vd5",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "Fontán",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "vd6",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "Las Migas",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "vd7",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "La Azotea",
+          "escenario": "Escenario Le Club / Café Central"
+        },
+        {
+          "id": "vd8",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "13:50",
+          "artista": "Nuevo Berlín",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "vd9",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "14:00",
+          "artista": "Éxtasis",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "vd10",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "14:00",
+          "artista": "La Garfield",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "vd11",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "14:45",
+          "artista": "Nuevos Vicios",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "vd12",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "15:00",
+          "artista": "Sorpresa",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "vd13",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "15:00",
+          "artista": "Siamés",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "vd14",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "15:30",
+          "artista": "Aguacate y Mango",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "vd15",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "16:00",
+          "artista": "Coti",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "vd16",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "16:30",
+          "artista": "She's A Star DJ",
+          "escenario": "Escenario Le Club / Café Central"
+        },
+        {
+          "id": "vd17",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "16:40",
+          "artista": "Mr. Kitos",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "vd18",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "17:00",
+          "artista": "Lucky Salvadori",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "vn1",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "La Sonrisa de Julia",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "vn2",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Suzete",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "vn3",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Canciller",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "vn4",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:50",
+          "artista": "Funambulista",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "vn5",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "Ángel Stanich",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "vn6",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:05",
+          "artista": "Da Igual",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "vn7",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:40",
+          "artista": "Malmö 040",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "vn8",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "Carlos Ares",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "vn9",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:10",
+          "artista": "Memocracia",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "vn10",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:30",
+          "artista": "Los Negativos",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "vn11",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:00",
+          "artista": "Love of Lesbian",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "vn12",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:15",
+          "artista": "Alejo",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "vn13",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:20",
+          "artista": "Soleá Morente",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "vn14",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:10",
+          "artista": "Xavibo",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "vn15",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:20",
+          "artista": "Candela Gómez",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "vn16",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:30",
+          "artista": "Sexy Zebras",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "vn17",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:00",
+          "artista": "Lucho RK",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "vn18",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:25",
+          "artista": "Hoonine",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "vn19",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:45",
+          "artista": "Niña Polaca",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "vn20",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:50",
+          "artista": "Depresión Sonora",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "vn21",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:15",
+          "artista": "Rialto",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "vn22",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:40",
+          "artista": "StormyKid",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "vn23",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:45",
+          "artista": "Comandante Twin",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "vn24",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:20",
+          "artista": "Varoc",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "vn25",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:30",
+          "artista": "Eladio y Los Seres Queridos",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "vn26",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:45",
+          "artista": "Samuraï",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "vn27",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "03:20",
+          "artista": "Marban",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "vn28",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "03:25",
+          "artista": "Juanann_Deck",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "vn29",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "03:45",
+          "artista": "Ladilla Rusa",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "vn30",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "04:10",
+          "artista": "Bum Motion Club",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "sd2",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "12:00",
+          "artista": "El Verbo Odiado",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "sd3",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "12:00",
+          "artista": "La Juventud",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "sd4",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "12:00",
+          "artista": "Gauchito Club",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "sd5",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "12:55",
+          "artista": "Ricardo Moya",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "sd6",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "Modelo",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "sd8",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "Vangoura",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "sd9",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "Grama Agropunk",
+          "escenario": "Escenario Le Club / Café Central"
+        },
+        {
+          "id": "sd10",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "13:50",
+          "artista": "Mazu",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "sd11",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "14:00",
+          "artista": "Oslo Ovnies",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "sd12",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "14:00",
+          "artista": "Colectivo Da Silva",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "sd13",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "14:45",
+          "artista": "Daphne",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "sd14",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "15:00",
+          "artista": "Sorpresa",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "sd15",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "15:00",
+          "artista": "Maruja Limón",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "sd16",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "15:30",
+          "artista": "Raúl Sanz DJ",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "sd17",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "16:00",
+          "artista": "Arco",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "sd18",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "16:20",
+          "artista": "Fat Gordon",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "sd19",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "16:30",
+          "artista": "She's A Star DJ",
+          "escenario": "Escenario Le Club / Café Central"
+        },
+        {
+          "id": "sd20",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "17:00",
+          "artista": "De Ninghures",
+          "escenario": "Escenario Charco"
+        },
+        {
+          "id": "sd21",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "17:10",
+          "artista": "DJ Ziry",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "sn1",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Repion",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "sn2",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Vis Viva",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "sn3",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Jaguayano",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "sn4",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:45",
+          "artista": "Valeria Castro",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "sn5",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:50",
+          "artista": "Pol 3.14",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "sn6",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:05",
+          "artista": "Los Chivatos",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "sn7",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:35",
+          "artista": "Belén Aguilera",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "sn8",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:40",
+          "artista": "Kitai",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "sn9",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:10",
+          "artista": "Aluo",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "sn10",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:30",
+          "artista": "Ruth",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "sn11",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:35",
+          "artista": "La M.O.D.A.",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "sn12",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:15",
+          "artista": "Nacho Pistacho",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "sn13",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:20",
+          "artista": "Paul Alone",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "sn14",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "Leiva",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "sn15",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:10",
+          "artista": "Al Safir",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "sn16",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:20",
+          "artista": "Grande Amore",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "sn17",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:00",
+          "artista": "Dollar Selmouni",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "sn18",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:25",
+          "artista": "Nøgen",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "sn19",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:30",
+          "artista": "Xoel López",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "sn20",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:50",
+          "artista": "El Mató a un Policía Motorizado",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "sn21",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:15",
+          "artista": "Freenipples B2B Lucía Dilema",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "sn22",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:40",
+          "artista": "Ojete Calor",
+          "escenario": "Escenario Ribera del Duero"
+        },
+        {
+          "id": "sn23",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:40",
+          "artista": "Puño Dragón",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "sn24",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:20",
+          "artista": "Peje B2B Peredius",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "sn25",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:30",
+          "artista": "The Rapants",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "sn26",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:40",
+          "artista": "Marlena",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "sn27",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "03:20",
+          "artista": "Raya Diplomática",
+          "escenario": "Escenario Indexa"
+        },
+        {
+          "id": "sn28",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "03:25",
+          "artista": "Brian Decalma",
+          "escenario": "Escenario Tierra de Sabor"
+        },
+        {
+          "id": "sn29",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "03:40",
+          "artista": "Eme DJ",
+          "escenario": "Escenario Aranda de Duero"
+        },
+        {
+          "id": "sn30",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "04:10",
+          "artista": "Lapili",
+          "escenario": "Escenario Porklovers"
+        },
+        {
+          "id": "dd2",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "12:00",
+          "artista": "Sarria",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "dd3",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "12:00",
+          "artista": "Late Capital",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "dd4",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "12:55",
+          "artista": "Mañana Viernes",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "dd5",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "La Regadera",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "dd7",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "13:50",
+          "artista": "Drugos",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "dd8",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "14:00",
+          "artista": "Niños Bravos",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "dd9",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "14:45",
+          "artista": "Eyelet",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "dd10",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "15:00",
+          "artista": "Sorpresa",
+          "escenario": "Pza. Trigo Vibra Mahou"
+        },
+        {
+          "id": "dd11",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "15:30",
+          "artista": "Serrano Brothers",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "dd12",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "16:45",
+          "artista": "Popi&Sito",
+          "escenario": "Pza. La Sal Vibra Mahou"
+        },
+        {
+          "id": "dd13",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "18:00",
+          "artista": "She's A Star DJ y Amigos",
+          "escenario": "Escenario Le Club / Café Central"
+        }
+      ]
+    },
+    {
+      "revision": "2026-08-14T12:20:00Z",
+      "festival": {
+        "id": "leyendas-del-rock-2026",
+        "legacyIDs": [],
+        "name": "Leyendas del Rock",
+        "year": 2026,
+        "days": [
+          {
+            "id": "miercoles",
+            "displayName": "Mie 05",
+            "calendarDate": "2026-08-05"
+          },
+          {
+            "id": "jueves",
+            "displayName": "Jue 06",
+            "calendarDate": "2026-08-06"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 07",
+            "calendarDate": "2026-08-07"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 08",
+            "calendarDate": "2026-08-08"
+          }
+        ],
+        "defaultDayID": "miercoles",
+        "defaultShift": "dia",
+        "forcedShiftByDay": {},
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Plano del recinto",
+            "inAppImageURL": "https://www.leyendasdelrockfestival.com/wp-content/uploads/2022/07/Plano-Leyendas-2022-recinto-2048x1362.jpg",
+            "systemImage": "map"
+          },
+          {
+            "title": "Web oficial",
+            "url": "https://www.leyendasdelrockfestival.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.leyendasdelrockfestival.com/tickets/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=leyendas+del+rock+villena",
+            "systemImage": "location"
+          }
+        ],
+        "regionGeoJSONFile": "leyendas-del-rock-2026-region",
+        "eventsFile": "leyendas-del-rock-2026-events",
+        "stageColorsFile": "leyendas-del-rock-2026-stage-colors"
+      },
+      "stageColors": {
+        "Dave Mustaine Stage": "#ef233c",
+        "Doro Pesch Stage": "#ffb703",
+        "New Rock Stage": "#38bdf8"
+      },
+      "events": [
+        {
+          "id": "leyendas-2026-mie-1650-tailgunner",
+          "dia": "miercoles",
+          "turno": "dia",
+          "hora": "16:50 - 17:40",
+          "artista": "TAILGUNNER",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-1705-heleven",
+          "dia": "miercoles",
+          "turno": "dia",
+          "hora": "17:05 - 17:55",
+          "artista": "HELEVEN",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-1750-thundermother",
+          "dia": "miercoles",
+          "turno": "dia",
+          "hora": "17:50 - 18:50",
+          "artista": "THUNDERMOTHER",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-1820-killus",
+          "dia": "miercoles",
+          "turno": "dia",
+          "hora": "18:20 - 19:10",
+          "artista": "KILLUS",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-1900-orbit-culture",
+          "dia": "miercoles",
+          "turno": "dia",
+          "hora": "19:00 - 20:00",
+          "artista": "ORBIT CULTURE",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-1935-hadadanza",
+          "dia": "miercoles",
+          "turno": "dia",
+          "hora": "19:35 - 20:25",
+          "artista": "HADADANZA",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-2010-black-label-society",
+          "dia": "miercoles",
+          "turno": "dia",
+          "hora": "20:10 - 21:10",
+          "artista": "BLACK LABEL SOCIETY",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-2050-signs-of-the-swarm",
+          "dia": "miercoles",
+          "turno": "dia",
+          "hora": "20:50 - 21:40",
+          "artista": "SIGNS OF THE SWARM",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-2120-savatage",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "21:20 - 22:40",
+          "artista": "SAVATAGE",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-2205-deathbats",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "22:05 - 22:55",
+          "artista": "DEATHBATS",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-2250-slaughter-to-prevail",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "22:50 - 00:10",
+          "artista": "SLAUGHTER TO PREVAIL",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-2320-chained-saint",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "23:20 - 00:20",
+          "artista": "CHAINED SAINT",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-0020-sepultura",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "00:20 - 01:40",
+          "artista": "SEPULTURA",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-0045-prom-kinks",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "00:45 - 01:45",
+          "artista": "PROM KINKS",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-mie-0150-salduie",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "01:50 - 03:00",
+          "artista": "SALDUIE",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-1650-creeper",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "16:50 - 17:40",
+          "artista": "CREEPER",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-1705-ekyrian",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "17:05 - 17:55",
+          "artista": "EKYRIAN",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-1750-mushroomhead",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "17:50 - 18:50",
+          "artista": "MUSHROOMHEAD",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-1820-aneuma",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "18:20 - 19:10",
+          "artista": "ANEUMA",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-1900-northlane",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "19:00 - 20:00",
+          "artista": "NORTHLANE",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-1935-landevir",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "19:35 - 20:25",
+          "artista": "LÁNDEVIR",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-2010-dark-tranquillity",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "20:10 - 21:10",
+          "artista": "DARK TRANQUILLITY",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-2050-injector",
+          "dia": "jueves",
+          "turno": "dia",
+          "hora": "20:50 - 21:40",
+          "artista": "INJECTOR",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-2120-godsmack",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:20 - 22:30",
+          "artista": "GODSMACK",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-2205-evo",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:05 - 22:55",
+          "artista": "EVO",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-2240-arch-enemy",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:40 - 00:10",
+          "artista": "ARCH ENEMY",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-2320-celtibeerian",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "23:20 - 00:20",
+          "artista": "CELTIBEERIAN",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-0020-dartagnan",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:20 - 01:40",
+          "artista": "DARTAGNAN",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-0045-bolu2-death",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:45 - 01:45",
+          "artista": "BOLU2 DEATH",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-jue-0150-lepoka",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "01:50 - 03:00",
+          "artista": "LÈPOKA",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-1650-chez-kane",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "16:50 - 17:40",
+          "artista": "CHEZ KANE",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-1705-xeria",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "17:05 - 17:55",
+          "artista": "XERIA",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-1750-future-palace",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "17:50 - 18:50",
+          "artista": "FUTURE PALACE",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-1820-wings-of-steel",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "18:20 - 19:10",
+          "artista": "WINGS OF STEEL",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-1900-the-baboon-show",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "19:00 - 20:00",
+          "artista": "THE BABOON SHOW",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-1935-against-myself",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "19:35 - 20:25",
+          "artista": "AGAINST MYSELF",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-2010-saratoga",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "20:10 - 21:10",
+          "artista": "SARATOGA",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-2050-employed-to-serve",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "20:50 - 21:40",
+          "artista": "EMPLOYED TO SERVE",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-2120-stratovarius",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:20 - 22:30",
+          "artista": "STRATOVARIUS",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-2205-daeria",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:05 - 22:55",
+          "artista": "DAERIA",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-2240-in-flames",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:40 - 00:10",
+          "artista": "IN FLAMES",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-2320-mind-driller",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:20 - 00:20",
+          "artista": "MIND DRILLER",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-0020-saurom",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:20 - 01:40",
+          "artista": "SAUROM",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-0045-jordi-wild-dj-set",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:45 - 01:45",
+          "artista": "JORDI WILD DJ SET",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-vie-0150-dark-moor",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:50 - 03:00",
+          "artista": "DARK MOOR",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-1700-guilt-trip",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "17:00 - 18:00",
+          "artista": "GUILT TRIP",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-1705-death-and-legacy",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "17:05 - 17:55",
+          "artista": "DEATH AND LEGACY",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-1810-eihwar",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "18:10 - 19:10",
+          "artista": "EIHWAR",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-1820-fallen-at-dawn",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "18:20 - 19:10",
+          "artista": "FALLEN AT DAWN",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-1920-deicide",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "19:20 - 20:20",
+          "artista": "DEICIDE",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-1935-latzen",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "19:35 - 20:25",
+          "artista": "LATZEN",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-2030-heaven-shall-burn",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "20:30 - 21:50",
+          "artista": "HEAVEN SHALL BURN",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-2050-hardline",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "20:50 - 21:40",
+          "artista": "HARDLINE",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-2200-helloween",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:00 - 00:00",
+          "artista": "HELLOWEEN",
+          "escenario": "Dave Mustaine Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-2205-ten56",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:05 - 22:55",
+          "artista": "TEN56.",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-2320-half-me",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:20 - 00:20",
+          "artista": "HALF ME",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-0010-warcry",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:10 - 01:40",
+          "artista": "WARCRY",
+          "escenario": "Doro Pesch Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-0045-cabal",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:45 - 01:45",
+          "artista": "CABAL",
+          "escenario": "New Rock Stage"
+        },
+        {
+          "id": "leyendas-2026-sab-0150-ankhara",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:50 - 03:00",
+          "artista": "ANKHARA",
+          "escenario": "Dave Mustaine Stage"
+        }
+      ]
+    },
+    {
+      "revision": "2026-08-17T09:45:00Z",
+      "festival": {
+        "id": "cosquin-rock-valladolid-2026",
+        "name": "Cosquin Rock Valladolid",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 28",
+            "calendarDate": "2026-08-28"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 29",
+            "calendarDate": "2026-08-29"
+          },
+          {
+            "id": "domingo",
+            "displayName": "Dom 30",
+            "calendarDate": "2026-08-30"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "viernes": "noche",
+          "sabado": "noche",
+          "domingo": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://cosquinrock.net/cresp/",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=espacio+de+ocio+pinguinos+arena+valladolid",
+            "systemImage": "location"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://cosquinrock.net/cresp/",
+            "systemImage": "ticket"
+          }
+        ]
+      },
+      "stageColors": {},
+      "events": [
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-apertura-puertas",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:30",
+          "artista": "APERTURA PUERTAS",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-ilan-amores",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "ILAN AMORES",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-whisky-caravan",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "WHISKY CARAVAN",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-puno-dragon",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:10",
+          "artista": "PUNO DRAGON",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-m-clan",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:20",
+          "artista": "M-CLAN",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-kaiser-chiefs",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:50",
+          "artista": "KAISER CHIEFS",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-vie-olugbenga-metronomy-dj-set",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:10",
+          "artista": "OLUGBENCA (METRONOMY) DJ SET",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-sab-apertura-puertas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:00",
+          "artista": "APERTURA PUERTAS",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-sab-kinderlomas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:30",
+          "artista": "KINDERLOMAS",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-sab-dmasso",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:40",
+          "artista": "DMASSO",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-sab-imbermind",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:50",
+          "artista": "IMBERMIND",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-sab-lola-bozzano",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:50",
+          "artista": "LOLA BOZZANO",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-sab-paul-kalkbrenner",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:15",
+          "artista": "PAUL KALKBRENNER LIVE",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-sab-lui-lu",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:05",
+          "artista": "LI | LU",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-sab-claptone",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:15",
+          "artista": "CLAPTONE",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-dom-apertura-puertas",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "18:30",
+          "artista": "APERTURA PUERTAS",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-dom-oslo-ovnies",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "19:40",
+          "artista": "OSLO OVNIES",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-dom-comandante-twin",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "20:50",
+          "artista": "COMANDANTE TWIN",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-dom-ultraligera",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "22:00",
+          "artista": "ULTRALIGERA",
+          "escenario": ""
+        },
+        {
+          "id": "cosquin-rock-valladolid-2026-dom-dani-del-lio",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "23:50",
+          "artista": "DANI DEL LIO",
+          "escenario": ""
+        }
+      ]
+    },
+    {
+      "revision": "2026-08-14T15:20:00Z",
+      "festival": {
+        "id": "jardin-delicias-sevilla-2026",
+        "name": "Jardin de las Delicias Sevilla",
+        "year": 2026,
+        "days": [
+          {
+            "id": "sabado",
+            "displayName": "Sab 17",
+            "calendarDate": "2026-10-17"
+          }
+        ],
+        "defaultDayID": "sabado",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://www.jardindeliciasfestival.com/sevilla/",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.jardindeliciasfestival.com/sevilla/comprar-entradas/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Centro+Andaluz+de+Arte+Contemporaneo",
+            "systemImage": "location"
+          }
+        ]
+      },
+      "stageColors": {},
+      "events": [
+        {
+          "id": "jardin-delicias-sevilla-2026-sab-siloe",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SILOE",
+          "escenario": ""
+        },
+        {
+          "id": "jardin-delicias-sevilla-2026-sab-taburete",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TABURETE",
+          "escenario": ""
+        },
+        {
+          "id": "jardin-delicias-sevilla-2026-sab-marlena",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MARLENA",
+          "escenario": ""
+        },
+        {
+          "id": "jardin-delicias-sevilla-2026-sab-hey-kid",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "HEY KID",
+          "escenario": ""
+        },
+        {
+          "id": "jardin-delicias-sevilla-2026-sab-tu-otra-bonita",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TU OTRA BONITA",
+          "escenario": ""
+        },
+        {
+          "id": "jardin-delicias-sevilla-2026-sab-hermanos-martinez",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "HERMANOS MARTINEZ",
+          "escenario": ""
+        }
+      ]
+    },
+    {
+      "revision": "2026-08-14T15:21:00Z",
+      "festival": {
+        "id": "jardin-delicias-madrid-2026",
+        "name": "Jardin de las Delicias Madrid",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 18",
+            "calendarDate": "2026-09-18"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 19",
+            "calendarDate": "2026-09-19"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://www.jardindeliciasfestival.com/madrid/",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.jardindeliciasfestival.com/madrid/comprar-entradas/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Campo+de+Rugby+Cantarranas",
+            "systemImage": "location"
+          }
+        ]
+      },
+      "stageColors": {
+        "Escenario Endesa": "#00d4d8",
+        "Escenario Bosque": "#2b2d42"
+      },
+      "events": [
+        {
+          "id": "jardin-delicias-madrid-2026-vie-dani-martin",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DANI MARTIN",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-nil-moliner",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "NIL MOLINER",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-sexy-zebras",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SEXY ZEBRAS",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-marlena",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MARLENA",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-despistaos",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DESPISTAOS",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-club-del-rio",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CLUB DEL RIO",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-kalenn",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "KALENN",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-mbongo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MBONGO",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-la-azotea",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LA AZOTEA",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-gon-abril",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "GON ABRIL",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-ignacio-serrano",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "IGNACIO SERRANO",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-tere",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TERE!",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-barce",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BARCE",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-ardiya",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "ARDIYA",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-mickey-pavon",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MICKEY PAVON",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-los-gilca",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LOS GILCA",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-ivan-mg",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "IVAN MG",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-carlos-g",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CARLOS G",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-vie-tinture",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TINTURE",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-viva-suecia",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "VIVA SUECIA",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-taburete",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TABURETE",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-dorian",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DORIAN",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-marlon",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MARLON",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-inazio",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "INAZIO",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-besmaya",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BESMAYA",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-serko",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SERKO",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-javi-chapela",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "JAVI CHAPELA",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-yarea",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "YAREA",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-alex-wall",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "ALEX WALL",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-moni-motes",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MONI MOTES",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-pavlena",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PAVLENA",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-ters",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TERS",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-juan-valiente",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "JUAN VALIENTE",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-mike-fajardo",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MIKE FAJARDO",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-julia-centeno",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "JULIA CENTENO",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-hidalgo",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "HIDALGO",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-juan-gonzalez",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "JUAN GONZALEZ",
+          "escenario": "Escenario Bosque"
+        },
+        {
+          "id": "jardin-delicias-madrid-2026-sab-raigada",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "RAIGADA",
+          "escenario": "Escenario Bosque"
+        }
+      ]
+    },
+    {
+      "revision": "2026-08-14T13:10:00Z",
+      "festival": {
+        "id": "gigante-festival-2026",
+        "legacyIDs": [],
+        "name": "Gigante Festival",
+        "year": 2026,
+        "days": [
+          {
+            "id": "jueves",
+            "displayName": "Jue 27",
+            "calendarDate": "2026-08-27"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 28",
+            "calendarDate": "2026-08-28"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 29",
+            "calendarDate": "2026-08-29"
+          }
+        ],
+        "defaultDayID": "jueves",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {},
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://festivalgigante.com/",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://festivalgigante.com/abonos/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Explanada+del+Paseo+del+Ocio+de+Guadalajara",
+            "systemImage": "location"
+          }
+        ]
+      },
+      "stageColors": {
+        "Escenario Vibra Mahou": "#E83E8C",
+        "Escenario Gigante": "#69D2E7",
+        "Escenario Mondo Sonoro": "#F5A623",
+        "Escenario Guadalajara (Plaza Mayor)": "#F26B38",
+        "Recinto": "#95A5A6"
+      },
+      "events": [
+        {
+          "id": "gigante-2026-jue-1930-apertura-puertas",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "19:30",
+          "artista": "APERTURA PUERTAS",
+          "escenario": "Recinto"
+        },
+        {
+          "id": "gigante-2026-vie-1300-sandra-bautista",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "SANDRA BAUTISTA",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        },
+        {
+          "id": "gigante-2026-vie-1400-la-126",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "14:00",
+          "artista": "LA 126",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        },
+        {
+          "id": "gigante-2026-vie-1515-toobaldsound",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "15:15",
+          "artista": "TOOBALDSOUND",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        },
+        {
+          "id": "gigante-2026-jue-2000-comandante-twin",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "COMANDANTE TWIN",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-jue-2220-angel-stanich",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:20",
+          "artista": "ANGEL STANICH",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-jue-0050-calequi-panteras",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:50",
+          "artista": "CALEQUI Y LAS PANTERAS",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-jue-2105-angela-gonzalez",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:05",
+          "artista": "ANGELA GONZALEZ",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-jue-2335-la-cabra-mecanica",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "23:35",
+          "artista": "LA CABRA MECANICA",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-jue-1945-kov",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "19:45",
+          "artista": "KOV",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-jue-2115-la-nina-paracaidas",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:15",
+          "artista": "LA NINA PARACAIDAS",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-jue-2245-tere",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:45",
+          "artista": "TERE!",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-jue-0015-estrogenuinas",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:15",
+          "artista": "ESTROGENUINAS",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-jue-0145-chinches-djs",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "01:45",
+          "artista": "CHINCHES DJS",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-vie-1830-apertura-puertas",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:30",
+          "artista": "APERTURA PUERTAS",
+          "escenario": "Recinto"
+        },
+        {
+          "id": "gigante-2026-vie-1915-the-molotovs",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:15",
+          "artista": "THE MOLOTOVS",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-vie-2140-repion",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:40",
+          "artista": "REPION",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-vie-0035-ultraligera",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:35",
+          "artista": "ULTRALIGERA",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-vie-1845-los-domingos",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:45",
+          "artista": "LOS DOMINGOS",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-vie-2020-aiko-el-grupo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:20",
+          "artista": "AIKO EL GRUPO",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-vie-2300-lamoda",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "LA M.O.D.A.",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-vie-0150-ortiga",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:50",
+          "artista": "ORTIGA",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-vie-2015-musgo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:15",
+          "artista": "MUSGO",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-vie-2145-doplers",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:45",
+          "artista": "DOPLERS",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-vie-2315-ruvenruven",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:15",
+          "artista": "RUVENRUVEN",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-vie-0045-ona-mafalda",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:45",
+          "artista": "ONA MAFALDA",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-vie-0215-bita",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:15",
+          "artista": "BITA",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-sab-1830-apertura-puertas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:30",
+          "artista": "APERTURA PUERTAS",
+          "escenario": "Recinto"
+        },
+        {
+          "id": "gigante-2026-sab-1900-septeto-santiaguero",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "SEPTETO SANTIAGUERO",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-sab-2140-belen-aguilera",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:40",
+          "artista": "BELEN AGUILERA",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-sab-0020-zahara-rave",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:20",
+          "artista": "ZAHARA RAVE",
+          "escenario": "Escenario Vibra Mahou"
+        },
+        {
+          "id": "gigante-2026-sab-2020-queralt-lahoz",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:20",
+          "artista": "QUERALT LAHOZ",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-sab-2300-ginebras",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "GINEBRAS",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-sab-0135-chimo-bayo",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:35",
+          "artista": "CHIMO BAYO",
+          "escenario": "Escenario Gigante"
+        },
+        {
+          "id": "gigante-2026-sab-1845-late-capital",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:45",
+          "artista": "LATE CAPITAL",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-sab-2015-delacueva",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:15",
+          "artista": "DELACUEVA",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-sab-2145-casino-montreal",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:45",
+          "artista": "CASINO MONTREAL",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-sab-2315-minino",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:15",
+          "artista": "MININO",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-sab-0045-oslo-ovnies",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:45",
+          "artista": "OSLO OVNIES",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-sab-0215-superframe",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:15",
+          "artista": "SUPERFRAME",
+          "escenario": "Escenario Mondo Sonoro"
+        },
+        {
+          "id": "gigante-2026-sab-1300-lola-vila",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "LOLA VILA",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        },
+        {
+          "id": "gigante-2026-sab-1400-kitai",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "14:00",
+          "artista": "KITAI",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        },
+        {
+          "id": "gigante-2026-sab-1515-popi-sito",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "15:15",
+          "artista": "POPI & SITO",
+          "escenario": "Escenario Guadalajara (Plaza Mayor)"
+        }
+      ]
+    },
+    {
+      "revision": "2026-08-14T14:05:00Z",
+      "festival": {
+        "id": "festival-de-la-luz-2026",
+        "legacyIDs": [],
+        "name": "Festival de la Luz",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 28",
+            "calendarDate": "2026-08-28"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 29",
+            "calendarDate": "2026-08-29"
+          },
+          {
+            "id": "domingo",
+            "displayName": "Dom 30",
+            "calendarDate": "2026-08-30"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {},
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://festivaldelaluz.es/",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.enterticket.es/eventos/festival-de-la-luz-2026-283482",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Festival+de+la+Luz",
+            "systemImage": "location"
+          }
+        ]
+      },
+      "stageColors": {},
+      "events": [
+        {
+          "id": "festival-luz-2026-vie-nena-daconte",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "NENA DACONTE",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-vie-quinkillada",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "QUINKILLADA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-vie-manuro",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MANURO",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-vie-uzlive",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "UZLIVE",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-vie-vamos-con-todo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "VAMOS CON TODO",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-vie-kris-k-dj",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "KRIS K DJ",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-vie-mr-kitos",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MR.KITOS (SESION DJ VIBRA MAHOU)",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-chambao",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CHAMBAO",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-the-rapants",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "THE RAPANTS",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-boikot",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BOIKOT",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-carlos-sadness",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CARLOS SADNESS",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-budino",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BUDINO",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-repion",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "REPION",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-mi-fritos-gimme-chetos",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MI FRITOS AND THE GIMME CHETOS",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-complices",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "COMPLICES",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-bma",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BMA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-sabela",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SABELA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-triixadura",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TRIIXADURA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-birnal",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BIRNAL",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-los-motores",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LOS MOTORES",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-emilio-rua",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "EMILIO RUA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-crebinsky-balkan-band",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CREBINSKY BALKAN BAND",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-stivijois",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "STIVIJOIS",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-los-acebos",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LOS ACEBOS",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-siliti",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SILITI",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-poi-floid",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "POI FLOID",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-dilara",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DILARA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-banda-balbina",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "A BANDA DA BALBINA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-divergente-dj",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DIVERGENTE DJ (SESION DJ VIBRA MAHOU)",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-sab-santiaguinos-boimorto",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SANTIAGUINOS DE BOIMORTO",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-pablo-alboran",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PABLO ALBORAN",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-rafaga",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "RAFAGA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-puno-dragon",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PUNO DRAGON",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-luar-na-lubre",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LUAR NA LUBRE",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-la-bien-querida",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LA BIEN QUERIDA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-la-paloma",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LA PALOMA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-ona-mafalda",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "ONA MAFALDA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-mabu",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MABU",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-banda-loba",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "A BANDA DA LOBA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-vangoura",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "VANGOURA",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-dani-cornes",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DANI CORNES",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-leningoat",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LENINGOAT",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-vimbio",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "VIMBIO",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-the-binturas",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "THE BINTURAS",
+          "escenario": ""
+        },
+        {
+          "id": "festival-luz-2026-dom-banda-musica-salceda",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BANDA DE MUSICA DE SALCEDA",
+          "escenario": ""
+        }
+      ]
+    },
+    {
+      "revision": "2026-08-14T14:25:00Z",
+      "festival": {
+        "id": "ebrovision-2026",
+        "legacyIDs": [],
+        "name": "Ebrovision",
+        "year": 2026,
+        "days": [
+          {
+            "id": "jueves",
+            "displayName": "Jue 03",
+            "calendarDate": "2026-09-03"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 04",
+            "calendarDate": "2026-09-04"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 05",
+            "calendarDate": "2026-09-05"
+          },
+          {
+            "id": "domingo",
+            "displayName": "Dom 06",
+            "calendarDate": "2026-09-06"
+          }
+        ],
+        "defaultDayID": "jueves",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {},
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://ebrovision.com/",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.entradas.com/artist/festival-ebrovision/?affiliate=BVS",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Festival+Ebrovision",
+            "systemImage": "location"
+          }
+        ]
+      },
+      "stageColors": {},
+      "events": [
+        {
+          "id": "ebrovision-2026-jue-juventude",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "",
+          "artista": "JUVENTUDE",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-jue-rata",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "",
+          "artista": "RATA",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-jue-la-126",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LA 126",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-jue-concierto-sorpresa",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CONCIERTO SORPRESA (RIO EBRO)",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-carlos-ares",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CARLOS ARES",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-getdown-services",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "GETDOWN SERVICES",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-shego",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SHEGO",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-la-habitacion-roja",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LA HABITACION ROJA (30 ANIVERSARIO)",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-triangulo-amor-bizarro",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TRIANGULO DE AMOR BIZARRO",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-puno-dragon",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PUNO DRAGON",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-dani-dicostas",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DANI DICOSTAS",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-san-tosielo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SAN TOSIELO",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-hoonine",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "HOONINE",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-go-cactus",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "GO CACTUS",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-vie-grama-agropunk",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "GRAMA AGROPUNK",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-lori-meyers",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LORI MEYERS",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-sanguijuelas-guadiana",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "SANGUIJUELAS DEL GUADIANA",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-bodega",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BODEGA",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-rufus-firefly",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "RUFUS T. FIREFLY",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-repion",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "REPION",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-mujeres",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MUJERES",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-la-milagrosa",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LA MILAGROSA",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-mala-gestion",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MALA GESTION",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-los-chivatos",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LOS CHIVATOS",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-sab-concierto-sorpresa",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CONCIERTO SORPRESA (CASTILLO DE MIRANDA)",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-dom-lisasinson",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LISASINSON",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-dom-ganador-concurso-tsw",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "GANADOR CONCURSO TSW",
+          "escenario": ""
+        },
+        {
+          "id": "ebrovision-2026-dom-mas-por-confirmar",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MAS POR CONFIRMAR",
+          "escenario": ""
+        }
+      ]
+    },
+    {
+      "revision": "2026-08-14T14:45:00Z",
+      "festival": {
+        "id": "coca-cola-music-experience-2026",
+        "legacyIDs": [
+          "ccme-2026"
+        ],
+        "name": "Coca-Cola Music Experience",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 04",
+            "calendarDate": "2026-09-04"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 05",
+            "calendarDate": "2026-09-05"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {},
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web oficial",
+            "url": "https://www.coca-cola.com/es/es/offerings/musica",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.coca-cola.com/es/es/offerings/musica/CCME/abonos-entradas",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Iberdrola+Music",
+            "systemImage": "location"
+          }
+        ]
+      },
+      "stageColors": {},
+      "events": [
+        {
+          "id": "ccme-2026-vie-melendi",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MELENDI",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-milo-j",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "MILO J",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-wisin",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "WISIN",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-lucho-rk",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LUCHO RK",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-natalia-lacunza",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "NATALIA LACUNZA",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-violeta",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "VIOLETA",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-tami-tamako",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TAMI TAMAKO",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-hey-kid",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "HEY KID",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-vilu-gontero",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "VILU GONTERO",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-kabasaki",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "KABASAKI",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-lucia-puerta",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LUCIA DE LA PUERTA",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-vie-cero",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "CERO",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-dellafuente",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DELLAFUENTE",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-dei-v",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DEI V",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-dimitri-vegas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DIMITRI VEGAS",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-omar-montes",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "OMAR MONTES",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-ruslana",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "RUSLANA",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-lorna",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LORNA",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-ysy-a",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "YSY A",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-pepe-vizio",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PEPE Y VIZIO",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-luc-loren",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "LUC LOREN",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-taichu",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "TAICHU",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-pikeras",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PIKERAS",
+          "escenario": ""
+        },
+        {
+          "id": "ccme-2026-sab-dib",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DIB",
+          "escenario": ""
+        }
+      ]
+    }
+  ]
+}
