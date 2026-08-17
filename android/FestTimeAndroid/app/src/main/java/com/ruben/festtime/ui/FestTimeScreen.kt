@@ -738,6 +738,7 @@ private fun EventRow(
     val stripeColor = parseHex(stageColorHex)
     val hasValidSchedule = event.sortableMinutes != Int.MAX_VALUE
     val scheduleLabel = if (hasValidSchedule) "${event.hora} h" else "Horarios no disponibles"
+    val stageLabel = event.escenario.ifBlank { "Sin Escenario" }
 
     Card(
         modifier = Modifier
@@ -770,7 +771,7 @@ private fun EventRow(
                         fontWeight = FontWeight.SemiBold
                     )
                     Text(
-                        text = event.escenario,
+                        text = stageLabel,
                         style = MaterialTheme.typography.labelSmall,
                         fontWeight = FontWeight.Bold,
                         color = stripeColor
