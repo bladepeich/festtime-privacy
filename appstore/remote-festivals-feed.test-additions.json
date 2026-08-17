@@ -4817,7 +4817,7 @@
           "id": "brisa-norte-2027-sab-2350-luna-boreal",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "23:50",
+          "hora": "23:35",
           "artista": "Luna Boreal",
           "escenario": "Escenario Costa"
         },
@@ -4830,11 +4830,19 @@
           "escenario": "Escenario Faro"
         },
         {
-          "id": "brisa-norte-2027-vie-0040-muelle-oscuro",
+          "id": "brisa-norte-2027-vie-1835-mar-abierto",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "00:40",
-          "artista": "Muelle Oscuro",
+          "hora": "18:35",
+          "artista": "Mar Abierto",
+          "escenario": "Escenario Costa"
+        },
+        {
+          "id": "brisa-norte-2027-sab-0045-puerto-norte",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:45",
+          "artista": "Puerto Norte",
           "escenario": "Escenario Faro"
         }
       ]
@@ -4889,7 +4897,7 @@
           "dia": "domingo",
           "turno": "dia",
           "hora": "13:00",
-          "artista": "Corriente Libre",
+          "artista": "Corriente Libre X",
           "escenario": "Escenario Pico"
         },
         {
@@ -4922,6 +4930,14 @@
           "turno": "dia",
           "hora": "22:50",
           "artista": "Cable Lunar",
+          "escenario": "Escenario Valle"
+        },
+        {
+          "id": "sierra-electrica-2027-dom-1715-orbita-solar",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "17:15",
+          "artista": "Orbita Solar",
           "escenario": "Escenario Pico"
         }
       ]
