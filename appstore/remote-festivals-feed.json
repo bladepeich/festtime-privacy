@@ -6,6 +6,7 @@
       "revision": "2026-08-14T11:55:00Z",
       "festival": {
         "id": "cooltural-fest-2026",
+      "chatChannelID": "cooltural-fest-2026",
         "name": "Cooltural Fest",
         "year": 2026,
         "days": [
@@ -718,6 +719,7 @@
       "revision": "2026-08-14T12:15:00Z",
       "festival": {
         "id": "sonorama-2026",
+      "chatChannelID": "sonorama-2026",
         "name": "Sonorama Ribera",
         "year": 2026,
         "days": [
@@ -2259,6 +2261,7 @@
       "revision": "2026-08-14T12:20:00Z",
       "festival": {
         "id": "leyendas-del-rock-2026",
+      "chatChannelID": "leyendas-del-rock-2026",
         "legacyIDs": [],
         "name": "Leyendas del Rock",
         "year": 2026,
@@ -2798,6 +2801,7 @@
       "revision": "2026-08-17T09:45:00Z",
       "festival": {
         "id": "cosquin-rock-valladolid-2026",
+      "chatChannelID": "cosquin-rock-valladolid-2026",
         "name": "Cosquin Rock Valladolid",
         "year": 2026,
         "days": [
@@ -3011,6 +3015,7 @@
       "revision": "2026-08-14T15:20:00Z",
       "festival": {
         "id": "jardin-delicias-sevilla-2026",
+      "chatChannelID": "jardin-delicias-sevilla-2026",
         "name": "Jardin de las Delicias Sevilla",
         "year": 2026,
         "days": [
@@ -3100,6 +3105,7 @@
       "revision": "2026-08-14T15:21:00Z",
       "festival": {
         "id": "jardin-delicias-madrid-2026",
+      "chatChannelID": "jardin-delicias-madrid-2026",
         "name": "Jardin de las Delicias Madrid",
         "year": 2026,
         "days": [
@@ -3454,6 +3460,7 @@
       "revision": "2026-08-14T13:10:00Z",
       "festival": {
         "id": "gigante-festival-2026",
+      "chatChannelID": "gigante-festival-2026",
         "legacyIDs": [],
         "name": "Gigante Festival",
         "year": 2026,
@@ -3854,6 +3861,7 @@
       "revision": "2026-08-14T14:05:00Z",
       "festival": {
         "id": "festival-de-la-luz-2026",
+      "chatChannelID": "festival-de-la-luz-2026",
         "legacyIDs": [],
         "name": "Festival de la Luz",
         "year": 2026,
@@ -4264,6 +4272,7 @@
       "revision": "2026-08-14T14:25:00Z",
       "festival": {
         "id": "ebrovision-2026",
+      "chatChannelID": "ebrovision-2026",
         "legacyIDs": [],
         "name": "Ebrovision",
         "year": 2026,
@@ -4543,6 +4552,7 @@
       "revision": "2026-08-14T14:45:00Z",
       "festival": {
         "id": "coca-cola-music-experience-2026",
+      "chatChannelID": "coca-cola-music-experience-2026",
         "legacyIDs": [
           "ccme-2026"
         ],

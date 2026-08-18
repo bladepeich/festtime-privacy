@@ -8,6 +8,7 @@
       "bundle": {
         "festival": {
           "id": "leyendas-del-rock-2026",
+          "chatChannelID": "leyendas-del-rock-2026",
           "name": "Leyendas del Rock",
           "year": 2026,
           "days": [
@@ -53,6 +54,7 @@
       "bundle": {
         "festival": {
           "id": "mi-festival-2027",
+          "chatChannelID": "mi-festival-2027",
           "legacyIDs": [],
           "name": "Mi Festival",
           "year": 2027,
