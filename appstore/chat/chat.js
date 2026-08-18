@@ -203,12 +203,59 @@ async function leaveChat() {
     messagesEl.innerHTML = '';
     lastSeen = 0;
     mentionUnread = 0;
+    input.value = '';
+    await clearLocalChatFootprint();
     titleUpdate();
     setStatus('Has abandonado el chat. El historial local se ha limpiado.', 'ok');
   } finally {
     isLeaving = false;
     syncButtons();
   }
+}
+
+async function clearLocalChatFootprint() {
+  try {
+    const prefixes = ['ft-chat', 'festtime.chat'];
+
+    try {
+      const lsKeys = [];
+      for (let i = 0; i < localStorage.length; i += 1) {
+        const key = localStorage.key(i);
+        if (key) {
+          lsKeys.push(key);
+        }
+      }
+      for (const key of lsKeys) {
+        if (prefixes.some((prefix) => key.startsWith(prefix))) {
+          localStorage.removeItem(key);
+        }
+      }
+    } catch (_) {}
+
+    try {
+      const ssKeys = [];
+      for (let i = 0; i < sessionStorage.length; i += 1) {
+        const key = sessionStorage.key(i);
+        if (key) {
+          ssKeys.push(key);
+        }
+      }
+      for (const key of ssKeys) {
+        if (prefixes.some((prefix) => key.startsWith(prefix))) {
+          sessionStorage.removeItem(key);
+        }
+      }
+    } catch (_) {}
+
+    if (window.caches && caches.keys) {
+      const cacheNames = await caches.keys();
+      await Promise.all(
+        cacheNames
+          .filter((name) => name.includes('chat') || name.includes('festtime'))
+          .map((name) => caches.delete(name))
+      );
+    }
+  } catch (_) {}
 }
 
 function scheduleNextPoll() {
