@@ -1,24 +1,226 @@
+:root {
+	--fest-red: #e63946;
+	--fest-blue: #1d3557;
+	--fest-blue-soft: #4f6d98;
+	--fest-bg: #f4f6fb;
+	--fest-card: #ffffff;
+	--fest-ink: #1f2937;
+	--fest-muted: #667085;
+	--fest-line: #dbe3ef;
+	--ok: #147f52;
+	--danger: #b4232d;
+}
+
 * { box-sizing: border-box; }
-html, body { height: 100%; -webkit-text-size-adjust: 100%; }
-body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif; background: #0f172a; color: #e5e7eb; overflow: hidden; }
-.app { max-width: 960px; margin: 0 auto; height: 100dvh; min-height: 100dvh; display: grid; grid-template-rows: auto auto minmax(0, 1fr) auto; }
-.topbar { padding: 16px; background: #111827; border-bottom: 1px solid #1f2937; display: flex; justify-content: space-between; gap: 12px; align-items: center; }
-.topbar h1 { margin: 0; font-size: 1.1rem; }
-.topbar p { margin: 4px 0 0; color: #9ca3af; font-size: .9rem; }
-.actions { display: flex; gap: 8px; flex-wrap: wrap; }
-.notice { padding: 10px 16px; background: #1f2937; color: #cbd5e1; font-size: .9rem; border-bottom: 1px solid #374151; }
-.status { min-height: 24px; padding: 6px 16px; font-size: .85rem; color: #bfdbfe; background: #111827; border-bottom: 1px solid #1f2937; }
-.status.error { color: #fecaca; }
-.status.ok { color: #bbf7d0; }
-.messages { padding: 14px; overflow: auto; min-height: 0; display: flex; flex-direction: column; gap: 8px; -webkit-overflow-scrolling: touch; }
-.msg { padding: 10px; border-radius: 10px; background: #1f2937; border: 1px solid #374151; }
-.msg.me { background: #1e3a8a; border-color: #2563eb; }
-.msg .meta { font-size: .75rem; color: #9ca3af; margin-bottom: 4px; }
-.msg .body { white-space: pre-wrap; word-break: break-word; }
-.msg .mention { color: #fbbf24; font-weight: 700; }
-.composer { display: grid; grid-template-columns: 1fr auto; gap: 8px; padding: 12px; padding-bottom: calc(12px + env(safe-area-inset-bottom)); background: #111827; border-top: 1px solid #1f2937; position: sticky; bottom: 0; }
-input { width: 100%; padding: 12px; border-radius: 8px; border: 1px solid #334155; background: #0b1220; color: #f8fafc; font-size: 16px; line-height: 1.2; }
-button { border: 0; border-radius: 8px; padding: 10px 14px; cursor: pointer; font-size: 16px; line-height: 1.2; }
-button.primary { background: #2563eb; color: #fff; }
-button.danger { background: #b91c1c; color: #fff; }
-button:disabled { opacity: .5; cursor: not-allowed; }
+
+html,
+body {
+	height: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	margin: 0;
+	font-family: "Avenir Next", "SF Pro Text", "Segoe UI", sans-serif;
+	color: var(--fest-ink);
+	overflow: hidden;
+	background:
+		radial-gradient(1300px 700px at -12% -20%, rgba(230, 57, 70, 0.14), transparent 55%),
+		radial-gradient(1000px 520px at 115% -22%, rgba(29, 53, 87, 0.18), transparent 52%),
+		linear-gradient(180deg, #f8faff 0%, var(--fest-bg) 100%);
+}
+
+.app {
+	max-width: 980px;
+	margin: 0 auto;
+	height: 100dvh;
+	min-height: 100dvh;
+	display: grid;
+	grid-template-rows: auto auto auto minmax(0, 1fr) auto;
+	background: rgba(255, 255, 255, 0.64);
+	border-left: 1px solid rgba(255, 255, 255, 0.7);
+	border-right: 1px solid rgba(255, 255, 255, 0.7);
+	backdrop-filter: blur(8px);
+}
+
+.topbar {
+	padding: 14px 16px;
+	padding-top: calc(14px + env(safe-area-inset-top));
+	background:
+		linear-gradient(120deg, rgba(230, 57, 70, 0.12), rgba(29, 53, 87, 0.15)),
+		var(--fest-card);
+	border-bottom: 1px solid var(--fest-line);
+	display: flex;
+	justify-content: space-between;
+	gap: 12px;
+	align-items: center;
+}
+
+.topbar h1 {
+	margin: 0;
+	font-size: 1.08rem;
+	letter-spacing: 0.02em;
+	font-weight: 800;
+	color: var(--fest-blue);
+}
+
+.topbar p {
+	margin: 4px 0 0;
+	color: var(--fest-muted);
+	font-size: 0.83rem;
+	font-weight: 600;
+}
+
+.actions {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.notice {
+	padding: 10px 16px;
+	background: #fff7e8;
+	color: #8f5b00;
+	font-size: 0.88rem;
+	border-bottom: 1px solid #f1d39e;
+	font-weight: 600;
+}
+
+.status {
+	min-height: 25px;
+	padding: 6px 16px;
+	font-size: 0.84rem;
+	color: var(--fest-blue-soft);
+	background: rgba(255, 255, 255, 0.8);
+	border-bottom: 1px solid var(--fest-line);
+	font-weight: 600;
+}
+
+.status.error {
+	color: var(--danger);
+}
+
+.status.ok {
+	color: var(--ok);
+}
+
+.messages {
+	padding: 14px;
+	overflow: auto;
+	min-height: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	-webkit-overflow-scrolling: touch;
+}
+
+.msg {
+	padding: 11px 12px;
+	border-radius: 14px;
+	background: var(--fest-card);
+	border: 1px solid var(--fest-line);
+	box-shadow: 0 5px 18px rgba(17, 24, 39, 0.05);
+}
+
+.msg.me {
+	background: linear-gradient(180deg, #f5f8ff 0%, #ebf1ff 100%);
+	border-color: #cddaf7;
+	box-shadow: 0 6px 18px rgba(29, 53, 87, 0.09);
+}
+
+.msg .meta {
+	font-size: 0.74rem;
+	color: var(--fest-muted);
+	margin-bottom: 5px;
+	font-weight: 700;
+}
+
+.msg .body {
+	white-space: pre-wrap;
+	word-break: break-word;
+	line-height: 1.35;
+}
+
+.msg .mention {
+	color: var(--fest-red);
+	font-weight: 800;
+	background: rgba(230, 57, 70, 0.1);
+	border-radius: 6px;
+	padding: 1px 4px;
+}
+
+.composer {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	gap: 8px;
+	padding: 12px;
+	padding-bottom: calc(12px + env(safe-area-inset-bottom));
+	background: rgba(255, 255, 255, 0.95);
+	border-top: 1px solid var(--fest-line);
+	position: sticky;
+	bottom: 0;
+}
+
+input {
+	width: 100%;
+	padding: 12px;
+	border-radius: 10px;
+	border: 1px solid #c8d3e6;
+	background: #ffffff;
+	color: #101828;
+	font-size: 16px;
+	line-height: 1.2;
+}
+
+input:focus {
+	outline: none;
+	border-color: var(--fest-blue-soft);
+	box-shadow: 0 0 0 3px rgba(79, 109, 152, 0.14);
+}
+
+button {
+	border: 0;
+	border-radius: 10px;
+	padding: 10px 14px;
+	cursor: pointer;
+	font-size: 15px;
+	line-height: 1.2;
+	font-weight: 700;
+	transition: transform 120ms ease, filter 120ms ease;
+}
+
+button:active {
+	transform: translateY(1px);
+}
+
+button.primary {
+	background: linear-gradient(135deg, #2a4f84 0%, var(--fest-blue) 100%);
+	color: #fff;
+}
+
+button.danger {
+	background: linear-gradient(135deg, #d22f3d 0%, #b4232d 100%);
+	color: #fff;
+}
+
+button:disabled {
+	opacity: 0.5;
+	cursor: not-allowed;
+	transform: none;
+}
+
+@media (max-width: 700px) {
+	.topbar {
+		align-items: flex-start;
+		flex-direction: column;
+	}
+
+	.actions {
+		width: 100%;
+	}
+
+	.actions button {
+		flex: 1;
+		min-width: 0;
+	}
+}
