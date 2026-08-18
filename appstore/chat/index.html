@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <title>FestTime Chat</title>
+  <link rel="stylesheet" href="chat.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="topbar">
+      <div>
+        <h1>Chat del Festival</h1>
+        <p id="meta"></p>
+      </div>
+      <div class="actions">
+        <button id="joinBtn" class="primary">Unirse al Chat</button>
+        <button id="leaveBtn" class="danger" disabled>Abandonar el Chat</button>
+      </div>
+    </header>
+
+    <section class="notice">
+      Notificaciones de chat en modo silencioso. Solo menciones.
+    </section>
+
+    <section id="status" class="status" aria-live="polite"></section>
+
+    <section id="messages" class="messages"></section>
+
+    <form id="composer" class="composer">
+      <input id="messageInput" type="text" maxlength="400" placeholder="Escribe un mensaje..." autocomplete="off" />
+      <button type="submit" class="primary">Enviar</button>
+    </form>
+  </main>
+
+  <script src="chat.js"></script>
+</body>
+</html>
