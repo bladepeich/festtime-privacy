@@ -155,11 +155,11 @@ body {
 	font-weight: 700;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-start;
 	gap: 8px;
 }
 
-.dm-open {
+.user-link {
 	border: 1px solid #cddaf7;
 	background: #f5f8ff;
 	color: var(--fest-blue);
@@ -167,6 +167,10 @@ body {
 	border-radius: 8px;
 	font-size: 12px;
 	font-weight: 700;
+}
+
+.meta-time {
+	opacity: 0.9;
 }
 
 .hidden {
@@ -233,6 +237,28 @@ body {
 	background: transparent;
 	border: 1px solid #c8d3e6;
 	color: var(--fest-blue);
+}
+
+.user-action-sheet {
+	position: fixed;
+	inset: 0;
+	background: rgba(15, 23, 42, 0.35);
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding: 12px;
+	z-index: 50;
+}
+
+.user-action-card {
+	width: min(460px, 100%);
+	background: #fff;
+	border: 1px solid var(--fest-line);
+	border-radius: 14px;
+	padding: 12px;
+	display: grid;
+	gap: 8px;
+	box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
 }
 
 .msg .body {

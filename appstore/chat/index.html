@@ -38,6 +38,14 @@
       </form>
     </section>
 
+    <section id="userActionSheet" class="user-action-sheet hidden" aria-live="polite">
+      <div class="user-action-card">
+        <strong id="userActionTitle">Usuario</strong>
+        <button id="startDmBtn" type="button" class="primary">Iniciar chat privado</button>
+        <button id="cancelUserActionBtn" type="button" class="ghost">Cancelar</button>
+      </div>
+    </section>
+
     <form id="composer" class="composer">
       <input id="messageInput" type="text" maxlength="400" placeholder="Escribe un mensaje..." autocomplete="off" />
       <button type="submit" class="primary">Enviar</button>

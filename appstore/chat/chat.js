@@ -20,6 +20,10 @@ const dmMessagesEl = document.getElementById('dmMessages');
 const dmCloseBtn = document.getElementById('dmCloseBtn');
 const dmComposer = document.getElementById('dmComposer');
 const dmMessageInput = document.getElementById('dmMessageInput');
+const userActionSheet = document.getElementById('userActionSheet');
+const userActionTitle = document.getElementById('userActionTitle');
+const startDmBtn = document.getElementById('startDmBtn');
+const cancelUserActionBtn = document.getElementById('cancelUserActionBtn');
 
 let joined = false;
 let me = { userId, alias };
@@ -32,6 +36,7 @@ let isJoining = false;
 let isLeaving = false;
 let isSending = false;
 let dmPeer = null;
+let selectedUserForAction = null;
 
 meta.textContent = `${festivalId || 'festival-desconocido'} · ${alias || 'anonimo'} · ${platform}`;
 
@@ -167,14 +172,14 @@ function renderMessages(list) {
     const safeAlias = esc(m.alias);
     const safeBody = esc(m.text).replace(/@([A-Za-z0-9_-]{3,24})/g, '<span class="mention">@$1</span>');
 
-    const dmButton = m.userId !== me.userId
-      ? `<button type="button" class="dm-open" data-user-id="${esc(m.userId)}" data-alias="${safeAlias}">DM</button>`
-      : '';
+    const userButton = m.userId !== me.userId
+      ? `<button type="button" class="user-link" data-user-id="${esc(m.userId)}" data-alias="${safeAlias}">${safeAlias}</button>`
+      : `<span>${safeAlias}</span>`;
 
     div.innerHTML = `
       <div class="meta">
-        <span>${safeAlias} · ${fmtTime(m.createdAt)}</span>
-        ${dmButton}
+        ${userButton}
+        <span class="meta-time">· ${fmtTime(m.createdAt)}</span>
       </div>
       <div class="body">${safeBody}</div>
     `;
@@ -247,6 +252,29 @@ function closeDmPanel() {
   }
   if (dmMessageInput) {
     dmMessageInput.value = '';
+  }
+}
+
+function openUserActionSheet(userIdValue, aliasValue) {
+  if (!userActionSheet || !userIdValue || userIdValue === me.userId) {
+    return;
+  }
+
+  selectedUserForAction = {
+    userId: String(userIdValue).trim(),
+    alias: String(aliasValue || 'Usuario').trim()
+  };
+
+  if (userActionTitle) {
+    userActionTitle.textContent = selectedUserForAction.alias;
+  }
+  userActionSheet.classList.remove('hidden');
+}
+
+function closeUserActionSheet() {
+  selectedUserForAction = null;
+  if (userActionSheet) {
+    userActionSheet.classList.add('hidden');
   }
 }
 
@@ -397,13 +425,40 @@ messagesEl.addEventListener('click', async (ev) => {
     return;
   }
 
-  const button = target.closest('.dm-open');
+  const button = target.closest('.user-link');
   if (!(button instanceof HTMLElement)) {
     return;
   }
 
-  await openDm(button.dataset.userId || '', button.dataset.alias || '');
+  openUserActionSheet(button.dataset.userId || '', button.dataset.alias || '');
 });
+
+if (userActionSheet) {
+  userActionSheet.addEventListener('click', (ev) => {
+    if (ev.target === userActionSheet) {
+      closeUserActionSheet();
+    }
+  });
+}
+
+if (cancelUserActionBtn) {
+  cancelUserActionBtn.addEventListener('click', () => {
+    closeUserActionSheet();
+  });
+}
+
+if (startDmBtn) {
+  startDmBtn.addEventListener('click', async () => {
+    if (!selectedUserForAction) {
+      closeUserActionSheet();
+      return;
+    }
+
+    const peer = selectedUserForAction;
+    closeUserActionSheet();
+    await openDm(peer.userId, peer.alias);
+  });
+}
 
 if (dmCloseBtn) {
   dmCloseBtn.addEventListener('click', () => {
