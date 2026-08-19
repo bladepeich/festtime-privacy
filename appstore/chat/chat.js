@@ -1,5 +1,6 @@
 const qp = new URLSearchParams(window.location.search);
 const festivalId = (qp.get('festivalId') || '').trim();
+const festivalNameParam = (qp.get('festivalName') || '').trim();
 const userId = (qp.get('userId') || '').trim();
 const alias = (qp.get('alias') || '').trim();
 const platform = (qp.get('platform') || 'web').trim();
@@ -12,6 +13,7 @@ const messagesEl = document.getElementById('messages');
 const composer = document.getElementById('composer');
 const input = document.getElementById('messageInput');
 const statusEl = document.getElementById('status');
+const chatTitleEl = document.getElementById('chatTitle');
 
 let joined = false;
 let me = { userId, alias };
@@ -25,6 +27,49 @@ let isLeaving = false;
 let isSending = false;
 
 meta.textContent = `${festivalId || 'festival-desconocido'} · ${alias || 'anonimo'} · ${platform}`;
+
+function stripYearSuffix(name) {
+  return String(name).replace(/\s*\(?\b(19|20)\d{2}\b\)?\s*$/g, '').trim();
+}
+
+function titleCaseFromSlug(slug) {
+  const stopWords = new Set(['de', 'del', 'la', 'las', 'los', 'y', 'e']);
+  const clean = String(slug || '')
+    .replace(/[-_](19|20)\d{2}$/g, '')
+    .replace(/[\-_]+/g, ' ')
+    .trim();
+
+  if (!clean) {
+    return 'Festival';
+  }
+
+  return clean
+    .split(/\s+/)
+    .map((word, index) => {
+      const lower = word.toLowerCase();
+      if (index > 0 && stopWords.has(lower)) {
+        return lower;
+      }
+      return lower.charAt(0).toUpperCase() + lower.slice(1);
+    })
+    .join(' ');
+}
+
+function getFestivalDisplayName() {
+  if (festivalNameParam) {
+    const withoutYear = stripYearSuffix(festivalNameParam);
+    if (withoutYear) {
+      return withoutYear;
+    }
+  }
+  return titleCaseFromSlug(festivalId);
+}
+
+const festivalDisplayName = getFestivalDisplayName();
+const chatTitleText = `Chat de ${festivalDisplayName}`;
+if (chatTitleEl) {
+  chatTitleEl.textContent = chatTitleText;
+}
 
 function esc(str) {
   return String(str)
@@ -40,7 +85,7 @@ function fmtTime(ts) {
 }
 
 function titleUpdate() {
-  document.title = mentionUnread > 0 ? `(${mentionUnread}) Chat del Festival` : 'Chat del Festival';
+  document.title = mentionUnread > 0 ? `(${mentionUnread}) ${chatTitleText}` : chatTitleText;
 }
 
 function setStatus(message, kind = 'info') {
@@ -335,6 +380,8 @@ document.addEventListener('visibilitychange', () => {
     titleUpdate();
   }
 });
+
+titleUpdate();
 
 (async function boot() {
   if (!festivalId || !userId || !alias) {

@@ -56,6 +56,25 @@ body {
 	align-items: center;
 }
 
+.title-wrap {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	min-width: 0;
+}
+
+.chat-logo {
+	width: 36px;
+	height: 36px;
+	object-fit: contain;
+	border-radius: 8px;
+	background: rgba(255, 255, 255, 0.95);
+	border: 1px solid rgba(29, 53, 87, 0.12);
+	padding: 3px;
+	box-shadow: 0 4px 12px rgba(17, 24, 39, 0.08);
+	flex: 0 0 auto;
+}
+
 .topbar h1 {
 	margin: 0;
 	font-size: 1.08rem;
@@ -214,6 +233,11 @@ button:disabled {
 	.topbar {
 		align-items: flex-start;
 		flex-direction: column;
+	}
+
+	.chat-logo {
+		width: 32px;
+		height: 32px;
 	}
 
 	.actions {
