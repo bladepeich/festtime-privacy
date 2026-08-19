@@ -20,6 +20,10 @@ const dmMessagesEl = document.getElementById('dmMessages');
 const dmCloseBtn = document.getElementById('dmCloseBtn');
 const dmComposer = document.getElementById('dmComposer');
 const dmMessageInput = document.getElementById('dmMessageInput');
+const dmInboxBtn = document.getElementById('dmInboxBtn');
+const dmInboxPanel = document.getElementById('dmInboxPanel');
+const dmThreadsEl = document.getElementById('dmThreads');
+const dmInboxCloseBtn = document.getElementById('dmInboxCloseBtn');
 const userActionSheet = document.getElementById('userActionSheet');
 const userActionTitle = document.getElementById('userActionTitle');
 const startDmBtn = document.getElementById('startDmBtn');
@@ -36,6 +40,7 @@ let isJoining = false;
 let isLeaving = false;
 let isSending = false;
 let dmPeer = null;
+let dmThreads = [];
 let selectedUserForAction = null;
 
 meta.textContent = `${festivalId || 'festival-desconocido'} · ${alias || 'anonimo'} · ${platform}`;
@@ -212,6 +217,42 @@ function renderDmMessages(list) {
   dmMessagesEl.scrollTop = dmMessagesEl.scrollHeight;
 }
 
+function renderDmThreads(list) {
+  if (!dmThreadsEl) {
+    return;
+  }
+
+  if (!Array.isArray(list) || list.length === 0) {
+    dmThreadsEl.innerHTML = '<div class="dm-thread-empty">Todavia no tienes conversaciones privadas.</div>';
+    return;
+  }
+
+  dmThreadsEl.innerHTML = '';
+  for (const thread of list) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'dm-thread-item';
+    btn.dataset.userId = String(thread.peerUserId || '');
+    btn.dataset.alias = String(thread.peerAlias || 'Usuario');
+    btn.innerHTML = `
+      <span class="thread-title">${esc(thread.peerAlias || 'Usuario')}</span>
+      <span class="thread-preview">${esc(thread.lastMessageText || '')}</span>
+    `;
+    dmThreadsEl.appendChild(btn);
+  }
+}
+
+async function refreshDmThreads() {
+  try {
+    const out = await api('dm_threads', { userId: me.userId });
+    dmThreads = Array.isArray(out.threads) ? out.threads : [];
+    renderDmThreads(dmThreads);
+  } catch (err) {
+    console.error(err);
+    renderDmThreads([]);
+  }
+}
+
 async function refreshDmMessages() {
   if (!dmPeer) {
     return;
@@ -238,6 +279,9 @@ async function openDm(userIdValue, aliasValue) {
   if (dmTitleEl) {
     dmTitleEl.textContent = `Chat privado con ${dmPeer.alias}`;
   }
+  if (dmInboxPanel) {
+    dmInboxPanel.classList.add('hidden');
+  }
   dmPanel.classList.remove('hidden');
   await refreshDmMessages();
 }
@@ -253,6 +297,19 @@ function closeDmPanel() {
   if (dmMessageInput) {
     dmMessageInput.value = '';
   }
+}
+
+async function openDmInbox() {
+  if (!dmInboxPanel) {
+    return;
+  }
+  dmPanel?.classList.add('hidden');
+  dmInboxPanel.classList.remove('hidden');
+  await refreshDmThreads();
+}
+
+function closeDmInbox() {
+  dmInboxPanel?.classList.add('hidden');
 }
 
 function openUserActionSheet(userIdValue, aliasValue) {
@@ -414,9 +471,38 @@ function scheduleNextPoll() {
   }
   pollTimer = setTimeout(async () => {
     await refreshMessages();
+    await refreshDmThreads();
     await refreshDmMessages();
     scheduleNextPoll();
   }, pollDelayMs);
+}
+
+if (dmInboxBtn) {
+  dmInboxBtn.addEventListener('click', async () => {
+    await openDmInbox();
+  });
+}
+
+if (dmInboxCloseBtn) {
+  dmInboxCloseBtn.addEventListener('click', () => {
+    closeDmInbox();
+  });
+}
+
+if (dmThreadsEl) {
+  dmThreadsEl.addEventListener('click', async (ev) => {
+    const target = ev.target;
+    if (!(target instanceof HTMLElement)) {
+      return;
+    }
+
+    const button = target.closest('.dm-thread-item');
+    if (!(button instanceof HTMLElement)) {
+      return;
+    }
+
+    await openDm(button.dataset.userId || '', button.dataset.alias || '');
+  });
 }
 
 messagesEl.addEventListener('click', async (ev) => {
@@ -486,6 +572,7 @@ if (dmComposer) {
         text
       });
       dmMessageInput.value = '';
+      await refreshDmThreads();
       await refreshDmMessages();
     } catch (err) {
       console.error(err);

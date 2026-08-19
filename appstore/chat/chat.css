@@ -185,6 +185,53 @@ body {
 	max-height: 44dvh;
 }
 
+.dm-inbox-panel {
+	border-top: 1px solid var(--fest-line);
+	background: rgba(246, 248, 253, 0.96);
+	display: grid;
+	grid-template-rows: auto minmax(0, 1fr);
+	max-height: 40dvh;
+}
+
+.dm-threads {
+	padding: 8px 12px 12px;
+	overflow: auto;
+	display: grid;
+	gap: 8px;
+}
+
+.dm-thread-item {
+	width: 100%;
+	text-align: left;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid var(--fest-line);
+	background: #fff;
+	color: var(--fest-ink);
+	display: grid;
+	gap: 4px;
+}
+
+.dm-thread-item .thread-title {
+	font-size: 0.9rem;
+	font-weight: 800;
+	color: var(--fest-blue);
+}
+
+.dm-thread-item .thread-preview {
+	font-size: 0.82rem;
+	color: var(--fest-muted);
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.dm-thread-empty {
+	font-size: 0.86rem;
+	color: var(--fest-muted);
+	padding: 6px 0;
+}
+
 .dm-header {
 	display: flex;
 	justify-content: space-between;

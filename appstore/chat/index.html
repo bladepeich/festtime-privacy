@@ -17,6 +17,7 @@
         </div>
       </div>
       <div class="actions">
+        <button id="dmInboxBtn" class="ghost">Mis DMs</button>
         <button id="joinBtn" class="primary">Unirse al Chat</button>
         <button id="leaveBtn" class="danger" disabled>Abandonar el Chat</button>
       </div>
@@ -25,6 +26,14 @@
     <section id="status" class="status" aria-live="polite"></section>
 
     <section id="messages" class="messages"></section>
+
+    <section id="dmInboxPanel" class="dm-inbox-panel hidden" aria-live="polite">
+      <div class="dm-header">
+        <strong>Conversaciones privadas</strong>
+        <button id="dmInboxCloseBtn" type="button" class="ghost">Cerrar</button>
+      </div>
+      <section id="dmThreads" class="dm-threads"></section>
+    </section>
 
     <section id="dmPanel" class="dm-panel hidden" aria-live="polite">
       <div class="dm-header">

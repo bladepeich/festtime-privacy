@@ -13,6 +13,7 @@ define('RATE_LIMITS', [
     'leave' => ['window' => 60, 'max' => 40],
     'messages' => ['window' => 60, 'max' => 180],
     'send' => ['window' => 60, 'max' => 35],
+    'dm_threads' => ['window' => 60, 'max' => 180],
     'dm_messages' => ['window' => 60, 'max' => 180],
     'dm_send' => ['window' => 60, 'max' => 35]
 ]);
@@ -49,6 +50,9 @@ function action_dispatch(): void {
                 return;
             case 'dm_send':
                 dm_send_action();
+                return;
+            case 'dm_threads':
+                dm_threads_action();
                 return;
             default:
                 respond(['error' => 'unknown_action'], 400);
@@ -506,6 +510,46 @@ function dm_messages_action(): void {
         'peerAlias' => dm_peer_alias($data, $peerUserId),
         'messages' => $all
     ]);
+}
+
+function dm_threads_action(): void {
+    $body = read_json_body();
+    $userId = validate_user_id(require_field($body, 'userId'));
+
+    $data = load_data();
+    $threads = [];
+
+    foreach (($data['dmMessages'] ?? []) as $threadId => $messages) {
+        if (!is_array($messages) || empty($messages)) {
+            continue;
+        }
+
+        $parts = explode('__', (string) $threadId, 2);
+        if (count($parts) !== 2) {
+            continue;
+        }
+
+        if ($parts[0] !== $userId && $parts[1] !== $userId) {
+            continue;
+        }
+
+        $peerUserId = ($parts[0] === $userId) ? $parts[1] : $parts[0];
+        $lastMessage = $messages[count($messages) - 1];
+
+        $threads[] = [
+            'threadId' => $threadId,
+            'peerUserId' => $peerUserId,
+            'peerAlias' => dm_peer_alias($data, $peerUserId),
+            'lastMessageText' => (string) ($lastMessage['text'] ?? ''),
+            'lastMessageAt' => (int) ($lastMessage['createdAt'] ?? 0)
+        ];
+    }
+
+    usort($threads, static function ($a, $b) {
+        return ((int) ($b['lastMessageAt'] ?? 0)) <=> ((int) ($a['lastMessageAt'] ?? 0));
+    });
+
+    respond(['threads' => $threads]);
 }
 
 function dm_send_action(): void {
