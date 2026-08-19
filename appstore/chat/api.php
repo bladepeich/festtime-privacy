@@ -3,6 +3,7 @@ header('Content-Type: application/json; charset=utf-8');
 
 define('CHAT_DATA_FILE', __DIR__ . '/chat-data.json');
 define('MAX_MESSAGES_PER_CHANNEL', 3000);
+define('MAX_DM_MESSAGES_PER_THREAD', 800);
 define('MAX_MESSAGE_AGE_MS', 21 * 24 * 60 * 60 * 1000);
 
 define('RATE_LIMITS', [
@@ -11,7 +12,9 @@ define('RATE_LIMITS', [
     'join' => ['window' => 60, 'max' => 40],
     'leave' => ['window' => 60, 'max' => 40],
     'messages' => ['window' => 60, 'max' => 180],
-    'send' => ['window' => 60, 'max' => 35]
+    'send' => ['window' => 60, 'max' => 35],
+    'dm_messages' => ['window' => 60, 'max' => 180],
+    'dm_send' => ['window' => 60, 'max' => 35]
 ]);
 
 action_dispatch();
@@ -40,6 +43,12 @@ function action_dispatch(): void {
                 return;
             case 'send':
                 send_action();
+                return;
+            case 'dm_messages':
+                dm_messages_action();
+                return;
+            case 'dm_send':
+                dm_send_action();
                 return;
             default:
                 respond(['error' => 'unknown_action'], 400);
@@ -70,6 +79,7 @@ function load_data(): array {
             'users' => [],
             'memberships' => [],
             'messages' => [],
+            'dmMessages' => [],
             'rateLimits' => []
         ];
     }
@@ -80,6 +90,7 @@ function load_data(): array {
             'users' => [],
             'memberships' => [],
             'messages' => [],
+            'dmMessages' => [],
             'rateLimits' => []
         ];
     }
@@ -90,6 +101,7 @@ function load_data(): array {
             'users' => [],
             'memberships' => [],
             'messages' => [],
+            'dmMessages' => [],
             'rateLimits' => []
         ];
     }
@@ -97,6 +109,7 @@ function load_data(): array {
     $decoded['users'] = is_array($decoded['users'] ?? null) ? $decoded['users'] : [];
     $decoded['memberships'] = is_array($decoded['memberships'] ?? null) ? $decoded['memberships'] : [];
     $decoded['messages'] = is_array($decoded['messages'] ?? null) ? $decoded['messages'] : [];
+    $decoded['dmMessages'] = is_array($decoded['dmMessages'] ?? null) ? $decoded['dmMessages'] : [];
     $decoded['rateLimits'] = is_array($decoded['rateLimits'] ?? null) ? $decoded['rateLimits'] : [];
     return $decoded;
 }
@@ -261,6 +274,38 @@ function cleanup_old_messages(array &$data): void {
 
         $data['messages'][$festivalId] = $filtered;
     }
+
+    foreach ($data['dmMessages'] as $threadId => $messages) {
+        if (!is_array($messages)) {
+            unset($data['dmMessages'][$threadId]);
+            continue;
+        }
+
+        $filtered = array_values(array_filter($messages, static function ($message) use ($minCreatedAt) {
+            return ((int) ($message['createdAt'] ?? 0)) >= $minCreatedAt;
+        }));
+
+        if (count($filtered) > MAX_DM_MESSAGES_PER_THREAD) {
+            $filtered = array_slice($filtered, -MAX_DM_MESSAGES_PER_THREAD);
+        }
+
+        $data['dmMessages'][$threadId] = $filtered;
+    }
+}
+
+function dm_thread_id(string $userA, string $userB): string {
+    $pair = [$userA, $userB];
+    sort($pair, SORT_STRING);
+    return $pair[0] . '__' . $pair[1];
+}
+
+function dm_peer_alias(array $data, string $peerUserId): string {
+    $fallback = 'Usuario';
+    if (!isset($data['users'][$peerUserId])) {
+        return $fallback;
+    }
+    $alias = (string) ($data['users'][$peerUserId]['alias'] ?? '');
+    return $alias !== '' ? $alias : $fallback;
 }
 
 function join_membership(array &$data, string $festivalId, string $userId): array {
@@ -429,6 +474,87 @@ function send_action(): void {
 
     if (count($data['messages'][$festivalId]) > MAX_MESSAGES_PER_CHANNEL) {
         $data['messages'][$festivalId] = array_slice($data['messages'][$festivalId], -MAX_MESSAGES_PER_CHANNEL);
+    }
+
+    save_data($data);
+    respond(['ok' => true, 'message' => $message]);
+}
+
+function dm_messages_action(): void {
+    $body = read_json_body();
+    $userId = validate_user_id(require_field($body, 'userId'));
+    $peerUserId = validate_user_id(require_field($body, 'peerUserId'));
+
+    if ($userId === $peerUserId) {
+        respond(['messages' => []]);
+    }
+
+    $data = load_data();
+    $threadId = dm_thread_id($userId, $peerUserId);
+    $all = $data['dmMessages'][$threadId] ?? [];
+    if (!is_array($all)) {
+        $all = [];
+    }
+
+    if (count($all) > 200) {
+        $all = array_slice($all, -200);
+    }
+
+    respond([
+        'threadId' => $threadId,
+        'peerUserId' => $peerUserId,
+        'peerAlias' => dm_peer_alias($data, $peerUserId),
+        'messages' => $all
+    ]);
+}
+
+function dm_send_action(): void {
+    $body = read_json_body();
+    $userId = validate_user_id(require_field($body, 'userId'));
+    $alias = validate_alias(require_field($body, 'alias'));
+    $peerUserId = validate_user_id(require_field($body, 'peerUserId'));
+    $text = sanitize_text(require_field($body, 'text'));
+
+    if ($userId === $peerUserId) {
+        respond(['error' => 'invalid_peerUserId'], 400);
+    }
+
+    if ($text === '') {
+        respond(['error' => 'empty_message'], 400);
+    }
+
+    $data = load_data();
+    ensure_user($data, $userId, $alias);
+
+    if (!isset($data['users'][$peerUserId])) {
+        $data['users'][$peerUserId] = [
+            'userId' => $peerUserId,
+            'alias' => 'Festi' . substr($peerUserId, -4),
+            'createdAt' => now_ms()
+        ];
+    }
+
+    cleanup_old_messages($data);
+
+    $threadId = dm_thread_id($userId, $peerUserId);
+    if (!isset($data['dmMessages'][$threadId]) || !is_array($data['dmMessages'][$threadId])) {
+        $data['dmMessages'][$threadId] = [];
+    }
+
+    $message = [
+        'id' => random_id('dm-'),
+        'threadId' => $threadId,
+        'fromUserId' => $userId,
+        'fromAlias' => $data['users'][$userId]['alias'],
+        'toUserId' => $peerUserId,
+        'toAlias' => $data['users'][$peerUserId]['alias'],
+        'text' => $text,
+        'createdAt' => now_ms()
+    ];
+
+    $data['dmMessages'][$threadId][] = $message;
+    if (count($data['dmMessages'][$threadId]) > MAX_DM_MESSAGES_PER_THREAD) {
+        $data['dmMessages'][$threadId] = array_slice($data['dmMessages'][$threadId], -MAX_DM_MESSAGES_PER_THREAD);
     }
 
     save_data($data);

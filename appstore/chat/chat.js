@@ -14,6 +14,12 @@ const composer = document.getElementById('composer');
 const input = document.getElementById('messageInput');
 const statusEl = document.getElementById('status');
 const chatTitleEl = document.getElementById('chatTitle');
+const dmPanel = document.getElementById('dmPanel');
+const dmTitleEl = document.getElementById('dmTitle');
+const dmMessagesEl = document.getElementById('dmMessages');
+const dmCloseBtn = document.getElementById('dmCloseBtn');
+const dmComposer = document.getElementById('dmComposer');
+const dmMessageInput = document.getElementById('dmMessageInput');
 
 let joined = false;
 let me = { userId, alias };
@@ -25,6 +31,7 @@ let consecutiveErrors = 0;
 let isJoining = false;
 let isLeaving = false;
 let isSending = false;
+let dmPeer = null;
 
 meta.textContent = `${festivalId || 'festival-desconocido'} · ${alias || 'anonimo'} · ${platform}`;
 
@@ -160,8 +167,15 @@ function renderMessages(list) {
     const safeAlias = esc(m.alias);
     const safeBody = esc(m.text).replace(/@([A-Za-z0-9_-]{3,24})/g, '<span class="mention">@$1</span>');
 
+    const dmButton = m.userId !== me.userId
+      ? `<button type="button" class="dm-open" data-user-id="${esc(m.userId)}" data-alias="${safeAlias}">DM</button>`
+      : '';
+
     div.innerHTML = `
-      <div class="meta">${safeAlias} · ${fmtTime(m.createdAt)}</div>
+      <div class="meta">
+        <span>${safeAlias} · ${fmtTime(m.createdAt)}</span>
+        ${dmButton}
+      </div>
       <div class="body">${safeBody}</div>
     `;
     messagesEl.appendChild(div);
@@ -171,6 +185,69 @@ function renderMessages(list) {
     }
   }
   messagesEl.scrollTop = messagesEl.scrollHeight;
+}
+
+function renderDmMessages(list) {
+  if (!dmMessagesEl) {
+    return;
+  }
+
+  dmMessagesEl.innerHTML = '';
+  for (const m of list) {
+    const div = document.createElement('div');
+    const isMe = m.fromUserId === me.userId;
+    div.className = `dm-msg ${isMe ? 'me' : ''}`;
+    const author = esc(isMe ? me.alias : (dmPeer?.alias || m.fromAlias || 'Usuario'));
+    div.innerHTML = `
+      <div class="meta">${author} · ${fmtTime(m.createdAt)}</div>
+      <div class="body">${esc(m.text)}</div>
+    `;
+    dmMessagesEl.appendChild(div);
+  }
+  dmMessagesEl.scrollTop = dmMessagesEl.scrollHeight;
+}
+
+async function refreshDmMessages() {
+  if (!dmPeer) {
+    return;
+  }
+
+  try {
+    const out = await api('dm_messages', { userId: me.userId, peerUserId: dmPeer.userId });
+    renderDmMessages(out.messages || []);
+  } catch (err) {
+    console.error(err);
+  }
+}
+
+async function openDm(userIdValue, aliasValue) {
+  if (!userIdValue || userIdValue === me.userId || !dmPanel) {
+    return;
+  }
+
+  dmPeer = {
+    userId: String(userIdValue).trim(),
+    alias: String(aliasValue || 'Usuario').trim()
+  };
+
+  if (dmTitleEl) {
+    dmTitleEl.textContent = `Chat privado con ${dmPeer.alias}`;
+  }
+  dmPanel.classList.remove('hidden');
+  await refreshDmMessages();
+}
+
+function closeDmPanel() {
+  dmPeer = null;
+  if (dmPanel) {
+    dmPanel.classList.add('hidden');
+  }
+  if (dmMessagesEl) {
+    dmMessagesEl.innerHTML = '';
+  }
+  if (dmMessageInput) {
+    dmMessageInput.value = '';
+  }
 }
 
 async function refreshMessages() {
@@ -309,8 +386,57 @@ function scheduleNextPoll() {
   }
   pollTimer = setTimeout(async () => {
     await refreshMessages();
+    await refreshDmMessages();
     scheduleNextPoll();
   }, pollDelayMs);
+}
+
+messagesEl.addEventListener('click', async (ev) => {
+  const target = ev.target;
+  if (!(target instanceof HTMLElement)) {
+    return;
+  }
+
+  const button = target.closest('.dm-open');
+  if (!(button instanceof HTMLElement)) {
+    return;
+  }
+
+  await openDm(button.dataset.userId || '', button.dataset.alias || '');
+});
+
+if (dmCloseBtn) {
+  dmCloseBtn.addEventListener('click', () => {
+    closeDmPanel();
+  });
+}
+
+if (dmComposer) {
+  dmComposer.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    if (!dmPeer || !dmMessageInput) {
+      return;
+    }
+
+    const text = dmMessageInput.value.trim();
+    if (!text) {
+      return;
+    }
+
+    try {
+      await api('dm_send', {
+        userId: me.userId,
+        alias: me.alias,
+        peerUserId: dmPeer.userId,
+        text
+      });
+      dmMessageInput.value = '';
+      await refreshDmMessages();
+    } catch (err) {
+      console.error(err);
+      setStatus('No se pudo enviar el DM.', 'error');
+    }
+  });
 }
 
 joinBtn.addEventListener('click', async () => {

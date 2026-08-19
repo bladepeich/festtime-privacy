@@ -26,6 +26,18 @@
 
     <section id="messages" class="messages"></section>
 
+    <section id="dmPanel" class="dm-panel hidden" aria-live="polite">
+      <div class="dm-header">
+        <strong id="dmTitle">Chat privado</strong>
+        <button id="dmCloseBtn" type="button" class="ghost">Cerrar</button>
+      </div>
+      <section id="dmMessages" class="dm-messages"></section>
+      <form id="dmComposer" class="dm-composer">
+        <input id="dmMessageInput" type="text" maxlength="400" placeholder="Mensaje privado..." autocomplete="off" />
+        <button type="submit" class="primary">Enviar DM</button>
+      </form>
+    </section>
+
     <form id="composer" class="composer">
       <input id="messageInput" type="text" maxlength="400" placeholder="Escribe un mensaje..." autocomplete="off" />
       <button type="submit" class="primary">Enviar</button>
