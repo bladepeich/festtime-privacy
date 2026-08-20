@@ -2316,7 +2316,6 @@
       ]
     },
     {
-      "revision": "2026-08-20T12:00:00Z",
       "festival": {
         "id": "festival-de-la-luz-2026",
         "chatChannelID": "festival-de-la-luz-2026",
@@ -2446,7 +2445,7 @@
         {
           "id": "festival-luz-2026-vie-0130-kris-k-dj",
           "dia": "viernes",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "01:30",
           "artista": "KRIS K DJ",
           "escenario": "Escenario Cultivando Musica"
@@ -2454,7 +2453,7 @@
         {
           "id": "festival-luz-2026-sab-1130-apertura-puertas",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "11:30",
           "artista": "APERTURA DE PUERTAS",
           "escenario": "General"
@@ -2462,7 +2461,7 @@
         {
           "id": "festival-luz-2026-sab-1215-santiaguinos-boimorto",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "12:15",
           "artista": "SANTIAGUINOS DE BOIMORTO",
           "escenario": "Escenario Conciertos do Xacobeo"
@@ -2470,7 +2469,7 @@
         {
           "id": "festival-luz-2026-sab-1220-roberto-lolo",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "12:20",
           "artista": "ROBERTO LOLO",
           "escenario": "Escenario Deputacion da Coruna"
@@ -2478,7 +2477,7 @@
         {
           "id": "festival-luz-2026-sab-1310-treixadura",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "13:10",
           "artista": "TREIXADURA",
           "escenario": "Escenario Cultivando Musica"
@@ -2486,7 +2485,7 @@
         {
           "id": "festival-luz-2026-sab-1310-unto-vello",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "13:10",
           "artista": "UNTO VELLO + CEIP ARZUA",
           "escenario": "Escenario Interritmos"
@@ -2494,7 +2493,7 @@
         {
           "id": "festival-luz-2026-sab-1400-bernal",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "14:00",
           "artista": "BERNAL",
           "escenario": "Escenario Conciertos do Xacobeo"
@@ -2502,7 +2501,7 @@
         {
           "id": "festival-luz-2026-sab-1400-emilio-rua",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "14:00",
           "artista": "EMILIO RUA",
           "escenario": "Escenario Deputacion da Coruna"
@@ -2510,7 +2509,7 @@
         {
           "id": "festival-luz-2026-sab-1500-los-acebos",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "15:00",
           "artista": "LOS ACEBOS",
           "escenario": "Escenario Cultivando Musica"
@@ -2518,7 +2517,7 @@
         {
           "id": "festival-luz-2026-sab-1500-o-courelouzara",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "15:00",
           "artista": "O COURELOUZARA + CEIP SAMOS",
           "escenario": "Escenario Interritmos"
@@ -2526,7 +2525,7 @@
         {
           "id": "festival-luz-2026-sab-1550-bma",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "15:50",
           "artista": "BMA",
           "escenario": "Escenario Conciertos do Xacobeo"
@@ -2534,7 +2533,7 @@
         {
           "id": "festival-luz-2026-sab-1550-crebinsky-balkan-band",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "15:50",
           "artista": "CREBINSKY BALKAN BAND",
           "escenario": "Escenario Deputacion da Coruna"
@@ -2542,7 +2541,7 @@
         {
           "id": "festival-luz-2026-sab-1650-stivijoes",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "16:50",
           "artista": "STIVIJOES",
           "escenario": "Escenario Cultivando Musica"
@@ -2550,7 +2549,7 @@
         {
           "id": "festival-luz-2026-sab-1650-peito-escuro",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "16:50",
           "artista": "PEITO ESCURO + CEIP AS NOGAIS",
           "escenario": "Escenario Interritmos"
@@ -2686,7 +2685,7 @@
         {
           "id": "festival-luz-2026-sab-0040-repion",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "00:40",
           "artista": "REPION",
           "escenario": "Escenario Cultivando Musica"
@@ -2694,7 +2693,7 @@
         {
           "id": "festival-luz-2026-sab-0140-me-fritos-and-the-gimme-cheetos",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "01:40",
           "artista": "ME FRITOS AND THE GIMME CHEETOS",
           "escenario": "Escenario Conciertos do Xacobeo"
@@ -2702,7 +2701,7 @@
         {
           "id": "festival-luz-2026-sab-0240-delara-dj",
           "dia": "sabado",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "02:40",
           "artista": "DELARA DJ",
           "escenario": "Escenario Cultivando Musica"
@@ -2710,7 +2709,7 @@
         {
           "id": "festival-luz-2026-dom-1130-apertura-puertas",
           "dia": "domingo",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "11:30",
           "artista": "APERTURA DE PUERTAS",
           "escenario": "General"
@@ -2718,7 +2717,7 @@
         {
           "id": "festival-luz-2026-dom-1210-banda-cultural-de-salceda",
           "dia": "domingo",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "12:10",
           "artista": "BANDA CULTURAL DE SALCEDA",
           "escenario": "Escenario Conciertos do Xacobeo"
@@ -2726,7 +2725,7 @@
         {
           "id": "festival-luz-2026-dom-1210-pakolas",
           "dia": "domingo",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "12:10",
           "artista": "PAKOLAS",
           "escenario": "Escenario Deputacion da Coruna"
@@ -2734,7 +2733,7 @@
         {
           "id": "festival-luz-2026-dom-1300-the-benturas",
           "dia": "domingo",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "13:00",
           "artista": "THE BENTURAS",
           "escenario": "Escenario Cultivando Musica"
@@ -2742,7 +2741,7 @@
         {
           "id": "festival-luz-2026-dom-1350-la-bien-querida",
           "dia": "domingo",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "13:50",
           "artista": "LA BIEN QUERIDA",
           "escenario": "Escenario Conciertos do Xacobeo"
@@ -2750,7 +2749,7 @@
         {
           "id": "festival-luz-2026-dom-1350-dani-cornes",
           "dia": "domingo",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "13:50",
           "artista": "DANI CORNES",
           "escenario": "Escenario Deputacion da Coruna"
@@ -2758,7 +2757,7 @@
         {
           "id": "festival-luz-2026-dom-1450-mabu",
           "dia": "domingo",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "14:50",
           "artista": "MABU",
           "escenario": "Escenario Cultivando Musica"
@@ -2766,7 +2765,7 @@
         {
           "id": "festival-luz-2026-dom-1450-french-riviera",
           "dia": "domingo",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "14:50",
           "artista": "FRENCH RIVIERA",
           "escenario": "Escenario Interritmos"
@@ -2774,7 +2773,7 @@
         {
           "id": "festival-luz-2026-dom-1540-rafaga",
           "dia": "domingo",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "15:40",
           "artista": "RAFAGA",
           "escenario": "Escenario Conciertos do Xacobeo"
@@ -2782,7 +2781,7 @@
         {
           "id": "festival-luz-2026-dom-1540-vimbio",
           "dia": "domingo",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "15:40",
           "artista": "VIMBIO",
           "escenario": "Escenario Deputacion da Coruna"
@@ -2790,7 +2789,7 @@
         {
           "id": "festival-luz-2026-dom-1640-ona-mafalda",
           "dia": "domingo",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "16:40",
           "artista": "ONA MAFALDA",
           "escenario": "Escenario Cultivando Musica"
@@ -2798,7 +2797,7 @@
         {
           "id": "festival-luz-2026-dom-1640-amaramar",
           "dia": "domingo",
-          "turno": "noche",
+          "turno": "dia",
           "hora": "16:40",
           "artista": "AMARAMAR",
           "escenario": "Escenario Interritmos"
