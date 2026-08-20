@@ -2445,7 +2445,7 @@
         {
           "id": "festival-luz-2026-vie-0130-kris-k-dj",
           "dia": "viernes",
-          "turno": "dia",
+          "turno": "noche",
           "hora": "01:30",
           "artista": "KRIS K DJ",
           "escenario": "Escenario Cultivando Musica"
@@ -2685,7 +2685,7 @@
         {
           "id": "festival-luz-2026-sab-0040-repion",
           "dia": "sabado",
-          "turno": "dia",
+          "turno": "noche",
           "hora": "00:40",
           "artista": "REPION",
           "escenario": "Escenario Cultivando Musica"
@@ -2693,7 +2693,7 @@
         {
           "id": "festival-luz-2026-sab-0140-me-fritos-and-the-gimme-cheetos",
           "dia": "sabado",
-          "turno": "dia",
+          "turno": "noche",
           "hora": "01:40",
           "artista": "ME FRITOS AND THE GIMME CHEETOS",
           "escenario": "Escenario Conciertos do Xacobeo"
@@ -2701,7 +2701,7 @@
         {
           "id": "festival-luz-2026-sab-0240-delara-dj",
           "dia": "sabado",
-          "turno": "dia",
+          "turno": "noche",
           "hora": "02:40",
           "artista": "DELARA DJ",
           "escenario": "Escenario Cultivando Musica"
