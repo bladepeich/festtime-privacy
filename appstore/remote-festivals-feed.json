@@ -2877,7 +2877,7 @@
       ]
     },
     {
-      "revision": "2026-08-26T07:55:30Z",
+      "revision": "2026-08-26T08:00:27Z",
       "festival": {
         "id": "ebrovision-2026",
         "chatChannelID": "ebrovision-2026",
@@ -2930,7 +2930,20 @@
         "eventsFile": "ebrovision-2026-events",
         "stageColorsFile": "ebrovision-2026-stage-colors"
       },
-      "stageColors": {},
+      "stageColors": {
+        "Escenario Ebrovision": "#1D4ED8",
+        "Escenario La Salve": "#7C3AED",
+        "Escenario Anfiteatro Natural (UBU)": "#0F766E",
+        "Escenario Rio Ebro Fundacion Caja de Burgos": "#0369A1",
+        "Escenario Castillo de Miranda Diario de Burgos": "#BE123C",
+        "Escenario Miranda de Ebro": "#EA580C",
+        "Espacio Estereoclub": "#6D28D9",
+        "Espacio La Arboleda": "#15803D",
+        "Sala Orosco": "#374151",
+        "Ebropeque": "#0891B2",
+        "Muestra Gastronomica Optica PLSA": "#B45309",
+        "Concierto 400 Aniversario Fundacion Caja de Burgos": "#C2410C"
+      },
       "events": [
         {
           "id": "ebrovision-2026-jue-2015-concierto-sorpresa",
