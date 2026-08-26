@@ -2877,7 +2877,7 @@
       ]
     },
     {
-      "revision": "2026-08-26T08:00:27Z",
+      "revision": "2026-08-26T08:52:34Z",
       "festival": {
         "id": "ebrovision-2026",
         "chatChannelID": "ebrovision-2026",
@@ -2931,18 +2931,18 @@
         "stageColorsFile": "ebrovision-2026-stage-colors"
       },
       "stageColors": {
-        "Escenario Ebrovision": "#1D4ED8",
-        "Escenario La Salve": "#7C3AED",
-        "Escenario Anfiteatro Natural (UBU)": "#0F766E",
-        "Escenario Rio Ebro Fundacion Caja de Burgos": "#0369A1",
-        "Escenario Castillo de Miranda Diario de Burgos": "#BE123C",
-        "Escenario Miranda de Ebro": "#EA580C",
-        "Espacio Estereoclub": "#6D28D9",
-        "Espacio La Arboleda": "#15803D",
-        "Sala Orosco": "#374151",
-        "Ebropeque": "#0891B2",
-        "Muestra Gastronomica Optica PLSA": "#B45309",
-        "Concierto 400 Aniversario Fundacion Caja de Burgos": "#C2410C"
+        "Escenario Ebrovision": "#2563EB",
+        "Escenario La Salve": "#DC2626",
+        "Escenario Anfiteatro Natural (UBU)": "#16A34A",
+        "Escenario Rio Ebro Fundacion Caja de Burgos": "#F59E0B",
+        "Escenario Castillo de Miranda Diario de Burgos": "#7C3AED",
+        "Escenario Miranda de Ebro": "#EC4899",
+        "Espacio Estereoclub": "#06B6D4",
+        "Espacio La Arboleda": "#84CC16",
+        "Sala Orosco": "#64748B",
+        "Ebropeque": "#E11D48",
+        "Muestra Gastronomica Optica PLSA": "#A16207",
+        "Concierto 400 Aniversario Fundacion Caja de Burgos": "#14B8A6"
       },
       "events": [
         {
