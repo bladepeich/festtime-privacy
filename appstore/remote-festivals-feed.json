@@ -3611,5 +3611,18 @@
         }
       ]
     }
-  ]
+  ],
+  "appUpdate": {
+    "ios": {
+      "minVersion": "1.5",
+      "force": false,
+      "message": "Si quiere disponer de todas las funcionalidades, actualice la aplicacion."
+    },
+    "android": {
+      "minVersion": "1.5",
+      "force": false,
+      "storeURL": "market://details?id=com.ruben.festtime",
+      "message": "Si quiere disponer de todas las funcionalidades, actualice la aplicacion."
+    }
+  }
 }
