@@ -2877,7 +2877,7 @@
       ]
     },
     {
-      "revision": "2026-08-14T14:25:00Z",
+      "revision": "2026-08-26T07:55:30Z",
       "festival": {
         "id": "ebrovision-2026",
         "chatChannelID": "ebrovision-2026",
@@ -2926,233 +2926,435 @@
             "url": "https://www.google.com/maps/search/?api=1&query=Festival+Ebrovision",
             "systemImage": "location"
           }
-        ]
+        ],
+        "eventsFile": "ebrovision-2026-events",
+        "stageColorsFile": "ebrovision-2026-stage-colors"
       },
       "stageColors": {},
       "events": [
         {
-          "id": "ebrovision-2026-jue-juventude",
+          "id": "ebrovision-2026-jue-2015-concierto-sorpresa",
           "dia": "jueves",
           "turno": "noche",
-          "hora": "",
+          "hora": "20:15",
+          "artista": "CONCIERTO SORPRESA",
+          "escenario": "Escenario Rio Ebro Fundacion Caja de Burgos"
+        },
+        {
+          "id": "ebrovision-2026-jue-2200-la-26",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:00",
+          "artista": "LA '26",
+          "escenario": "Escenario Anfiteatro Natural (UBU)"
+        },
+        {
+          "id": "ebrovision-2026-jue-2310-juventude",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "23:10",
           "artista": "JUVENTUDE",
-          "escenario": ""
+          "escenario": "Escenario Anfiteatro Natural (UBU)"
         },
         {
-          "id": "ebrovision-2026-jue-rata",
+          "id": "ebrovision-2026-jue-0015-rata",
           "dia": "jueves",
           "turno": "noche",
-          "hora": "",
+          "hora": "00:15",
           "artista": "RATA",
-          "escenario": ""
+          "escenario": "Escenario Anfiteatro Natural (UBU)"
         },
         {
-          "id": "ebrovision-2026-jue-la-126",
+          "id": "ebrovision-2026-jue-0130-david-van-bylen-brummel",
           "dia": "jueves",
           "turno": "noche",
-          "hora": "",
-          "artista": "LA 126",
-          "escenario": ""
+          "hora": "01:30",
+          "artista": "DAVID VAN BYLEN & BRUMMEL",
+          "escenario": "Sala Orosco"
         },
         {
-          "id": "ebrovision-2026-jue-concierto-sorpresa",
-          "dia": "jueves",
-          "turno": "noche",
-          "hora": "",
-          "artista": "CONCIERTO SORPRESA (RIO EBRO)",
-          "escenario": ""
-        },
-        {
-          "id": "ebrovision-2026-vie-carlos-ares",
+          "id": "ebrovision-2026-vie-1230-grama-agropunk",
           "dia": "viernes",
-          "turno": "noche",
-          "hora": "",
-          "artista": "CARLOS ARES",
-          "escenario": ""
-        },
-        {
-          "id": "ebrovision-2026-vie-getdown-services",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "",
-          "artista": "GETDOWN SERVICES",
-          "escenario": ""
-        },
-        {
-          "id": "ebrovision-2026-vie-shego",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "",
-          "artista": "SHEGO",
-          "escenario": ""
-        },
-        {
-          "id": "ebrovision-2026-vie-la-habitacion-roja",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "",
-          "artista": "LA HABITACION ROJA (30 ANIVERSARIO)",
-          "escenario": ""
-        },
-        {
-          "id": "ebrovision-2026-vie-triangulo-amor-bizarro",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "",
-          "artista": "TRIANGULO DE AMOR BIZARRO",
-          "escenario": ""
-        },
-        {
-          "id": "ebrovision-2026-vie-puno-dragon",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "",
-          "artista": "PUNO DRAGON",
-          "escenario": ""
-        },
-        {
-          "id": "ebrovision-2026-vie-dani-dicostas",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "",
-          "artista": "DANI DICOSTAS",
-          "escenario": ""
-        },
-        {
-          "id": "ebrovision-2026-vie-san-tosielo",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "",
-          "artista": "SAN TOSIELO",
-          "escenario": ""
-        },
-        {
-          "id": "ebrovision-2026-vie-hoonine",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "",
-          "artista": "HOONINE",
-          "escenario": ""
-        },
-        {
-          "id": "ebrovision-2026-vie-go-cactus",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "",
-          "artista": "GO CACTUS",
-          "escenario": ""
-        },
-        {
-          "id": "ebrovision-2026-vie-grama-agropunk",
-          "dia": "viernes",
-          "turno": "noche",
-          "hora": "",
+          "turno": "dia",
+          "hora": "12:30",
           "artista": "GRAMA AGROPUNK",
-          "escenario": ""
+          "escenario": "Escenario Anfiteatro Natural (UBU)"
         },
         {
-          "id": "ebrovision-2026-sab-lori-meyers",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "",
-          "artista": "LORI MEYERS",
-          "escenario": ""
+          "id": "ebrovision-2026-vie-1315-go-cactus",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "13:15",
+          "artista": "GO CACTUS",
+          "escenario": "Escenario Anfiteatro Natural (UBU)"
         },
         {
-          "id": "ebrovision-2026-sab-sanguijuelas-guadiana",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "",
-          "artista": "SANGUIJUELAS DEL GUADIANA",
-          "escenario": ""
+          "id": "ebrovision-2026-vie-1425-dani-dicostas",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "14:25",
+          "artista": "DANI DICOSTAS",
+          "escenario": "Escenario Anfiteatro Natural (UBU)"
         },
         {
-          "id": "ebrovision-2026-sab-bodega",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "",
-          "artista": "BODEGA",
-          "escenario": ""
+          "id": "ebrovision-2026-vie-1715-gran-bingo-musical-optigan1",
+          "dia": "viernes",
+          "turno": "dia",
+          "hora": "17:15",
+          "artista": "GRAN BINGO MUSICAL CON OPTIGAN1",
+          "escenario": "Escenario Anfiteatro Natural (UBU)"
         },
         {
-          "id": "ebrovision-2026-sab-rufus-firefly",
-          "dia": "sabado",
+          "id": "ebrovision-2026-vie-1900-san-tosielo",
+          "dia": "viernes",
           "turno": "noche",
-          "hora": "",
-          "artista": "RUFUS T. FIREFLY",
-          "escenario": ""
+          "hora": "19:00",
+          "artista": "SAN TOSIELO",
+          "escenario": "Escenario La Salve"
         },
         {
-          "id": "ebrovision-2026-sab-repion",
-          "dia": "sabado",
+          "id": "ebrovision-2026-vie-1900-dj-tonin",
+          "dia": "viernes",
           "turno": "noche",
-          "hora": "",
-          "artista": "REPION",
-          "escenario": ""
+          "hora": "19:00",
+          "artista": "DJ TONIN",
+          "escenario": "Espacio Estereoclub"
         },
         {
-          "id": "ebrovision-2026-sab-mujeres",
-          "dia": "sabado",
+          "id": "ebrovision-2026-vie-1945-drewtune-dj",
+          "dia": "viernes",
           "turno": "noche",
-          "hora": "",
-          "artista": "MUJERES",
-          "escenario": ""
+          "hora": "19:45",
+          "artista": "DREWTUNE DJ",
+          "escenario": "Espacio La Arboleda"
         },
         {
-          "id": "ebrovision-2026-sab-la-milagrosa",
-          "dia": "sabado",
+          "id": "ebrovision-2026-vie-1950-la-habitacion-roja",
+          "dia": "viernes",
           "turno": "noche",
-          "hora": "",
-          "artista": "LA MILAGROSA",
-          "escenario": ""
+          "hora": "19:50",
+          "artista": "LA HABITACION ROJA (CONCIERTO 30 ANIVERSARIO)",
+          "escenario": "Escenario Ebrovision"
         },
         {
-          "id": "ebrovision-2026-sab-mala-gestion",
-          "dia": "sabado",
+          "id": "ebrovision-2026-vie-2055-inkilino-dj",
+          "dia": "viernes",
           "turno": "noche",
-          "hora": "",
-          "artista": "MALA GESTION",
-          "escenario": ""
+          "hora": "20:55",
+          "artista": "INKILINO DJ",
+          "escenario": "Espacio Estereoclub"
         },
         {
-          "id": "ebrovision-2026-sab-los-chivatos",
-          "dia": "sabado",
+          "id": "ebrovision-2026-vie-2100-triangulo-amor-bizarro",
+          "dia": "viernes",
           "turno": "noche",
-          "hora": "",
+          "hora": "21:00",
+          "artista": "TRIANGULO DE AMOR BIZARRO",
+          "escenario": "Escenario La Salve"
+        },
+        {
+          "id": "ebrovision-2026-vie-2155-bilboloopers-djs",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:55",
+          "artista": "BILBOLOOPERS DJS",
+          "escenario": "Espacio La Arboleda"
+        },
+        {
+          "id": "ebrovision-2026-vie-2200-shego",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:00",
+          "artista": "SHEGO",
+          "escenario": "Escenario Ebrovision"
+        },
+        {
+          "id": "ebrovision-2026-vie-2300-panoramis",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "PANORAMIS",
+          "escenario": "Espacio Estereoclub"
+        },
+        {
+          "id": "ebrovision-2026-vie-2305-puno-dragon",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:05",
+          "artista": "PUNO DRAGON",
+          "escenario": "Escenario La Salve"
+        },
+        {
+          "id": "ebrovision-2026-vie-2355-sra-de-las-alturas",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:55",
+          "artista": "SRA. DE LAS ALTURAS",
+          "escenario": "Espacio La Arboleda"
+        },
+        {
+          "id": "ebrovision-2026-vie-0000-carlos-ares",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:00",
+          "artista": "CARLOS ARES",
+          "escenario": "Escenario Ebrovision"
+        },
+        {
+          "id": "ebrovision-2026-vie-0045-dadi-is-bad",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:45",
+          "artista": "DADI IS BAD",
+          "escenario": "Espacio Estereoclub"
+        },
+        {
+          "id": "ebrovision-2026-vie-0045-optigan1",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:45",
+          "artista": "OPTIGAN1",
+          "escenario": "Espacio La Arboleda"
+        },
+        {
+          "id": "ebrovision-2026-vie-0125-hoonine",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:25",
+          "artista": "HOONINE",
+          "escenario": "Escenario La Salve"
+        },
+        {
+          "id": "ebrovision-2026-vie-0215-jonathan-castillo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:15",
+          "artista": "JONATHAN CASTILLO",
+          "escenario": "Escenario La Salve"
+        },
+        {
+          "id": "ebrovision-2026-vie-0220-getdown-services",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:20",
+          "artista": "GETDOWN SERVICES",
+          "escenario": "Escenario Ebrovision"
+        },
+        {
+          "id": "ebrovision-2026-vie-0315-popocre-jotapop-mediocre",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "03:15",
+          "artista": "POPOCRE (JOTAPOP + MEDIOCRE)",
+          "escenario": "Escenario La Salve"
+        },
+        {
+          "id": "ebrovision-2026-vie-0415-david-van-bylen-brummel",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "04:15",
+          "artista": "DAVID VAN BYLEN & BRUMMEL",
+          "escenario": "Sala Orosco"
+        },
+        {
+          "id": "ebrovision-2026-sab-1115-the-chapel",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "11:15",
+          "artista": "THE CHAPEL (CONSERVATORIO MUNICIPAL MIRANDA DE EBRO)",
+          "escenario": "Ebropeque"
+        },
+        {
+          "id": "ebrovision-2026-sab-1300-concierto-sorpresa",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "CONCIERTO SORPRESA",
+          "escenario": "Escenario Castillo de Miranda Diario de Burgos"
+        },
+        {
+          "id": "ebrovision-2026-sab-1300-blutasky-brummel",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "13:00",
+          "artista": "BLUTASKY & BRUMMEL",
+          "escenario": "Muestra Gastronomica Optica PLSA"
+        },
+        {
+          "id": "ebrovision-2026-sab-1530-oslo-ovnies",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "15:30",
+          "artista": "OSLO OVNIES",
+          "escenario": "Concierto 400 Aniversario Fundacion Caja de Burgos"
+        },
+        {
+          "id": "ebrovision-2026-sab-1645-los-chivatos",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "16:45",
           "artista": "LOS CHIVATOS",
-          "escenario": ""
+          "escenario": "Escenario Anfiteatro Natural (UBU)"
         },
         {
-          "id": "ebrovision-2026-sab-concierto-sorpresa",
+          "id": "ebrovision-2026-sab-1745-la-milagrosa",
+          "dia": "sabado",
+          "turno": "dia",
+          "hora": "17:45",
+          "artista": "LA MILAGROSA",
+          "escenario": "Escenario Anfiteatro Natural (UBU)"
+        },
+        {
+          "id": "ebrovision-2026-sab-1900-mujeres",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
-          "artista": "CONCIERTO SORPRESA (CASTILLO DE MIRANDA)",
-          "escenario": ""
+          "hora": "19:00",
+          "artista": "MUJERES",
+          "escenario": "Escenario La Salve"
         },
         {
-          "id": "ebrovision-2026-dom-lisasinson",
-          "dia": "domingo",
+          "id": "ebrovision-2026-sab-1900-fanfan",
+          "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "19:00",
+          "artista": "FANFAN",
+          "escenario": "Espacio Estereoclub"
+        },
+        {
+          "id": "ebrovision-2026-sab-1950-soy-sauce",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:50",
+          "artista": "SOY SAUCE",
+          "escenario": "Espacio La Arboleda"
+        },
+        {
+          "id": "ebrovision-2026-sab-1955-rufus-firefly",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:55",
+          "artista": "RUFUS T. FIREFLY",
+          "escenario": "Escenario Ebrovision"
+        },
+        {
+          "id": "ebrovision-2026-sab-2055-teleclub-djs",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:55",
+          "artista": "TELECLUB DJ'S",
+          "escenario": "Espacio Estereoclub"
+        },
+        {
+          "id": "ebrovision-2026-sab-2100-bodega",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "BODEGA",
+          "escenario": "Escenario La Salve"
+        },
+        {
+          "id": "ebrovision-2026-sab-2155-cobie",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:55",
+          "artista": "COBIE",
+          "escenario": "Espacio La Arboleda"
+        },
+        {
+          "id": "ebrovision-2026-sab-2155-sanguijuelas-guadiana",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:55",
+          "artista": "SANGUIJUELAS DEL GUADIANA",
+          "escenario": "Escenario Ebrovision"
+        },
+        {
+          "id": "ebrovision-2026-sab-2255-david-cano-remember",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:55",
+          "artista": "DAVID CANO REMEMBER",
+          "escenario": "Espacio Estereoclub"
+        },
+        {
+          "id": "ebrovision-2026-sab-2300-ahy-singer",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "AHY SINGER",
+          "escenario": "Espacio La Arboleda"
+        },
+        {
+          "id": "ebrovision-2026-sab-2330-lori-meyers",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:30",
+          "artista": "LORI MEYERS",
+          "escenario": "Escenario Ebrovision"
+        },
+        {
+          "id": "ebrovision-2026-sab-0045-dj-froy",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:45",
+          "artista": "DJ FROY",
+          "escenario": "Espacio Estereoclub"
+        },
+        {
+          "id": "ebrovision-2026-sab-0050-mala-gestion",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:50",
+          "artista": "MALA GESTION",
+          "escenario": "Escenario La Salve"
+        },
+        {
+          "id": "ebrovision-2026-sab-0145-mondoinsonoro-djs",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:45",
+          "artista": "MONDOINSONORO DJS",
+          "escenario": "Escenario La Salve"
+        },
+        {
+          "id": "ebrovision-2026-sab-0150-repion",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:50",
+          "artista": "REPION",
+          "escenario": "Escenario Ebrovision"
+        },
+        {
+          "id": "ebrovision-2026-sab-0300-daniless-b2b-peredius",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "03:00",
+          "artista": "DANILESS B2B PEREDIUS",
+          "escenario": "Escenario La Salve"
+        },
+        {
+          "id": "ebrovision-2026-sab-0415-jotapop-brummel",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "04:15",
+          "artista": "JOTAPOP & BRUMMEL",
+          "escenario": "Sala Orosco"
+        },
+        {
+          "id": "ebrovision-2026-dom-1240-montesco",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "12:40",
+          "artista": "MONTESCO (GANADORES THESPANISH WAVE)",
+          "escenario": "Escenario Miranda de Ebro"
+        },
+        {
+          "id": "ebrovision-2026-dom-1355-lisasinson",
+          "dia": "domingo",
+          "turno": "dia",
+          "hora": "13:55",
           "artista": "LISASINSON",
-          "escenario": ""
-        },
-        {
-          "id": "ebrovision-2026-dom-ganador-concurso-tsw",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "",
-          "artista": "GANADOR CONCURSO TSW",
-          "escenario": ""
-        },
-        {
-          "id": "ebrovision-2026-dom-mas-por-confirmar",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "",
-          "artista": "MAS POR CONFIRMAR",
-          "escenario": ""
+          "escenario": "Escenario Miranda de Ebro"
         }
       ]
     },
