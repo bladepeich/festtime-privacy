@@ -48,12 +48,12 @@
         "favoriteIDAliases": {},
         "menuOptions": [
           {
-            "title": "Web oficial",
+            "title": "Web Oficial",
             "url": "https://coolturalfest.com/",
             "systemImage": "safari"
           },
           {
-            "title": "Ubicacion recinto",
+            "title": "Ubicacion del Recinto",
             "url": "https://www.google.com/maps/search/?api=1&query=cooltural+fest",
             "systemImage": "location"
           },
@@ -751,12 +751,12 @@
         "favoriteIDAliases": {},
         "menuOptions": [
           {
-            "title": "Plano del recinto",
+            "title": "Plano del Recinto",
             "inAppImageURL": "https://www.leyendasdelrockfestival.com/wp-content/uploads/2022/07/Plano-Leyendas-2022-recinto-2048x1362.jpg",
             "systemImage": "map"
           },
           {
-            "title": "Web oficial",
+            "title": "Web Oficial",
             "url": "https://www.leyendasdelrockfestival.com",
             "systemImage": "safari"
           },
@@ -766,7 +766,7 @@
             "systemImage": "ticket"
           },
           {
-            "title": "Ubicacion recinto",
+            "title": "Ubicacion del Recinto",
             "url": "https://www.google.com/maps/search/?api=1&query=leyendas+del+rock+villena",
             "systemImage": "location"
           }
@@ -1289,12 +1289,12 @@
         "favoriteIDAliases": {},
         "menuOptions": [
           {
-            "title": "Web oficial",
+            "title": "Web Oficial",
             "url": "https://cosquinrock.net/cresp/",
             "systemImage": "safari"
           },
           {
-            "title": "Ubicacion recinto",
+            "title": "Ubicacion del Recinto",
             "url": "https://www.google.com/maps/search/?api=1&query=espacio+de+ocio+pinguinos+arena+valladolid",
             "systemImage": "location"
           },
@@ -1491,7 +1491,7 @@
         "favoriteIDAliases": {},
         "menuOptions": [
           {
-            "title": "Web oficial",
+            "title": "Web Oficial",
             "url": "https://www.jardindeliciasfestival.com/sevilla/",
             "systemImage": "safari"
           },
@@ -1501,7 +1501,7 @@
             "systemImage": "ticket"
           },
           {
-            "title": "Ubicacion recinto",
+            "title": "Ubicacion del Recinto",
             "url": "https://www.google.com/maps/search/?api=1&query=Centro+Andaluz+de+Arte+Contemporaneo",
             "systemImage": "location"
           }
@@ -1587,7 +1587,7 @@
         "favoriteIDAliases": {},
         "menuOptions": [
           {
-            "title": "Web oficial",
+            "title": "Web Oficial",
             "url": "https://www.jardindeliciasfestival.com/madrid/",
             "systemImage": "safari"
           },
@@ -1597,7 +1597,7 @@
             "systemImage": "ticket"
           },
           {
-            "title": "Ubicacion recinto",
+            "title": "Ubicacion del Recinto",
             "url": "https://www.google.com/maps/search/?api=1&query=Campo+de+Rugby+Cantarranas",
             "systemImage": "location"
           }
@@ -1945,7 +1945,7 @@
         "favoriteIDAliases": {},
         "menuOptions": [
           {
-            "title": "Web oficial",
+            "title": "Web Oficial",
             "url": "https://festivalgigante.com/",
             "systemImage": "safari"
           },
@@ -1955,7 +1955,7 @@
             "systemImage": "ticket"
           },
           {
-            "title": "Ubicacion recinto",
+            "title": "Ubicacion del Recinto",
             "url": "https://www.google.com/maps/search/?api=1&query=Explanada+del+Paseo+del+Ocio+de+Guadalajara",
             "systemImage": "location"
           }
@@ -2345,7 +2345,7 @@
         "favoriteIDAliases": {},
         "menuOptions": [
           {
-            "title": "Web oficial",
+            "title": "Web Oficial",
             "url": "https://festivaldelaluz.es/",
             "systemImage": "safari"
           },
@@ -2355,7 +2355,7 @@
             "systemImage": "ticket"
           },
           {
-            "title": "Ubicacion recinto",
+            "title": "Ubicacion del Recinto",
             "url": "https://www.google.com/maps/search/?api=1&query=Festival+de+la+Luz",
             "systemImage": "location"
           }
@@ -2912,7 +2912,7 @@
         "favoriteIDAliases": {},
         "menuOptions": [
           {
-            "title": "Web oficial",
+            "title": "Web Oficial",
             "url": "https://ebrovision.com/",
             "systemImage": "safari"
           },
@@ -2922,7 +2922,7 @@
             "systemImage": "ticket"
           },
           {
-            "title": "Ubicacion recinto",
+            "title": "Ubicacion del Recinto",
             "url": "https://www.google.com/maps/search/?api=1&query=Festival+Ebrovision",
             "systemImage": "location"
           }
@@ -3399,7 +3399,7 @@
         "favoriteIDAliases": {},
         "menuOptions": [
           {
-            "title": "Web oficial",
+            "title": "Web Oficial",
             "url": "https://www.coca-cola.com/es/es/offerings/musica",
             "systemImage": "safari"
           },
@@ -3409,7 +3409,7 @@
             "systemImage": "ticket"
           },
           {
-            "title": "Ubicacion recinto",
+            "title": "Ubicacion del Recinto",
             "url": "https://www.google.com/maps/search/?api=1&query=Iberdrola+Music",
             "systemImage": "location"
           }
