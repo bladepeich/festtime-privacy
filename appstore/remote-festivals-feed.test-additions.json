@@ -3421,7 +3421,7 @@
           "id": "ccme-2026-vie-melendi",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "",
+          "hora": "22:45",
           "artista": "MELENDI",
           "escenario": ""
         },
@@ -3429,7 +3429,7 @@
           "id": "ccme-2026-vie-milo-j",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "",
+          "hora": "21:00 - 22:45",
           "artista": "MILO J",
           "escenario": ""
         },
@@ -3437,7 +3437,7 @@
           "id": "ccme-2026-vie-wisin",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "",
+          "hora": "19:30 - 21:00",
           "artista": "WISIN",
           "escenario": ""
         },
@@ -3445,7 +3445,7 @@
           "id": "ccme-2026-vie-lucho-rk",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "",
+          "hora": "21:00 - 22:45",
           "artista": "LUCHO RK",
           "escenario": ""
         },
@@ -3453,7 +3453,7 @@
           "id": "ccme-2026-vie-natalia-lacunza",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "",
+          "hora": "18:00 - 19:30",
           "artista": "NATALIA LACUNZA",
           "escenario": ""
         },
@@ -3461,7 +3461,7 @@
           "id": "ccme-2026-vie-violeta",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "",
+          "hora": "19:30 - 21:00",
           "artista": "VIOLETA",
           "escenario": ""
         },
@@ -3469,7 +3469,7 @@
           "id": "ccme-2026-vie-tami-tamako",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "",
+          "hora": "16:00 - 18:00",
           "artista": "TAMI TAMAKO",
           "escenario": ""
         },
@@ -3477,7 +3477,7 @@
           "id": "ccme-2026-vie-hey-kid",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "",
+          "hora": "16:00 - 18:00",
           "artista": "HEY KID",
           "escenario": ""
         },
@@ -3485,7 +3485,7 @@
           "id": "ccme-2026-vie-vilu-gontero",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "",
+          "hora": "18:00 - 19:30",
           "artista": "VILU GONTERO",
           "escenario": ""
         },
@@ -3493,7 +3493,7 @@
           "id": "ccme-2026-vie-kabasaki",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "",
+          "hora": "16:00 - 18:00",
           "artista": "KABASAKI",
           "escenario": ""
         },
@@ -3501,7 +3501,7 @@
           "id": "ccme-2026-vie-lucia-puerta",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "",
+          "hora": "16:00 - 18:00",
           "artista": "LUCIA DE LA PUERTA",
           "escenario": ""
         },
@@ -3509,7 +3509,7 @@
           "id": "ccme-2026-vie-cero",
           "dia": "viernes",
           "turno": "noche",
-          "hora": "",
+          "hora": "16:00 - 18:00",
           "artista": "CERO",
           "escenario": ""
         },
@@ -3517,7 +3517,7 @@
           "id": "ccme-2026-sab-dellafuente",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "22:45",
           "artista": "DELLAFUENTE",
           "escenario": ""
         },
@@ -3525,7 +3525,7 @@
           "id": "ccme-2026-sab-dei-v",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "21:00 - 22:45",
           "artista": "DEI V",
           "escenario": ""
         },
@@ -3533,7 +3533,7 @@
           "id": "ccme-2026-sab-dimitri-vegas",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "21:00 - 22:45",
           "artista": "DIMITRI VEGAS",
           "escenario": ""
         },
@@ -3541,7 +3541,7 @@
           "id": "ccme-2026-sab-omar-montes",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "19:30 - 21:00",
           "artista": "OMAR MONTES",
           "escenario": ""
         },
@@ -3549,7 +3549,7 @@
           "id": "ccme-2026-sab-ruslana",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "18:00 - 19:30",
           "artista": "RUSLANA",
           "escenario": ""
         },
@@ -3557,7 +3557,7 @@
           "id": "ccme-2026-sab-lorna",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "16:00 - 18:00",
           "artista": "LORNA",
           "escenario": ""
         },
@@ -3565,7 +3565,7 @@
           "id": "ccme-2026-sab-ysy-a",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "18:00 - 19:30",
           "artista": "YSY A",
           "escenario": ""
         },
@@ -3573,7 +3573,7 @@
           "id": "ccme-2026-sab-pepe-vizio",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "19:30 - 21:00",
           "artista": "PEPE Y VIZIO",
           "escenario": ""
         },
@@ -3581,7 +3581,7 @@
           "id": "ccme-2026-sab-luc-loren",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "16:00 - 18:00",
           "artista": "LUC LOREN",
           "escenario": ""
         },
@@ -3589,7 +3589,7 @@
           "id": "ccme-2026-sab-taichu",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "16:00 - 18:00",
           "artista": "TAICHU",
           "escenario": ""
         },
@@ -3597,7 +3597,7 @@
           "id": "ccme-2026-sab-pikeras",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "16:00 - 18:00",
           "artista": "PIKERAS",
           "escenario": ""
         },
@@ -3605,7 +3605,7 @@
           "id": "ccme-2026-sab-dib",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "16:00 - 18:00",
           "artista": "DIB",
           "escenario": ""
         }
