@@ -3616,6 +3616,209 @@
           "escenario": ""
         }
       ]
+    },
+    {
+      "revision": "2026-09-02T14:13:37Z",
+      "festival": {
+        "id": "caudal-fest-2026",
+        "chatChannelID": "caudal-fest-2026",
+        "name": "Caudal Fest",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 18",
+            "calendarDate": "2026-09-18"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 19",
+            "calendarDate": "2026-09-19"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://caudalfest.es/",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://caudalfest.es/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=caudal+fest+lugo",
+            "systemImage": "location"
+          }
+        ]
+      },
+      "stageColors": {
+        "Escenario Estrella Galicia": "#4E44A8",
+        "Escenario Cutty Sark": "#FF6E8F"
+      },
+      "events": [
+        {
+          "id": "caudal-fest-2026-vie-1705-no-quiero",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:05",
+          "artista": "NO QUIERO",
+          "escenario": "Escenario Estrella Galicia"
+        },
+        {
+          "id": "caudal-fest-2026-vie-1745-besmaya",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:45",
+          "artista": "BESMAYA",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "caudal-fest-2026-vie-1835-anni-b-sweet",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:35",
+          "artista": "ANNI B SWEET",
+          "escenario": "Escenario Estrella Galicia"
+        },
+        {
+          "id": "caudal-fest-2026-vie-1925-inazio",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:25",
+          "artista": "INAZIO",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "caudal-fest-2026-vie-2015-xoel-lopez",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:15",
+          "artista": "XOEL LOPEZ",
+          "escenario": "Escenario Estrella Galicia"
+        },
+        {
+          "id": "caudal-fest-2026-vie-2115-pignoise",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:15",
+          "artista": "PIGNOISE",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "caudal-fest-2026-vie-2215-lori-meyers",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:15",
+          "artista": "LORI MEYERS",
+          "escenario": "Escenario Estrella Galicia"
+        },
+        {
+          "id": "caudal-fest-2026-vie-2330-barry-b",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:30",
+          "artista": "BARRY B",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "caudal-fest-2026-vie-0030-sanguijuelas-del-guadiana",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:30",
+          "artista": "SANGUIJUELAS DEL GUADIANA",
+          "escenario": "Escenario Estrella Galicia"
+        },
+        {
+          "id": "caudal-fest-2026-vie-0130-ortiga",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:30",
+          "artista": "ORTIGA",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "caudal-fest-2026-sab-1805-tere",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:05",
+          "artista": "TERE!",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "caudal-fest-2026-sab-1845-leire-martinez",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:45",
+          "artista": "LEIRE MARTINEZ",
+          "escenario": "Escenario Estrella Galicia"
+        },
+        {
+          "id": "caudal-fest-2026-sab-1945-o-caiman-do-rio-tea",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:45",
+          "artista": "O CAIMAN DO RIO TEA",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "caudal-fest-2026-sab-2025-carlos-ares",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:25",
+          "artista": "CARLOS ARES",
+          "escenario": "Escenario Estrella Galicia"
+        },
+        {
+          "id": "caudal-fest-2026-sab-2125-veintiuno",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:25",
+          "artista": "VEINTIUNO",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "caudal-fest-2026-sab-2215-siloe",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:15",
+          "artista": "SILOE",
+          "escenario": "Escenario Estrella Galicia"
+        },
+        {
+          "id": "caudal-fest-2026-sab-2330-sexy-zebras",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:30",
+          "artista": "SEXY ZEBRAS",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "caudal-fest-2026-sab-0030-ultraligera",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:30",
+          "artista": "ULTRALIGERA",
+          "escenario": "Escenario Estrella Galicia"
+        },
+        {
+          "id": "caudal-fest-2026-sab-0130-la-la-love-you",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:30",
+          "artista": "LA LA LOVE YOU",
+          "escenario": "Escenario Cutty Sark"
+        }
+      ]
     }
   ],
   "appUpdate": {
