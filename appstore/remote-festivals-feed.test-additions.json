@@ -65,12 +65,12 @@
         ]
       },
       "stageColors": {
-        "Escenario Estrella": "#60B256",
-        "Escenario Music For All": "#7A33CC",
-        "Escenario Cupra": "#D058A4",
-        "Cooltural DJs": "#E67E22",
-        "Parque de las Almadrabillas": "#4B63B5",
-        "Faluca Almariya": "#F2B544"
+        "Cooltural DJs": "#F6D74A",
+        "Escenario Cupra": "#FF8A00",
+        "Escenario Estrella": "#E6006F",
+        "Escenario Music For All": "#FFB703",
+        "Faluca Almariya": "#FB5607",
+        "Parque de las Almadrabillas": "#4CC9F0"
       },
       "events": [
         {
@@ -776,9 +776,9 @@
         "stageColorsFile": "leyendas-del-rock-2026-stage-colors"
       },
       "stageColors": {
-        "Dave Mustaine Stage": "#ef233c",
-        "Doro Pesch Stage": "#ffb703",
-        "New Rock Stage": "#38bdf8"
+        "Dave Mustaine Stage": "#F6D74A",
+        "Doro Pesch Stage": "#FF8A00",
+        "New Rock Stage": "#E6006F"
       },
       "events": [
         {
@@ -1305,7 +1305,9 @@
           }
         ]
       },
-      "stageColors": {},
+      "stageColors": {
+        "": "#F6D74A"
+      },
       "events": [
         {
           "id": "cosquin-rock-valladolid-2026-vie-apertura-puertas",
@@ -1507,7 +1509,9 @@
           }
         ]
       },
-      "stageColors": {},
+      "stageColors": {
+        "": "#F6D74A"
+      },
       "events": [
         {
           "id": "jardin-delicias-sevilla-2026-sab-siloe",
@@ -1604,8 +1608,8 @@
         ]
       },
       "stageColors": {
-        "Escenario Endesa": "#00d4d8",
-        "Escenario Bosque": "#2b2d42"
+        "Escenario Bosque": "#F6D74A",
+        "Escenario Endesa": "#FF8A00"
       },
       "events": [
         {
@@ -1962,11 +1966,11 @@
         ]
       },
       "stageColors": {
-        "Escenario Vibra Mahou": "#E83E8C",
-        "Escenario Gigante": "#69D2E7",
-        "Escenario Mondo Sonoro": "#F5A623",
-        "Escenario Guadalajara (Plaza Mayor)": "#F26B38",
-        "Recinto": "#95A5A6"
+        "Escenario Gigante": "#F6D74A",
+        "Escenario Guadalajara (Plaza Mayor)": "#FF8A00",
+        "Escenario Mondo Sonoro": "#E6006F",
+        "Escenario Vibra Mahou": "#FFB703",
+        "Recinto": "#FB5607"
       },
       "events": [
         {
@@ -2362,12 +2366,12 @@
         ]
       },
       "stageColors": {
-        "Escenario Conciertos do Xacobeo": "#E58B3A",
-        "Escenario Cultivando Musica": "#7447B8",
-        "Escenario Deputacion da Coruna": "#C837A7",
-        "Escenario Interritmos": "#5D8691",
-        "Espacio Mahou": "#D84D5A",
-        "General": "#F1F1F1"
+        "Escenario Conciertos do Xacobeo": "#F6D74A",
+        "Escenario Cultivando Musica": "#FF8A00",
+        "Escenario Deputacion da Coruna": "#E6006F",
+        "Escenario Interritmos": "#FFB703",
+        "Espacio Mahou": "#FB5607",
+        "General": "#4CC9F0"
       },
       "events": [
         {
@@ -2931,18 +2935,18 @@
         "stageColorsFile": "ebrovision-2026-stage-colors"
       },
       "stageColors": {
-        "Escenario Ebrovision": "#2563EB",
-        "Escenario La Salve": "#DC2626",
-        "Escenario Anfiteatro Natural (UBU)": "#16A34A",
-        "Escenario Rio Ebro Fundacion Caja de Burgos": "#F59E0B",
-        "Escenario Castillo de Miranda Diario de Burgos": "#7C3AED",
-        "Escenario Miranda de Ebro": "#EC4899",
-        "Espacio Estereoclub": "#06B6D4",
-        "Espacio La Arboleda": "#84CC16",
-        "Sala Orosco": "#64748B",
-        "Ebropeque": "#E11D48",
-        "Muestra Gastronomica Optica PLSA": "#A16207",
-        "Concierto 400 Aniversario Fundacion Caja de Burgos": "#14B8A6"
+        "Concierto 400 Aniversario Fundacion Caja de Burgos": "#F6D74A",
+        "Ebropeque": "#FF8A00",
+        "Escenario Anfiteatro Natural (UBU)": "#E6006F",
+        "Escenario Castillo de Miranda Diario de Burgos": "#FFB703",
+        "Escenario Ebrovision": "#FB5607",
+        "Escenario La Salve": "#4CC9F0",
+        "Escenario Miranda de Ebro": "#7C5CFF",
+        "Escenario Rio Ebro Fundacion Caja de Burgos": "#2DD4BF",
+        "Espacio Estereoclub": "#84CC16",
+        "Espacio La Arboleda": "#EC4899",
+        "Muestra Gastronomica Optica PLSA": "#38BDF8",
+        "Sala Orosco": "#A855F7"
       },
       "events": [
         {
@@ -3415,7 +3419,9 @@
           }
         ]
       },
-      "stageColors": {},
+      "stageColors": {
+        "": "#F6D74A"
+      },
       "events": [
         {
           "id": "ccme-2026-vie-melendi",
