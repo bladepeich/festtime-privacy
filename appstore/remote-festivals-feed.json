@@ -3819,6 +3819,253 @@
           "escenario": "Escenario Cutty Sark"
         }
       ]
+    },
+    {
+      "revision": "2026-09-03T06:15:18Z",
+      "festival": {
+        "id": "granada-sound-2026",
+        "chatChannelID": "granada-sound-2026",
+        "festivalLogoURL": "https://granadasound.com/wp-content/uploads/2025/10/GS26-LOGOTIPOSIMBOLO-1-LINEA-HORIZONTAL-ROJO-1.svg",
+        "name": "Granada Sound",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 11",
+            "calendarDate": "2026-09-11"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 12",
+            "calendarDate": "2026-09-12"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://granadasound.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://granadasound.com/abonos/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=granada+sound",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "granada-sound-2026-events",
+        "stageColorsFile": "granada-sound-2026-stage-colors"
+      },
+      "stageColors": {
+        "Escenario Alhambra": "#3CBF6D",
+        "Escenario Repsol": "#F39A4A",
+        "La Placeta by Cacique": "#E24C66"
+      },
+      "events": [
+        {
+          "id": "granada-sound-2026-vie-1900-oslo-ovnies",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "OSLO OVNIES",
+          "escenario": "La Placeta by Cacique"
+        },
+        {
+          "id": "granada-sound-2026-vie-1915-marlena",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:15",
+          "artista": "MARLENA",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "granada-sound-2026-vie-1955-anabel-lee",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:55",
+          "artista": "ANABEL LEE",
+          "escenario": "La Placeta by Cacique"
+        },
+        {
+          "id": "granada-sound-2026-vie-2025-carlos-sadness",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:25",
+          "artista": "CARLOS SADNESS",
+          "escenario": "Escenario Alhambra"
+        },
+        {
+          "id": "granada-sound-2026-vie-2120-la-sonrisa-de-julia",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:20",
+          "artista": "LA SONRISA DE JULIA",
+          "escenario": "La Placeta by Cacique"
+        },
+        {
+          "id": "granada-sound-2026-vie-2145-pignoise",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:45",
+          "artista": "PIGNOISE",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "granada-sound-2026-vie-2300-fangoria",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "FANGORIA",
+          "escenario": "Escenario Alhambra"
+        },
+        {
+          "id": "granada-sound-2026-vie-2300-carlangas",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "CARLANGAS",
+          "escenario": "La Placeta by Cacique"
+        },
+        {
+          "id": "granada-sound-2026-vie-0020-maadraassoo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:20",
+          "artista": "MAADRAASSOO",
+          "escenario": "La Placeta by Cacique"
+        },
+        {
+          "id": "granada-sound-2026-vie-0025-belen-aguilera",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:25",
+          "artista": "BELEN AGUILERA",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "granada-sound-2026-vie-0140-la-la-love-you",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:40",
+          "artista": "LA LA LOVE YOU",
+          "escenario": "Escenario Alhambra"
+        },
+        {
+          "id": "granada-sound-2026-vie-0215-isaac-corrales",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:15",
+          "artista": "ISAAC CORRALES",
+          "escenario": "La Placeta by Cacique"
+        },
+        {
+          "id": "granada-sound-2026-sab-1900-rocio-lapaz",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "ROCIO LAPAZ",
+          "escenario": "La Placeta by Cacique"
+        },
+        {
+          "id": "granada-sound-2026-sab-1915-tu-otra-bonita",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:15",
+          "artista": "TU OTRA BONITA",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "granada-sound-2026-sab-1955-fontan",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:55",
+          "artista": "FONTAN",
+          "escenario": "La Placeta by Cacique"
+        },
+        {
+          "id": "granada-sound-2026-sab-2020-malmo-040",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:20",
+          "artista": "MALMO 040",
+          "escenario": "Escenario Alhambra"
+        },
+        {
+          "id": "granada-sound-2026-sab-2130-hey-kid",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:30",
+          "artista": "HEY KID",
+          "escenario": "La Placeta by Cacique"
+        },
+        {
+          "id": "granada-sound-2026-sab-2135-sexy-zebras",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:35",
+          "artista": "SEXY ZEBRAS",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "granada-sound-2026-sab-2245-siloe",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:45",
+          "artista": "SILOE",
+          "escenario": "Escenario Alhambra"
+        },
+        {
+          "id": "granada-sound-2026-sab-2300-ciclonautas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "CICLONAUTAS",
+          "escenario": "La Placeta by Cacique"
+        },
+        {
+          "id": "granada-sound-2026-sab-0010-elyella",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:10",
+          "artista": "ELYELLA",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "granada-sound-2026-sab-0020-miss-deep-in",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:20",
+          "artista": "MISS DEEP'IN",
+          "escenario": "La Placeta by Cacique"
+        },
+        {
+          "id": "granada-sound-2026-sab-0140-ultraligera",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:40",
+          "artista": "ULTRALIGERA",
+          "escenario": "Escenario Alhambra"
+        },
+        {
+          "id": "granada-sound-2026-sab-0215-oski",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:15",
+          "artista": "OSKI",
+          "escenario": "La Placeta by Cacique"
+        }
+      ]
     }
   ],
   "appUpdate": {
