@@ -3330,8 +3330,313 @@
                 "Escenario Endesa": "#FF8A00",
                 "": "#F6D74A"
             },
-            "events": [],
-            "revision": "e6c69eabf76d861c31264aaf46a722ac1070482b"
+            "events": [
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-ardiya",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "ARDIYA",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-barce",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "BARCE",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-carlos-g",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "CARLOS G",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-club-del-rio",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "CLUB DEL RIO",
+                    "escenario": "Escenario Endesa"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-dani-martin",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "DANI MARTIN",
+                    "escenario": "Escenario Endesa"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-despistaos",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "DESPISTAOS",
+                    "escenario": "Escenario Endesa"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-gon-abril",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "GON ABRIL",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-ignacio-serrano",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "IGNACIO SERRANO",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-ivan-mg",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "IVAN MG",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-kalenn",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "KALENN",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-la-azotea",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "LA AZOTEA",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-los-gilca",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "LOS GILCA",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-marlena",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "MARLENA",
+                    "escenario": "Escenario Endesa"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-mbongo",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "MBONGO",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-mickey-pavon",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "MICKEY PAVON",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-nil-moliner",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "NIL MOLINER",
+                    "escenario": "Escenario Endesa"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-sexy-zebras",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "SEXY ZEBRAS",
+                    "escenario": "Escenario Endesa"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-tere",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "TERE!",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-vie-tinture",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "TINTURE",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-alex-wall",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "ALEX WALL",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-besmaya",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "BESMAYA",
+                    "escenario": "Escenario Endesa"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-dorian",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "DORIAN",
+                    "escenario": "Escenario Endesa"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-hidalgo",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "HIDALGO",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-inazio",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "INAZIO",
+                    "escenario": "Escenario Endesa"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-javi-chapela",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "JAVI CHAPELA",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-juan-gonzalez",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "JUAN GONZALEZ",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-juan-valiente",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "JUAN VALIENTE",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-julia-centeno",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "JULIA CENTENO",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-marlon",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "MARLON",
+                    "escenario": "Escenario Endesa"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-mike-fajardo",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "MIKE FAJARDO",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-moni-motes",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "MONI MOTES",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-pavlena",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "PAVLENA",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-raigada",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "RAIGADA",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-serko",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "SERKO",
+                    "escenario": "Escenario Endesa"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-taburete",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "TABURETE",
+                    "escenario": "Escenario Endesa"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-ters",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "TERS",
+                    "escenario": "Escenario Bosque"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-viva-suecia",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "VIVA SUECIA",
+                    "escenario": "Escenario Endesa"
+                },
+                {
+                    "id": "jardin-delicias-madrid-2026-sab-yarea",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "00:00",
+                    "artista": "YAREA",
+                    "escenario": "Escenario Bosque"
+                }
+            ],
+            "revision": "1c0cbfe5f9a3dd9bcd27d77e2ee71fccec89e47b"
         },
         {
             "festival": {
@@ -3451,6 +3756,6 @@
             "revision": "bf4d3ba92ab778309dc1a56526296ca95a90a01b"
         }
     ],
-    "generatedAt": "2026-09-03T16:42:18+00:00",
+    "generatedAt": "2026-09-03T16:51:29+00:00",
     "source": "mysql-exporter"
 }
