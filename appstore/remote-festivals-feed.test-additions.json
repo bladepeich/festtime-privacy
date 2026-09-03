@@ -4066,6 +4066,325 @@
           "escenario": "La Placeta by Cacique"
         }
       ]
+    },
+    {
+      "revision": "2026-09-03T07:36:05Z",
+      "festival": {
+        "id": "vive-latino-2026",
+        "chatChannelID": "vive-latino-2026",
+        "festivalLogoURL": "https://vivelatino.es/wp-content/uploads/2025/02/Logo-Original-VL-LOW.png",
+        "name": "Vive Latino",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 04",
+            "calendarDate": "2026-09-04"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 05",
+            "calendarDate": "2026-09-05"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://vivelatino.es",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://vivelatino.es/comprar-entradas/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Parque+Fluvial+de+la+Expo+Zaragoza",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "vive-latino-2026-events",
+        "stageColorsFile": "vive-latino-2026-stage-colors"
+      },
+      "stageColors": {
+        "AMBAR": "#1E4FC4",
+        "Caja Rural de Aragon": "#10826F",
+        "Escena VL": "#22A8F4"
+      },
+      "events": [
+        {
+          "id": "vive-latino-2026-vie-1715-el-practicante",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:15",
+          "artista": "EL PRACTICANTE",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-vie-1740-nina-polaca",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:40",
+          "artista": "NINA POLACA",
+          "escenario": "Caja Rural de Aragon"
+        },
+        {
+          "id": "vive-latino-2026-vie-1825-julieta-venegas",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:25",
+          "artista": "JULIETA VENEGAS",
+          "escenario": "AMBAR"
+        },
+        {
+          "id": "vive-latino-2026-vie-1825-volador",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:25",
+          "artista": "VOLADOR",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-vie-1915-pignoise",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:15",
+          "artista": "PIGNOISE",
+          "escenario": "Caja Rural de Aragon"
+        },
+        {
+          "id": "vive-latino-2026-vie-2005-amaia",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:05",
+          "artista": "AMAIA",
+          "escenario": "AMBAR"
+        },
+        {
+          "id": "vive-latino-2026-vie-2010-el-kuelgue",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:10",
+          "artista": "EL KUELGUE",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-vie-2110-m-clan",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:10",
+          "artista": "M-CLAN",
+          "escenario": "Caja Rural de Aragon"
+        },
+        {
+          "id": "vive-latino-2026-vie-2140-ed-maverick",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:40",
+          "artista": "ED MAVERICK",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-vie-2215-loquillo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:15",
+          "artista": "LOQUILLO",
+          "escenario": "AMBAR"
+        },
+        {
+          "id": "vive-latino-2026-vie-2310-plastilina-mosh",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:10",
+          "artista": "PLASTILINA MOSH",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-vie-2335-rigoberta-bandini",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:35",
+          "artista": "RIGOBERTA BANDINI",
+          "escenario": "Caja Rural de Aragon"
+        },
+        {
+          "id": "vive-latino-2026-vie-0030-sanguijuelas-del-guadiana",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:30",
+          "artista": "SANGUIJUELAS DEL GUADIANA",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-vie-0050-rawayana",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:50",
+          "artista": "RAWAYANA",
+          "escenario": "AMBAR"
+        },
+        {
+          "id": "vive-latino-2026-vie-0200-modelo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:00",
+          "artista": "MODELO",
+          "escenario": "Caja Rural de Aragon"
+        },
+        {
+          "id": "vive-latino-2026-vie-0200-la-chiva-gantiva",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:00",
+          "artista": "LA CHIVA GANTIVA",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-sab-1715-multipla",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:15",
+          "artista": "MULTIPLA",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-sab-1740-bv-all-stars",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:40",
+          "artista": "B.V. ALL STARS",
+          "escenario": "Caja Rural de Aragon"
+        },
+        {
+          "id": "vive-latino-2026-sab-1825-biznaga",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:25",
+          "artista": "BIZNAGA",
+          "escenario": "AMBAR"
+        },
+        {
+          "id": "vive-latino-2026-sab-1825-el-verbo-odiado",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:25",
+          "artista": "EL VERBO ODIADO",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-sab-1915-veintiuno",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:15",
+          "artista": "VEINTIUNO",
+          "escenario": "Caja Rural de Aragon"
+        },
+        {
+          "id": "vive-latino-2026-sab-1945-hermanos-martinez",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:45",
+          "artista": "HERMANOS MARTINEZ",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-sab-2005-guitarricadelafuente",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:05",
+          "artista": "GUITARRICADELAFUENTE",
+          "escenario": "AMBAR"
+        },
+        {
+          "id": "vive-latino-2026-sab-2110-ojete-calor",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:10",
+          "artista": "OJETE CALOR",
+          "escenario": "Caja Rural de Aragon"
+        },
+        {
+          "id": "vive-latino-2026-sab-2110-esteman-daniela-spalla",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:10",
+          "artista": "ESTEMAN Y DANIELA SPALLA",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-sab-2215-siloe",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:15",
+          "artista": "SILOE",
+          "escenario": "AMBAR"
+        },
+        {
+          "id": "vive-latino-2026-sab-2235-division-minuscula",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:35",
+          "artista": "DIVISION MINUSCULA",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-sab-2330-ultraligera",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:30",
+          "artista": "ULTRALIGERA",
+          "escenario": "Caja Rural de Aragon"
+        },
+        {
+          "id": "vive-latino-2026-sab-2350-begut",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:50",
+          "artista": "BEGUT",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-sab-0045-la-moda",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:45",
+          "artista": "LA M.O.D.A.",
+          "escenario": "AMBAR"
+        },
+        {
+          "id": "vive-latino-2026-sab-0110-sonido-gallo-negro",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:10",
+          "artista": "SONIDO GALLO NEGRO",
+          "escenario": "Escena VL"
+        },
+        {
+          "id": "vive-latino-2026-sab-0155-la-plazuela",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:55",
+          "artista": "LA PLAZUELA",
+          "escenario": "Caja Rural de Aragon"
+        },
+        {
+          "id": "vive-latino-2026-sab-0210-rialto",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:10",
+          "artista": "RIALTO",
+          "escenario": "Escena VL"
+        }
+      ]
     }
   ],
   "appUpdate": {
