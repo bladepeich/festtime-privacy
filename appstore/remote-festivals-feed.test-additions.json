@@ -20,7 +20,7 @@
                 "id": "vive-latino-2026",
                 "chatChannelID": "vive-latino-2026",
                 "legacyIDs": [],
-                "festivalLogoURL": "https://vivelatino.es/wp-content/uploads/2025/02/Logo-Original-VL-LOW.png",
+                "festivalLogoURL": "https://festtime.app/media/festivals/logos/vivelatino_logo.png",
                 "name": "Vive Latino",
                 "year": 2026,
                 "days": [
@@ -335,7 +335,7 @@
                     "escenario": "Escena VL"
                 }
             ],
-            "revision": "1992a1ed860b22d6c39c845859c324dde8e18d33"
+            "revision": "bf83e3fdb7c198ab244cc4b80a074028e718b47b"
         },
         {
             "festival": {
@@ -1340,7 +1340,7 @@
                 "id": "cosquin-rock-valladolid-2026",
                 "chatChannelID": "cosquin-rock-valladolid-2026",
                 "legacyIDs": [],
-                "festivalLogoURL": null,
+                "festivalLogoURL": "https://festtime.app/media/festivals/logos/cosquin_rock_logo.png",
                 "name": "Cosquin Rock Valladolid",
                 "year": 2026,
                 "days": [
@@ -1554,14 +1554,14 @@
                     "escenario": ""
                 }
             ],
-            "revision": "fc86ea5259d378d6aac46f74e3dfcbc846d92484"
+            "revision": "fe58467b14854812892a18fd6a8cd5c6b414244e"
         },
         {
             "festival": {
                 "id": "ebrovision-2026",
                 "chatChannelID": "ebrovision-2026",
                 "legacyIDs": [],
-                "festivalLogoURL": null,
+                "festivalLogoURL": "https://festtime.app/media/festivals/logos/ebrovision_logo.png",
                 "name": "Ebrovision",
                 "year": 2026,
                 "days": [
@@ -2052,14 +2052,14 @@
                     "escenario": "Escenario Miranda de Ebro"
                 }
             ],
-            "revision": "5683cd81160f0106f3c4e02368dd6806c02c2f15"
+            "revision": "7f0243a0da3591b037c7dcb1467571ba5514d6d9"
         },
         {
             "festival": {
                 "id": "festival-de-la-luz-2026",
                 "chatChannelID": "festival-de-la-luz-2026",
                 "legacyIDs": [],
-                "festivalLogoURL": null,
+                "festivalLogoURL": "https://festtime.app/media/festivals/logos/festivalluz_logo.png",
                 "name": "Festival de la Luz",
                 "year": 2026,
                 "days": [
@@ -2619,14 +2619,14 @@
                     "escenario": "Escenario Conciertos do Xacobeo"
                 }
             ],
-            "revision": "df1e13745f6f33dcbc8b82db3390077eafcb9e12"
+            "revision": "9df12c208c49972cf70251ac716a17a2b99e69f4"
         },
         {
             "festival": {
                 "id": "gigante-festival-2026",
                 "chatChannelID": "gigante-festival-2026",
                 "legacyIDs": [],
-                "festivalLogoURL": null,
+                "festivalLogoURL": "https://festtime.app/media/festivals/logos/gigante_logo.png",
                 "name": "Gigante Festival",
                 "year": 2026,
                 "days": [
@@ -3025,7 +3025,7 @@
                     "escenario": "Escenario Mondo Sonoro"
                 }
             ],
-            "revision": "6d014d82c66f20f47fc389227dd30e1e96b0dbcb"
+            "revision": "0de6b81f7f48d37b9a28a18faf16dcb6e874046e"
         },
         {
             "festival": {
@@ -3282,7 +3282,7 @@
                 "id": "jardin-delicias-madrid-2026",
                 "chatChannelID": "jardin-delicias-madrid-2026",
                 "legacyIDs": [],
-                "festivalLogoURL": null,
+                "festivalLogoURL": "https://festtime.app/media/festivals/logos/jardindelicias_logo.png",
                 "name": "Jardin de las Delicias Madrid",
                 "year": 2026,
                 "days": [
@@ -3331,14 +3331,14 @@
                 "": "#F6D74A"
             },
             "events": [],
-            "revision": "496449fc4aabd383cf68e9012a9058dd8e9415ad"
+            "revision": "e6c69eabf76d861c31264aaf46a722ac1070482b"
         },
         {
             "festival": {
                 "id": "jardin-delicias-sevilla-2026",
                 "chatChannelID": "jardin-delicias-sevilla-2026",
                 "legacyIDs": [],
-                "festivalLogoURL": null,
+                "festivalLogoURL": "https://festtime.app/media/festivals/logos/jardindelicias_logo.png",
                 "name": "Jardin de las Delicias Sevilla",
                 "year": 2026,
                 "days": [
@@ -3379,14 +3379,14 @@
                 "": "#F6D74A"
             },
             "events": [],
-            "revision": "2454b74beb97f7ee25cffdc15e6c66e1d45719ba"
+            "revision": "9598119fd95f4d84226606bc9c6e845b7b486902"
         },
         {
             "festival": {
                 "id": "leyendas-del-rock-2026",
                 "chatChannelID": "leyendas-del-rock-2026",
                 "legacyIDs": [],
-                "festivalLogoURL": null,
+                "festivalLogoURL": "https://festtime.app/media/festivals/logos/leyendasrock_logo.png",
                 "name": "Leyendas del Rock",
                 "year": 2026,
                 "days": [
@@ -3448,9 +3448,9 @@
                 "": "#F6D74A"
             },
             "events": [],
-            "revision": "92d23a1af259237078be8f7bd15c25768a255339"
+            "revision": "bf4d3ba92ab778309dc1a56526296ca95a90a01b"
         }
     ],
-    "generatedAt": "2026-09-03T15:16:03+00:00",
+    "generatedAt": "2026-09-03T16:42:18+00:00",
     "source": "mysql-exporter"
 }
