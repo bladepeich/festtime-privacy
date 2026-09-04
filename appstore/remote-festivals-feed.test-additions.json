@@ -598,11 +598,187 @@
             },
             "events": [
                 {
+                    "id": "ccme-2026-vie-cero",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "16:00",
+                    "artista": "CERO",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-vie-hey-kid",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "16:00",
+                    "artista": "HEY KID",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-vie-kabasaki",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "16:00",
+                    "artista": "KABASAKI",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-vie-lucia-puerta",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "16:00",
+                    "artista": "LUCIA DE LA PUERTA",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-vie-tami-tamako",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "16:00",
+                    "artista": "TAMI TAMAKO",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-vie-natalia-lacunza",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "18:00",
+                    "artista": "NATALIA LACUNZA",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-vie-vilu-gontero",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "18:00",
+                    "artista": "VILU GONTERO",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-vie-violeta",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "19:30",
+                    "artista": "VIOLETA",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-vie-wisin",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "19:30",
+                    "artista": "WISIN",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-vie-lucho-rk",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "21:00",
+                    "artista": "LUCHO RK",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-vie-milo-j",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "21:00",
+                    "artista": "MILO J",
+                    "escenario": ""
+                },
+                {
                     "id": "ccme-2026-vie-melendi",
                     "dia": "viernes",
                     "turno": "noche",
                     "hora": "22:45",
                     "artista": "MELENDI",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-sab-dib",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "16:00",
+                    "artista": "DIB",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-sab-lorna",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "16:00",
+                    "artista": "LORNA",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-sab-luc-loren",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "16:00",
+                    "artista": "LUC LOREN",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-sab-pikeras",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "16:00",
+                    "artista": "PIKERAS",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-sab-taichu",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "16:00",
+                    "artista": "TAICHU",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-sab-ruslana",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "18:00",
+                    "artista": "RUSLANA",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-sab-ysy-a",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "18:00",
+                    "artista": "YSY A",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-sab-omar-montes",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "19:30",
+                    "artista": "OMAR MONTES",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-sab-pepe-vizio",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "19:30",
+                    "artista": "PEPE Y VIZIO",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-sab-dei-v",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "21:00",
+                    "artista": "DEI V",
+                    "escenario": ""
+                },
+                {
+                    "id": "ccme-2026-sab-dimitri-vegas",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "21:00",
+                    "artista": "DIMITRI VEGAS",
                     "escenario": ""
                 },
                 {
@@ -614,7 +790,7 @@
                     "escenario": ""
                 }
             ],
-            "revision": "868607e7fd65576faee3d9ee5f938f1630331873"
+            "revision": "44335da7bdfb2d8d2776d9c5259e883a0293e3fc"
         },
         {
             "festival": {
@@ -3756,6 +3932,6 @@
             "revision": "bf4d3ba92ab778309dc1a56526296ca95a90a01b"
         }
     ],
-    "generatedAt": "2026-09-03T16:51:29+00:00",
+    "generatedAt": "2026-09-04T07:10:44+00:00",
     "source": "mysql-exporter"
 }
