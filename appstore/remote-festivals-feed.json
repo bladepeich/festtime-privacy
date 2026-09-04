@@ -432,22 +432,6 @@
                     "escenario": "Plaza de Espana"
                 },
                 {
-                    "id": "b-side-2026-sab-0145-sexy-zebras",
-                    "dia": "sabado",
-                    "turno": "dia",
-                    "hora": "01:45",
-                    "artista": "SEXY ZEBRAS",
-                    "escenario": "Escenario Estrella de Levante"
-                },
-                {
-                    "id": "b-side-2026-sab-0330-crystal-fighters",
-                    "dia": "sabado",
-                    "turno": "dia",
-                    "hora": "03:30",
-                    "artista": "CRYSTAL FIGHTERS",
-                    "escenario": "Escenario Estrella de Levante"
-                },
-                {
                     "id": "b-side-2026-sab-1200-staring",
                     "dia": "sabado",
                     "turno": "dia",
@@ -482,10 +466,34 @@
                 {
                     "id": "b-side-2026-sab-1800-well",
                     "dia": "sabado",
-                    "turno": "noche",
+                    "turno": "dia",
                     "hora": "18:00",
                     "artista": "WELL",
                     "escenario": "Calle Jesuita Hernandez"
+                },
+                {
+                    "id": "b-side-2026-sab-1900-regular-crowd",
+                    "dia": "sabado",
+                    "turno": "dia",
+                    "hora": "19:00",
+                    "artista": "REGULAR CROWD",
+                    "escenario": "Calle Jesuita Hernandez"
+                },
+                {
+                    "id": "b-side-2026-sab-0145-sexy-zebras",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "01:45",
+                    "artista": "SEXY ZEBRAS",
+                    "escenario": "Escenario Estrella de Levante"
+                },
+                {
+                    "id": "b-side-2026-sab-0330-crystal-fighters",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "03:30",
+                    "artista": "CRYSTAL FIGHTERS",
+                    "escenario": "Escenario Estrella de Levante"
                 },
                 {
                     "id": "b-side-2026-sab-1810-xavibo",
@@ -494,14 +502,6 @@
                     "hora": "18:10",
                     "artista": "XAVIBO",
                     "escenario": "Escenario Estrella de Levante"
-                },
-                {
-                    "id": "b-side-2026-sab-1900-regular-crowd",
-                    "dia": "sabado",
-                    "turno": "noche",
-                    "hora": "19:00",
-                    "artista": "REGULAR CROWD",
-                    "escenario": "Calle Jesuita Hernandez"
                 },
                 {
                     "id": "b-side-2026-sab-1910-alcala-norte",
@@ -536,7 +536,7 @@
                     "escenario": "Escenario Estrella de Levante"
                 }
             ],
-            "revision": "b5680bed30e4896c1efbbad2dffcba42c9127563"
+            "revision": "e7f30a71b01906c687574497bc98435bf1efebb6"
         },
         {
             "festival": {
@@ -4133,6 +4133,6 @@
             "revision": "bf4d3ba92ab778309dc1a56526296ca95a90a01b"
         }
     ],
-    "generatedAt": "2026-09-04T07:49:44+00:00",
+    "generatedAt": "2026-09-04T07:56:30+00:00",
     "source": "mysql-exporter"
 }
