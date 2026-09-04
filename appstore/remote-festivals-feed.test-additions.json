@@ -339,6 +339,207 @@
         },
         {
             "festival": {
+                "id": "b-side-2026",
+                "chatChannelID": "b-side-2026",
+                "legacyIDs": [],
+                "festivalLogoURL": null,
+                "name": "B-Side",
+                "year": 2026,
+                "days": [
+                    {
+                        "id": "viernes",
+                        "displayName": "Vie 04",
+                        "calendarDate": "2026-09-04"
+                    },
+                    {
+                        "id": "sabado",
+                        "displayName": "Sab 05",
+                        "calendarDate": "2026-09-05"
+                    }
+                ],
+                "defaultDayID": "viernes",
+                "defaultShift": "noche",
+                "forcedShiftByDay": {},
+                "favoriteIDAliases": {},
+                "menuOptions": [
+                    {
+                        "title": "Web Oficial",
+                        "url": "https://b-sidefestival.com",
+                        "systemImage": "safari"
+                    },
+                    {
+                        "title": "Entradas",
+                        "url": "https://b-sidefestival.com/#entradas",
+                        "systemImage": "ticket"
+                    },
+                    {
+                        "title": "Ubicacion del Recinto",
+                        "url": "https://www.google.com/maps/search/?api=1&query=Recinto+de+Eventos+de+Molina+de+Segura",
+                        "systemImage": "location"
+                    }
+                ],
+                "regionGeoJSONFile": null,
+                "eventsFile": "b-side-2026-events-remote",
+                "stageColorsFile": "b-side-2026-stage-colors-remote"
+            },
+            "stageColors": {
+                "Escenario Estrella de Levante": "#0A8F5B",
+                "Plaza de Espana": "#1E9E67",
+                "Plaza de la Region Murciana": "#2AAE73",
+                "Calle Plaza Santa Barbara": "#42BA83",
+                "Calle Jesuita Hernandez": "#35A476",
+                "": "#F6D74A"
+            },
+            "events": [
+                {
+                    "id": "b-side-2026-vie-1930-yo-soy-raton",
+                    "dia": "viernes",
+                    "turno": "dia",
+                    "hora": "19:30",
+                    "artista": "YO SOY RATON",
+                    "escenario": "Plaza de la Region Murciana"
+                },
+                {
+                    "id": "b-side-2026-vie-0100-serial-killerz",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "01:00",
+                    "artista": "SERIAL KILLERZ",
+                    "escenario": "Plaza de Espana"
+                },
+                {
+                    "id": "b-side-2026-vie-2030-gallopedro",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "20:30",
+                    "artista": "GALLOPEDRO",
+                    "escenario": "Plaza de Espana"
+                },
+                {
+                    "id": "b-side-2026-vie-2130-wings-of-desire",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "21:30",
+                    "artista": "WINGS OF DESIRE",
+                    "escenario": "Plaza de Espana"
+                },
+                {
+                    "id": "b-side-2026-vie-2300-sidonie",
+                    "dia": "viernes",
+                    "turno": "noche",
+                    "hora": "23:00",
+                    "artista": "SIDONIE",
+                    "escenario": "Plaza de Espana"
+                },
+                {
+                    "id": "b-side-2026-sab-1200-staring",
+                    "dia": "sabado",
+                    "turno": "dia",
+                    "hora": "12:00",
+                    "artista": "STARING",
+                    "escenario": "Plaza de la Region Murciana"
+                },
+                {
+                    "id": "b-side-2026-sab-1230-sao",
+                    "dia": "sabado",
+                    "turno": "dia",
+                    "hora": "12:30",
+                    "artista": "SAO",
+                    "escenario": "Calle Plaza Santa Barbara"
+                },
+                {
+                    "id": "b-side-2026-sab-1300-lamartumind",
+                    "dia": "sabado",
+                    "turno": "dia",
+                    "hora": "13:00",
+                    "artista": "LAMARTUMIND",
+                    "escenario": "Plaza de la Region Murciana"
+                },
+                {
+                    "id": "b-side-2026-sab-1330-vuelve-abril",
+                    "dia": "sabado",
+                    "turno": "dia",
+                    "hora": "13:30",
+                    "artista": "VUELVE ABRIL",
+                    "escenario": "Calle Plaza Santa Barbara"
+                },
+                {
+                    "id": "b-side-2026-sab-1800-well",
+                    "dia": "sabado",
+                    "turno": "dia",
+                    "hora": "18:00",
+                    "artista": "WELL",
+                    "escenario": "Calle Jesuita Hernandez"
+                },
+                {
+                    "id": "b-side-2026-sab-1900-regular-crowd",
+                    "dia": "sabado",
+                    "turno": "dia",
+                    "hora": "19:00",
+                    "artista": "REGULAR CROWD",
+                    "escenario": "Calle Jesuita Hernandez"
+                },
+                {
+                    "id": "b-side-2026-sab-0145-sexy-zebras",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "01:45",
+                    "artista": "SEXY ZEBRAS",
+                    "escenario": "Escenario Estrella de Levante"
+                },
+                {
+                    "id": "b-side-2026-sab-0330-crystal-fighters",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "03:30",
+                    "artista": "CRYSTAL FIGHTERS",
+                    "escenario": "Escenario Estrella de Levante"
+                },
+                {
+                    "id": "b-side-2026-sab-1810-xavibo",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "18:10",
+                    "artista": "XAVIBO",
+                    "escenario": "Escenario Estrella de Levante"
+                },
+                {
+                    "id": "b-side-2026-sab-1910-alcala-norte",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "19:10",
+                    "artista": "ALCALA NORTE",
+                    "escenario": "Escenario Estrella de Levante"
+                },
+                {
+                    "id": "b-side-2026-sab-2025-nina-polaca",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "20:25",
+                    "artista": "NINA POLACA",
+                    "escenario": "Escenario Estrella de Levante"
+                },
+                {
+                    "id": "b-side-2026-sab-2155-rigoberta-bandini",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "21:55",
+                    "artista": "RIGOBERTA BANDINI",
+                    "escenario": "Escenario Estrella de Levante"
+                },
+                {
+                    "id": "b-side-2026-sab-2345-love-of-lesbian",
+                    "dia": "sabado",
+                    "turno": "noche",
+                    "hora": "23:45",
+                    "artista": "LOVE OF LESBIAN",
+                    "escenario": "Escenario Estrella de Levante"
+                }
+            ],
+            "revision": "86afd11eeb3eb28e1d466ba1bc25cafff9252732"
+        },
+        {
+            "festival": {
                 "id": "caudal-fest-2026",
                 "chatChannelID": "caudal-fest-2026",
                 "legacyIDs": [],
@@ -3932,6 +4133,6 @@
             "revision": "bf4d3ba92ab778309dc1a56526296ca95a90a01b"
         }
     ],
-    "generatedAt": "2026-09-04T07:10:44+00:00",
+    "generatedAt": "2026-09-04T07:25:52+00:00",
     "source": "mysql-exporter"
 }
