@@ -383,11 +383,11 @@
                 "stageColorsFile": "b-side-2026-stage-colors-remote"
             },
             "stageColors": {
-                "Escenario Estrella de Levante": "#0A8F5B",
-                "Plaza de Espana": "#1E9E67",
-                "Plaza de la Region Murciana": "#2AAE73",
-                "Calle Plaza Santa Barbara": "#42BA83",
-                "Calle Jesuita Hernandez": "#35A476",
+                "Escenario Estrella de Levante": "#F26A21",
+                "Plaza de Espana": "#E7358C",
+                "Plaza de la Region Murciana": "#0B8F5A",
+                "Calle Plaza Santa Barbara": "#F4E54C",
+                "Calle Jesuita Hernandez": "#A33A3E",
                 "": "#F6D74A"
             },
             "events": [
@@ -536,7 +536,7 @@
                     "escenario": "Escenario Estrella de Levante"
                 }
             ],
-            "revision": "e7f30a71b01906c687574497bc98435bf1efebb6"
+            "revision": "aebd7ef569dad8826594781134cb26b29896ef03"
         },
         {
             "festival": {
@@ -4133,6 +4133,6 @@
             "revision": "bf4d3ba92ab778309dc1a56526296ca95a90a01b"
         }
     ],
-    "generatedAt": "2026-09-04T07:56:30+00:00",
+    "generatedAt": "2026-09-04T07:58:53+00:00",
     "source": "mysql-exporter"
 }
