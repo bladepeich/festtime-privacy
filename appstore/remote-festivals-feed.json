@@ -1813,7 +1813,8 @@
           }
         ],
         "eventsFile": "cosquin-rock-valladolid-2026-events",
-        "stageColorsFile": "cosquin-rock-valladolid-2026-stage-colors"
+        "stageColorsFile": "cosquin-rock-valladolid-2026-stage-colors",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/cosquin_rock_logo.png"
       },
       "stageColors": {
         "": "#F6D74A"
@@ -1940,7 +1941,7 @@
           "escenario": ""
         }
       ],
-      "revision": "78bf48ded94872a18233cd6d1482b592afb6ec12"
+      "revision": "65b1db6ee20e214af1e305dafa67e83f8557a912"
     },
     {
       "festival": {
@@ -1993,7 +1994,8 @@
           }
         ],
         "eventsFile": "ebrovision-2026-events",
-        "stageColorsFile": "ebrovision-2026-stage-colors"
+        "stageColorsFile": "ebrovision-2026-stage-colors",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/ebrovision_logo.png"
       },
       "stageColors": {
         "Concierto 400 Aniversario Fundacion Caja de Burgos": "#F6D74A",
@@ -2435,7 +2437,7 @@
           "escenario": "Escenario Miranda de Ebro"
         }
       ],
-      "revision": "5d7fe76fa7e4dab100b5712de91c417afd73f6ac"
+      "revision": "de47461728d7115588f2e275c68be893a0f2862c"
     },
     {
       "festival": {
@@ -2483,7 +2485,8 @@
           }
         ],
         "eventsFile": "festival-de-la-luz-2026-events",
-        "stageColorsFile": "festival-de-la-luz-2026-stage-colors"
+        "stageColorsFile": "festival-de-la-luz-2026-stage-colors",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/festivalluz_logo.png"
       },
       "stageColors": {
         "Escenario Conciertos do Xacobeo": "#F6D74A",
@@ -2999,7 +3002,7 @@
           "escenario": "Escenario Conciertos do Xacobeo"
         }
       ],
-      "revision": "637ad8aea4cce679de103d187ecee9cff0b7d745"
+      "revision": "5a42de213d608e1fc5ee9d723767fe6214fc3fab"
     },
     {
       "festival": {
@@ -3047,7 +3050,8 @@
           }
         ],
         "eventsFile": "gigante-festival-2026-events",
-        "stageColorsFile": "gigante-festival-2026-stage-colors"
+        "stageColorsFile": "gigante-festival-2026-stage-colors",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/gigante_logo.png"
       },
       "stageColors": {
         "Escenario Gigante": "#F6D74A",
@@ -3402,7 +3406,7 @@
           "escenario": "Escenario Guadalajara (Plaza Mayor)"
         }
       ],
-      "revision": "f24689e6ad82fa6a42d8e93b13e43f0279938686"
+      "revision": "9effa9477722444e26b41458a83dbc50f7bd93ff"
     },
     {
       "festival": {
@@ -3694,7 +3698,8 @@
           }
         ],
         "eventsFile": "jardin-delicias-madrid-2026-events",
-        "stageColorsFile": "jardin-delicias-madrid-2026-stage-colors"
+        "stageColorsFile": "jardin-delicias-madrid-2026-stage-colors",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/jardindelicias_logo.png"
       },
       "stageColors": {
         "Escenario Bosque": "#F6D74A",
@@ -4006,7 +4011,7 @@
           "escenario": "Escenario Bosque"
         }
       ],
-      "revision": "8ebe6ca790156ff3a09a90ac7d2cb67c37ba4e4f"
+      "revision": "b49d5382fecd9bcebf52a132fe877924a306d5ad"
     },
     {
       "festival": {
@@ -4045,7 +4050,8 @@
           }
         ],
         "eventsFile": "jardin-delicias-sevilla-2026-events",
-        "stageColorsFile": "jardin-delicias-sevilla-2026-stage-colors"
+        "stageColorsFile": "jardin-delicias-sevilla-2026-stage-colors",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/jardindelicias_logo.png"
       },
       "stageColors": {
         "": "#F6D74A"
@@ -4100,7 +4106,7 @@
           "escenario": ""
         }
       ],
-      "revision": "f7c9f7965b5ab3c3e28b2345150e9c9937b48271"
+      "revision": "af37f3876794c6da77f6f190c8bc1fa5c4666a90"
     },
     {
       "festival": {
@@ -4159,7 +4165,8 @@
         ],
         "regionGeoJSONFile": "leyendas-del-rock-2026-region",
         "eventsFile": "leyendas-del-rock-2026-events",
-        "stageColorsFile": "leyendas-del-rock-2026-stage-colors"
+        "stageColorsFile": "leyendas-del-rock-2026-stage-colors",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/leyendasrock_logo.png"
       },
       "stageColors": {
         "Dave Mustaine Stage": "#F6D74A",
@@ -4640,7 +4647,7 @@
           "escenario": "Dave Mustaine Stage"
         }
       ],
-      "revision": "d3db8cc8978b345f80831e688bac696937586562"
+      "revision": "815b6ebb8d9acd0e1a623aa5cbf953feb751372f"
     },
     {
       "festival": {
@@ -4794,7 +4801,7 @@
       "festival": {
         "id": "vive-latino-2026",
         "chatChannelID": "vive-latino-2026",
-        "festivalLogoURL": "https://vivelatino.es/wp-content/uploads/2025/02/Logo-Original-VL-LOW.png",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/vivelatino_logo.png",
         "name": "Vive Latino",
         "year": 2026,
         "days": [
@@ -5107,9 +5114,9 @@
           "escenario": "Escena VL"
         }
       ],
-      "revision": "2d6ee4cf746552cd81e04cb9c98a86aa5df54b2a"
+      "revision": "6f5215644d66b57cf9e5ed4b4360b9b07371a7eb"
     }
   ],
-  "generatedAt": "2026-09-10T08:57:53Z",
+  "generatedAt": "2026-09-10T09:28:40Z",
   "source": "json-sync-exporter"
 }
