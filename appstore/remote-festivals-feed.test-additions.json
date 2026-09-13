@@ -4706,7 +4706,7 @@
           "dia": "viernes",
           "turno": "noche",
           "hora": "16:00",
-          "artista": "Apertura de puertas",
+          "artista": "APERTURA DE PUERTAS",
           "escenario": "Escenario Principal"
         },
         {
@@ -4714,7 +4714,7 @@
           "dia": "viernes",
           "turno": "noche",
           "hora": "17:00",
-          "artista": "Extasis",
+          "artista": "EXTASIS",
           "escenario": "Escenario Principal"
         },
         {
@@ -4722,7 +4722,7 @@
           "dia": "viernes",
           "turno": "noche",
           "hora": "18:30",
-          "artista": "Xoel Lopez",
+          "artista": "XOEL LOPEZ",
           "escenario": "Escenario Principal"
         },
         {
@@ -4730,7 +4730,7 @@
           "dia": "viernes",
           "turno": "noche",
           "hora": "20:30",
-          "artista": "Pignoise",
+          "artista": "PIGNOISE",
           "escenario": "Escenario Principal"
         },
         {
@@ -4738,7 +4738,7 @@
           "dia": "viernes",
           "turno": "noche",
           "hora": "22:30",
-          "artista": "Love of Lesbian",
+          "artista": "LOVE OF LESBIAN",
           "escenario": "Escenario Principal"
         },
         {
@@ -4746,7 +4746,7 @@
           "dia": "viernes",
           "turno": "noche",
           "hora": "00:30",
-          "artista": "Sanguijuelas del Guadiana",
+          "artista": "SANGUIJUELAS DEL GUADIANA",
           "escenario": "Escenario Principal"
         },
         {
@@ -4754,7 +4754,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "16:00",
-          "artista": "Apertura de puertas",
+          "artista": "APERTURA DE PUERTAS",
           "escenario": "Escenario Principal"
         },
         {
@@ -4762,7 +4762,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "17:00",
-          "artista": "Anni B Sweet",
+          "artista": "ANNI B SWEET",
           "escenario": "Escenario Principal"
         },
         {
@@ -4770,7 +4770,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "18:30",
-          "artista": "Samurai",
+          "artista": "SAMURAI",
           "escenario": "Escenario Principal"
         },
         {
@@ -4778,7 +4778,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "20:30",
-          "artista": "Sexy Zebras",
+          "artista": "SEXY ZEBRAS",
           "escenario": "Escenario Principal"
         },
         {
@@ -4786,7 +4786,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "22:30",
-          "artista": "Lori Meyers",
+          "artista": "LORI MEYERS",
           "escenario": "Escenario Principal"
         },
         {
@@ -4794,7 +4794,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "00:30",
-          "artista": "La La Love You",
+          "artista": "LA LA LOVE YOU",
           "escenario": "Escenario Principal"
         }
       ],
