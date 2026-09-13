@@ -5119,6 +5119,796 @@
         }
       ],
       "revision": "6f5215644d66b57cf9e5ed4b4360b9b07371a7eb"
+    },
+    {
+      "festival": {
+        "id": "fstvl-b-2026",
+        "chatChannelID": "fstvl-b-2026",
+        "name": "FSTVL-B",
+        "year": 2026,
+        "days": [
+          {
+            "id": "jueves",
+            "displayName": "Jue 17",
+            "calendarDate": "2026-09-17"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 18",
+            "calendarDate": "2026-09-18"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 19",
+            "calendarDate": "2026-09-19"
+          }
+        ],
+        "defaultDayID": "jueves",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "jueves": "noche",
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Parc+del+Forum+Barcelona",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "fstvl-b-2026-events",
+        "stageColorsFile": "fstvl-b-2026-stage-colors"
+      },
+      "stageColors": {
+        "Voll-Damm": "#E5B63C",
+        "●B": "#E64C91",
+        "Adidas Originals": "#1D1D1D",
+        "RA●B x Jägermusic": "#D34843"
+      },
+      "events": [
+        {
+          "id": "fstvl-b-2026-jueves-1715-las-petunias",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "17:15",
+          "artista": "Las Petunias",
+          "escenario": "Voll-Damm"
+        },
+        {
+          "id": "fstvl-b-2026-jueves-1830-jimena-amarillo",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "18:30",
+          "artista": "Jimena Amarillo",
+          "escenario": "Voll-Damm"
+        },
+        {
+          "id": "fstvl-b-2026-jueves-2000-natalia-lacunza",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "Natalia Lacunza",
+          "escenario": "Voll-Damm"
+        },
+        {
+          "id": "fstvl-b-2026-jueves-2130-mala-gesti-on",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:30",
+          "artista": "Mala Gestión",
+          "escenario": "Voll-Damm"
+        },
+        {
+          "id": "fstvl-b-2026-jueves-1730-raly",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "17:30",
+          "artista": "Raly",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-jueves-1900-tarchi",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Tarchi",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-jueves-2030-c-mar-i",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:30",
+          "artista": "C Marí",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-jueves-2200-lorna",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:00",
+          "artista": "Lorna",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-1720-le-iti",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:20",
+          "artista": "Leïti",
+          "escenario": "Voll-Damm"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-1920-d-valentino",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:20",
+          "artista": "D. Valentino",
+          "escenario": "Voll-Damm"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-2135-mushkaa",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:35",
+          "artista": "Mushkaa",
+          "escenario": "Voll-Damm"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-2355-yung-beef",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:55",
+          "artista": "Yung Beef",
+          "escenario": "Voll-Damm"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-1820-akriila",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:20",
+          "artista": "Akriila",
+          "escenario": "●B"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-2025-juicy-bae",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:25",
+          "artista": "Juicy Bae",
+          "escenario": "●B"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-2250-mvrk",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:50",
+          "artista": "Mvrk",
+          "escenario": "●B"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-1715-ultralone",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:15",
+          "artista": "Ultralone",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-1815-stereo-madness",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:15",
+          "artista": "Stereo Madness",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-1940-claudio-montana",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:40",
+          "artista": "Claudio Montana",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-2050-8belial",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:50",
+          "artista": "8Belial",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-2205-ladiferencia2006",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:05",
+          "artista": "Ladiferencia2006",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-2315-xiyo-y-fernandez",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:15",
+          "artista": "Xiyo y Fernandez",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-1700-dj-belly-phat",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:00",
+          "artista": "DJ Belly Phat",
+          "escenario": "RA●B x Jägermusic"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-1900-muna-khaled",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Muna Khaled",
+          "escenario": "RA●B x Jägermusic"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-2100-azombike",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "Azombike",
+          "escenario": "RA●B x Jägermusic"
+        },
+        {
+          "id": "fstvl-b-2026-viernes-2300-akazie",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "Akazie",
+          "escenario": "RA●B x Jägermusic"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-1650-gavina-mp3",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "16:50",
+          "artista": "Gavina.mp3",
+          "escenario": "Voll-Damm"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-1900-pablopablo",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Pablopablo",
+          "escenario": "Voll-Damm"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-2100-guitarricadelafuente",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "Guitarricadelafuente",
+          "escenario": "Voll-Damm"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-2330-rusowsky",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:30",
+          "artista": "Rusowsky",
+          "escenario": "Voll-Damm"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-0200-cupido",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:00",
+          "artista": "Cupido",
+          "escenario": "Voll-Damm"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-1750-alosa",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:50",
+          "artista": "Alosa",
+          "escenario": "●B"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-2000-maria-arnal",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "Maria Arnal",
+          "escenario": "●B"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-2215-la-plazuela",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:15",
+          "artista": "La Plazuela",
+          "escenario": "●B"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-0045-sanguijuelas-del-guadiana",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:45",
+          "artista": "Sanguijuelas del Guadiana",
+          "escenario": "●B"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-1900-angeles-toledano",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "Ángeles Toledano",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-2055-rebe",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:55",
+          "artista": "Rebe",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-2215-trist-an",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:15",
+          "artista": "Tristán!",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-2345-la-elite",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:45",
+          "artista": "La Élite",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-0200-biznaga",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:00",
+          "artista": "Biznaga",
+          "escenario": "Adidas Originals"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-1910-gazzi",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:10",
+          "artista": "Gazzi",
+          "escenario": "RA●B x Jägermusic"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-2100-patataonstereo",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "Patataonstereo",
+          "escenario": "RA●B x Jägermusic"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-2300-jehia-b2b-b4mba",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "Jehia b2b B4mba",
+          "escenario": "RA●B x Jägermusic"
+        },
+        {
+          "id": "fstvl-b-2026-sabado-0100-meritxell-de-soto-b2b-merca-bae",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:00",
+          "artista": "Meritxell de Soto b2b Merca Bae",
+          "escenario": "RA●B x Jägermusic"
+        }
+      ],
+      "revision": "a3004d59dd26c402fadfdeed390067f464847fa1"
+    },
+    {
+      "festival": {
+        "id": "love-the-90s-sevilla-2026",
+        "chatChannelID": "love-the-90s-sevilla-2026",
+        "name": "Love the 90's Sevilla",
+        "year": 2026,
+        "days": [
+          {
+            "id": "sabado",
+            "displayName": "Sab 26",
+            "calendarDate": "2026-09-26"
+          }
+        ],
+        "defaultDayID": "sabado",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://lovethe90ssevilla.es",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Estadio+La+Cartuja+Sevilla",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "love-the-90s-sevilla-2026-events",
+        "stageColorsFile": "love-the-90s-sevilla-2026-stage-colors"
+      },
+      "stageColors": {
+        "Escenario Repsol": "#F6D74A",
+        "Escenario Pop": "#F0508C",
+        "Escenario I Love Breakbeat": "#3EBE68"
+      },
+      "events": [
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-2-unlimited",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "2 Unlimited",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-alexia",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Alexia",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-snap",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Snap!",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-robin-s",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Robin S",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-crystal-waters",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Crystal Waters",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-sonique",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Sonique",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-mystic",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Mystic",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-twenty-4-seven",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Twenty 4 Seven",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-daisy-dee-de-technotronic",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Daisy Dee de Technotronic",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-double-you",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Double You",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-cappella",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Cappella",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-rozalla",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Rozalla",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-paco-pil",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Paco Pil",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-jumper-brothers",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Jumper Brothers",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-rebeca",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Rebeca",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-sensity-world",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Sensity World",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-marian-dacal",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Marian Dacal",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-fernandisco",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Fernandisco",
+          "escenario": "Escenario Repsol"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-mojinos-escozios",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Mojinos Escozios",
+          "escenario": "Escenario Pop"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-no-me-pises-que-llevo-chanclas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "No Me Pises Que Llevo Chanclas",
+          "escenario": "Escenario Pop"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-javier-ojeda-de-danza-invisible",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Javier Ojeda de Danza Invisible",
+          "escenario": "Escenario Pop"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-los-inhumanos",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Los Inhumanos",
+          "escenario": "Escenario Pop"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-amistades-peligrosas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Amistades Peligrosas",
+          "escenario": "Escenario Pop"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-marilia-de-ella-baila-sola",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Marilia de Ella Baila Sola",
+          "escenario": "Escenario Pop"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-az-ucar-moreno",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Azúcar Moreno",
+          "escenario": "Escenario Pop"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-viceversa",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Viceversa",
+          "escenario": "Escenario Pop"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-dj-teto",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DJ Teto",
+          "escenario": "Escenario Pop"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-jordi-cruz",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Jordi Cruz",
+          "escenario": "Escenario Pop"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-crystal-method",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Crystal Method",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-tony-faline",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Tony Faline",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-freestylers-ft-mc-navigator",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Freestylers ft. MC Navigator",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-general-levy",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "General Levy",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-baby-d",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Baby D",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-1516-mr-b-de-bomfunk-mc-s",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "1516 & Mr. B de Bomfunk MC’s",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-ricardo-del-toro",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Ricardo del Toro",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-dj-jonay",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DJ Jonay",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-dj-rasco",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DJ Rasco",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-anuschka",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Anuschka",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-dj-karpin",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DJ Karpin",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-juan-b",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Juan B",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-dj-man",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DJ Man",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-dj-mike",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DJ Mike",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-susana-villegas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "Susana Villegas",
+          "escenario": "Escenario I Love Breakbeat"
+        },
+        {
+          "id": "love-the-90s-sevilla-2026-sabado-sin-hora-the-break-brothers",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "The Break Brothers",
+          "escenario": "Escenario I Love Breakbeat"
+        }
+      ],
+      "revision": "6a03c3067810cd3379ca45b33ddc4510688766d1"
     }
   ],
   "generatedAt": "2026-09-10T09:28:40Z",
