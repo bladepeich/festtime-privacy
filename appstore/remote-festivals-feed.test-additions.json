@@ -3415,7 +3415,7 @@
       "festival": {
         "id": "granada-sound-2026",
         "chatChannelID": "granada-sound-2026",
-        "festivalLogoURL": "https://granadasound.com/wp-content/uploads/2025/10/GS26-LOGOTIPOSIMBOLO-1-LINEA-HORIZONTAL-ROJO-1.svg",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/granada_sound_logo.png",
         "name": "Granada Sound",
         "year": 2026,
         "days": [
@@ -4657,6 +4657,7 @@
         "id": "muralla-indie-2026",
         "chatChannelID": "muralla-indie-2026",
         "name": "Muralla Indie",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/muralla_indie_logo.png",
         "year": 2026,
         "days": [
           {
