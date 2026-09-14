@@ -5164,8 +5164,8 @@
       "stageColors": {
         "Voll-Damm": "#F0508C",
         "●B": "#F26A21",
-        "Adidas Originals": "#F0508C",
-        "RA●B x Jägermusic": "#F26A21"
+        "Adidas Originals": "#4CC9F0",
+        "RA●B x Jägermusic": "#84CC16"
       },
       "events": [
         {
@@ -5552,7 +5552,7 @@
       "stageColors": {
         "Escenario Repsol": "#F0508C",
         "Escenario Pop": "#F26A21",
-        "Escenario I Love Breakbeat": "#F0508C"
+        "Escenario I Love Breakbeat": "#4CC9F0"
       },
       "events": [
         {
