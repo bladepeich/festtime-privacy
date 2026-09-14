@@ -5162,10 +5162,10 @@
         "stageColorsFile": "fstvl-b-2026-stage-colors"
       },
       "stageColors": {
-        "Voll-Damm": "#E5B63C",
-        "●B": "#E64C91",
-        "Adidas Originals": "#1D1D1D",
-        "RA●B x Jägermusic": "#D34843"
+        "Voll-Damm": "#F0508C",
+        "●B": "#F26A21",
+        "Adidas Originals": "#F0508C",
+        "RA●B x Jägermusic": "#F26A21"
       },
       "events": [
         {
@@ -5550,9 +5550,9 @@
         "stageColorsFile": "love-the-90s-sevilla-2026-stage-colors"
       },
       "stageColors": {
-        "Escenario Repsol": "#F6D74A",
-        "Escenario Pop": "#F0508C",
-        "Escenario I Love Breakbeat": "#3EBE68"
+        "Escenario Repsol": "#F0508C",
+        "Escenario Pop": "#F26A21",
+        "Escenario I Love Breakbeat": "#F0508C"
       },
       "events": [
         {
