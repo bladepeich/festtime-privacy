@@ -5909,8 +5909,478 @@
         }
       ],
       "revision": "6a03c3067810cd3379ca45b33ddc4510688766d1"
+    },
+    {
+      "festival": {
+        "id": "madrid-salvaje-2026",
+        "chatChannelID": "madrid-salvaje-2026",
+        "name": "Madrid Salvaje",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/madrid_salvaje_logo.png",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 25",
+            "calendarDate": "2026-09-25"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 26",
+            "calendarDate": "2026-09-26"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://madridsalvaje.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.enterticket.es/eventos/madrid-salvaje-2026-733328",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Estadio+Ontime+Butarque+Leganes",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "madrid-salvaje-2026-events",
+        "stageColorsFile": "madrid-salvaje-2026-stage-colors"
+      },
+      "stageColors": {
+        "Escenario Cutty Sark": "#F6C23E",
+        "Escenario Salvaje": "#4C6FFF",
+        "El Ring by Plata o Plomo": "#F44336",
+        "Urban Park": "#F41FEA"
+      },
+      "events": [
+        {
+          "id": "madrid-salvaje-2026-viernes-17:00-iban",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:00",
+          "artista": "IBAN",
+          "escenario": "Escenario Salvaje"
+        },
+        {
+          "id": "madrid-salvaje-2026-viernes-17:30-mayo214",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:30",
+          "artista": "MAYO214",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "madrid-salvaje-2026-viernes-18:20-damorte",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:20",
+          "artista": "DAMORTE",
+          "escenario": "Escenario Salvaje"
+        },
+        {
+          "id": "madrid-salvaje-2026-viernes-sin-hora-pgj",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "PGJ",
+          "escenario": "El Ring by Plata o Plomo"
+        },
+        {
+          "id": "madrid-salvaje-2026-viernes-19:00-nikone",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "NIKONE",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "madrid-salvaje-2026-viernes-sin-hora-doble-o",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "DOBLE O",
+          "escenario": "El Ring by Plata o Plomo"
+        },
+        {
+          "id": "madrid-salvaje-2026-viernes-20:00-jime",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "JIME",
+          "escenario": "Escenario Salvaje"
+        },
+        {
+          "id": "madrid-salvaje-2026-viernes-sin-hora-boxeo-ink83",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BOXEO + INK83",
+          "escenario": "El Ring by Plata o Plomo"
+        },
+        {
+          "id": "madrid-salvaje-2026-viernes-20:50-kidd-keo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:50",
+          "artista": "KIDD KEO",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "madrid-salvaje-2026-viernes-21:50-rade",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:50",
+          "artista": "RADE",
+          "escenario": "Escenario Salvaje"
+        },
+        {
+          "id": "madrid-salvaje-2026-viernes-sin-hora-khea-showcase",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "KHEA (Showcase)",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "madrid-salvaje-2026-viernes-sin-hora-jorge-quel",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "",
+          "artista": "JORGE QUEL",
+          "escenario": "El Ring by Plata o Plomo"
+        },
+        {
+          "id": "madrid-salvaje-2026-viernes-23:00-fernandocosta",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "FERNANDOCOSTA",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "madrid-salvaje-2026-viernes-23:30-matasvandals",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:30",
+          "artista": "MATASVANDALS",
+          "escenario": "Escenario Salvaje"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-16:15-doni",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "16:15",
+          "artista": "DONI",
+          "escenario": "Escenario Salvaje"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-17:00-lndc",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:00",
+          "artista": "LNDC",
+          "escenario": "Escenario Salvaje"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-17:30-ardo440",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:30",
+          "artista": "ARDO440",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-sin-hora-kaene",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "KAENE",
+          "escenario": "El Ring by Plata o Plomo"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-18:20-dollar-selmouni",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:20",
+          "artista": "DOLLAR SELMOUNI",
+          "escenario": "Escenario Salvaje"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-sin-hora-bdlc",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BDLC",
+          "escenario": "El Ring by Plata o Plomo"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-19:00-foyone",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "FOYONE",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-sin-hora-boxeo-jorge-quel",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "BOXEO + JORGE QUEL",
+          "escenario": "El Ring by Plata o Plomo"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-20:00-l0rna",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "L0RNA",
+          "escenario": "Escenario Salvaje"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-20:50-nadal015",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:50",
+          "artista": "NADAL015",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-21:50-krisan",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:50",
+          "artista": "KRISAN",
+          "escenario": "Escenario Salvaje"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-sin-hora-ink83",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "",
+          "artista": "INK83",
+          "escenario": "El Ring by Plata o Plomo"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-23:00-delaossa",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "DELAOSSA",
+          "escenario": "Escenario Cutty Sark"
+        },
+        {
+          "id": "madrid-salvaje-2026-sabado-23:30-anier",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:30",
+          "artista": "ANIER",
+          "escenario": "Escenario Salvaje"
+        }
+      ],
+      "revision": "384342894c4c2e661bab50bdd171eeccab3bd04d51e00a8264fdc0736b811f88"
+    },
+    {
+      "festival": {
+        "id": "gran-canaria-sum-festival-2026",
+        "chatChannelID": "gran-canaria-sum-festival-2026",
+        "name": "Gran Canaria SUM Festival",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/gran_canaria_sum_festival_logo.png",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 02",
+            "calendarDate": "2026-10-02"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 03",
+            "calendarDate": "2026-10-03"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://www.sumfestival.es",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.entradas.com/noapp/artist/gran-canaria-sum-festival/?affiliate=S3M",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Polideportivo+de+Arucas+Gran+Canaria",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "gran-canaria-sum-festival-2026-events",
+        "stageColorsFile": "gran-canaria-sum-festival-2026-stage-colors"
+      },
+      "stageColors": {
+        "Escenario Ron Aldea": "#F0508C",
+        "Escenario Mahou": "#F26A21"
+      },
+      "events": [
+        {
+          "id": "gran-canaria-sum-festival-2026-viernes-18:30-kimera",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:30",
+          "artista": "KIMERA",
+          "escenario": "Escenario Ron Aldea"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-viernes-19:00-repion",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "REPION",
+          "escenario": "Escenario Mahou"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-viernes-20:00-veintiuno",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "VEINTIUNO",
+          "escenario": "Escenario Ron Aldea"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-viernes-21:00-walls",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "WALLS",
+          "escenario": "Escenario Mahou"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-viernes-22:00-carlos-ares",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:00",
+          "artista": "CARLOS ARES",
+          "escenario": "Escenario Ron Aldea"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-viernes-23:00-ultraligera",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "ULTRALIGERA",
+          "escenario": "Escenario Mahou"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-viernes-00:00-miss-caffeina",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:00",
+          "artista": "MISS CAFFEINA",
+          "escenario": "Escenario Ron Aldea"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-viernes-01:00-nil-moliner",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:00",
+          "artista": "NIL MOLINER",
+          "escenario": "Escenario Mahou"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-sabado-17:10-arco",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:10",
+          "artista": "ARCO",
+          "escenario": "Escenario Ron Aldea"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-sabado-18:00-chambao",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:00",
+          "artista": "CHAMBAO",
+          "escenario": "Escenario Mahou"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-sabado-19:00-ara-malikian",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "ARA MALIKIAN",
+          "escenario": "Escenario Ron Aldea"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-sabado-20:00-sexy-zebras",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "SEXY ZEBRAS",
+          "escenario": "Escenario Mahou"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-sabado-21:00-samurai",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "SAMURAÏ",
+          "escenario": "Escenario Ron Aldea"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-sabado-22:00-la-casa-azul",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:00",
+          "artista": "LA CASA AZUL",
+          "escenario": "Escenario Mahou"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-sabado-23:00-la-la-love-you",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "LA LA LOVE YOU",
+          "escenario": "Escenario Ron Aldea"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-sabado-00:00-siloe",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:00",
+          "artista": "SILOÉ",
+          "escenario": "Escenario Mahou"
+        },
+        {
+          "id": "gran-canaria-sum-festival-2026-sabado-01:00-dorian",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:00",
+          "artista": "DORIAN",
+          "escenario": "Escenario Ron Aldea"
+        }
+      ],
+      "revision": "abca8232a7a99700ee5ff70f5d86fd7675ee855668c66a7ef7d9cf45c8392975"
     }
   ],
-  "generatedAt": "2026-09-10T09:28:40Z",
+  "generatedAt": "2026-09-19T11:15:27.836Z",
   "source": "json-sync-exporter"
 }
