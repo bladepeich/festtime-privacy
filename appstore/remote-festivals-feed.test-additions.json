@@ -6379,8 +6379,365 @@
         }
       ],
       "revision": "abca8232a7a99700ee5ff70f5d86fd7675ee855668c66a7ef7d9cf45c8392975"
+    },
+    {
+      "festival": {
+        "id": "sonorama-ibiza-2026",
+        "chatChannelID": "sonorama-ibiza-2026",
+        "name": "Sonorama Ibiza",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/sonorama_ibiza_logo.png",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 02",
+            "calendarDate": "2026-10-02"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 03",
+            "calendarDate": "2026-10-03"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://sonoramariberaibiza.es",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://sonoramariberaibiza.es",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Venice+Bay+Cala+de+Bou+Ibiza",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "sonorama-ibiza-2026-events",
+        "stageColorsFile": "sonorama-ibiza-2026-stage-colors"
+      },
+      "stageColors": {
+        "Auditorio Caló de s'Oli": "#4A9FE0",
+        "Escenario Venice Bay": "#F0953C",
+        "Cinerama Hotel Grand Paradiso": "#7DC95E"
+      },
+      "events": [
+        {
+          "id": "sonorama-ibiza-2026-viernes-18:00-kitai",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:00",
+          "artista": "KITAI",
+          "escenario": "Auditorio Caló de s'Oli"
+        },
+        {
+          "id": "sonorama-ibiza-2026-viernes-19:00-modelo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "MODELO",
+          "escenario": "Auditorio Caló de s'Oli"
+        },
+        {
+          "id": "sonorama-ibiza-2026-viernes-20:00-extasis",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "ÉXTASIS",
+          "escenario": "Auditorio Caló de s'Oli"
+        },
+        {
+          "id": "sonorama-ibiza-2026-viernes-21:00-tenda",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "TENDA",
+          "escenario": "Auditorio Caló de s'Oli"
+        },
+        {
+          "id": "sonorama-ibiza-2026-viernes-22:00-comandante-twin",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:00",
+          "artista": "COMANDANTE TWIN",
+          "escenario": "Auditorio Caló de s'Oli"
+        },
+        {
+          "id": "sonorama-ibiza-2026-viernes-23:00-oslo-ovnies",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "OSLO OVNIES",
+          "escenario": "Auditorio Caló de s'Oli"
+        },
+        {
+          "id": "sonorama-ibiza-2026-sabado-13:00-bouza-vs-dylan",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "13:00",
+          "artista": "BOUZA VS DYLAN",
+          "escenario": "Cinerama Hotel Grand Paradiso"
+        },
+        {
+          "id": "sonorama-ibiza-2026-sabado-17:00-anabel-lee",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:00",
+          "artista": "ANABEL LEE",
+          "escenario": "Escenario Venice Bay"
+        },
+        {
+          "id": "sonorama-ibiza-2026-sabado-18:05-peter-colours",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:05",
+          "artista": "PETER COLOURS",
+          "escenario": "Escenario Venice Bay"
+        },
+        {
+          "id": "sonorama-ibiza-2026-sabado-19:15-anni-b-sweet-acustico",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:15",
+          "artista": "ANNI B SWEET (Acústico)",
+          "escenario": "Escenario Venice Bay"
+        },
+        {
+          "id": "sonorama-ibiza-2026-sabado-20:30-statuas-d-sal",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:30",
+          "artista": "STATUAS D SAL",
+          "escenario": "Escenario Venice Bay"
+        },
+        {
+          "id": "sonorama-ibiza-2026-sabado-21:45-tu-otra-bonita",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:45",
+          "artista": "TU OTRA BONITA",
+          "escenario": "Escenario Venice Bay"
+        },
+        {
+          "id": "sonorama-ibiza-2026-sabado-23:00-marlena",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:00",
+          "artista": "MARLENA",
+          "escenario": "Escenario Venice Bay"
+        }
+      ],
+      "revision": "62f5ac2012fd2a0d1e91d4818e221a76f8f2802e6334ac67a6d2c220df8f50fc"
+    },
+    {
+      "festival": {
+        "id": "oasis-elche-music-fest-2026",
+        "chatChannelID": "oasis-elche-music-fest-2026",
+        "name": "Oasis Elche Music Fest",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/oasis_elche_music_fest_logo.png",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 09",
+            "calendarDate": "2026-10-09"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 10",
+            "calendarDate": "2026-10-10"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://oasiselchemusicfest.es",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.enterticket.es/eventos/oasis-elche-music-fest-2026-472540",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Parking+Universidad+Miguel+Hernandez+Elche",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "oasis-elche-music-fest-2026-events",
+        "stageColorsFile": "oasis-elche-music-fest-2026-stage-colors"
+      },
+      "stageColors": {
+        "Escenario Estrella de Levante": "#2E8B57",
+        "Escenario BYD": "#D4E157"
+      },
+      "events": [
+        {
+          "id": "oasis-elche-music-fest-2026-viernes-18:00-malmo-040",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:00",
+          "artista": "MALMÖ 040",
+          "escenario": "Escenario Estrella de Levante"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-viernes-19:15-elche-suena",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:15",
+          "artista": "ELCHE SUENA",
+          "escenario": "Escenario BYD"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-viernes-19:45-carlos-ares",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:45",
+          "artista": "CARLOS ARES",
+          "escenario": "Escenario Estrella de Levante"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-viernes-21:15-nuestra-senora",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:15",
+          "artista": "NUESTRA SEÑORA",
+          "escenario": "Escenario BYD"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-viernes-21:45-viva-suecia",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:45",
+          "artista": "VIVA SUECIA",
+          "escenario": "Escenario Estrella de Levante"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-viernes-23:45-mujeres",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:45",
+          "artista": "MUJERES",
+          "escenario": "Escenario BYD"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-viernes-00:15-nina-polaca",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:15",
+          "artista": "NIÑA POLACA",
+          "escenario": "Escenario Estrella de Levante"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-viernes-01:15-hoonine",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:15",
+          "artista": "HOONINE",
+          "escenario": "Escenario BYD"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-viernes-01:45-elyella",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:45",
+          "artista": "ELYELLA",
+          "escenario": "Escenario Estrella de Levante"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-sabado-17:30-miss-caffeina",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:30",
+          "artista": "MISS CAFFEINA",
+          "escenario": "Escenario Estrella de Levante"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-sabado-18:45-tgysoa",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:45",
+          "artista": "TGYSOA",
+          "escenario": "Escenario BYD"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-sabado-19:15-barry-b",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:15",
+          "artista": "BARRY B",
+          "escenario": "Escenario Estrella de Levante"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-sabado-20:45-el-diablo-de-shanghai",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:45",
+          "artista": "EL DIABLO DE SHANGHAI",
+          "escenario": "Escenario BYD"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-sabado-21:15-ojete-calor",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:15",
+          "artista": "OJETE CALOR",
+          "escenario": "Escenario Estrella de Levante"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-sabado-23:30-lori-meyers",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:30",
+          "artista": "LORI MEYERS",
+          "escenario": "Escenario Estrella de Levante"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-sabado-23:30-ninos",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:30",
+          "artista": "NIÑOS",
+          "escenario": "Escenario BYD"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-sabado-01:00-teo-lucadamo",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:00",
+          "artista": "TEO LUCADAMO",
+          "escenario": "Escenario BYD"
+        },
+        {
+          "id": "oasis-elche-music-fest-2026-sabado-01:30-la-la-love-you",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:30",
+          "artista": "LA LA LOVE YOU",
+          "escenario": "Escenario Estrella de Levante"
+        }
+      ],
+      "revision": "5051f8f18cf91e3e78009569b4626f9f54c85ecf3418e48623323024c6326f3d"
     }
   ],
-  "generatedAt": "2026-09-19T11:15:27.836Z",
+  "generatedAt": "2026-09-30T09:24:53.000Z",
   "source": "json-sync-exporter"
 }
