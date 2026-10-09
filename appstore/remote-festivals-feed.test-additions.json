@@ -4057,59 +4057,83 @@
         "festivalLogoURL": "https://festtime.app/media/festivals/logos/jardindelicias_logo.png"
       },
       "stageColors": {
-        "": "#F6D74A"
+        "Escenario Endesa": "#FF8A00"
       },
       "events": [
         {
-          "id": "jardin-delicias-sevilla-2026-sab-siloe",
+          "id": "jardin-delicias-sevilla-2026-sab-q2",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
-          "artista": "SILOE",
-          "escenario": ""
-        },
-        {
-          "id": "jardin-delicias-sevilla-2026-sab-taburete",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "",
-          "artista": "TABURETE",
-          "escenario": ""
-        },
-        {
-          "id": "jardin-delicias-sevilla-2026-sab-marlena",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "",
-          "artista": "MARLENA",
-          "escenario": ""
-        },
-        {
-          "id": "jardin-delicias-sevilla-2026-sab-hey-kid",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "",
-          "artista": "HEY KID",
-          "escenario": ""
-        },
-        {
-          "id": "jardin-delicias-sevilla-2026-sab-tu-otra-bonita",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "",
-          "artista": "TU OTRA BONITA",
-          "escenario": ""
+          "hora": "14:00",
+          "artista": "Q2",
+          "escenario": "Escenario Endesa"
         },
         {
           "id": "jardin-delicias-sevilla-2026-sab-hermanos-martinez",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "",
+          "hora": "15:15",
           "artista": "HERMANOS MARTINEZ",
-          "escenario": ""
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-sevilla-2026-sab-tu-otra-bonita",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "16:30",
+          "artista": "TU OTRA BONITA",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-sevilla-2026-sab-hey-kid",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:00",
+          "artista": "HEY KID",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-sevilla-2026-sab-marlena",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:15",
+          "artista": "MARLENA",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-sevilla-2026-sab-taburete",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:45",
+          "artista": "TABURETE",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-sevilla-2026-sab-sebastian-yatra",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:30",
+          "artista": "SEBASTIAN YATRA",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-sevilla-2026-sab-siloe",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:15",
+          "artista": "SILOE",
+          "escenario": "Escenario Endesa"
+        },
+        {
+          "id": "jardin-delicias-sevilla-2026-sab-alvaro-de-luna",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:00",
+          "artista": "ALVARO DE LUNA",
+          "escenario": "Escenario Endesa"
         }
       ],
-      "revision": "af37f3876794c6da77f6f190c8bc1fa5c4666a90"
+      "revision": "468f196d8ffe26b2df07f973198de41059cfc138"
     },
     {
       "festival": {
@@ -6738,6 +6762,6 @@
       "revision": "5051f8f18cf91e3e78009569b4626f9f54c85ecf3418e48623323024c6326f3d"
     }
   ],
-  "generatedAt": "2026-09-30T09:24:53.000Z",
+  "generatedAt": "2026-10-09T19:20:22.000Z",
   "source": "json-sync-exporter"
 }
