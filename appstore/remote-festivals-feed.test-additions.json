@@ -6760,8 +6760,198 @@
         }
       ],
       "revision": "5051f8f18cf91e3e78009569b4626f9f54c85ecf3418e48623323024c6326f3d"
+    },
+    {
+      "festival": {
+        "id": "contempopranea-2026",
+        "chatChannelID": "contempopranea-2026",
+        "name": "Contempopranea",
+        "year": 2026,
+        "days": [
+          {
+            "id": "viernes",
+            "displayName": "Vie 16",
+            "calendarDate": "2026-10-16"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 17",
+            "calendarDate": "2026-10-17"
+          }
+        ],
+        "defaultDayID": "viernes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://contempopranea.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://contempopranea.com/tickets/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Institucion+Ferial+FEVAL+Don+Benito",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "contempopranea-2026-events",
+        "stageColorsFile": "contempopranea-2026-stage-colors"
+      },
+      "stageColors": {
+        "Plaza de España": "#E8833A",
+        "Escenario Exterior": "#C9D94F",
+        "Escenario Interior": "#4A9FE0"
+      },
+      "events": [
+        {
+          "id": "contempopranea-2026-viernes-21:30-electrozacho",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:30",
+          "artista": "ELECTROZACHO",
+          "escenario": "Plaza de España"
+        },
+        {
+          "id": "contempopranea-2026-viernes-23:20-nena-daconte",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:20",
+          "artista": "NENA DACONTE",
+          "escenario": "Plaza de España"
+        },
+        {
+          "id": "contempopranea-2026-viernes-01:00-fonal",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:00",
+          "artista": "FÔNAL",
+          "escenario": "Plaza de España"
+        },
+        {
+          "id": "contempopranea-2026-sabado-13:30-depedro",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "13:30",
+          "artista": "DEPEDRO",
+          "escenario": "Escenario Exterior"
+        },
+        {
+          "id": "contempopranea-2026-sabado-14:40-el-gato-con-jotas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "14:40",
+          "artista": "EL GATO CON JOTAS",
+          "escenario": "Escenario Exterior"
+        },
+        {
+          "id": "contempopranea-2026-sabado-16:00-veintiuno",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "16:00",
+          "artista": "VEINTIUNO",
+          "escenario": "Escenario Exterior"
+        },
+        {
+          "id": "contempopranea-2026-sabado-17:40-barry-b",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:40",
+          "artista": "BARRY B",
+          "escenario": "Escenario Exterior"
+        },
+        {
+          "id": "contempopranea-2026-sabado-18:40-carlos-ares",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:40",
+          "artista": "CARLOS ARES",
+          "escenario": "Escenario Interior"
+        },
+        {
+          "id": "contempopranea-2026-sabado-19:40-ninos-bravos",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:40",
+          "artista": "NIÑOS BRAVOS",
+          "escenario": "Escenario Exterior"
+        },
+        {
+          "id": "contempopranea-2026-sabado-20:10-la-m-o-d-a",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:10",
+          "artista": "LA M.O.D.A",
+          "escenario": "Escenario Interior"
+        },
+        {
+          "id": "contempopranea-2026-sabado-21:20-bolsa-de-moscas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:20",
+          "artista": "BOLSA DE MOSCAS",
+          "escenario": "Escenario Exterior"
+        },
+        {
+          "id": "contempopranea-2026-sabado-22:00-ultraligera",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:00",
+          "artista": "ULTRALIGERA",
+          "escenario": "Escenario Interior"
+        },
+        {
+          "id": "contempopranea-2026-sabado-23:10-los-primos-djs",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:10",
+          "artista": "LOS PRIMOS DJS",
+          "escenario": "Escenario Exterior"
+        },
+        {
+          "id": "contempopranea-2026-sabado-23:50-sexy-zebras",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:50",
+          "artista": "SEXY ZEBRAS",
+          "escenario": "Escenario Interior"
+        },
+        {
+          "id": "contempopranea-2026-sabado-00:50-la-petite-mort",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "00:50",
+          "artista": "LA PETITE MORT",
+          "escenario": "Escenario Exterior"
+        },
+        {
+          "id": "contempopranea-2026-sabado-01:20-elyella",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:20",
+          "artista": "ELYELLA",
+          "escenario": "Escenario Interior"
+        },
+        {
+          "id": "contempopranea-2026-sabado-02:50-los-primos-djs",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:50",
+          "artista": "LOS PRIMOS DJS",
+          "escenario": "Escenario Interior"
+        }
+      ],
+      "revision": "f1e76261b8665fcf8a00c3be186e1daed599ed460156066a3417768a7a781afd"
     }
   ],
-  "generatedAt": "2026-10-09T19:20:22.000Z",
+  "generatedAt": "2026-10-20T08:46:11.000Z",
   "source": "json-sync-exporter"
 }
