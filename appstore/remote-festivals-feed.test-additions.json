@@ -6766,6 +6766,7 @@
         "id": "contempopranea-2026",
         "chatChannelID": "contempopranea-2026",
         "name": "Contempopranea",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/contempopranea_logo.png",
         "year": 2026,
         "days": [
           {
@@ -6949,9 +6950,9 @@
           "escenario": "Escenario Interior"
         }
       ],
-      "revision": "f1e76261b8665fcf8a00c3be186e1daed599ed460156066a3417768a7a781afd"
+      "revision": "30c64869221cfaa3b0d257552ecb118b28dcbff6b76cb425f4fa46db17b00fb7"
     }
   ],
-  "generatedAt": "2026-10-20T08:46:11.000Z",
+  "generatedAt": "2026-10-20T16:13:02.000Z",
   "source": "json-sync-exporter"
 }
