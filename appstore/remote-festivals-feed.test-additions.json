@@ -6951,8 +6951,718 @@
         }
       ],
       "revision": "30c64869221cfaa3b0d257552ecb118b28dcbff6b76cb425f4fa46db17b00fb7"
+    },
+    {
+      "festival": {
+        "id": "bime-live-2026",
+        "chatChannelID": "bime-live-2026",
+        "name": "BIME Live",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/bime_logo.png",
+        "year": 2026,
+        "days": [
+          {
+            "id": "martes",
+            "displayName": "Mar 27",
+            "calendarDate": "2026-10-27"
+          },
+          {
+            "id": "miercoles",
+            "displayName": "Mie 28",
+            "calendarDate": "2026-10-28"
+          },
+          {
+            "id": "jueves",
+            "displayName": "Jue 29",
+            "calendarDate": "2026-10-29"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 30",
+            "calendarDate": "2026-10-30"
+          }
+        ],
+        "defaultDayID": "martes",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "martes": "noche",
+          "miercoles": "noche",
+          "jueves": "noche",
+          "viernes": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://bime.org",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Kafe+Antzokia+Bilbao",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "bime-live-2026-events",
+        "stageColorsFile": "bime-live-2026-stage-colors"
+      },
+      "stageColors": {
+        "Kafe Antzokia": "#E8833A",
+        "Sala BBK": "#4A9FE0",
+        "Bilborock": "#D9534F",
+        "Azkena": "#8E6CCF",
+        "Crystal": "#3FB8AF",
+        "Dock BBF": "#F2C14E",
+        "La Ribera": "#5CB85C",
+        "Stage Live": "#E36BAE",
+        "Backroom": "#9AA5B1",
+        "OMODA 1": "#E6F06A",
+        "OMODA 2": "#B5C93A"
+      },
+      "events": [
+        {
+          "id": "bime-live-2026-martes-20:00-no-quiero",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "NO QUIERO",
+          "escenario": "Sala BBK"
+        },
+        {
+          "id": "bime-live-2026-martes-20:00-pitxorines",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "PITXORINES",
+          "escenario": "Azkena"
+        },
+        {
+          "id": "bime-live-2026-martes-20:00-martin",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "MARTIN",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-martes-20:00-la-maria",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "LA MARIA",
+          "escenario": "La Ribera"
+        },
+        {
+          "id": "bime-live-2026-martes-20:30-restinga",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "20:30",
+          "artista": "RESTINGA",
+          "escenario": "Bilborock"
+        },
+        {
+          "id": "bime-live-2026-martes-20:30-bisai",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "20:30",
+          "artista": "BISAI",
+          "escenario": "Dock BBF"
+        },
+        {
+          "id": "bime-live-2026-martes-20:30-cristina-len",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "20:30",
+          "artista": "CRISTINA LEN",
+          "escenario": "Stage Live"
+        },
+        {
+          "id": "bime-live-2026-martes-21:00-julia-cry",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "JULIA CRY",
+          "escenario": "Kafe Antzokia"
+        },
+        {
+          "id": "bime-live-2026-martes-21:05-paco-pecado",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "21:05",
+          "artista": "PACO PECADO",
+          "escenario": "Sala BBK"
+        },
+        {
+          "id": "bime-live-2026-martes-21:05-aeronave-adolescente",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "21:05",
+          "artista": "AERONAVE ADOLESCENTE",
+          "escenario": "Azkena"
+        },
+        {
+          "id": "bime-live-2026-martes-21:05-avenida",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "21:05",
+          "artista": "AVENIDA",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-martes-21:05-maria-jaume",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "21:05",
+          "artista": "MARIA JAUME",
+          "escenario": "La Ribera"
+        },
+        {
+          "id": "bime-live-2026-martes-21:35-amor-liquido",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "21:35",
+          "artista": "AMOR LÍQUIDO",
+          "escenario": "Bilborock"
+        },
+        {
+          "id": "bime-live-2026-martes-21:35-hondora",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "21:35",
+          "artista": "HONDORA",
+          "escenario": "Dock BBF"
+        },
+        {
+          "id": "bime-live-2026-martes-21:35-san-tosielo",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "21:35",
+          "artista": "SAN TOSIELO",
+          "escenario": "Stage Live"
+        },
+        {
+          "id": "bime-live-2026-martes-22:10-ashleys",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "22:10",
+          "artista": "ASHLEYS",
+          "escenario": "Kafe Antzokia"
+        },
+        {
+          "id": "bime-live-2026-martes-22:10-henry-semler",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "22:10",
+          "artista": "HENRY SEMLER",
+          "escenario": "Sala BBK"
+        },
+        {
+          "id": "bime-live-2026-martes-22:10-estamos-perdidos",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "22:10",
+          "artista": "ESTAMOS PERDIDOS",
+          "escenario": "Azkena"
+        },
+        {
+          "id": "bime-live-2026-martes-22:10-1111",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "22:10",
+          "artista": "1111",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-martes-22:10-ana-de-llor",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "22:10",
+          "artista": "ANA DE LLOR",
+          "escenario": "La Ribera"
+        },
+        {
+          "id": "bime-live-2026-martes-22:40-axolotes-mexicanos",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "22:40",
+          "artista": "AXOLOTES MEXICANOS",
+          "escenario": "Bilborock"
+        },
+        {
+          "id": "bime-live-2026-martes-22:40-erik-urano",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "22:40",
+          "artista": "ERIK URANO",
+          "escenario": "Stage Live"
+        },
+        {
+          "id": "bime-live-2026-martes-23:15-aldhara",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "23:15",
+          "artista": "ALDHARA",
+          "escenario": "Kafe Antzokia"
+        },
+        {
+          "id": "bime-live-2026-martes-23:15-estrellas-del-rap-nacional",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "23:15",
+          "artista": "ESTRELLAS DEL RAP NACIONAL",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-martes-23:15-bella-kanela",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "23:15",
+          "artista": "BELLA KANELA",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-martes-00:15-brava",
+          "dia": "martes",
+          "turno": "noche",
+          "hora": "00:15",
+          "artista": "BRAVA",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-miercoles-20:00-javi-medina",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "JAVI MEDINA",
+          "escenario": "Sala BBK"
+        },
+        {
+          "id": "bime-live-2026-miercoles-20:00-gloory-hole",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "GLOORY HOLE",
+          "escenario": "Azkena"
+        },
+        {
+          "id": "bime-live-2026-miercoles-20:00-valentina-peralta",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "VALENTINA PERALTA",
+          "escenario": "La Ribera"
+        },
+        {
+          "id": "bime-live-2026-miercoles-20:30-pedraxe",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "20:30",
+          "artista": "PEDRAXE",
+          "escenario": "Bilborock"
+        },
+        {
+          "id": "bime-live-2026-miercoles-20:30-sofia-gabanna",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "20:30",
+          "artista": "SOFÍA GABANNA",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-miercoles-20:30-sara-zozaya",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "20:30",
+          "artista": "SARA ZOZAYA",
+          "escenario": "Stage Live"
+        },
+        {
+          "id": "bime-live-2026-miercoles-21:00-tussiwarriors",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "TUSSIWARRIORS",
+          "escenario": "Kafe Antzokia"
+        },
+        {
+          "id": "bime-live-2026-miercoles-21:05-expresso-transatlantico",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "21:05",
+          "artista": "EXPRESSO TRANSATLÂNTICO",
+          "escenario": "Sala BBK"
+        },
+        {
+          "id": "bime-live-2026-miercoles-21:05-she-is-a-devil",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "21:05",
+          "artista": "SHE IS A DEVIL",
+          "escenario": "Azkena"
+        },
+        {
+          "id": "bime-live-2026-miercoles-21:05-nico",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "21:05",
+          "artista": "NICO",
+          "escenario": "La Ribera"
+        },
+        {
+          "id": "bime-live-2026-miercoles-21:35-angeladorrrm",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "21:35",
+          "artista": "ANGELADORRRM",
+          "escenario": "Bilborock"
+        },
+        {
+          "id": "bime-live-2026-miercoles-21:35-tatiana-delalvz",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "21:35",
+          "artista": "TATIANA DELALVZ",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-miercoles-21:35-ke-lepo",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "21:35",
+          "artista": "KE LEPO",
+          "escenario": "Stage Live"
+        },
+        {
+          "id": "bime-live-2026-miercoles-22:10-baby-berserk",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "22:10",
+          "artista": "BABY BERSERK",
+          "escenario": "Kafe Antzokia"
+        },
+        {
+          "id": "bime-live-2026-miercoles-22:10-efecto-pasillo",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "22:10",
+          "artista": "EFECTO PASILLO",
+          "escenario": "Sala BBK"
+        },
+        {
+          "id": "bime-live-2026-miercoles-22:10-mostaza-karizia",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "22:10",
+          "artista": "MOSTAZA KARIZIA",
+          "escenario": "Azkena"
+        },
+        {
+          "id": "bime-live-2026-miercoles-22:10-odd-mami",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "22:10",
+          "artista": "ODD MAMI",
+          "escenario": "La Ribera"
+        },
+        {
+          "id": "bime-live-2026-miercoles-22:40-the-bird-experience",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "22:40",
+          "artista": "THE BIRD EXPERIENCE",
+          "escenario": "Bilborock"
+        },
+        {
+          "id": "bime-live-2026-miercoles-22:40-maria-pelae",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "22:40",
+          "artista": "MARÍA PELÁE",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-miercoles-22:40-silitia",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "22:40",
+          "artista": "SILITIA",
+          "escenario": "Stage Live"
+        },
+        {
+          "id": "bime-live-2026-miercoles-23:15-cervatana",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "23:15",
+          "artista": "CERVATANA",
+          "escenario": "Kafe Antzokia"
+        },
+        {
+          "id": "bime-live-2026-miercoles-23:45-zahara",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "23:45",
+          "artista": "ZAHARA",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-miercoles-00:00-daniless",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "00:00",
+          "artista": "DANILESS",
+          "escenario": "Kafe Antzokia"
+        },
+        {
+          "id": "bime-live-2026-miercoles-01:00-alan-mcgee",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "01:00",
+          "artista": "ALAN MCGEE",
+          "escenario": "Kafe Antzokia"
+        },
+        {
+          "id": "bime-live-2026-miercoles-03:00-daniless",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "03:00",
+          "artista": "DANILESS",
+          "escenario": "Kafe Antzokia"
+        },
+        {
+          "id": "bime-live-2026-jueves-20:00-juan-lopez",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "JUAN LÓPEZ",
+          "escenario": "Sala BBK"
+        },
+        {
+          "id": "bime-live-2026-jueves-20:30-ouineta",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:30",
+          "artista": "OUINETA",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-jueves-20:30-pedro-da-linha",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:30",
+          "artista": "PEDRO DA LINHA",
+          "escenario": "La Ribera"
+        },
+        {
+          "id": "bime-live-2026-jueves-20:30-dianka",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:30",
+          "artista": "DIANKA",
+          "escenario": "Stage Live"
+        },
+        {
+          "id": "bime-live-2026-jueves-21:00-davus",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "DAVUS",
+          "escenario": "Kafe Antzokia"
+        },
+        {
+          "id": "bime-live-2026-jueves-21:05-feli-colina",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:05",
+          "artista": "FELI COLINA",
+          "escenario": "Sala BBK"
+        },
+        {
+          "id": "bime-live-2026-jueves-21:35-clara-kimera",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:35",
+          "artista": "CLARA KIMERA",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-jueves-21:35-leo-rizzi",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:35",
+          "artista": "LEO RIZZI",
+          "escenario": "La Ribera"
+        },
+        {
+          "id": "bime-live-2026-jueves-21:35-juventude",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:35",
+          "artista": "JUVENTUDE",
+          "escenario": "Stage Live"
+        },
+        {
+          "id": "bime-live-2026-jueves-22:10-duplat",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:10",
+          "artista": "DUPLAT",
+          "escenario": "Kafe Antzokia"
+        },
+        {
+          "id": "bime-live-2026-jueves-22:10-marttein",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:10",
+          "artista": "MARTTEIN",
+          "escenario": "Sala BBK"
+        },
+        {
+          "id": "bime-live-2026-jueves-22:40-linlin",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:40",
+          "artista": "LINLIN",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-jueves-22:40-moictani",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:40",
+          "artista": "MOICTANI",
+          "escenario": "La Ribera"
+        },
+        {
+          "id": "bime-live-2026-jueves-22:40-carlos-sadness",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:40",
+          "artista": "CARLOS SADNESS",
+          "escenario": "Stage Live"
+        },
+        {
+          "id": "bime-live-2026-jueves-23:15-pedro-capo",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "23:15",
+          "artista": "PEDRO CAPÓ",
+          "escenario": "Kafe Antzokia"
+        },
+        {
+          "id": "bime-live-2026-jueves-23:45-caries-djs",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "23:45",
+          "artista": "CARIES DJS",
+          "escenario": "Backroom"
+        },
+        {
+          "id": "bime-live-2026-jueves-00:00-alta",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:00",
+          "artista": "ALTA",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-jueves-00:45-whip-worldwide",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:45",
+          "artista": "WHIP WORLDWIDE",
+          "escenario": "Backroom"
+        },
+        {
+          "id": "bime-live-2026-jueves-01:00-azuleja",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "01:00",
+          "artista": "AZULEJA",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-jueves-01:30-alta",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "01:30",
+          "artista": "ALTA",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-jueves-02:00-kiliki",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "02:00",
+          "artista": "KILIKI",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-jueves-02:15-zaidbreak",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "02:15",
+          "artista": "ZAIDBREAK",
+          "escenario": "Backroom"
+        },
+        {
+          "id": "bime-live-2026-jueves-02:30-dalila",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "02:30",
+          "artista": "DALILA",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-jueves-04:30-alta",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "04:30",
+          "artista": "ALTA",
+          "escenario": "Crystal"
+        },
+        {
+          "id": "bime-live-2026-viernes-17:00-jimena-amarillo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:00",
+          "artista": "JIMENA AMARILLO",
+          "escenario": "OMODA 1"
+        },
+        {
+          "id": "bime-live-2026-viernes-17:50-1111",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:50",
+          "artista": "1111",
+          "escenario": "OMODA 2"
+        },
+        {
+          "id": "bime-live-2026-viernes-18:45-sedientos-de-cumbia",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:45",
+          "artista": "SEDIENTOS DE CUMBIA",
+          "escenario": "OMODA 1"
+        },
+        {
+          "id": "bime-live-2026-viernes-19:40-hija-del-nopal",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:40",
+          "artista": "HIJA DEL NOPAL",
+          "escenario": "OMODA 2"
+        },
+        {
+          "id": "bime-live-2026-viernes-20:45-alcala-norte",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:45",
+          "artista": "ALCALÁ NORTE",
+          "escenario": "OMODA 1"
+        }
+      ],
+      "revision": "25d02e546bfeebe58499c9d537b26229572a5afbea1e1c9d6ee256ae795145c9"
     }
   ],
-  "generatedAt": "2026-10-20T16:13:02.000Z",
+  "generatedAt": "2026-10-25T01:20:09.000Z",
   "source": "json-sync-exporter"
 }
