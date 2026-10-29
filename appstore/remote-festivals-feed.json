@@ -7662,8 +7662,307 @@
         }
       ],
       "revision": "470493c45ff8a595e3f93fe76c8392604711a015823df2a26e0878791bb72ac6"
+    },
+    {
+      "festival": {
+        "id": "pintor-rock-2026",
+        "chatChannelID": "pintor-rock-2026",
+        "name": "Pintor Rock",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/pintor_rock_logo.png",
+        "year": 2026,
+        "days": [
+          {
+            "id": "jueves",
+            "displayName": "Jue 29",
+            "calendarDate": "2026-10-29"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 30",
+            "calendarDate": "2026-10-30"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 31",
+            "calendarDate": "2026-10-31"
+          }
+        ],
+        "defaultDayID": "jueves",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "jueves": "noche",
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://pintorrock.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.enterticket.es/eventos/pintor-rock-2026-308924",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Parc+de+la+Festa+Reus",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "pintor-rock-2026-events",
+        "stageColorsFile": "pintor-rock-2026-stage-colors"
+      },
+      "stageColors": {
+        "Escenario Principal": "#E3262E"
+      },
+      "events": [
+        {
+          "id": "pintor-rock-2026-jueves-16:30-kuerpospin",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "16:30",
+          "artista": "KUERPOSPIN",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-jueves-17:30-baya-baye",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "17:30",
+          "artista": "BAYA BAYE",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-jueves-18:50-bull-brigade",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "18:50",
+          "artista": "BULL BRIGADE",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-jueves-20:10-kaos-urbano",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:10",
+          "artista": "KAOS URBANO",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-jueves-21:40-envidia-kotxina",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:40",
+          "artista": "ENVIDIA KOTXINA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-jueves-23:10-the-toy-dolls",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "23:10",
+          "artista": "THE TOY DOLLS",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-jueves-00:50-moscow-death-brigade",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:50",
+          "artista": "MOSCOW DEATH BRIGADE",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-jueves-02:20-bihotza",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "02:20",
+          "artista": "BIHOTZA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-viernes-12:00-kamikazes",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "12:00",
+          "artista": "KAMIKAZES",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-viernes-13:10-rat-zinger",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "13:10",
+          "artista": "RAT-ZINGER",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-viernes-14:30-biznaga",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "14:30",
+          "artista": "BIZNAGA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-viernes-15:50-periferia",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "15:50",
+          "artista": "PERIFERIA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-viernes-17:10-josetxu-piperrak",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:10",
+          "artista": "JOSETXU PIPERRAK",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-viernes-18:30-inadaptats",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:30",
+          "artista": "INADAPTATS",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-viernes-20:05-boikot",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:05",
+          "artista": "BOIKOT",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-viernes-21:50-el-drogas",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:50",
+          "artista": "EL DROGAS",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-viernes-23:35-narco",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "23:35",
+          "artista": "NARCO",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-viernes-01:10-la-elite",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:10",
+          "artista": "LA ÉLITE",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-viernes-02:20-amygdala",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:20",
+          "artista": "AMYGDALA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-sabado-12:00-the-lizards",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "12:00",
+          "artista": "THE LIZARDS",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-sabado-13:00-bala",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "13:00",
+          "artista": "BALA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-sabado-14:20-benito-kamelas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "14:20",
+          "artista": "BENITO KAMELAS",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-sabado-15:40-manifa",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "15:40",
+          "artista": "MANIFA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-sabado-17:00-el-ultimo-ke-zierre",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:00",
+          "artista": "EL ÚLTIMO KE ZIERRE",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-sabado-18:20-los-de-marras",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:20",
+          "artista": "LOS DE MARRAS",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-sabado-20:00-soziedad-alkoholika",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "SOZIEDAD ALKOHOLIKA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-sabado-21:40-segismundo-toxicomano",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:40",
+          "artista": "SEGISMUNDO TOXICÓMANO",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-sabado-23:20-the-baboon-show",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:20",
+          "artista": "THE BABOON SHOW",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-sabado-01:00-crim",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:00",
+          "artista": "CRIM",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "pintor-rock-2026-sabado-02:30-me-fritos-and-the-gimme-cheetos",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:30",
+          "artista": "ME FRITOS AND THE GIMME CHEETOS",
+          "escenario": "Escenario Principal"
+        }
+      ],
+      "revision": "230fc501106488baa22cbc6faadb0ec3dfa1aba4434f9be640eef9c3981306ec"
     }
   ],
-  "generatedAt": "2026-10-25T07:51:32.000Z",
+  "generatedAt": "2026-10-29T19:28:52.000Z",
   "source": "json-sync-exporter"
 }
