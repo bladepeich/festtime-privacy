@@ -7961,8 +7961,356 @@
         }
       ],
       "revision": "230fc501106488baa22cbc6faadb0ec3dfa1aba4434f9be640eef9c3981306ec"
+    },
+    {
+      "festival": {
+        "id": "atrapa-fest-2026",
+        "chatChannelID": "atrapa-fest-2026",
+        "name": "Atrapa Fest",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/atrapa_fest_logo.png",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/atrapa-fest-2026.jpg",
+        "year": 2026,
+        "days": [
+          {
+            "id": "jueves",
+            "displayName": "Jue 12",
+            "calendarDate": "2026-11-12"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 13",
+            "calendarDate": "2026-11-13"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 14",
+            "calendarDate": "2026-11-14"
+          }
+        ],
+        "defaultDayID": "jueves",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "jueves": "noche",
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://atrapafest.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://atrapafest.com/entradas/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Caceres+Forum+Recinto+Ferial+Caceres",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "atrapa-fest-2026-events",
+        "stageColorsFile": "atrapa-fest-2026-stage-colors"
+      },
+      "stageColors": {
+        "Escenario Principal": "#E6007E"
+      },
+      "events": [
+        {
+          "id": "atrapa-fest-2026-jueves-18:30-apertura-de-puertas",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "18:30",
+          "artista": "APERTURA DE PUERTAS",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-jueves-19:00-dj-keko-residente",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "DJ KEKO (RESIDENTE)",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-jueves-19:00-barrilada",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "BARRILADA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-jueves-20:00-finalistas-concurso",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "FINALISTAS CONCURSO",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-jueves-21:00-rakata-by-victor-montero",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "RAKATÁ BY VICTOR MONTERO",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-jueves-22:30-la-beba",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "22:30",
+          "artista": "LA BEBA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-jueves-23:40-ganador-concurso",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "23:40",
+          "artista": "GANADOR CONCURSO",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-jueves-00:30-israel-b",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "00:30",
+          "artista": "ISRAEL B",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-jueves-01:30-carlos-chaparro",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "01:30",
+          "artista": "CARLOS CHAPARRO",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-jueves-03:00-alba-franch",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "03:00",
+          "artista": "ALBA FRANCH",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-jueves-04:30-didi-duke",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "04:30",
+          "artista": "DIDI DUKE",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-viernes-17:30-apertura-de-puertas",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:30",
+          "artista": "APERTURA DE PUERTAS",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-viernes-17:30-dj-talo-residente",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "17:30",
+          "artista": "DJ TALO (RESIDENTE)",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-viernes-18:00-khs-crew",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "18:00",
+          "artista": "KHS CREW",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-viernes-19:00-faenna",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "FAENNA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-viernes-20:00-al-safir",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "AL SAFIR",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-viernes-21:00-fyahbwoy",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "FYAHBWOY",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-viernes-22:30-bejo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "22:30",
+          "artista": "BEJO",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-viernes-00:00-fernandocosta",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "00:00",
+          "artista": "FERNANDOCOSTA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-viernes-01:30-dj-talo",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "01:30",
+          "artista": "DJ TALO",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-viernes-02:10-r-de-rumba-dj-set",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "02:10",
+          "artista": "R DE RUMBA (DJ SET)",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-viernes-03:10-stbaan",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "03:10",
+          "artista": "STBAAN",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-viernes-04:30-delirium-showcase",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "04:30",
+          "artista": "DELIRIUM SHOWCASE",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-sabado-17:30-apertura-de-puertas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:30",
+          "artista": "APERTURA DE PUERTAS",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-sabado-17:30-indomable-residente",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:30",
+          "artista": "INDOMABLE (RESIDENTE)",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-sabado-17:00-tandemonios",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:00",
+          "artista": "TANDEMONIOS",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-sabado-18:00-dolores-y-mazmorras",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:00",
+          "artista": "DOLORES Y MAZMORRAS",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-sabado-19:00-una-y-carne",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:00",
+          "artista": "UÑA Y CARNE",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-sabado-20:00-nikone",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:00",
+          "artista": "NIKONE",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-sabado-21:00-reality",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:00",
+          "artista": "REALITY",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-sabado-22:00-dollar-selmouni",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:00",
+          "artista": "DOLLAR SELMOUNI",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-sabado-23:30-yung-beef",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "23:30",
+          "artista": "YUNG BEEF",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-sabado-01:30-kabasaki",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "01:30",
+          "artista": "KABASAKI",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-sabado-02:30-selecta",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "02:30",
+          "artista": "SELECTA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-sabado-04:00-daniella-da-silva",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "04:00",
+          "artista": "DANIELLA DA SILVA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "atrapa-fest-2026-sabado-05:30-skinyz",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "05:30",
+          "artista": "SKINYZ",
+          "escenario": "Escenario Principal"
+        }
+      ],
+      "revision": "f56586ad17b1cfb81798684df1be2502df28a1ba7dc9de1145adb37763b9dcf9"
     }
   ],
-  "generatedAt": "2026-10-29T19:28:52.000Z",
+  "generatedAt": "2026-11-05T09:41:39.000Z",
   "source": "json-sync-exporter"
 }
