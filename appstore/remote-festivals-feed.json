@@ -447,12 +447,12 @@
         "menuOptions": [
           {
             "title": "Web Oficial",
-            "url": "https://www.coca-cola.com/mx/es/offerings/music/coca-cola-flow-fest",
+            "url": "https://cocacolaflowfest.com.mx",
             "systemImage": "safari"
           },
           {
             "title": "Entradas",
-            "url": "https://www.ticketmaster.com.mx",
+            "url": "https://cocacolaflowfest.com.mx/boletos",
             "systemImage": "ticket"
           },
           {
@@ -805,7 +805,7 @@
           "escenario": "Escenario Principal"
         }
       ],
-      "revision": "5ffea9baae85c1e8f62ea4826b114506e9151ee0"
+      "revision": "1d05dbb8c49782024279a99cc70cfa1788f83a56"
     },
     {
       "festival": {
