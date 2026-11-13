@@ -462,7 +462,8 @@
           }
         ],
         "eventsFile": "coca-cola-flow-fest-2026-events",
-        "stageColorsFile": "coca-cola-flow-fest-2026-stage-colors"
+        "stageColorsFile": "coca-cola-flow-fest-2026-stage-colors",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/coca-cola-flow-fest-2026.jpg"
       },
       "stageColors": {
         "Escenario Principal": "#E60023"
@@ -473,7 +474,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Anuel AA",
+          "artista": "ANUEL AA",
           "escenario": "Escenario Principal"
         },
         {
@@ -481,7 +482,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Tito Double P",
+          "artista": "TITO DOUBLE P",
           "escenario": "Escenario Principal"
         },
         {
@@ -489,7 +490,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Chencho Corleone",
+          "artista": "CHENCHO CORLEONE",
           "escenario": "Escenario Principal"
         },
         {
@@ -497,7 +498,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Manuel Turizo",
+          "artista": "MANUEL TURIZO",
           "escenario": "Escenario Principal"
         },
         {
@@ -505,7 +506,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Nengo Flow",
+          "artista": "ÑENGO FLOW",
           "escenario": "Escenario Principal"
         },
         {
@@ -513,7 +514,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Zion",
+          "artista": "ZION",
           "escenario": "Escenario Principal"
         },
         {
@@ -521,7 +522,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "El Bogueto",
+          "artista": "EL BOGUETO",
           "escenario": "Escenario Principal"
         },
         {
@@ -529,7 +530,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Tokischa",
+          "artista": "TOKISCHA",
           "escenario": "Escenario Principal"
         },
         {
@@ -537,7 +538,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Kevin Roldan",
+          "artista": "KEVIN ROLDAN",
           "escenario": "Escenario Principal"
         },
         {
@@ -545,7 +546,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Ken-Y",
+          "artista": "KEN-Y",
           "escenario": "Escenario Principal"
         },
         {
@@ -553,7 +554,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "ClarenT",
+          "artista": "CLARENT",
           "escenario": "Escenario Principal"
         },
         {
@@ -561,7 +562,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Noriel",
+          "artista": "NORIEL",
           "escenario": "Escenario Principal"
         },
         {
@@ -569,7 +570,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Uzielito Mix",
+          "artista": "UZIELITO MIX",
           "escenario": "Escenario Principal"
         },
         {
@@ -585,7 +586,7 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Eme MalaFe",
+          "artista": "EME MALAFE",
           "escenario": "Escenario Principal"
         },
         {
@@ -593,15 +594,167 @@
           "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Legallyrxx",
+          "artista": "LEGALLYRXX",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2040-six-sex",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SIX SEX",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2050-sinaka",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SINAKA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2100-tobal-mj",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TOBAL MJ",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2110-loyaltty",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LOYALTTY",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2120-seven-kayne",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SEVEN KAYNE",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2130-ivy-wavy",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "IVY WAVY",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2140-dj-blass-y-dj-aza-sandunguero-mx",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DJ BLASS Y DJ AZA - SANDUNGUERO MX",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2150-alanis-yuki",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ALANIS YUKI",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2200-lauty-gram",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LAUTY GRAM",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2210-denna-la-porri",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DENNA LA PORRI",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2220-flvckka",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FLVCKKA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2230-chzter",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CHZTER",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2240-ikoniko",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "IKONIKO",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2250-pepo-mix",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PEPO MIX",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2300-lucas-gael",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LUCAS GAEL",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2310-maracuya",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MARACUYÁ",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2320-daizak",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DAIZAK",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2330-yurgenis",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "YURGENIS",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2340-dj-ishi",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DJ ISHI",
           "escenario": "Escenario Principal"
         },
         {
           "id": "coca-cola-flow-fest-2026-dom-1800-grupo-frontera",
-          "dia": "domingo",
+          "dia": "sabado",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Grupo Frontera",
+          "artista": "GRUPO FRONTERA",
           "escenario": "Escenario Principal"
         },
         {
@@ -609,7 +762,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Ozuna",
+          "artista": "OZUNA",
           "escenario": "Escenario Principal"
         },
         {
@@ -617,7 +770,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Kali Uchis",
+          "artista": "KALI UCHIS",
           "escenario": "Escenario Principal"
         },
         {
@@ -625,7 +778,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Yandel Sinfonico",
+          "artista": "YANDEL SINFÓNICO",
           "escenario": "Escenario Principal"
         },
         {
@@ -633,7 +786,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Trueno",
+          "artista": "TRUENO",
           "escenario": "Escenario Principal"
         },
         {
@@ -641,7 +794,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Tito El Bambino",
+          "artista": "TITO EL BAMBINO",
           "escenario": "Escenario Principal"
         },
         {
@@ -649,7 +802,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Farruko",
+          "artista": "FARRUKO",
           "escenario": "Escenario Principal"
         },
         {
@@ -657,7 +810,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Dei V",
+          "artista": "DEI V",
           "escenario": "Escenario Principal"
         },
         {
@@ -665,7 +818,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Alleh",
+          "artista": "ALLEH",
           "escenario": "Escenario Principal"
         },
         {
@@ -673,7 +826,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "J Alvarez",
+          "artista": "J ALVAREZ",
           "escenario": "Escenario Principal"
         },
         {
@@ -681,7 +834,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "FloyyMenor",
+          "artista": "FLOYYMENOR",
           "escenario": "Escenario Principal"
         },
         {
@@ -689,7 +842,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Yan Block",
+          "artista": "YAN BLOCK",
           "escenario": "Escenario Principal"
         },
         {
@@ -697,7 +850,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Kybba",
+          "artista": "KYBBA",
           "escenario": "Escenario Principal"
         },
         {
@@ -713,7 +866,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Omar Camacho",
+          "artista": "OMAR CAMACHO",
           "escenario": "Escenario Principal"
         },
         {
@@ -721,7 +874,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Martinwhite",
+          "artista": "MARTINWHITE",
           "escenario": "Escenario Principal"
         },
         {
@@ -729,7 +882,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Kidd Voodoo",
+          "artista": "KIDD VOODOO",
           "escenario": "Escenario Principal"
         },
         {
@@ -737,7 +890,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Lencho",
+          "artista": "LENCHO",
           "escenario": "Escenario Principal"
         },
         {
@@ -745,7 +898,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Nat Calma",
+          "artista": "NATT CALMA",
           "escenario": "Escenario Principal"
         },
         {
@@ -761,7 +914,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Doony Graff",
+          "artista": "DOONY GRAFF",
           "escenario": "Escenario Principal"
         },
         {
@@ -769,7 +922,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Jezzy",
+          "artista": "JEZZY",
           "escenario": "Escenario Principal"
         },
         {
@@ -777,7 +930,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "PabloTTO Mix",
+          "artista": "PABLITO MIX",
           "escenario": "Escenario Principal"
         },
         {
@@ -785,7 +938,119 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Low Ckila",
+          "artista": "LOW CLIKA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2150-novato-el-flow",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NOVATO EL FLOW",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2200-cael-roldan",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CAEL ROLDAN",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2210-robot95",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ROBOT95",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2220-tuli",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TULI",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2230-jey-f-el-gudi-ovina",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JEY F & EL GUDI & OVIÑA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2240-rivva",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RIVVA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2250-plastikboy",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PLASTIKBOY",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2300-mila",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MILA",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2310-jozzee",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JOZZEE",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2320-dam-dam",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DAM DAM",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2330-dj-freshly",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DJ FRESHLY",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2340-jose-alatorre",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JOSE ALATORRE",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2350-mikeanyway-tzunami-presentan-el-pluhh",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MIKEANYWAY & TZUNAMI PRESENTAN EL PLUHH",
+          "escenario": "Escenario Principal"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2400-bvbba-dvbs",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BVBBA DVBS",
           "escenario": "Escenario Principal"
         },
         {
@@ -793,19 +1058,11 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Justin Quiles",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2210-lenny-tavarez",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "Lenny Tavarez",
+          "artista": "JUSTIN QUILES X LENNY TAVAREZ PRESENTAN SUPERARTE",
           "escenario": "Escenario Principal"
         }
       ],
-      "revision": "1d05dbb8c49782024279a99cc70cfa1788f83a56"
+      "revision": "880c6eedff068881446991b9748652d5c8ce4189"
     },
     {
       "festival": {
