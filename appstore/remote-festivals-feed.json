@@ -10172,6 +10172,532 @@
         }
       ],
       "revision": "947853c2e10093cd7246dae2b52f8805e7b926d8"
+    },
+    {
+      "festival": {
+        "id": "azkena-rock-festival-2027",
+        "chatChannelID": "azkena-rock-festival-2027",
+        "name": "Azkena Rock Festival",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/azkena_rock_festival_logo.png",
+        "year": 2027,
+        "days": [
+          {
+            "id": "jueves",
+            "displayName": "Jue 17",
+            "calendarDate": "2027-06-17"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 18",
+            "calendarDate": "2027-06-18"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 19",
+            "calendarDate": "2027-06-19"
+          }
+        ],
+        "defaultDayID": "jueves",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "jueves": "noche",
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://azkenarockfestival.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://azkenarockfestival.com/tickets/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Mendizabala+Vitoria-Gasteiz",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "azkena-rock-festival-2027-events",
+        "stageColorsFile": "azkena-rock-festival-2027-stage-colors",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/azkena-rock-festival-2027.jpg"
+      },
+      "stageColors": {
+        "GOD · RESPECT · LOVE": "#F26A21",
+        "TRASHVILLE ALLSTARS & FRIENDS": "#C0392B",
+        "STRAWHOUSE": "#E8B84A"
+      },
+      "events": [
+        {
+          "id": "azkena-rock-festival-2027-jueves-marilyn-manson",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MARILYN MANSON",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-slash-ft-myles-kennedy-the-conspirators",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SLASH FT. MYLES KENNEDY & THE CONSPIRATORS",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-john-garcia",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JOHN GARCIA",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-rival-sons",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RIVAL SONS",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-the-southern-river-band",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE SOUTHERN RIVER BAND",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-the-clayton",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE CLAYTON",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-parker-barrow",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PARKER BARROW",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-the-cyborgs",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE CYBORGS",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-dead-elvis-his-one-man-grave",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DEAD ELVIS & HIS ONE MAN GRAVE",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-les-greene",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LES GREENE",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-reverend-beat-man-milan-slick",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "REVEREND BEAT-MAN & MILAN SLICK",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-the-urban-voodoo-machine",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE URBAN VOODOO MACHINE",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-peter-bruntnell",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PETER BRUNTNELL",
+          "escenario": "STRAWHOUSE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-deke-dickerson",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DEKE DICKERSON",
+          "escenario": "STRAWHOUSE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-jueves-jerron-paxton",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JERRON PAXTON",
+          "escenario": "STRAWHOUSE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-patti-smith-quartet",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PATTI SMITH QUARTET",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-wilco",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "WILCO",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-16-horsepower",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "16 HORSEPOWER",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-billy-bragg",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BILLY BRAGG",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-billy-talent",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BILLY TALENT",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-nick-lowe-los-straitjackets",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NICK LOWE & LOS STRAITJACKETS",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-the-waterboys",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE WATERBOYS",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-the-bird-experience",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE BIRD EXPERIENCE",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-cherry-poppin-daddies",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CHERRY POPPIN’ DADDIES",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-barrrk",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BARRRK",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-the-drones",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE DRONES",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-girls-against-boys",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GIRLS AGAINST BOYS",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-super-400",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SUPER 400",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-barbara-y-rey",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BÁRBARA Y REY",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-blind-rage-violence",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BLIND RAGE & VIOLENCE",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-demented-are-go",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DEMENTED ARE GO",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-old-time-spooks",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "OLD TIME SPOOKS",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-los-straitjackets",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LOS STRAITJACKETS",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-the-complete-recordings-of-hezekiah-procter",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE COMPLETE RECORDINGS OF HEZEKIAH PROCTER",
+          "escenario": "STRAWHOUSE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-hayseed-dixie",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "HAYSEED DIXIE",
+          "escenario": "STRAWHOUSE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-joana-serrat",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JOANA SERRAT",
+          "escenario": "STRAWHOUSE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-viernes-tulsa",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TULSA",
+          "escenario": "STRAWHOUSE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-bad-religion",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BAD RELIGION",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-dave-alvin-the-guilty-ones",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DAVE ALVIN & THE GUILTY ONES",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-beth-hart",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BETH HART",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-michael-monroe-plays-hanoi-rocks",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MICHAEL MONROE PLAYS HANOI ROCKS",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-twin-temple",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TWIN TEMPLE",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-american-aquarium",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "AMERICAN AQUARIUM",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-the-bevis-frond",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE BEVIS FROND",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-bratakus",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BRATAKUS",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-cala-vento",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CALA VENTO",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-cockney-rejects",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "COCKNEY REJECTS",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-foxy-shazam",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FOXY SHAZAM",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-marte-lasarte",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MARTE LASARTE",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-old-97s",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "OLD 97´s",
+          "escenario": "GOD · RESPECT · LOVE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-the-bank-robbers",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE BANK ROBBERS",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-bob-log-iii",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BOB LOG III",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-micky-y-los-colosos-del-ritmo",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MICKY Y LOS COLOSOS DEL RITMO",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-tear-dungeon",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TEAR DUNGEON",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-wild-billy-childish-ctmf",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "WILD BILLY CHILDISH & CTMF",
+          "escenario": "TRASHVILLE ALLSTARS & FRIENDS"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-dave-hause",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DAVE HAUSE",
+          "escenario": "STRAWHOUSE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-lilly-hiatt",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LILLY HIATT",
+          "escenario": "STRAWHOUSE"
+        },
+        {
+          "id": "azkena-rock-festival-2027-sabado-nick-lowe",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NICK LOWE",
+          "escenario": "STRAWHOUSE"
+        }
+      ],
+      "revision": "f19d1edf2939863be06020e72107c22df5bb9601"
     }
   ],
   "generatedAt": "2026-11-05T09:41:39.000Z",
