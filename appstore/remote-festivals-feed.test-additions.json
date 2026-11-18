@@ -10224,7 +10224,7 @@
         ],
         "eventsFile": "azkena-rock-festival-2027-events",
         "stageColorsFile": "azkena-rock-festival-2027-stage-colors",
-        "festivalPosterURL": "https://festtime.app/media/festivals/posters/azkena-rock-festival-2027.jpg"
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/azkena-rock-festival-2027.jpg?v=2"
       },
       "stageColors": {
         "GOD · RESPECT · LOVE": "#F26A21",
@@ -10697,7 +10697,7 @@
           "escenario": "STRAWHOUSE"
         }
       ],
-      "revision": "f19d1edf2939863be06020e72107c22df5bb9601"
+      "revision": "5c208abf764c910e0a1d1815194498eec7ecf41a"
     }
   ],
   "generatedAt": "2026-11-05T09:41:39.000Z",
