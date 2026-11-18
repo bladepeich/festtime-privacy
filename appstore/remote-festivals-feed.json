@@ -10698,6 +10698,630 @@
         }
       ],
       "revision": "5c208abf764c910e0a1d1815194498eec7ecf41a"
+    },
+    {
+      "festival": {
+        "id": "resurrection-fest-2027",
+        "chatChannelID": "resurrection-fest-2027",
+        "name": "Resurrection Fest",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/resurrection_fest_logo.png",
+        "year": 2027,
+        "days": [
+          {
+            "id": "cartel",
+            "displayName": "Cartel",
+            "calendarDate": "2027-06-30"
+          }
+        ],
+        "defaultDayID": "cartel",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "cartel": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://resurrectionfest.es",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://tickets.resurrectionfest.es/es/resurrection-fest-2027/4-day-tickets",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Resurrection+Fest+Viveiro",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "resurrection-fest-2027-events",
+        "stageColorsFile": "resurrection-fest-2027-stage-colors",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/resurrection-fest-2027.jpg"
+      },
+      "stageColors": {
+        "ESCENARIO POR CONFIRMAR": "#C9A44C"
+      },
+      "events": [
+        {
+          "id": "resurrection-fest-2027-evanescence",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "EVANESCENCE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-motley-crue",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MÖTLEY CRÜE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-parkway-drive",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PARKWAY DRIVE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-lorna-shore",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LORNA SHORE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-helloween-40th-anniversary-show",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "HELLOWEEN 40TH ANNIVERSARY SHOW",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-dropkick-murphys",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DROPKICK MURPHYS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-motionless-in-white",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MOTIONLESS IN WHITE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-enter-shikari",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ENTER SHIKARI",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-fever-333",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FEVER 333",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-beartooth",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BEARTOOTH",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-fit-for-a-king",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FIT FOR A KING",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-wage-war",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "WAGE WAR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-kreator",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KREATOR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-cradle-of-filth",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CRADLE OF FILTH",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-leprous",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LEPROUS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-crisix",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CRISIX",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-british-lion",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BRITISH LION",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-gwar",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GWAR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-coldrain",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "COLDRAIN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-blue-medusa",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BLUE MEDUSA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-daughtry",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DAUGHTRY",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-calva-louise",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CALVA LOUISE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-paledusk",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PALEDUSK",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-aesthetic-perfection",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "AESTHETIC PERFECTION",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-novelists",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NOVELISTS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-samurai-pizza-cats",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SAMURAI PIZZA CATS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-hokka",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "HOKKA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-cenobia",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CENOBIA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-master-boot-record",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MASTER BOOT RECORD",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-the-dark-fm",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE DARK.FM",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-nocturnal-bloodlust",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NOCTURNAL BLOODLUST",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-any-given-day",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ANY GIVEN DAY",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-celestial-sanctuary",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CELESTIAL SANCTUARY",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-windwaker",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "WINDWAKER",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-seven-blood",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SEVEN BLOOD",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-sunborn",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SUNBORN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-prom-kinks",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PROM KINKS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-after-salem",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "AFTER SALEM",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-keepers",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KEEPERS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-blood-for-blood",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BLOOD FOR BLOOD",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-speed",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SPEED",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-maruja",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MARUJA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-currents",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CURRENTS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-pain-of-truth",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PAIN OF TRUTH",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-static-dress",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "STATIC DRESS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-gideon",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GIDEON",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-locked-shut",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LOCKED SHUT",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-punk-rave-stvw",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PUNK RAVE-STVW",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-emnw",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "EMNW",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-unpeople",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "UNPEOPLE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-damned",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DAMNED",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-escuela-grind",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ESCUELA GRIND",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-empty-shell-casing",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "EMPTY SHELL CASING",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-big-ass-truck-i-e",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BIG ASS TRUCK I.E.",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-crowquill",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CROWQUILL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-lust",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LUST",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-demenzia-sozial",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DEMENZIA SOZIAL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-danko-jones",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DANKO JONES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-twin-temple",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TWIN TEMPLE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-king-buffalo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KING BUFFALO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-kylesa",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KYLESA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-richie-kotzen",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RICHIE KOTZEN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-the-barbarians-of-california",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE BARBARIANS OF CALIFORNIA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-persefone",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PERSEFONE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-conjurer",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CONJURER",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-dead-meadow",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DEAD MEADOW",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-wyatt-e",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "WYATT E.",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-ashes-of-billy",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ASHES OF BILLY",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-no-quiero",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NO QUIERO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-plebeians-grandstand",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PLEBEIANS GRANDSTAND",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-split-dogs",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SPLIT DOGS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "resurrection-fest-2027-the-photonicst",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE PHOTONICST",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        }
+      ],
+      "revision": "6c3d383ba86d894baefbaf6b657ec349089008b5"
     }
   ],
   "generatedAt": "2026-11-05T09:41:39.000Z",
