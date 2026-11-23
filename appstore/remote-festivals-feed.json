@@ -470,8 +470,7 @@
         "ESCENARIO SPRITE": "#00A651",
         "ESCENARIO LITTLE CAESARS": "#FF7A00",
         "ESCENARIO DEMBOW VICKY'S": "#8E44AD",
-        "COKE SESSIONS": "#F5B700",
-        "POR CONFIRMAR": "#8C8C8C"
+        "ESCENARIO COKE STUDIO": "#F5B700"
       },
       "events": [
         {
@@ -648,7 +647,7 @@
           "turno": "noche",
           "hora": "19:35 - 20:05",
           "artista": "ESLABÓN ARMADO",
-          "escenario": "COKE SESSIONS"
+          "escenario": "ESCENARIO COKE STUDIO"
         },
         {
           "id": "coca-cola-flow-fest-2026-sab-2140-dj-blass-y-dj-aza-sandunguero-mx",
@@ -696,7 +695,7 @@
           "turno": "noche",
           "hora": "20:55 - 21:25",
           "artista": "GABITO BALLESTEROS",
-          "escenario": "COKE SESSIONS"
+          "escenario": "ESCENARIO COKE STUDIO"
         },
         {
           "id": "coca-cola-flow-fest-2026-sab-2010-cro",
@@ -728,7 +727,7 @@
           "turno": "noche",
           "hora": "22:20 - 22:50",
           "artista": "TAINY",
-          "escenario": "COKE SESSIONS"
+          "escenario": "ESCENARIO COKE STUDIO"
         },
         {
           "id": "coca-cola-flow-fest-2026-sab-1820-chencho-corleone",
@@ -963,6 +962,14 @@
           "escenario": "ESCENARIO LITTLE CAESARS"
         },
         {
+          "id": "coca-cola-flow-fest-2026-dom-1915-aeromexico-presenta-mike-bahia",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "19:15 - 19:55",
+          "artista": "AEROMEXICO presenta MIKE BAHIA",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
           "id": "coca-cola-flow-fest-2026-dom-1910-dei-v",
           "dia": "domingo",
           "turno": "noche",
@@ -1000,7 +1007,7 @@
           "turno": "noche",
           "hora": "20:35 - 21:10",
           "artista": "MATISSE",
-          "escenario": "COKE SESSIONS"
+          "escenario": "ESCENARIO COKE STUDIO"
         },
         {
           "id": "coca-cola-flow-fest-2026-dom-1900-farruko",
@@ -1015,7 +1022,7 @@
           "dia": "domingo",
           "turno": "noche",
           "hora": "21:10 - 22:05",
-          "artista": "JUSTIN QUILES X LENNY TAVAREZ presentan SUPERARTE",
+          "artista": "JUSTIN QUILES X LENNY TAVAREZ",
           "escenario": "ESCENARIO COCA-COLA"
         },
         {
@@ -1048,7 +1055,7 @@
           "turno": "noche",
           "hora": "22:05 - 22:35",
           "artista": "ELADIO CARRIÓN",
-          "escenario": "COKE SESSIONS"
+          "escenario": "ESCENARIO COKE STUDIO"
         },
         {
           "id": "coca-cola-flow-fest-2026-dom-2000-kybba",
@@ -1129,17 +1136,9 @@
           "hora": "01:20 - 02:00",
           "artista": "DOONY GRAFF",
           "escenario": "ESCENARIO DEMBOW VICKY'S"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-1950-yan-block",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "YAN BLOCK",
-          "escenario": "POR CONFIRMAR"
         }
       ],
-      "revision": "bc31302534aabc3bff0b8374e24d4d3dea8bda54"
+      "revision": "5324f3031064629981f5dcd71f885e3a870805c1"
     },
     {
       "festival": {
