@@ -470,7 +470,7 @@
         "ESCENARIO SPRITE": "#00A651",
         "ESCENARIO LITTLE CAESARS": "#FF7A00",
         "ESCENARIO DEMBOW VICKY'S": "#8E44AD",
-        "ESCENARIO COKE STUDIO": "#F5B700"
+        "COKE SESSIONS": "#F5B700"
       },
       "events": [
         {
@@ -647,7 +647,7 @@
           "turno": "noche",
           "hora": "19:35 - 20:05",
           "artista": "ESLABÓN ARMADO",
-          "escenario": "ESCENARIO COKE STUDIO"
+          "escenario": "COKE SESSIONS"
         },
         {
           "id": "coca-cola-flow-fest-2026-sab-2140-dj-blass-y-dj-aza-sandunguero-mx",
@@ -695,7 +695,7 @@
           "turno": "noche",
           "hora": "20:55 - 21:25",
           "artista": "GABITO BALLESTEROS",
-          "escenario": "ESCENARIO COKE STUDIO"
+          "escenario": "COKE SESSIONS"
         },
         {
           "id": "coca-cola-flow-fest-2026-sab-2010-cro",
@@ -727,7 +727,7 @@
           "turno": "noche",
           "hora": "22:20 - 22:50",
           "artista": "TAINY",
-          "escenario": "ESCENARIO COKE STUDIO"
+          "escenario": "COKE SESSIONS"
         },
         {
           "id": "coca-cola-flow-fest-2026-sab-1820-chencho-corleone",
@@ -1007,7 +1007,7 @@
           "turno": "noche",
           "hora": "20:35 - 21:10",
           "artista": "MATISSE",
-          "escenario": "ESCENARIO COKE STUDIO"
+          "escenario": "COKE SESSIONS"
         },
         {
           "id": "coca-cola-flow-fest-2026-dom-1900-farruko",
@@ -1055,7 +1055,7 @@
           "turno": "noche",
           "hora": "22:05 - 22:35",
           "artista": "ELADIO CARRIÓN",
-          "escenario": "ESCENARIO COKE STUDIO"
+          "escenario": "COKE SESSIONS"
         },
         {
           "id": "coca-cola-flow-fest-2026-dom-2000-kybba",
@@ -1138,7 +1138,7 @@
           "escenario": "ESCENARIO DEMBOW VICKY'S"
         }
       ],
-      "revision": "5324f3031064629981f5dcd71f885e3a870805c1"
+      "revision": "098add72ca55a6bbdd0189daef0896d444ed9b05"
     },
     {
       "festival": {
