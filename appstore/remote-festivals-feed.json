@@ -466,376 +466,669 @@
         "festivalPosterURL": "https://festtime.app/media/festivals/posters/coca-cola-flow-fest-2026.jpg"
       },
       "stageColors": {
-        "Escenario Principal": "#E60023"
+        "ESCENARIO COCA-COLA": "#E60023",
+        "ESCENARIO SPRITE": "#00A651",
+        "ESCENARIO LITTLE CAESARS": "#FF7A00",
+        "ESCENARIO DEMBOW VICKY'S": "#8E44AD",
+        "COKE SESSIONS": "#F5B700",
+        "POR CONFIRMAR": "#8C8C8C"
       },
       "events": [
         {
-          "id": "coca-cola-flow-fest-2026-sab-1800-anuel-aa",
+          "id": "coca-cola-flow-fest-2026-dom-2200-cael-roldan",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "ANUEL AA",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-1810-tito-double-p",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "TITO DOUBLE P",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-1820-chencho-corleone",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "CHENCHO CORLEONE",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-1830-manuel-turizo",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "MANUEL TURIZO",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-1840-nengo-flow",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "ÑENGO FLOW",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-1850-zion",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "ZION",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-1900-el-bogueto",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "EL BOGUETO",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-1910-tokischa",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "TOKISCHA",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-1920-kevin-roldan",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "KEVIN ROLDAN",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-1930-ken-y",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "KEN-Y",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-1940-clarent",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "CLARENT",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-1950-noriel",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "NORIEL",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2000-uzielito-mix",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "UZIELITO MIX",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2010-cro",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "C.R.O",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2020-eme-malafe",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "EME MALAFE",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2030-legallyrxx",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "LEGALLYRXX",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2040-six-sex",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "SIX SEX",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2050-sinaka",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "SINAKA",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2100-tobal-mj",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "TOBAL MJ",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2110-loyaltty",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "LOYALTTY",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2120-seven-kayne",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "SEVEN KAYNE",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2130-ivy-wavy",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "IVY WAVY",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2140-dj-blass-y-dj-aza-sandunguero-mx",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "DJ BLASS Y DJ AZA - SANDUNGUERO MX",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2150-alanis-yuki",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "ALANIS YUKI",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2200-lauty-gram",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "LAUTY GRAM",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2210-denna-la-porri",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "DENNA LA PORRI",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2220-flvckka",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "FLVCKKA",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2230-chzter",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "CHZTER",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2240-ikoniko",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "IKONIKO",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-sab-2250-pepo-mix",
-          "dia": "sabado",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "PEPO MIX",
-          "escenario": "Escenario Principal"
+          "hora": "15:00 - 15:30",
+          "artista": "CAEL ROLDÁN",
+          "escenario": "ESCENARIO COCA-COLA"
         },
         {
           "id": "coca-cola-flow-fest-2026-sab-2300-lucas-gael",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
+          "hora": "15:00 - 15:30",
           "artista": "LUCAS GAEL",
-          "escenario": "Escenario Principal"
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
         },
         {
-          "id": "coca-cola-flow-fest-2026-sab-2310-maracuya",
+          "id": "coca-cola-flow-fest-2026-sab-2250-pepo-mix",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "MARACUYÁ",
-          "escenario": "Escenario Principal"
+          "hora": "15:10 - 15:50",
+          "artista": "PEPO MIX",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2150-alanis-yuki",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "15:25 - 16:05",
+          "artista": "ALANIS YUKI",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2100-tobal-mj",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "15:45 - 16:15",
+          "artista": "TOBAL MJ",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2220-flvckka",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "15:50 - 16:25",
+          "artista": "FLVCKKA",
+          "escenario": "ESCENARIO COCA-COLA"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2130-ivy-wavy",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "16:05 - 16:45",
+          "artista": "IVY WAVY",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2110-loyaltty",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "16:20 - 17:00",
+          "artista": "LOYALTTY",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2200-lauty-gram",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "16:35 - 17:05",
+          "artista": "LAUTY GRAM",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2000-uzielito-mix",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "16:40 - 17:20",
+          "artista": "UZIELITO MIX",
+          "escenario": "ESCENARIO COCA-COLA"
         },
         {
           "id": "coca-cola-flow-fest-2026-sab-2320-daizak",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
+          "hora": "17:00 - 17:50",
           "artista": "DAIZAK",
-          "escenario": "Escenario Principal"
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-1930-ken-y",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:20 - 18:00",
+          "artista": "KEN-Y",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2120-seven-kayne",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:20 - 18:00",
+          "artista": "SEVEN KAYNE",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-1920-kevin-roldan",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "17:45 - 18:25",
+          "artista": "KEVIN ROLDÁN",
+          "escenario": "ESCENARIO COCA-COLA"
         },
         {
           "id": "coca-cola-flow-fest-2026-sab-2330-yurgenis",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
+          "hora": "18:05 - 18:45",
           "artista": "YURGENIS",
-          "escenario": "Escenario Principal"
+          "escenario": "ESCENARIO LITTLE CAESARS"
         },
         {
-          "id": "coca-cola-flow-fest-2026-sab-2340-dj-ishi",
+          "id": "coca-cola-flow-fest-2026-sab-1940-clarent",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "DJ ISHI",
-          "escenario": "Escenario Principal"
+          "hora": "18:20 - 19:05",
+          "artista": "CLARENT",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2020-eme-malafe",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:20 - 19:05",
+          "artista": "EME MALAFE",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-1850-zion",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "18:50 - 19:35",
+          "artista": "ZION",
+          "escenario": "ESCENARIO COCA-COLA"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2310-maracuya",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:00 - 19:50",
+          "artista": "MARACUYÁ",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2030-legallyrxx",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:25 - 20:05",
+          "artista": "LEGALLYRXX",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-1910-tokischa",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:30 - 20:20",
+          "artista": "TOKISCHA",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-1935-eslabon-armado",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:35 - 20:05",
+          "artista": "ESLABÓN ARMADO",
+          "escenario": "COKE SESSIONS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2140-dj-blass-y-dj-aza-sandunguero-mx",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "19:50 - 20:40",
+          "artista": "DJ BLASS Y DJ AZA - SANDUNGUERO MX",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-1900-el-bogueto",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:05 - 20:55",
+          "artista": "EL BOGUETO",
+          "escenario": "ESCENARIO COCA-COLA"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2040-six-sex",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:25 - 21:00",
+          "artista": "SIX SEX",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-1840-nengo-flow",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:45 - 21:35",
+          "artista": "ÑENGO FLOW",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2230-chzter",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:55 - 21:40",
+          "artista": "CHZTER",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2055-gabito-ballesteros",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "20:55 - 21:25",
+          "artista": "GABITO BALLESTEROS",
+          "escenario": "COKE SESSIONS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2010-cro",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:20 - 22:05",
+          "artista": "C.R.O",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-1830-manuel-turizo",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:25 - 22:20",
+          "artista": "MANUEL TURIZO",
+          "escenario": "ESCENARIO COCA-COLA"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2240-ikoniko",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "21:55 - 22:45",
+          "artista": "IKONIKO",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2220-tainy",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:20 - 22:50",
+          "artista": "TAINY",
+          "escenario": "COKE SESSIONS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-1820-chencho-corleone",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:25 - 23:25",
+          "artista": "CHENCHO CORLEONE",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-2050-sinaka",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "22:25 - 23:05",
+          "artista": "SINAKA",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
         },
         {
           "id": "coca-cola-flow-fest-2026-dom-1800-grupo-frontera",
           "dia": "sabado",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
+          "hora": "22:50 - 00:05",
           "artista": "GRUPO FRONTERA",
-          "escenario": "Escenario Principal"
+          "escenario": "ESCENARIO COCA-COLA"
         },
         {
-          "id": "coca-cola-flow-fest-2026-dom-1810-ozuna",
-          "dia": "domingo",
+          "id": "coca-cola-flow-fest-2026-sab-2340-dj-ishi",
+          "dia": "sabado",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "OZUNA",
-          "escenario": "Escenario Principal"
+          "hora": "23:00 - 23:50",
+          "artista": "DJ ISHI",
+          "escenario": "ESCENARIO LITTLE CAESARS"
         },
         {
-          "id": "coca-cola-flow-fest-2026-dom-1820-kali-uchis",
-          "dia": "domingo",
+          "id": "coca-cola-flow-fest-2026-sab-2210-denna-la-porri",
+          "dia": "sabado",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "KALI UCHIS",
-          "escenario": "Escenario Principal"
+          "hora": "23:25 - 00:05",
+          "artista": "DENNA LA PORRI",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
         },
         {
-          "id": "coca-cola-flow-fest-2026-dom-1830-yandel-sinfonico",
-          "dia": "domingo",
+          "id": "coca-cola-flow-fest-2026-sab-2350-mami-pistola",
+          "dia": "sabado",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "YANDEL SINFÓNICO",
-          "escenario": "Escenario Principal"
+          "hora": "23:50 - 00:50",
+          "artista": "MAMI PISTOLA",
+          "escenario": "ESCENARIO LITTLE CAESARS"
         },
         {
-          "id": "coca-cola-flow-fest-2026-dom-1840-trueno",
-          "dia": "domingo",
+          "id": "coca-cola-flow-fest-2026-sab-1810-tito-double-p",
+          "dia": "sabado",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "TRUENO",
-          "escenario": "Escenario Principal"
+          "hora": "23:55 - 01:10",
+          "artista": "TITO DOUBLE P",
+          "escenario": "ESCENARIO SPRITE"
         },
         {
-          "id": "coca-cola-flow-fest-2026-dom-1850-tito-el-bambino",
-          "dia": "domingo",
+          "id": "coca-cola-flow-fest-2026-sab-0035-mc-davo",
+          "dia": "sabado",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "TITO EL BAMBINO",
-          "escenario": "Escenario Principal"
+          "hora": "00:35 - 01:35",
+          "artista": "MC DAVO",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
         },
         {
-          "id": "coca-cola-flow-fest-2026-dom-1900-farruko",
-          "dia": "domingo",
+          "id": "coca-cola-flow-fest-2026-sab-1800-anuel-aa",
+          "dia": "sabado",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "FARRUKO",
-          "escenario": "Escenario Principal"
+          "hora": "00:45 - 02:00",
+          "artista": "ANUEL AA",
+          "escenario": "ESCENARIO COCA-COLA"
         },
         {
-          "id": "coca-cola-flow-fest-2026-dom-1910-dei-v",
+          "id": "coca-cola-flow-fest-2026-dom-1445-grtsch",
           "dia": "domingo",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "DEI V",
-          "escenario": "Escenario Principal"
+          "hora": "14:45 - 15:15",
+          "artista": "GRTSCH",
+          "escenario": "ESCENARIO SPRITE"
         },
         {
-          "id": "coca-cola-flow-fest-2026-dom-1920-alleh",
+          "id": "coca-cola-flow-fest-2026-dom-2250-plastikboy",
           "dia": "domingo",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "ALLEH",
-          "escenario": "Escenario Principal"
+          "hora": "14:55 - 15:30",
+          "artista": "PLASTIKBOY",
+          "escenario": "ESCENARIO COCA-COLA"
         },
         {
-          "id": "coca-cola-flow-fest-2026-dom-1930-j-alvarez",
+          "id": "coca-cola-flow-fest-2026-dom-2220-tuli",
           "dia": "domingo",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "J ALVAREZ",
-          "escenario": "Escenario Principal"
+          "hora": "15:00 - 15:30",
+          "artista": "TULI ACOSTA",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2400-bvbba-dvbs",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "15:10 - 15:50",
+          "artista": "BVBBA DVBS",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2100-nat-calma",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "15:30 - 16:05",
+          "artista": "NATT CALMA",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2130-jezzy",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "15:45 - 16:20",
+          "artista": "JEZZY",
+          "escenario": "ESCENARIO COCA-COLA"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2150-low-ckila",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "15:45 - 16:15",
+          "artista": "LOW CLIKA",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2350-mikeanyway-tzunami-presentan-el-pluhh",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "16:05 - 16:50",
+          "artista": "MIKE ANYWAY & TZUNAMI presentan EL PLUHH",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2050-lencho",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "16:20 - 17:00",
+          "artista": "LENCHO",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2240-rivva",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "16:25 - 16:55",
+          "artista": "RIVVA",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
         },
         {
           "id": "coca-cola-flow-fest-2026-dom-1940-floyymenor",
           "dia": "domingo",
           "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
+          "hora": "16:40 - 17:15",
           "artista": "FLOYYMENOR",
-          "escenario": "Escenario Principal"
+          "escenario": "ESCENARIO COCA-COLA"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2340-jose-alatorre",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "17:05 - 17:45",
+          "artista": "JOSÉ ALATORRE",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2210-robot95",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "17:10 - 17:50",
+          "artista": "ROBOT95",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2010-ysy-a",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "17:20 - 18:00",
+          "artista": "YSY A",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-1930-j-alvarez",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "17:40 - 18:25",
+          "artista": "J ÁLVAREZ",
+          "escenario": "ESCENARIO COCA-COLA"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2320-dam-dam",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "18:00 - 18:50",
+          "artista": "DAM DAM",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2110-achal",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "18:10 - 18:55",
+          "artista": "A. CHAL",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-sab-1950-noriel",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "18:20 - 19:05",
+          "artista": "NORIEL",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-1920-alleh",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "18:45 - 19:30",
+          "artista": "ALLEH",
+          "escenario": "ESCENARIO COCA-COLA"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2310-jozzee",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "19:05 - 19:50",
+          "artista": "JOZZEE",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-1910-dei-v",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "19:30 - 20:20",
+          "artista": "DEI V",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-1850-tito-el-bambino",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "19:50 - 20:35",
+          "artista": "TITO EL BAMBINO",
+          "escenario": "ESCENARIO COCA-COLA"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2300-mila",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "20:10 - 20:50",
+          "artista": "MILA",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2030-martinwhite",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "20:15 - 20:55",
+          "artista": "MARTINWHITE",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2035-matisse",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "20:35 - 21:10",
+          "artista": "MATISSE",
+          "escenario": "COKE SESSIONS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-1900-farruko",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "20:45 - 21:35",
+          "artista": "FARRUKO",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2200-justin-quiles",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "21:10 - 22:05",
+          "artista": "JUSTIN QUILES X LENNY TAVAREZ presentan SUPERARTE",
+          "escenario": "ESCENARIO COCA-COLA"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2110-emi-blue",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "21:10 - 21:45",
+          "artista": "EMI BLUE",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2040-kidd-voodoo",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "21:15 - 21:55",
+          "artista": "KIDD VOODOO",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2230-jey-f-el-gudi-ovina",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "22:05 - 22:50",
+          "artista": "JEY F & EL GUDI & OVIÑA",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2205-eladio-carrion",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "22:05 - 22:35",
+          "artista": "ELADIO CARRIÓN",
+          "escenario": "COKE SESSIONS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2000-kybba",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "22:15 - 22:55",
+          "artista": "KYBBA",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-1840-trueno",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "22:20 - 23:20",
+          "artista": "TRUENO",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-1830-yandel-sinfonico",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "22:50 - 23:50",
+          "artista": "YANDEL SINFÓNICO",
+          "escenario": "ESCENARIO COCA-COLA"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2330-dj-freshly",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "23:05 - 00:00",
+          "artista": "DJ FRESHLY",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2020-omar-camacho",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "23:15 - 23:55",
+          "artista": "OMAR CAMACHO",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2140-pablotto-mix",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "00:00 - 01:00",
+          "artista": "PABLITO MIX",
+          "escenario": "ESCENARIO LITTLE CAESARS"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-1820-kali-uchis",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "00:15 - 01:45",
+          "artista": "KALI UCHIS",
+          "escenario": "ESCENARIO SPRITE"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2150-novato-el-flow",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "00:20 - 01:00",
+          "artista": "NOVATO EL FLOW",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-1810-ozuna",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "00:30 - 02:00",
+          "artista": "OZUNA",
+          "escenario": "ESCENARIO COCA-COLA"
+        },
+        {
+          "id": "coca-cola-flow-fest-2026-dom-2120-doony-graff",
+          "dia": "domingo",
+          "turno": "noche",
+          "hora": "01:20 - 02:00",
+          "artista": "DOONY GRAFF",
+          "escenario": "ESCENARIO DEMBOW VICKY'S"
         },
         {
           "id": "coca-cola-flow-fest-2026-dom-1950-yan-block",
@@ -843,226 +1136,10 @@
           "turno": "noche",
           "hora": "HORARIO NO DISPONIBLE",
           "artista": "YAN BLOCK",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2000-kybba",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "KYBBA",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2010-ysy-a",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "YSY-A",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2020-omar-camacho",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "OMAR CAMACHO",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2030-martinwhite",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "MARTINWHITE",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2040-kidd-voodoo",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "KIDD VOODOO",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2050-lencho",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "LENCHO",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2100-nat-calma",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "NATT CALMA",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2110-achal",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "A.CHAL",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2120-doony-graff",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "DOONY GRAFF",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2130-jezzy",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "JEZZY",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2140-pablotto-mix",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "PABLITO MIX",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2150-low-ckila",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "LOW CLIKA",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2150-novato-el-flow",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "NOVATO EL FLOW",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2200-cael-roldan",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "CAEL ROLDAN",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2210-robot95",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "ROBOT95",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2220-tuli",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "TULI",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2230-jey-f-el-gudi-ovina",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "JEY F & EL GUDI & OVIÑA",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2240-rivva",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "RIVVA",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2250-plastikboy",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "PLASTIKBOY",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2300-mila",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "MILA",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2310-jozzee",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "JOZZEE",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2320-dam-dam",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "DAM DAM",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2330-dj-freshly",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "DJ FRESHLY",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2340-jose-alatorre",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "JOSE ALATORRE",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2350-mikeanyway-tzunami-presentan-el-pluhh",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "MIKEANYWAY & TZUNAMI PRESENTAN EL PLUHH",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2400-bvbba-dvbs",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "BVBBA DVBS",
-          "escenario": "Escenario Principal"
-        },
-        {
-          "id": "coca-cola-flow-fest-2026-dom-2200-justin-quiles",
-          "dia": "domingo",
-          "turno": "noche",
-          "hora": "HORARIO NO DISPONIBLE",
-          "artista": "JUSTIN QUILES X LENNY TAVAREZ PRESENTAN SUPERARTE",
-          "escenario": "Escenario Principal"
+          "escenario": "POR CONFIRMAR"
         }
       ],
-      "revision": "880c6eedff068881446991b9748652d5c8ce4189"
+      "revision": "bc31302534aabc3bff0b8374e24d4d3dea8bda54"
     },
     {
       "festival": {
