@@ -11398,6 +11398,3764 @@
         }
       ],
       "revision": "6c3d383ba86d894baefbaf6b657ec349089008b5"
+    },
+    {
+      "festival": {
+        "id": "sansan-festival-2027",
+        "chatChannelID": "sansan-festival-2027",
+        "name": "SanSan Festival",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/sansan_festival_logo.png",
+        "year": 2027,
+        "days": [
+          {
+            "id": "cartel",
+            "displayName": "Cartel",
+            "calendarDate": "2027-03-25"
+          }
+        ],
+        "defaultDayID": "cartel",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "cartel": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://sansanfestival.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://sansanfestival.com/2027/entradas/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Recinto+de+Festivales+Benicassim",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "sansan-festival-2027-events",
+        "stageColorsFile": "sansan-festival-2027-stage-colors",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/sansan-festival-2027.jpg"
+      },
+      "stageColors": {
+        "ESCENARIO POR CONFIRMAR": "#C9A44C"
+      },
+      "events": [
+        {
+          "id": "sansan-festival-2027-vetusta-morla",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VETUSTA MORLA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-lori-meyers",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LORI MEYERS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-ivan-ferreiro-desde-piratas-hasta-hoy",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "IVÁN FERREIRO (DESDE PIRATAS HASTA HOY)",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-la-pegatina",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LA PEGATINA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-sexy-zebras",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SEXY ZEBRAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-shinova",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SHINOVA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-zaharave",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ZAHARAVE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-alcala-norte",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ALCALÁ NORTE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-el-mato-a-un-policia-motorizado",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "EL MATO A UN POLICIA MOTORIZADO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-bestia-bebe",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BESTIA BEBÉ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-cala-vento",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CALA VENTO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-el-zar",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "EL ZAR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-los-punsetes",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LOS PUNSETES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-nina-polaca",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NIÑA POLACA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-parquesvr",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PARQUESVR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-rufus-t-firefly",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RUFUS T. FIREFLY",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-sidonie",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SIDONIE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-sobrezero",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SOBREZERO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-triangulo-de-amor-bizarro",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TRIÁNGULO DE AMOR BIZARRO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-vera-fauna",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VERA FAUNA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-aiko-el-grupo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "AIKO EL GRUPO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-begut",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BEGUT",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-el-diablo-de-shanghai",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "EL DIABLO DE SHANGHAI",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-el-nido",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "EL NIDO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-fatal",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FATAL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-la-126",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LA 126",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-linze",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LINZE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-los-estanques",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LOS ESTANQUES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-mala-gestion",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MALA GESTIÓN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-merina-gris",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MERINA GRIS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-ona-mafalda",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ONA MAFALDA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-oslo-ovnies",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "OSLO OVNIES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-paco-pecado",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PACO PECADO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-perfecto-miserable",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PERFECTO MISERABLE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-pipiolas",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PIPIOLAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-rata",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RATA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-shego",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SHEGO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-tenda",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TENDA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-toldos-verdes",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TOLDOS VERDES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-vangoura",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VANGOURA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-groc-talent-ganador-concurso-2027",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GROC TALENT (GANADOR CONCURSO 2027)",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-alex-curreya",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ALEX CURREYA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-andy-grey",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ANDY GREY",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-bita",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BITA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-cate",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CATE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-ella-pincha-sola",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ELLA PINCHA SOLA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-john-core-b2b-qsade",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JOHN CORE B2B QSADE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-kid-rizzo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KID RIZZO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-mr-kitos",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MR.KITOS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-popi-sito",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "POPI&SITO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-ravepop",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RAVEPOP",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sansan-festival-2027-toxicosmos",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TOXICOSMOS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        }
+      ],
+      "revision": "7e9aa78bf6d09eac9ba2013682874032093a73ef"
+    },
+    {
+      "festival": {
+        "id": "bilbao-bbk-live-2027",
+        "chatChannelID": "bilbao-bbk-live-2027",
+        "name": "Bilbao BBK Live",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/bilbao_bbk_live_logo.png",
+        "year": 2027,
+        "days": [
+          {
+            "id": "cartel",
+            "displayName": "Cartel",
+            "calendarDate": "2027-07-08"
+          }
+        ],
+        "defaultDayID": "cartel",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "cartel": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://bilbaobbklive.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://bilbaobbklive.com/tickets/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Kobetamendi+Bilbao",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "bilbao-bbk-live-2027-events",
+        "stageColorsFile": "bilbao-bbk-live-2027-stage-colors",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/bilbao-bbk-live-2027.jpg"
+      },
+      "stageColors": {
+        "ESCENARIO POR CONFIRMAR": "#C9A44C"
+      },
+      "events": [
+        {
+          "id": "bilbao-bbk-live-2027-the-xx",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE XX",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-teddy-swims",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TEDDY SWIMS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-pixies",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PIXIES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-the-war-on-drugs",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE WAR ON DRUGS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-alt-j",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "alt-J",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-amelie-lens-presents-aura",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "AMELIE LENS PRESENTS AURA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-bonobo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BONOBO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-jack-johnson",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JACK JOHNSON",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-lykke-li",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LYKKE LI",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-of-monsters-and-men",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "OF MONSTERS AND MEN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-sofia-isella",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SOFIA ISELLA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-two-door-cinema-club",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TWO DOOR CINEMA CLUB",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-vetusta-morla",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VETUSTA MORLA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-viva-suecia",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VIVA SUECIA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-1111",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "1111",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-alcala-norte",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ALCALÁ NORTE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-antony-szmierek",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ANTONY SZMIEREK",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-ari-abdul",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ARI ABDUL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-barry-b",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BARRY B",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-club-romantico-dngdngdng-b2b-florentino",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CLUB ROMÁNTICO: DNGDNGDNG b2b FLORENTINO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-dj-shadow-celebrates-30-years-of-endtroducing",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DJ SHADOW CELEBRATES 30 YEARS OF ENDTRODUCING.....",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-fat-dog",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FAT DOG",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-frost-children",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FROST CHILDREN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-genesis-owusu",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GENESIS OWUSU",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-indabe",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "INDABE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-keo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KEO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-laaza",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LAAZA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-los-bitchos",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LOS BITCHOS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-mala-gestion",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MALA GESTIÓN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-martin",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MARTIN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-merina-gris",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MERINA GRIS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-mustbejohn",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MUSTBEJOHN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-nogen",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NØGEN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-oxis",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "OXIS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-paris-jackson",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PARIS JACKSON",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-perfecto-miserable",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PERFECTO MISERABLE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-saint-levant",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SAINT LEVANT",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-sanguijuelas-del-guadiana",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SANGUIJUELAS DEL GUADIANA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-sexy-zebras",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SEXY ZEBRAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-sofia-and-the-antoinettes",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SOFIA AND THE ANTOINETTES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-sua",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SUA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-the-womack-sisters",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE WOMACK SISTERS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-toc",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TOC",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-triangulo-de-amor-bizarro",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TRIÁNGULO DE AMOR BIZARRO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-violet-grohl",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VIOLET GROHL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "bilbao-bbk-live-2027-zeatikez",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ZEATIKEZ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        }
+      ],
+      "revision": "7c0300ae012ccb21bd70d45882fc39013ddab2d9"
+    },
+    {
+      "festival": {
+        "id": "mad-cool-festival-2027",
+        "chatChannelID": "mad-cool-festival-2027",
+        "name": "Mad Cool Festival",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/mad_cool_festival_logo.png",
+        "year": 2027,
+        "days": [
+          {
+            "id": "miercoles",
+            "displayName": "Mie 07",
+            "calendarDate": "2027-07-07"
+          },
+          {
+            "id": "jueves",
+            "displayName": "Jue 08",
+            "calendarDate": "2027-07-08"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 09",
+            "calendarDate": "2027-07-09"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 10",
+            "calendarDate": "2027-07-10"
+          }
+        ],
+        "defaultDayID": "miercoles",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "miercoles": "noche",
+          "jueves": "noche",
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://madcoolfestival.es",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://madcooltickets.com/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Iberdrola+Music+Villaverde+Madrid",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "mad-cool-festival-2027-events",
+        "stageColorsFile": "mad-cool-festival-2027-stage-colors",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/mad-cool-festival-2027.jpg"
+      },
+      "stageColors": {
+        "ESCENARIO POR CONFIRMAR": "#C9A44C"
+      },
+      "events": [
+        {
+          "id": "mad-cool-festival-2027-miercoles-faith-no-more",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FAITH NO MORE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-miercoles-placebo",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PLACEBO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-miercoles-idles",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "IDLES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-miercoles-kneecap",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KNEECAP",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-miercoles-primus",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PRIMUS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-miercoles-nothing-but-thieves",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NOTHING BUT THIEVES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-miercoles-the-mars-volta",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE MARS VOLTA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-miercoles-ecca-vandal",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ECCA VANDAL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-miercoles-lambrini-girls",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LAMBRINI GIRLS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-miercoles-perturbator",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PERTURBATOR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-miercoles-the-struts",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE STRUTS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-miercoles-getdown-services",
+          "dia": "miercoles",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GETDOWN SERVICES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-tame-impala",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TAME IMPALA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-raye",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RAYE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-sombr",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SOMBR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-daniel-caesar",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DANIEL CAESAR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-5-seconds-of-summer",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "5 SECONDS OF SUMMER",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-leon-bridges",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LEON BRIDGES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-james-blake",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JAMES BLAKE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-spoon",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SPOON",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-alyssa-grace",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ALYSSA GRACE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-mike-d-5d",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MIKE D 5D",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-violet-grohl",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VIOLET GROHL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-gang-of-youths",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GANG OF YOUTHS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-cure-for-paranoia",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CURE FOR PARANOIA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-rosa-linn",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ROSA LINN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-elle-coves",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ELLE COVES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-pond",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "POND",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-girl-in-the-year-above",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GIRL IN THE YEAR ABOVE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-sofia-and-the-antoinettes",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SOFIA AND THE ANTOINETTES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-bees-honey",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BEES & HONEY",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-fantastic-negrito",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FANTASTIC NEGRITO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-jueves-kerala-dust",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KERALA DUST",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-enhypen",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ENHYPEN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-the-neighbourhood",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE NEIGHBOURHOOD",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-jungle",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JUNGLE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-alex-warren",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ALEX WARREN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-kehlani",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KEHLANI",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-foals",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FOALS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-myles-smith",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MYLES SMITH",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-hot-chip",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "HOT CHIP",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-angele",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ANGÈLE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-paris-paloma",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PARIS PALOMA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-noga-erez",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NOGA EREZ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-between-friends",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BETWEEN FRIENDS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-maddie-ashman",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MADDIE ASHMAN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-declan-mckenna",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DECLAN MCKENNA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-gurriers",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GURRIERS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-chloe-qisha",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CHLOE QISHA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-corto-alto",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CORTO.ALTO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-mico",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MICO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-dermot-henry",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DERMOT HENRY",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-viernes-janus-lester",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JANUS LESTER",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-the-strokes",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE STROKES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-the-xx",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE XX",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-jack-johnson",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JACK JOHNSON",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-tom-misch",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TOM MISCH",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-ezra-collective",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "EZRA COLLECTIVE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-christine-and-the-queens",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CHRISTINE AND THE QUEENS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-biffy-clyro",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BIFFY CLYRO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-slowdive",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SLOWDIVE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-the-avalanches-live",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE AVALANCHES LIVE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-balu-brigada",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BALU BRIGADA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-florence-road",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FLORENCE ROAD",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-keo",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KEO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-rikas",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RIKAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-the-royston-club",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE ROYSTON CLUB",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-the-lathums",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE LATHUMS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-the-north",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE NORTH",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-brigitte-calls-me-baby",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BRIGITTE CALLS ME BABY",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "mad-cool-festival-2027-sabado-garage-flower",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GARAGE FLOWER",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        }
+      ],
+      "revision": "6b5da095e8604c125166b586e1c637f55bf15aa0"
+    },
+    {
+      "festival": {
+        "id": "sonorama-ribera-2027",
+        "chatChannelID": "sonorama-ribera-2027",
+        "name": "Sonorama Ribera",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/sonorama_ribera_logo.png",
+        "year": 2027,
+        "days": [
+          {
+            "id": "cartel",
+            "displayName": "Cartel",
+            "calendarDate": "2027-08-04"
+          }
+        ],
+        "defaultDayID": "cartel",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "cartel": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://www.sonoramaribera.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.sonoramaribera.com/entradas/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Sonorama+Ribera+Aranda+de+Duero",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "sonorama-ribera-2027-events",
+        "stageColorsFile": "sonorama-ribera-2027-stage-colors",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/sonorama-ribera-2027.jpg"
+      },
+      "stageColors": {
+        "ESCENARIO POR CONFIRMAR": "#C9A44C"
+      },
+      "events": [
+        {
+          "id": "sonorama-ribera-2027-091",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "091",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-alcala-norte",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ALCALÁ NORTE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-ana-torroja",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ANA TORROJA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-andres-calamaro",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ANDRÉS CALAMARO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-anni-b-sweet",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ANNI B SWEET",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-antony-z",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ANTONY Z",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-ariel-rot",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ARIEL ROT",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-bala",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BALA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-ballena-52",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BALLENA 52",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-baloncesto",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BALONCESTO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-begut",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BEGUT",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-belako",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BELAKO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-billman",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BILLMAN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-black-karamel",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BLACK KARAMEL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-buenos-dias-hiroshima",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BUENOS DÍAS HIROSHIMA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-bulego",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BULEGO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-burning",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BURNING",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-cala-vento",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CALA VENTO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-cano",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CANO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-carameloraro",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CARAMELORARO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-carolina-durante",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CAROLINA DURANTE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-carrera-blanca",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CARRERA BLANCA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-catalina-grande-pinon-pequeno",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CATALINA GRANDE PIÑÓN PEQUEÑO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-cervatana",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CERVATANA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-chica-sobresalto",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CHICA SOBRESALTO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-cora-yako",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CORA YAKO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-corizonas",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CORIZONAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-delarocha",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DELAROCHA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-despistaos",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DESPISTAOS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-doctor-wattson",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DOCTOR WATTSON",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-dollar-selmouni",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DOLLAR SELMOUNI",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-doplers",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DOPLERS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-drugos",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DRUGOS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-duele",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DUELE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-el-momento-incomodo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "EL MOMENTO INCÓMODO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-elefantes",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ELEFANTES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-elyella",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ELYELLA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-embusteros",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "EMBUSTEROS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-emilia-pardo-y-bazan",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "EMILIA, PARDO Y BAZÁN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-estrogenuinas",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ESTROGENUINAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-fuet",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FUET!",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-funzo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FUNZO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-fuzzz-by-dj-nano",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FUZZZ BY DJ NANO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-gara-duran",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GARA DURÁN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-glassio",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GLASSIO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-green-silly-parrots",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GREEN SILLY PARROTS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-guilan",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GUILAN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-higinio",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "HIGINIO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-igloo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "IGLOO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-ionica",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "IÓNICA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-iseo-dodosound",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ISEO & DODOSOUND",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-javi-crespo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JAVI CRESPO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-javi-medina",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JAVI MEDINA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-javi-robles",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JAVI ROBLES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-javier-corcobado",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JAVIER CORCOBADO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-javypablo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JAVYPABLO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-jorge-drexler",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JORGE DREXLER",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-julieta-21",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JULIETA 21",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-juseph",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "JUSEPH",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-khea",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KHEA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-kiko-veneno",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KIKO VENENO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-kova",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KOVA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-kyoto-club",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KYOTO CLUB",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-l-a",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "L.A.",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-la-126",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LA 126",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-la-habitacion-roja",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LA HABITACIÓN ROJA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-la-la-love-you",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LA LA LOVE YOU",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-la-paloma",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LA PALOMA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-las-dianas",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LAS DIANAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-las-migas",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LAS MIGAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-lemot",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LEMOT",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-levitants",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LEVITANTS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-lori-meyers",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LORI MEYERS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-lorreine",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LORREINE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-los-acebos",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LOS ACEBOS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-los-enemigos",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LOS ENEMIGOS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-los-estanques",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LOS ESTANQUES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-los-flamingos",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LOS FLAMINGOS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-los-modelos",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LOS MODELOS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-luis-brea",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LUIS BREA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-mala-gestion",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MALA GESTIÓN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-maria-escarmiento",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MARÍA ESCARMIENTO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-mbongo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MBONGO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-melon-diesel",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MELON DIESEL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-michael-foster",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MICHAEL FOSTER",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-midas-alonso",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MIDAS ALONSO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-miss-caffeina",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MISS CAFFEINA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-mucho",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MUCHO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-ninos",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NIÑOS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-nita",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NITA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-no-quiero",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NO QUIERO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-oslo-ovnies",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "OSLO OVNIES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-pagafantas",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PAGAFANTAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-palo-domado",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PALO DOMADO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-parquesvr",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PARQUESVR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-patataonstereo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PATATAONSTEREO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-paula-koops",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PAULA KOOPS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-pequeno-mal",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PEQUEÑO MAL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-pignoise",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PIGNOISE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-pole",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "POLE.",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-puno-dragon",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PUÑO DRAGÓN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-querido",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "QUERIDO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-rata",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RATA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-rodrigo-cuevas",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RODRIGO CUEVAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-ruben-pozo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RUBÉN POZO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-ruto-neon",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RUTO NEÓN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-sanguijuelas-del-guadiana",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SANGUIJUELAS DEL GUADIANA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-segaz",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SEGAZ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-she-s-a-star-dj",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SHE'S A STAR DJ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-shego",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SHEGO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-sidecars",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SIDECARS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-sidonie",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SIDONIE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-sienna",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SIENNA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-siloe",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SILOÉ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-statuas-d-sal",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "STATUAS D SAL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-sune",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SÜNE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-supercremalleras",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SUPERCREMALLERAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-taburete",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TABURETE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-tenda",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TENDA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-tinho-vaamonde",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TINHO VAAMONDE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-toldos-verdes",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TOLDOS VERDES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-travis-birds",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TRAVIS BIRDS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-umbilika",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "UMBILIKA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-una-y-carne",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "UÑA Y CARNE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-varry-brava",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VARRY BRAVA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-venus-astra",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VENUS ASTRA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-viva-belgrado",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VIVA BELGRADO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-walls",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "WALLS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-yapi",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "YAPI",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-yo-fui-a-egb",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "YO FUI A EGB",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-yoghourt-daze",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "YOGHOURT DAZE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-ysy-a",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "YSY A",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-zaharave",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ZAHARAVE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "sonorama-ribera-2027-sinforama-30-aniversario-fernando-velazquez",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SINFORAMA 30 ANIVERSARIO - FERNANDO VELÁZQUEZ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        }
+      ],
+      "revision": "e394675f6d95a1a12d8b85c3b772517fe56b3a19"
+    },
+    {
+      "festival": {
+        "id": "vida-festival-2027",
+        "chatChannelID": "vida-festival-2027",
+        "name": "Vida Festival",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/vida_festival_logo.png",
+        "year": 2027,
+        "days": [
+          {
+            "id": "jueves",
+            "displayName": "Jue 01",
+            "calendarDate": "2027-07-01"
+          },
+          {
+            "id": "viernes",
+            "displayName": "Vie 02",
+            "calendarDate": "2027-07-02"
+          },
+          {
+            "id": "sabado",
+            "displayName": "Sab 03",
+            "calendarDate": "2027-07-03"
+          }
+        ],
+        "defaultDayID": "jueves",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "jueves": "noche",
+          "viernes": "noche",
+          "sabado": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://www.vidafestival.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.vidafestival.com/es/entradas/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Masia+d'en+Cabanyes+Vilanova+i+la+Geltru",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "vida-festival-2027-events",
+        "stageColorsFile": "vida-festival-2027-stage-colors",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/vida-festival-2027.jpg"
+      },
+      "stageColors": {
+        "ESCENARIO POR CONFIRMAR": "#C9A44C"
+      },
+      "events": [
+        {
+          "id": "vida-festival-2027-jueves-kingfishr",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KINGFISHR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-jueves-mushka",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MUSHKA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-jueves-figa-flawas",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FIGA FLAWAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-jueves-pau-vallve",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PAU VALLVÉ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-jueves-people-i-ve-met",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PEOPLE I'VE MET",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-jueves-parquesvr",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PARQUESVR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-jueves-mala-gestion",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MALA GESTIÓN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-jueves-gara-duran",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GARA DURÁN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-jueves-queralt-lahoz",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "QUERALT LAHOZ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-jueves-socunbohemio",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SOCUNBOHEMIO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-jueves-allergiques-al-pollen",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "AL·LÈRGIQUES AL POL·LEN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-jueves-chinese-american-bear",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CHINESE AMERICAN BEAR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-jueves-la-publicitat",
+          "dia": "jueves",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LA PUBLICITAT",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-caribou",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CARIBOU",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-the-womack-sisters",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE WOMACK SISTERS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-french-79-live",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FRENCH 79 (LIVE)",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-maro",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MARO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-fat-dog",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FAT DOG",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-guillem-gisbert",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GUILLEM GISBERT",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-marina-herlop",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MARINA HERLOP",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-la-elite",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LA ÉLITE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-wine-lips",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "WINE LIPS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-cala-vento",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CALA VENTO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-cervatana",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CERVATANA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-carlangas",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CARLANGAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-katie-gregson-macleod",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KATIE GREGSON-MACLEOD",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-playgrxvnd",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PLAYGRXVND",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-blanco-palamera",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BLANCO PALAMERA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-viernes-bernal",
+          "dia": "viernes",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BERNAL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-suki-waterhouse",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SUKI WATERHOUSE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-the-jesus-and-mary-chain",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "THE JESUS AND MARY CHAIN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-kevin-kaarl",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KEVIN KAARL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-dream-boat",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DREAM BOAT",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-rita-payes-i-lucia-fumero",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RITA PAYÉS I LUCÍA FUMERO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-standstill",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "STANDSTILL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-triangulo-de-amor-bizarro",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TRIÁNGULO DE AMOR BIZARRO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-mujeres",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MUJERES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-axolotes-mexicanos",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "AXOLOTES MEXICANOS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-mar-pujol",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MAR PUJOL",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-ouineta",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "OUINETA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-greta",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GRETA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-paco-pecado",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PACO PECADO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-dj-coco-b2b-maadraassoo",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DJ COCO B2B MAADRAASSOO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-andris-el-sardo",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ANDRIS EL SARDO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vida-festival-2027-sabado-fuji",
+          "dia": "sabado",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FUJI?",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        }
+      ],
+      "revision": "ed90a26b903a1b1c9a1f42f170dc731dc8d29e00"
+    },
+    {
+      "festival": {
+        "id": "vive-linares-2027",
+        "chatChannelID": "vive-linares-2027",
+        "name": "Vive Linares",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/vive_linares_logo.png",
+        "year": 2027,
+        "days": [
+          {
+            "id": "cartel",
+            "displayName": "Cartel",
+            "calendarDate": "2027-05-07"
+          }
+        ],
+        "defaultDayID": "cartel",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "cartel": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://vivelinares.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://www.enterticket.es/eventos/vive-linares-fest-2027-408779",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Recinto+Ferial+de+Linares",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "vive-linares-2027-events",
+        "stageColorsFile": "vive-linares-2027-stage-colors",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/vive-linares-2027.jpg"
+      },
+      "stageColors": {
+        "ESCENARIO POR CONFIRMAR": "#C9A44C"
+      },
+      "events": [
+        {
+          "id": "vive-linares-2027-dj-kike-rivero",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "DJ KIKE RIVERO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vive-linares-2027-embusteros",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "EMBUSTEROS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vive-linares-2027-ivan-ferreiro-hoy-x-ayer",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "IVÁN FERREIRO (HOY X AYER)",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vive-linares-2027-neverland-bari",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "NEVERLAND BARI",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vive-linares-2027-repion",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "REPION",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vive-linares-2027-sexy-zebras",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SEXY ZEBRAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vive-linares-2027-samaniego",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SAMANIEGO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vive-linares-2027-tu-otra-bonita",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TU OTRA BONITA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vive-linares-2027-vetusta-morla",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VETUSTA MORLA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "vive-linares-2027-viva-suecia",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VIVA SUECIA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        }
+      ],
+      "revision": "fdd336e66d93b188ae758aecb011aa5a1e05bbfc"
+    },
+    {
+      "festival": {
+        "id": "polar-sound-2027",
+        "chatChannelID": "polar-sound-2027",
+        "name": "Polar Sound",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/polar_sound_logo.png",
+        "year": 2027,
+        "days": [
+          {
+            "id": "cartel",
+            "displayName": "Cartel",
+            "calendarDate": "2027-03-12"
+          }
+        ],
+        "defaultDayID": "cartel",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "cartel": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://polarsound.es",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://feverup.com/m/801950",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Baqueira-Beret",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "polar-sound-2027-events",
+        "stageColorsFile": "polar-sound-2027-stage-colors",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/polar-sound-2027.jpg"
+      },
+      "stageColors": {
+        "ESCENARIO POR CONFIRMAR": "#C9A44C"
+      },
+      "events": [
+        {
+          "id": "polar-sound-2027-viva-suecia",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VIVA SUECIA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "polar-sound-2027-marlena",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MARLENA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "polar-sound-2027-puno-dragon",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PUÑO DRAGÓN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        }
+      ],
+      "revision": "ef71e1f7a9e52921be23aab83128194583980da3"
+    },
+    {
+      "festival": {
+        "id": "fib-benicassim-2027",
+        "chatChannelID": "fib-benicassim-2027",
+        "name": "FIB",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/fib_logo.png",
+        "year": 2027,
+        "days": [
+          {
+            "id": "cartel",
+            "displayName": "Cartel",
+            "calendarDate": "2027-07-15"
+          }
+        ],
+        "defaultDayID": "cartel",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "cartel": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://fiberfib.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://fiberfib.com/abonos/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Recinto+de+Festivales+Benicassim+FIB",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "fib-benicassim-2027-events",
+        "stageColorsFile": "fib-benicassim-2027-stage-colors",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/fib-benicassim-2027.jpg"
+      },
+      "stageColors": {
+        "ESCENARIO POR CONFIRMAR": "#C9A44C"
+      },
+      "events": [
+        {
+          "id": "fib-benicassim-2027-two-door-cinema-club",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TWO DOOR CINEMA CLUB",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-supergrass",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SUPERGRASS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-viva-suecia",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VIVA SUECIA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-siloe",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SILOÉ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-sanguijuelas-del-guadiana",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SANGUIJUELAS DEL GUADIANA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-barry-b",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "BARRY B",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-white-lies",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "WHITE LIES",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-anni-b-sweet",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ANNI B SWEET",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-cupido",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CUPIDO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-elyella",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ELYELLA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-extasis",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ÉXTASIS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-gara-duran",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "GARA DURÁN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-keo",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "KEO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-puno-dragon",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PUÑO DRAGÓN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-samurai",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SAMURAÏ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "fib-benicassim-2027-villanelle",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VILLANELLE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        }
+      ],
+      "revision": "a97317b698382754a405e25d1d34c68fad12d0b3"
+    },
+    {
+      "festival": {
+        "id": "antorchas-festival-2027",
+        "chatChannelID": "antorchas-festival-2027",
+        "name": "Antorchas Festival",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/antorchas_festival_logo.png",
+        "year": 2027,
+        "days": [
+          {
+            "id": "cartel",
+            "displayName": "Cartel",
+            "calendarDate": "2027-06-17"
+          }
+        ],
+        "defaultDayID": "cartel",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "cartel": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://antorchasfestival.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://antorchasfestival.com/entradas",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Recinto+Ferial+de+Albacete",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "antorchas-festival-2027-events",
+        "stageColorsFile": "antorchas-festival-2027-stage-colors",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/antorchas-festival-2027.jpg"
+      },
+      "stageColors": {
+        "ESCENARIO POR CONFIRMAR": "#C9A44C"
+      },
+      "events": [
+        {
+          "id": "antorchas-festival-2027-vetusta-morla",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VETUSTA MORLA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-viva-suecia",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "VIVA SUECIA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-alcala-norte",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "ALCALÁ NORTE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-carlos-sadness",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CARLOS SADNESS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-ivan-ferreiro",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "IVÁN FERREIRO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-la-perra-blanco",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LA PERRA BLANCO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-mala-gestion",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MALA GESTIÓN",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-pacifica",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PACÍFICA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-pipiolas",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "PIPIOLAS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-travis-birds",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "TRAVIS BIRDS",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-xoel-lopez",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "XOEL LÓPEZ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-091",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "091",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-claramente",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "CLARAMENTE",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-mercy-dj",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MERCY DJ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-l-a-s-djs",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "L.A.S Djs",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "antorchas-festival-2027-reino-polar",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "REINO POLAR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        }
+      ],
+      "revision": "650142c9901ec9a343dcdc51d5fe98ce44289afa"
+    },
+    {
+      "festival": {
+        "id": "arenal-sound-2027",
+        "chatChannelID": "arenal-sound-2027",
+        "name": "Arenal Sound",
+        "festivalLogoURL": "https://festtime.app/media/festivals/logos/arenal_sound_logo.png",
+        "year": 2027,
+        "days": [
+          {
+            "id": "cartel",
+            "displayName": "Cartel",
+            "calendarDate": "2027-07-29"
+          }
+        ],
+        "defaultDayID": "cartel",
+        "defaultShift": "noche",
+        "forcedShiftByDay": {
+          "cartel": "noche"
+        },
+        "favoriteIDAliases": {},
+        "menuOptions": [
+          {
+            "title": "Web Oficial",
+            "url": "https://arenalsound.com",
+            "systemImage": "safari"
+          },
+          {
+            "title": "Entradas",
+            "url": "https://arenalsound.com/abonos/",
+            "systemImage": "ticket"
+          },
+          {
+            "title": "Ubicacion del Recinto",
+            "url": "https://www.google.com/maps/search/?api=1&query=Playa+del+Arenal+Burriana",
+            "systemImage": "location"
+          }
+        ],
+        "eventsFile": "arenal-sound-2027-events",
+        "stageColorsFile": "arenal-sound-2027-stage-colors",
+        "festivalPosterURL": "https://festtime.app/media/festivals/posters/arenal-sound-2027.jpg"
+      },
+      "stageColors": {
+        "ESCENARIO POR CONFIRMAR": "#C9A44C"
+      },
+      "events": [
+        {
+          "id": "arenal-sound-2027-melendi",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MELENDI",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "arenal-sound-2027-rels-b",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "RELS B",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "arenal-sound-2027-sebastian-yatra",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "SEBASTIÁN YATRA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "arenal-sound-2027-al-safir",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "AL SAFIR",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "arenal-sound-2027-c-mari",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "C MARÍ",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "arenal-sound-2027-d-valentino",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "D. VALENTINO",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "arenal-sound-2027-fernandocosta",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "FERNANDOCOSTA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "arenal-sound-2027-la-zowi",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LA ZOWI",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "arenal-sound-2027-lorna",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LORNA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "arenal-sound-2027-lucho-rk",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "LUCHO RK",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "arenal-sound-2027-metrika",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "METRIKA",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "arenal-sound-2027-mvrk",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "MVRK",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        },
+        {
+          "id": "arenal-sound-2027-reality",
+          "dia": "cartel",
+          "turno": "noche",
+          "hora": "HORARIO NO DISPONIBLE",
+          "artista": "REALITY",
+          "escenario": "ESCENARIO POR CONFIRMAR"
+        }
+      ],
+      "revision": "919e56defe68b2918ae257c3773a5109f2113951"
     }
   ],
   "generatedAt": "2026-11-05T09:41:39.000Z",
